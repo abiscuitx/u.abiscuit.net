@@ -1,0 +1,2553 @@
+<!DOCTYPE html>
+            <html lang="zh-cn">
+
+            <head>
+            <meta charset="utf-8">
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+            <title>读写4-沈丛-B3U6Quiz2</title>
+            <meta name="MSSmartTagsPreventParsing" content="True" />
+            <meta http-equiv="MSThemeCompatible" content="Yes" />
+            <meta name="renderer" content="webkit">
+            <script src="https://uexercise.unipus.cn/static/its/lib/jquery/jquery.js"></script>
+            <script src="https://uexercise.unipus.cn/static/its/lib/zui/js/zui.js"></script>
+            <script src="https://uexercise.unipus.cn/static/its/lib/chosen/chosen.js"></script>
+            <script src="https://uexercise.unipus.cn/static/its/lib/jquery/jquery.form.js"></script>
+            <script>
+                window.CTX = 'https://uexercise.unipus.cn';
+            </script>
+            <script src="https://uexercise.unipus.cn/static/its/lib/itest/js/itest_common.js"></script>
+            <script src="https://uexercise.unipus.cn/static/its/lib/layer/layer.js"></script>
+            <script src="https://uexercise.unipus.cn/static/its/lib/layer/laytpl.js"></script>
+            <script src="https://uexercise.unipus.cn/static/its/lib/layer/extend/layer.ext.js"></script>
+            <script src="https://uexercise.unipus.cn/static/its/lib/fltrp/js/js.js"></script>
+            <script src="https://uexercise.unipus.cn/static/its/lib/fltrp/js/stopic.js"></script>
+            <script src="https://uexercise.unipus.cn/static/its/lib/jplayer/jquery.jplayer.min.js"></script>
+            <script type="text/javascript" src="//player.youku.com/jsapi"></script>
+            <script src='https://uexercise.unipus.cn/static/its/lib/fltrp/js/uploadXX.js'></script>
+            <script>
+                var _hmt = _hmt || [];
+                (function() {
+                    var hm = document.createElement("script");
+                    hm.src = "https://hm.baidu.com/hm.js?c402237d180d562bcdd7e9d5fe8780f8";
+                    var s = document.getElementsByTagName("script")[0];
+                    s.parentNode.insertBefore(hm, s);
+                })();
+            </script>
+            <script src="../assets/js/Valine.min.js"></script>
+            <link rel="shortcut icon" href="../assets/images/favicon.ico">
+            <link href="../assets/css/main.css" rel="stylesheet">
+            <link href="../assets/css/part.css" rel="stylesheet">
+            <link href="../assets/css/topic.css" rel="stylesheet">
+            <link href="../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+            <style>
+                ul {
+                    padding-left: 0px;
+                }
+                
+                .playButton {
+                    width: 35px;
+                    height: 35px;
+                    cursor: pointer;
+                    float: left;
+                    margin: 25px 10px 0 35px;
+                }
+                
+                .answer-video .playButton {
+                    margin: 0 10px;
+                }
+                
+                input.blankinput {
+                    -moz-border-bottom-colors: none;
+                    -moz-border-left-colors: none;
+                    -moz-border-right-colors: none;
+                    -moz-border-top-colors: none;
+                    border-color: -moz-use-text-color -moz-use-text-color #000000;
+                    border-image: none;
+                    border-style: none none solid;
+                    border-width: 0 0 1px;
+                    margin: 0 0px;
+                    font-weight: bold;
+                    text-align: center;
+                    outline: none;
+                    height: 24px;
+                    resize: none;
+                    color: #333;
+                }
+                
+                span.blankinput {
+                    border-color: -moz-use-text-color -moz-use-text-color #000000;
+                    border-image: none;
+                    border-style: none none solid;
+                    border-width: 0 0 1px;
+                    margin: 0 0px;
+                    font-weight: bold;
+                    text-align: center;
+                    outline: none;
+                    height: 24px;
+                    resize: none;
+                    color: white;
+                }
+                
+                .form-horizontal .form-group {
+                    margin-right: 0;
+                    margin-left: 0;
+                    margin-top: 20px;
+                }
+            </style>
+            </head>
+
+            <body>
+            <nav class="navbar navbar-light navbar-expand-md fixed-top" id="mainNav" style="background: rgba(0,0,0,0);">
+                <div class="container">
+                    <a class="navbar-brand d-xl-flex justify-content-xl-center align-items-xl-center js-scroll-trigger" data-aos="zoom-in-right" href="https://u.abiscuit.net" style="font-family: Roboto, sans-serif;text-shadow: 0px 0px 5px var(--red);"><img class="rounded-circle d-xl-flex justify-content-xl-center align-items-xl-center" src="https://gravatar.loli.net/avatar/058e7772431faa1fcf6ef8e6ceed6552" style="max-height: auto;width: 40px;height: 40px;margin-right: 10px;">u校园答案导航</a>
+                    <button data-toggle="collapse" class="navbar-toggler navbar-toggler-right" data-target="#navbarResponsive" data-aos="fade-left" type="button" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" value="Menu" style="box-shadow: 0px 0px 5px var(--red);"><i class="fa fa-bars" style="box-shadow: 0px 0px 5px var(--red);"></i></button>
+                    <div class="collapse navbar-collapse" id="navbarResponsive">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item nav-link js-scroll-trigger"><a class="nav-link js-scroll-trigger" data-aos="zoom-out-left" href="https://kxz.atcumt.com/" style="font-family: Roboto, sans-serif;text-shadow: 0px 0px 5px var(--primary);">友情推荐：矿小助</a></li>
+                            <li class="nav-item nav-link js-scroll-trigger"><a class="nav-link js-scroll-trigger" data-aos="zoom-out-left" href="mailto:abiscuit@vip.qq.com" style="font-family: Roboto, sans-serif;text-shadow: 0px 0px 5px var(--blue);">邮箱联系</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- 主体部分开始 -->
+            <div class="main">
+                <div class="topclass">读写4-沈丛-B3U6Quiz2</div>
+                <!-- 题型列表开始 --><div class="content Question">
+ <div class="Test">
+  <div class="TestTitle">
+   <div class="title" id="102">
+    短对话5题，总分值：10分
+   </div>
+   <div class="title-decrible">
+    <div class="directs">
+     Directions： In this section, you'll hear some short conversations. At the end of each conversation, one question will be asked. Both the conversation and the question will be spoken only once. After each question, choose the best answer from the four choices marked A, B, C, and D.
+    </div>
+   </div>
+  </div>
+  <div class="Question-Conversation" qid="157144" qtype="102">
+   <span class="answer-video">
+    <div class="play" respath="https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/t_102/201511/kxveqq_18095144358.mp3">
+     <img class="playImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/play-1.png">
+      <img class="playingImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/playing02-fltrp.gif" style="display:none;"/>
+     </img>
+    </div>
+   </span>
+   <div class="Choice">
+    <div class="nu" id="t1">
+     <span>
+      <b>
+       1)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  He must have learned the change of schedule.
+       </label>
+       <label>
+        B.  He didn’t know the change of schedule.
+       </label>
+       <label>
+        C.  He will probably get to the airport at 4 o’clock in the afternoon.
+       </label>
+       <label>
+        D.  He has already got a new flight before the flight change notice.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       1) A
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+     <p>
+      <b>
+       听力文本：
+      </b>
+     </p>
+     <p>
+      <p>
+       M: They had her thesis later than she had expected. There is a change in the flight schedule. So we’ll have to get to the airport at 7’clock in the morning instead of 4 o’clock in the afternoon. Does John know anything about this change?
+      </p>
+      <p>
+       W: He was here just now and I noticed that he had a new schedule.
+      </p>
+      <p>
+       Q: What can we learn about John from the conversation?
+      </p>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="157143" qtype="102">
+   <span class="answer-video">
+    <div class="play" respath="https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/t_102/201511/ojetfw_18095137123.mp3">
+     <img class="playImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/play-1.png"/>
+     <img class="playingImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/playing02-fltrp.gif" style="display:none;"/>
+    </div>
+   </span>
+   <div class="Choice">
+    <div class="nu" id="t2">
+     <span>
+      <b>
+       2)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  She finished her thesis as early as expected.
+       </label>
+       <label>
+        B.  She’s not sure what the mystery of writing a thesis is.
+       </label>
+       <label class="green">
+        C.  She herself can’t believe that she finished her thesis so early.
+       </label>
+       <label>
+        D.  She was shocked to learn that the man finished his thesis so early.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       2) C
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+     <p>
+      <b>
+       听力文本：
+      </b>
+     </p>
+     <p>
+      <p>
+       M: I was shocked when I heard you’d finished your master’s thesis a whole month early. Just a month ago you were still complaining about the insufficient materials.
+      </p>
+      <p>
+       W: As a matter of fact, how I managed to do it is still a mystery to me.
+      </p>
+      <p>
+       Q: What does the woman mean?
+      </p>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="157142" qtype="102">
+   <span class="answer-video">
+    <div class="play" respath="https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/t_102/201511/foifhc_18095128592.mp3">
+     <img class="playImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/play-1.png"/>
+     <img class="playingImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/playing02-fltrp.gif" style="display:none;"/>
+    </div>
+   </span>
+   <div class="Choice">
+    <div class="nu" id="t3">
+     <span>
+      <b>
+       3)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  The man was inexperienced for the job.
+       </label>
+       <label>
+        B.  The man was always the best in writing applications.
+       </label>
+       <label>
+        C.  The man’s job application was poorly written
+       </label>
+       <label>
+        D.  The man’s job interview discovered him to be a good journalist.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       3) A
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+     <p>
+      <b>
+       听力文本：
+      </b>
+     </p>
+     <p>
+      <p>
+       W: How did the job interview go? I think you’ll make a good journalist. I remember you were always the best writer in our class.
+      </p>
+      <p>
+       M: Well, in fact, my application was turned down. They were looking for people with experience in the profession.
+      </p>
+      <p>
+       Q: What can be inferred from the interview？
+      </p>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="157141" qtype="102">
+   <span class="answer-video">
+    <div class="play" respath="https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/t_102/201511/xdswff_18095120404.mp3">
+     <img class="playImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/play-1.png"/>
+     <img class="playingImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/playing02-fltrp.gif" style="display:none;"/>
+    </div>
+   </span>
+   <div class="Choice">
+    <div class="nu" id="t4">
+     <span>
+      <b>
+       4)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  To become a teacher.
+       </label>
+       <label>
+        B.  To change her job.
+       </label>
+       <label>
+        C.  To accept the job as a saleswoman.
+       </label>
+       <label>
+        D.  To face the reality eventually.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       4) A
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+     <p>
+      <b>
+       听力文本：
+      </b>
+     </p>
+     <p>
+      <p>
+       M: Haven’t seen you for a long time. I hear from a friend that you found a job at last. I remember you dreamed of being a teacher.
+      </p>
+      <p>
+       W: Yeah, but sometimes you have to face the reality. So, eventually, I accepted the job as a sales assistant.
+      </p>
+      <p>
+       Q: What did the woman want to do?
+      </p>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="157137" qtype="102">
+   <span class="answer-video">
+    <div class="play" respath="https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/t_102/201511/hwvoey_18094912417.mp3">
+     <img class="playImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/play-1.png"/>
+     <img class="playingImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/playing02-fltrp.gif" style="display:none;"/>
+    </div>
+   </span>
+   <div class="Choice">
+    <div class="nu" id="t5">
+     <span>
+      <b>
+       5)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  Because the man was majoring in English.
+       </label>
+       <label>
+        B.  Because the man wants to improve English.
+       </label>
+       <label>
+        C.  Because English grammar is required for business management majors.
+       </label>
+       <label class="green">
+        D.  Because English grammar can help the man in his business English.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       5) D
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+     <p>
+      <b>
+       听力文本：
+      </b>
+     </p>
+     <p>
+      <p>
+       W: Hi, Richard. I was surprised to see you in the class on English grammar yesterday. Are you also majoring in English?
+      </p>
+      <p>
+       M: No, I’m not. But as a major of business management, I can use this to fulfill the requirement in business English.
+      </p>
+      <p>
+       Q: Why did the man attend the class on English grammar?
+      </p>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+ </div>
+ <div class="Test">
+  <div class="TestTitle">
+   <div class="title" id="103">
+    长对话4题，总分值：8分
+   </div>
+   <div class="title-decrible">
+    <div class="directs">
+     Directions： In this section, you'll hear some long conversations. At the end of each conversation, some questions will be asked. Both the conversation and the questions will be spoken only once. After each question, choose the best answer from the four choices marked A, B, C, and D.
+    </div>
+   </div>
+  </div>
+  <div class="Question-Conversation" qid="156999" qtype="103">
+   <span class="answer-video">
+    <div class="play" respath="https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_3/t_103/201510/d7dccfc2-8f2b-41d9-9075-831685de35bf.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_3/t_103/201510/f297b9fc-20b7-4797-8c8c-7695c5529d7d.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_3/t_103/201510/9b9b689d-5950-4795-a868-66c032cda82a.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_3/t_103/201510/98981761-2675-4497-a7a3-7976e4879f15.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_3/t_103/201510/29eac364-ee5f-48b0-93fe-8246eabd04d2.mp3">
+     <img class="playImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/play-1.png"/>
+     <img class="playingImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/playing02-fltrp.gif" style="display:none;"/>
+    </div>
+   </span>
+   <div class="Choice">
+    <div class="nu" id="t6">
+     <span>
+      <b>
+       6)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  Moving to California.
+       </label>
+       <label>
+        B.  Finishing her research paper.
+       </label>
+       <label>
+        C.  Finding scandals from history.
+       </label>
+       <label class="green">
+        D.  Studying her family history.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t7">
+     <span>
+      <b>
+       7)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  From Ireland.
+       </label>
+       <label>
+        B.  From Texas.
+       </label>
+       <label>
+        C.  From California.
+       </label>
+       <label>
+        D.  From Colorado.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t8">
+     <span>
+      <b>
+       8)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  A long-lasting war.
+       </label>
+       <label class="green">
+        B.  A great crop failure.
+       </label>
+       <label>
+        C.  A widely-spread disease.
+       </label>
+       <label>
+        D.  A family scandal.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t9">
+     <span>
+      <b>
+       9)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  Organize a family reunion.
+       </label>
+       <label>
+        B.  Visit all their relatives.
+       </label>
+       <label>
+        C.  Pay a visit to their aunt.
+       </label>
+       <label>
+        D.  Plant a family tree.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      6) D      7) A      8) B      9) A
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <div>
+      <pre>（无）</pre>
+     </div>
+     <p>
+      <b>
+       听力文本：
+      </b>
+     </p>
+     <p>
+      <p style="text-align:justify">
+       M: Hey sis. We haven’t talked since your move to California. What have you been up to?
+      </p>
+      <p style="text-align:justify">
+       W: Oh hi John! I’ve been working on our family tree.
+      </p>
+      <p style="text-align:justify">
+       M: Mom said you’ve been researching our family history.
+      </p>
+      <p style="text-align:justify">
+       W: Yes, I want to know where we come from.
+      </p>
+      <p style="text-align:justify">
+       M: Have you found any exciting scandals from our past?
+      </p>
+      <p style="text-align:justify">
+       W: No, no scandals… But as you know, our ancestors were from Ireland.
+      </p>
+      <p style="text-align:justify">
+       M: Yes, I know! Six generations ago, our ancestor Sean McDaniels moved here to the United States after the great potato famine in 1845, when a fungus killed over a third of the potato crop.
+      </p>
+      <p style="text-align:justify">
+       W: Oh wow, I’m impressed with your knowledge of history! Can you guess where our ancestors lived when they got to America?
+      </p>
+      <p style="text-align:justify">
+       M: The north east like many such immigrants – before spreading out across the country? Ha! I see, I didn’t sleep through as much class in high school as everyone thinks!
+      </p>
+      <p style="text-align:justify">
+       W: Haha! Anyway, Sean came over with his two brothers and one sister, Claire, spending their life’s savings on the journey. They did indeed live in the north east, in Boston, before moving south to Texas. There, Sean worked as a policeman, and Claire was a teacher.
+      </p>
+      <p style="text-align:justify">
+       M: What about the other two brothers?
+      </p>
+      <p style="text-align:justify">
+       W: I haven’t been able to find out much about them. Claire married though, and had a whole family branch in Colorado that I just found out about.
+      </p>
+      <p style="text-align:justify">
+       M: Maybe we can contact them and arrange a family reunion! I’d love to meet our long-lost relatives, to see how everyone’s doing.
+      </p>
+      <p style="text-align:justify">
+       W: That’s a great idea! I only wish our aunt Selma was still alive to meet everyone. Family was always so important to her, she would have loved this!
+      </p>
+      <p style="text-align:justify">
+       New words:
+      </p>
+      <p style="text-align:justify">
+       sis n. (非正式)姐姐；妹妹（常用于直接称呼）
+      </p>
+      <p style="text-align:justify">
+       Sean McDaniels 肖恩·麦丹尼（人名）
+      </p>
+      <p style="text-align:justify">
+       potato famine 马铃薯饥荒（爱尔兰大饥荒）
+      </p>
+      <p style="text-align:justify">
+       fungus n. 真菌
+      </p>
+      <p style="text-align:justify">
+       Claire 克莱尔（人名）
+      </p>
+      <p style="text-align:justify">
+       Boston 波士顿（美国马萨诸塞州首府）
+      </p>
+      <p style="text-align:justify">
+       Colorado 科罗拉多(美国西部的州)
+      </p>
+      <p style="text-align:justify">
+       Selma 塞尔玛（人名）
+      </p>
+      <p>
+       <br/>
+       <p>
+        What has the woman been doing recently according to the conversation?
+       </p>
+       <p>
+        Where were their ancestors from on the basis of the woman’s research?
+       </p>
+       <p>
+        What caused their ancestors to immigrate to the States generations ago?
+       </p>
+       <p>
+        What do they plan to do at the end of the conversation?
+       </p>
+      </p>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+ </div>
+ <div class="Test">
+  <div class="TestTitle">
+   <div class="title" id="308">
+    长文章4题，总分值：8分
+   </div>
+   <div class="title-decrible">
+    <div class="directs">
+     Directions： In this section, you’ll hear some passages. At the end of each passage, you'll hear some questions. Both the passage and the questions will be spoken only once. After each question, choose the best answer from the four choices marked A, B, C, and D.
+    </div>
+   </div>
+  </div>
+  <div class="Question-Conversation" qid="157151" qtype="308">
+   <span class="answer-video">
+    <div class="play" respath="https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_3/t_301/201510/a33c2849-a20e-4bd8-b83e-f318d157e930.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_3/t_301/201510/34ca46c5-497b-4271-9014-3cb998366842.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_3/t_301/201510/de8f59c9-b953-4888-9f06-19a1c8149df2.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_1031/t_308/201701/bwdhoy_21153843238.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_1031/t_308/201701/qtnmow_21153843239.mp3">
+     <img class="playImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/play-1.png"/>
+     <img class="playingImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/playing02-fltrp.gif" style="display:none;"/>
+    </div>
+   </span>
+   <div class="Choice">
+    <div class="nu" id="t10">
+     <span>
+      <b>
+       10)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  Snow can cause thousands of deaths in the United States every year.
+       </label>
+       <label class="green">
+        B.  Snow can be very dangerous although it is beautiful.
+       </label>
+       <label>
+        C.  Snow can lead to many people’s heart attack in the United States.
+       </label>
+       <label>
+        D.  Snow can make it more difficult to do physical activity in winter.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t11">
+     <span>
+      <b>
+       11)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  Avoid living in areas where it snows often.
+       </label>
+       <label>
+        B.  Stay inside the house until the winter ends.
+       </label>
+       <label>
+        C.  Do physical activity by removing the snow around the house.
+       </label>
+       <label class="green">
+        D.  Keep sufficient supplies in the home before the snow storm.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t12">
+     <span>
+      <b>
+       12)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  Turn off the engine to save fuel for emergency.
+       </label>
+       <label>
+        B.  Shut the vehicle windows to keep it warm inside waiting for rescue.
+       </label>
+       <label class="green">
+        C.  Put a bright-colored object on top of the vehicle asking for help.
+       </label>
+       <label>
+        D.  Clear the exhaust pipe every ten or fifteen minutes.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t13">
+     <span>
+      <b>
+       13)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  Food, medicine and clothing.
+       </label>
+       <label>
+        B.  Food, medicine and clean water.
+       </label>
+       <label>
+        C.  Clothing, clean water and extra power supplies.
+       </label>
+       <label>
+        D.  Medicine, clean water and clothing.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      10) B      11) D      12) C      13) A
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <div>
+      <pre>（无）</pre>
+     </div>
+     <p>
+      <b>
+       听力文本：
+      </b>
+     </p>
+     <p>
+      <p style="text-align:justify">
+       Snow may be beautiful, but it can be deadly. It is responsible for the deaths of hundreds of people in the United States every year. Many people die in traffic accidents on roads that are covered with snow or ice. Others die from being out in the cold, or from heart attacks caused by too much physical activity during snow removal.
+       <br/>
+       <br/>
+       You may not be able to avoid living in areas where it snows often. However, you can avoid becoming a victim of a snowstorm. Most people are told to stay in their homes until the storm has passed. When removing large amounts of snow, they should stop and rest often. Difficult physical activity during snow removal can cause a heart attack, especially among older adults.
+       <br/>
+       <br/>
+       It is always a good idea to keep a lot of supplies in the home, even before winter begins. These supplies include food, medicine, clean water and extra power supplies.
+       <br/>
+       <br/>
+       Some drivers have become trapped in their vehicles during a snowstorm. If this happens, people should remain in or near their car unless they see some kind of help. They should get out and clear space around the vehicle’s exhaust pipe to prevent the possibility of carbon monoxide poisoning.
+       <br/>
+       <br/>
+       Drivers should tie a bright-colored object to the top of their car to increase the chance of rescue. Inside the car, they should open a window a little for fresh air and turn on the engine for ten or fifteen minutes every hour for heat.
+       <br/>
+       <br/>
+       People living in areas where winter storms are likely should carry emergency supplies in their vehicle. These include food, emergency medical supplies and extra clothing to stay warm and dry. People in these areas should always be prepared for winter emergencies. Snow can be beautiful, but it can also be dangerous.
+       <br/>
+       <br/>
+       New words：
+      </p>
+      <p style="text-align:justify">
+       exhaust pipe 排气管
+      </p>
+      <p style="text-align:justify">
+       carbon monoxide 一氧化碳
+      </p>
+      <p>
+       <br/>
+       <p>
+        What do we know about snow from the passage?
+       </p>
+       <p>
+        How can a person avoid becoming a victim of snowstorm according to the passage?
+       </p>
+       <p>
+        What should drivers do when they are trapped in their vehicles during a snowstorm?
+       </p>
+       <p>
+        What emergency supplies should people carry in their vehicles in case of a snowstorm?
+       </p>
+      </p>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+ </div>
+ <div class="Test">
+  <div class="TestTitle">
+   <div class="title" id="305">
+    词汇与结构12题，总分值：24分
+   </div>
+   <div class="title-decrible">
+    <div class="directs">
+     Directions： For each of the following sentences there are four choices marked A, B, C and D. Choose the best one to complete each sentence.
+    </div>
+   </div>
+  </div>
+  <div class="Question-Conversation" qid="157088" qtype="305">
+   <div class="Choice">
+    <div id="t14">
+     <span>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Robyn ________ the cars and forced herself to walk confidently up to the front door, despite the sinking feeling in her stomach.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  weaved her way through
+       </label>
+       <label>
+        B.  lost her way to
+       </label>
+       <label>
+        C.  tried her way for
+       </label>
+       <label>
+        D.  found her way from
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       14) A
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="157084" qtype="305">
+   <div class="Choice">
+    <div class="nu" id="t15">
+     <span>
+      <b>
+       15)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      The crew said they had survived on the upturned hull (船身), sleeping ________ in a compartment (隔间) the size of a double bed.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  separated out
+       </label>
+       <label>
+        B.  crowded up
+       </label>
+       <label class="green">
+        C.  huddled together
+       </label>
+       <label>
+        D.  forced down
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       15) C
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="157083" qtype="305">
+   <div class="Choice">
+    <div class="nu" id="t16">
+     <span>
+      <b>
+       16)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      It is assumed that the interior of the cap was ________ soft leather.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  put in
+       </label>
+       <label>
+        B.  contained with
+       </label>
+       <label>
+        C.  laid by
+       </label>
+       <label class="green">
+        D.  lined with
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       16) D
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="157079" qtype="305">
+   <div class="Choice">
+    <div class="nu" id="t17">
+     <span>
+      <b>
+       17)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      These books are worth next to ________ to them if they do not want to read.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  anything
+       </label>
+       <label class="green">
+        B.  nothing
+       </label>
+       <label>
+        C.  everything
+       </label>
+       <label>
+        D.  something
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       17) B
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="157078" qtype="305">
+   <div class="Choice">
+    <div class="nu" id="t18">
+     <span>
+      <b>
+       18)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Residents remember all too well the floods of 2010 that caused ten billion dollars in damage and forced thousands to ________.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  speculate
+       </label>
+       <label class="green">
+        B.  evacuate
+       </label>
+       <label>
+        C.  anticipate
+       </label>
+       <label>
+        D.  manifest
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       18) B
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="157077" qtype="305">
+   <div class="Choice">
+    <div class="nu" id="t19">
+     <span>
+      <b>
+       19)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      On a spring moonlit night, birds are singing, the air is ________ with the fragrance of flowers.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  violated
+       </label>
+       <label>
+        B.  probed
+       </label>
+       <label class="green">
+        C.  permeated
+       </label>
+       <label>
+        D.  groped
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       19) C
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="157076" qtype="305">
+   <div class="Choice">
+    <div class="nu" id="t20">
+     <span>
+      <b>
+       20)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Beyond the realm of information technology, the accelerated pace of technological change in virtually every industry has created entirely new businesses, wiped out others, and produced a ________ demand for continuous innovation.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  massive
+       </label>
+       <label>
+        B.  persuasive
+       </label>
+       <label>
+        C.  offensive
+       </label>
+       <label class="green">
+        D.  pervasive
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       20) D
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="157075" qtype="305">
+   <div class="Choice">
+    <div class="nu" id="t21">
+     <span>
+      <b>
+       21)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      He was disliked because he did not like other people and people were ________ of his wealth.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  notorious
+       </label>
+       <label>
+        B.  conspicuous
+       </label>
+       <label class="green">
+        C.  jealous
+       </label>
+       <label>
+        D.  inferior
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       21) C
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="157074" qtype="305">
+   <div class="Choice">
+    <div class="nu" id="t22">
+     <span>
+      <b>
+       22)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      A large amount of goods is piled up in the ________ at the train station.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  garage
+       </label>
+       <label class="green">
+        B.  warehouse
+       </label>
+       <label>
+        C.  barrel
+       </label>
+       <label>
+        D.  cabin
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       22) B
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="157072" qtype="305">
+   <div class="Choice">
+    <div class="nu" id="t23">
+     <span>
+      <b>
+       23)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Treating animals kindly does not mean that we must never ________ any pain on them.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  incline
+       </label>
+       <label>
+        B.  decline
+       </label>
+       <label>
+        C.  increase
+       </label>
+       <label class="green">
+        D.  inflict
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       23) D
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="157071" qtype="305">
+   <div class="Choice">
+    <div class="nu" id="t24">
+     <span>
+      <b>
+       24)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      She is so ________ that she believes everything he tells her.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  nasty
+       </label>
+       <label>
+        B.  notorious
+       </label>
+       <label class="green">
+        C.  naive
+       </label>
+       <label>
+        D.  notable
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       24) C
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="157067" qtype="305">
+   <div class="Choice">
+    <div class="nu" id="t25">
+     <span>
+      <b>
+       25)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      The boy ________ easily when he spoke in front of others.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  reserve
+       </label>
+       <label>
+        B.  sustain
+       </label>
+       <label>
+        C.  retain
+       </label>
+       <label class="green">
+        D.  blushed
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       25) D
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+ </div>
+ <div class="Test">
+  <div class="TestTitle">
+   <div class="title" id="112">
+    完型填空20题，总分值：40分
+   </div>
+   <div class="title-decrible">
+    <div class="directs">
+     Directions： There are some blanks in the following passage. For each blank there are four choices marked A, B, C and D. You should choose the ONE that best fits into the passage.
+    </div>
+   </div>
+  </div>
+  <div class="Question-Conversation" qid="157110" qtype="112">
+   <div class="Choice">
+    <div class="padding">
+     <p>
+      <p style="text-align:justify">
+       The world has spent on preparation for war more than $112 billion a year, roughly $450 per head for every man, woman, and child in the world. Let us
+       <b>
+        26)
+       </b>
+       <span class="blankinput" type="text">
+        consider
+       </span>
+       for a moment what could be done
+       <b>
+        27)
+       </b>
+       <span class="blankinput" type="text">
+        with
+       </span>
+       this sum of money if it were spent on peace and not on war. Some of it, at any
+       <b>
+        28)
+       </b>
+       <span class="blankinput" type="text">
+        rate
+       </span>
+       , in the more prosperous countries, could be spent on the reduction of taxation. The rest should be
+       <b>
+        29)
+       </b>
+       <span class="blankinput" type="text">
+        deployed
+       </span>
+       in ways that could bring
+       <b>
+        30)
+       </b>
+       <span class="blankinput" type="text">
+        innumerable
+       </span>
+       benefits to mankind and a solution
+       <b>
+        31)
+       </b>
+       <span class="blankinput" type="text">
+        to
+       </span>
+       the economic problem of change from war industry to the expansion of peace industries.
+       <b>
+        32)
+       </b>
+       <span class="blankinput" type="text">
+        As to
+       </span>
+       this expansion, let us begin with the most
+       <b>
+        33)
+       </b>
+       <span class="blankinput" type="text">
+        elementary
+       </span>
+       of all needs, namely, food. Today, the majority of mankind suffers from poor
+       <b>
+        34)
+       </b>
+       <span class="blankinput" type="text">
+        nutrition
+       </span>
+       , and in view of the population explosion, this situation could become truly
+       <b>
+        35)
+       </b>
+       <span class="blankinput" type="text">
+        appalling
+       </span>
+       in the coming decades. A very small part of what is now being spent upon
+       <b>
+        36)
+       </b>
+       <span class="blankinput" type="text">
+        ammunition
+       </span>
+       would improve this situation. For example, the American
+       <b>
+        37)
+       </b>
+       <span class="blankinput" type="text">
+        surplus
+       </span>
+       of grain, which were for many years uselessly destroyed, be spent in relief of famine. By irrigation, large region now desert could be
+       <b>
+        38)
+       </b>
+       <span class="blankinput" type="text">
+        made
+       </span>
+       fertile, and by improvement in transport distribution from regions of
+       <b>
+        39)
+       </b>
+       <span class="blankinput" type="text">
+        excess
+       </span>
+       to regions of scarcity could be improved.
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       Housing, even in the richest countries, is often
+       <b>
+        40)
+       </b>
+       <span class="blankinput" type="text">
+        pervasively
+       </span>
+       inadequate. This could be relieved by a tiny
+       <b>
+        41)
+       </b>
+       <span class="blankinput" type="text">
+        fraction
+       </span>
+       of what is being spent on missiles. Education everywhere, but
+       <b>
+        42)
+       </b>
+       <span class="blankinput" type="text">
+        especially
+       </span>
+       in the newly liberated countries of Africa and Asia,
+       <b>
+        43)
+       </b>
+       <span class="blankinput" type="text">
+        demands
+       </span>
+       expenditure many times as great as that
+       <b>
+        44)
+       </b>
+       <span class="blankinput" type="text">
+        which
+       </span>
+       it receives now. But it is not only greater expenditure that is needed in education. If the terror of war were
+       <b>
+        45)
+       </b>
+       <span class="blankinput" type="text">
+        removed
+       </span>
+       , science could be devoted to improving human welfare, instead of to the invention of increasingly expensive methods of mutual killing.
+      </p>
+     </p>
+    </div>
+    <div class="nu" id="t26">
+     <span>
+      <b>
+       26)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  know
+       </label>
+       <label class="green">
+        B.  consider
+       </label>
+       <label>
+        C.  suppose
+       </label>
+       <label>
+        D.  regard
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t27">
+     <span>
+      <b>
+       27)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  for
+       </label>
+       <label>
+        B.  in
+       </label>
+       <label class="green">
+        C.  with
+       </label>
+       <label>
+        D.  against
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t28">
+     <span>
+      <b>
+       28)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  degree
+       </label>
+       <label>
+        B.  extent
+       </label>
+       <label>
+        C.  ratio
+       </label>
+       <label class="green">
+        D.  rate
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t29">
+     <span>
+      <b>
+       29)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  deployed
+       </label>
+       <label>
+        B.  employed
+       </label>
+       <label>
+        C.  imposed
+       </label>
+       <label>
+        D.  plunged
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t30">
+     <span>
+      <b>
+       30)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  subordinate
+       </label>
+       <label>
+        B.  obscure
+       </label>
+       <label class="green">
+        C.  innumerable
+       </label>
+       <label>
+        D.  gloomy
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t31">
+     <span>
+      <b>
+       31)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  from
+       </label>
+       <label class="green">
+        B.  to
+       </label>
+       <label>
+        C.  with
+       </label>
+       <label>
+        D.  on
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t32">
+     <span>
+      <b>
+       32)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  As such
+       </label>
+       <label>
+        B.  As though
+       </label>
+       <label>
+        C.  As well as
+       </label>
+       <label class="green">
+        D.  As to
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t33">
+     <span>
+      <b>
+       33)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  secondary
+       </label>
+       <label>
+        B.  supplementary
+       </label>
+       <label class="green">
+        C.  elementary
+       </label>
+       <label>
+        D.  customary
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t34">
+     <span>
+      <b>
+       34)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  luxury
+       </label>
+       <label class="green">
+        B.  nutrition
+       </label>
+       <label>
+        C.  remedy
+       </label>
+       <label>
+        D.  provision
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t35">
+     <span>
+      <b>
+       35)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  remnant
+       </label>
+       <label>
+        B.  pertinent
+       </label>
+       <label>
+        C.  timid
+       </label>
+       <label class="green">
+        D.  appalling
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t36">
+     <span>
+      <b>
+       36)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  uniform
+       </label>
+       <label class="green">
+        B.  ammunition
+       </label>
+       <label>
+        C.  reproduction
+       </label>
+       <label>
+        D.  cabinet
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t37">
+     <span>
+      <b>
+       37)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  reservations
+       </label>
+       <label class="green">
+        B.  surplus
+       </label>
+       <label>
+        C.  responses
+       </label>
+       <label>
+        D.  formats
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t38">
+     <span>
+      <b>
+       38)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  made
+       </label>
+       <label>
+        B.  shifted
+       </label>
+       <label>
+        C.  disposed
+       </label>
+       <label>
+        D.  consumed
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t39">
+     <span>
+      <b>
+       39)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  access
+       </label>
+       <label>
+        B.  excursion
+       </label>
+       <label>
+        C.  recreation
+       </label>
+       <label class="green">
+        D.  excess
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t40">
+     <span>
+      <b>
+       40)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  pervasively
+       </label>
+       <label>
+        B.  radically
+       </label>
+       <label>
+        C.  restrictively
+       </label>
+       <label>
+        D.  exclusively
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t41">
+     <span>
+      <b>
+       41)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  fiction
+       </label>
+       <label>
+        B.  function
+       </label>
+       <label class="green">
+        C.  fraction
+       </label>
+       <label>
+        D.  friction
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t42">
+     <span>
+      <b>
+       42)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  rationally
+       </label>
+       <label class="green">
+        B.  especially
+       </label>
+       <label>
+        C.  traditionally
+       </label>
+       <label>
+        D.  empirically
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t43">
+     <span>
+      <b>
+       43)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  amends
+       </label>
+       <label>
+        B.  commends
+       </label>
+       <label class="green">
+        C.  demands
+       </label>
+       <label>
+        D.  recommends
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t44">
+     <span>
+      <b>
+       44)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  which
+       </label>
+       <label>
+        B.  what
+       </label>
+       <label>
+        C.  whose
+       </label>
+       <label>
+        D.  these
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t45">
+     <span>
+      <b>
+       45)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  exchanged
+       </label>
+       <label>
+        B.  transmitted
+       </label>
+       <label>
+        C.  transferred
+       </label>
+       <label class="green">
+        D.  removed
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      26) B      27) C      28) D      29) A      30) C      31) B      32) D      33) C      34) B      35) D      36) B      37) B      38) A      39) D      40) A      41) C      42) B      43) C      44) A      45) D
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <div>
+      <pre>（无）</pre>
+     </div>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+ </div>
+ <div class="Test">
+  <div class="TestTitle">
+   <div class="title" id="152">
+    阅读理解5题，总分值：10分
+   </div>
+   <div class="title-decrible">
+    <div class="directs">
+     Directions： Read the following passages carefully. Each passage is followed by some questions or unfinished sentences. For each of them there are four choices marked A, B, C, and D. Choose the best answer to each question.
+    </div>
+   </div>
+  </div>
+  <div class="Question-Conversation" qid="157115" qtype="152">
+   <div class="Choice">
+    <div class="padding">
+     <p>
+      <p style="text-align:justify">
+       The standardized educational or psychological tests that are widely used to aid in selecting, classifying, assigning, or promoting students, employees, and military personnel have been the target of recent attacks in books, magazines, the daily press, and even in Congress.
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       The target is wrong, for in attacking the tests, critics divert attention from the fault that lies with ill-informed or incompetent users. The tests themselves are merely tools, with characteristics that can be measured with reasonable precision under specified conditions. Whether the results will be valuable, meaningless, or even misleading depends partly upon the tool itself but largely upon the user.
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       All informed predictions of future performance are based upon some knowledge of relevant past performance: school grades, research productivity, sales records, or whatever is appropriate. How well the predictions will be validated by later performance depends upon the amount, reliability, and appropriateness of the information used and on the skill and wisdom with which it is interpreted. Anyone who keeps careful score knows that the information available is always incomplete and that the predictions are always subject to error.
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       Standardized tests should be considered in this context. They provide a quick objective method of getting some kinds of information about what a person learned, the skills he has developed, or the kind of person he is. The information so obtained has the same advantages and shortcomings as other kinds of information. Whether to use tests, other kinds of information, or both in a particular situation depends, therefore, upon the evidence from experience concerning comparative validity (有效性) and upon such factors as cost and availability.
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       In general, the tests work most effectively when the qualities to be measured can be most precisely defined and least effectively when what is to be measured or predicated can not be well defined. Properly used, they provide a rapid means of getting comparable information about many people. Sometimes they identify students whose high potential has not been previously recognized, but there are many things they do not do. For example, they do not compensate for gross (严重的) social inequality, and thus do not tell how able an underprivileged youngster might have been had he grown up under more favorable circumstances.
+      </p>
+     </p>
+    </div>
+    <div class="nu" id="t46">
+     <span>
+      <b>
+       46)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Why are the standardized tests criticized by so many people according to the passage?
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  Because the standardized tests are used so widely that people are deeply affected.
+       </label>
+       <label class="green">
+        B.  Because people’s attention is diverted by some critics from the real problem.
+       </label>
+       <label>
+        C.  Because the standardized tests are merely tools with limited functions.
+       </label>
+       <label>
+        D.  Because the standardized tests can only be used under specific conditions.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t47">
+     <span>
+      <b>
+       47)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      How do we evaluate informed predictions of future performance according to the passage?
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  By seeing whether they are based on some information about past performance.
+       </label>
+       <label>
+        B.  By knowing the wisdom and skills of people who provide the predictions.
+       </label>
+       <label>
+        C.  By listening to the opinions of those who keep careful score.
+       </label>
+       <label class="green">
+        D.  By paying attention to how the information is used and interpreted.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t48">
+     <span>
+      <b>
+       48)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      What does the passage say about standardized tests?
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  They can help to get detailed information about a person quickly.
+       </label>
+       <label>
+        B.  They provide a particular situation where a person can experience.
+       </label>
+       <label class="green">
+        C.  They serve as tools to get some quick and objective information about a person.
+       </label>
+       <label>
+        D.  They depend largely on how much experience a person has.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t49">
+     <span>
+      <b>
+       49)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Which of the following situation does a standardized test work most effectively?
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  To identify whose high potential has not been previously recognized.
+       </label>
+       <label>
+        B.  To prove how able an underprivileged youngster could be.
+       </label>
+       <label class="green">
+        C.  To measure a person’s qualities that can be described precisely.
+       </label>
+       <label>
+        D.  To predict what a person would be like if he grew up under more favorable circumstances.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t50">
+     <span>
+      <b>
+       50)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      What in general is the author’s attitude toward standardized tests in this passage?
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  Positive
+       </label>
+       <label>
+        B.  Negative
+       </label>
+       <label>
+        C.  Neutral
+       </label>
+       <label>
+        D.  doubtful
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      46) B      47) D      48) C      49) C      50) A
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <div>
+      <pre>（无）</pre>
+     </div>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+ </div>
+</div>
+
+                <!-- 题型列表结束 -->
+                <!-- 评论区开始 -->
+                <div class="container">
+                    <div id="vcomments" class="tow">
+                        <script>
+                            new Valine({
+                                el: '#vcomments',
+                                appId: 'jphqw5DgcOz2TwIRuwPvVusb-gzGzoHsz',
+                                appKey: 'e6WOjatXeFfe7C5ukXcmLGCE',
+                                notify: false,
+                                verify: false,
+                                avatar: 'wavatar',
+                                visitor: true,
+                                avatarForce: true,
+                                recordIP: true,
+                                enableQQ: true,
+                                requiredFields: ['nick'],
+                            })
+                        </script>
+                        <span id="/" class="leancloud_visitors" data-flag-title="U校园答案导航" style="position:relative;float:right;top:-10px;font-size: 12px;color:#808080">
+                        <em class="post-meta-item-text">访问量</em>
+                        <i class="leancloud-visitors-count">0</i>
+                    </span>
+                    </div>
+                </div>
+                <!-- 评论区结束 -->
+                            <br>
+            <!-- 主体部分结束 -->
+            <div class="container">
+                <div style="text-align: center;color:white;font-size: small;">Copyright&nbsp;© 2021 abiscuit</div>
+            </div>
+            <br>
+            </div>
+            </html>

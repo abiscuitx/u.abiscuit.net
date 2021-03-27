@@ -4,7 +4,7 @@
             <head>
             <meta charset="utf-8">
             <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
             <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
             <title>读写4-张新祥-第二次测试</title>
             <meta name="MSSmartTagsPreventParsing" content="True" />
@@ -2452,64 +2452,11 @@
                     </div>
                 </div>
                 <!-- 评论区结束 -->
-            </div>
-            <br>
+                            <br>
             <!-- 主体部分结束 -->
             <div class="container">
                 <div style="text-align: center;color:white;font-size: small;">Copyright&nbsp;© 2021 abiscuit</div>
             </div>
             <br>
-            <!--jplayer播放期div-->
-            <div style="width: 0px; height:0px;" id="jplayer"></div>
-            </body>
-
-            <script>
-            function initPlayerAciton() {
-                // 音频资源播放
-                var allPlayButton = $("div.play");
-                allPlayButton.click(function(event) {
-                    var self = this;
-                    var resPath = $(this).attr("resPath");
-                    var pFlag = $(this).attr("playing");
-                    if (pFlag && pFlag == 1) { // 正在播放，需要停止播放
-                        $("#jplayer").jPlayer("stop", 0);
-                        $(self).attr("playing", "0");
-                        $(self).find("img.playImg").show();
-                        $(self).find("img.playingImg").hide();
-                        return false;
-                    }
-                    allPlayButton.attr("playing", "0");
-                    allPlayButton.find("img.playImg").show();
-                    allPlayButton.find("img.playingImg").hide();
-                    $(self).attr("playing", "1");
-                    $(self).find("img.playImg").hide();
-                    $(self).find("img.playingImg").show();
-                    // 获取音频播放列表
-                    var res_arr = new Array();
-                    res_arr = resPath.split(",");
-                    var play_resPath = new Array();
-                    for (var i = 0; i < res_arr.length; i++) {
-                        play_resPath.push(res_arr[i]);
-                    }
-                    myPlayer.play(play_resPath, function() {
-                        $(self).find("img.playImg").show();
-                        $(self).find("img.playingImg").hide();
-                    });
-                    $('#jplayer').find('object').height(10);
-                    return false;
-                });
-            }
-
-            function initStaticReturn() {
-                // 返回
-                $("#staticReturn").click(function() {
-                    staticReturn();
-                });
-                // 返回
-                $("#staticPageReturn").click(function() {
-                    staticReturn();
-                });
-            }
-            </script>
-
+            </div>
             </html>
