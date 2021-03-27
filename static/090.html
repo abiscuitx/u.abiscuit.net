@@ -1,0 +1,3730 @@
+<!DOCTYPE html>
+            <html lang="zh-cn">
+
+            <head>
+            <meta charset="utf-8">
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+            <title>读写4-张新祥-重修Unit6</title>
+            <meta name="MSSmartTagsPreventParsing" content="True" />
+            <meta http-equiv="MSThemeCompatible" content="Yes" />
+            <meta name="renderer" content="webkit">
+            <script src="https://uexercise.unipus.cn/static/its/lib/jquery/jquery.js"></script>
+            <script src="https://uexercise.unipus.cn/static/its/lib/zui/js/zui.js"></script>
+            <script src="https://uexercise.unipus.cn/static/its/lib/chosen/chosen.js"></script>
+            <script src="https://uexercise.unipus.cn/static/its/lib/jquery/jquery.form.js"></script>
+            <script>
+                window.CTX = 'https://uexercise.unipus.cn';
+            </script>
+            <script src="https://uexercise.unipus.cn/static/its/lib/itest/js/itest_common.js"></script>
+            <script src="https://uexercise.unipus.cn/static/its/lib/layer/layer.js"></script>
+            <script src="https://uexercise.unipus.cn/static/its/lib/layer/laytpl.js"></script>
+            <script src="https://uexercise.unipus.cn/static/its/lib/layer/extend/layer.ext.js"></script>
+            <script src="https://uexercise.unipus.cn/static/its/lib/fltrp/js/js.js"></script>
+            <script src="https://uexercise.unipus.cn/static/its/lib/fltrp/js/stopic.js"></script>
+            <script src="https://uexercise.unipus.cn/static/its/lib/jplayer/jquery.jplayer.min.js"></script>
+            <script type="text/javascript" src="//player.youku.com/jsapi"></script>
+            <script src='https://uexercise.unipus.cn/static/its/lib/fltrp/js/uploadXX.js'></script>
+            <script>
+                var _hmt = _hmt || [];
+                (function() {
+                    var hm = document.createElement("script");
+                    hm.src = "https://hm.baidu.com/hm.js?c402237d180d562bcdd7e9d5fe8780f8";
+                    var s = document.getElementsByTagName("script")[0];
+                    s.parentNode.insertBefore(hm, s);
+                })();
+            </script>
+            <script src="../assets/js/Valine.min.js"></script>
+            <link rel="shortcut icon" href="../assets/images/favicon.ico">
+            <link href="../assets/css/main.css" rel="stylesheet">
+            <link href="../assets/css/part.css" rel="stylesheet">
+            <link href="../assets/css/topic.css" rel="stylesheet">
+            <link href="../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+            <style>
+                ul {
+                    padding-left: 0px;
+                }
+                
+                .playButton {
+                    width: 35px;
+                    height: 35px;
+                    cursor: pointer;
+                    float: left;
+                    margin: 25px 10px 0 35px;
+                }
+                
+                .answer-video .playButton {
+                    margin: 0 10px;
+                }
+                
+                input.blankinput {
+                    -moz-border-bottom-colors: none;
+                    -moz-border-left-colors: none;
+                    -moz-border-right-colors: none;
+                    -moz-border-top-colors: none;
+                    border-color: -moz-use-text-color -moz-use-text-color #000000;
+                    border-image: none;
+                    border-style: none none solid;
+                    border-width: 0 0 1px;
+                    margin: 0 0px;
+                    font-weight: bold;
+                    text-align: center;
+                    outline: none;
+                    height: 24px;
+                    resize: none;
+                    color: #333;
+                }
+                
+                span.blankinput {
+                    border-color: -moz-use-text-color -moz-use-text-color #000000;
+                    border-image: none;
+                    border-style: none none solid;
+                    border-width: 0 0 1px;
+                    margin: 0 0px;
+                    font-weight: bold;
+                    text-align: center;
+                    outline: none;
+                    height: 24px;
+                    resize: none;
+                    color: white;
+                }
+                
+                .form-horizontal .form-group {
+                    margin-right: 0;
+                    margin-left: 0;
+                    margin-top: 20px;
+                }
+            </style>
+            </head>
+
+            <body>
+            <nav class="navbar navbar-light navbar-expand-md fixed-top" id="mainNav" style="background: rgba(0,0,0,0);">
+                <div class="container">
+                    <a class="navbar-brand d-xl-flex justify-content-xl-center align-items-xl-center js-scroll-trigger" data-aos="zoom-in-right" href="https://u.abiscuit.net" style="font-family: Roboto, sans-serif;text-shadow: 0px 0px 5px var(--red);"><img class="rounded-circle d-xl-flex justify-content-xl-center align-items-xl-center" src="https://gravatar.loli.net/avatar/058e7772431faa1fcf6ef8e6ceed6552" style="max-height: auto;width: 40px;height: 40px;margin-right: 10px;">u校园答案导航</a>
+                    <button data-toggle="collapse" class="navbar-toggler navbar-toggler-right" data-target="#navbarResponsive" data-aos="fade-left" type="button" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" value="Menu" style="box-shadow: 0px 0px 5px var(--red);"><i class="fa fa-bars" style="box-shadow: 0px 0px 5px var(--red);"></i></button>
+                    <div class="collapse navbar-collapse" id="navbarResponsive">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item nav-link js-scroll-trigger"><a class="nav-link js-scroll-trigger" data-aos="zoom-out-left" href="https://kxz.atcumt.com/" style="font-family: Roboto, sans-serif;text-shadow: 0px 0px 5px var(--primary);">友情推荐：矿小助</a></li>
+                            <li class="nav-item nav-link js-scroll-trigger"><a class="nav-link js-scroll-trigger" data-aos="zoom-out-left" href="mailto:abiscuit@vip.qq.com" style="font-family: Roboto, sans-serif;text-shadow: 0px 0px 5px var(--blue);">邮箱联系</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- 主体部分开始 -->
+            <div class="main">
+                <div class="topclass">读写4-张新祥-重修Unit6</div>
+                <!-- 题型列表开始 --><div class="content Question">
+ <div class="Test">
+  <div class="TestTitle">
+   <div class="title" id="102">
+    短对话4题，总分值：4分
+   </div>
+   <div class="title-decrible">
+    <div class="directs">
+     Directions： In this section, you'll hear some short conversations. At the end of each conversation, one question will be asked. Both the conversation and the question will be spoken only once. After each question, choose the best answer from the four choices marked A, B, C, and D.
+    </div>
+   </div>
+  </div>
+  <div class="Question-Conversation" qid="155257" qtype="102">
+   <span class="answer-video">
+    <div class="play" respath="https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_4/t_102/201510/b38ce97b-11eb-42f3-af39-b9bb427bba7e.mp3">
+     <img class="playImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/play-1.png">
+      <img class="playingImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/playing02-fltrp.gif" style="display:none;"/>
+     </img>
+    </div>
+   </span>
+   <div class="Choice">
+    <div class="nu" id="t1">
+     <span>
+      <b>
+       1)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  Science fiction movies.
+       </label>
+       <label>
+        B.  Horror movies.
+       </label>
+       <label class="green">
+        C.  Adventures.
+       </label>
+       <label>
+        D.  Romances.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       1) C
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+     <p>
+      <b>
+       听力文本：
+      </b>
+     </p>
+     <p>
+      <p>
+       W: What kind of movies do you like? There’re a lot to choose from.
+      </p>
+      <p>
+       M: I don’t mind science fiction movies and horror movies, but I’m not keen on musicals. I watch romances and comedies once in a while. What I like best, however, are adventures.
+      </p>
+      <p>
+       Q: Which kind of movies does the man enjoy most?
+      </p>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="155256" qtype="102">
+   <span class="answer-video">
+    <div class="play" respath="https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/t_102/201511/oiioqo_20092222715.mp3">
+     <img class="playImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/play-1.png"/>
+     <img class="playingImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/playing02-fltrp.gif" style="display:none;"/>
+    </div>
+   </span>
+   <div class="Choice">
+    <div class="nu" id="t2">
+     <span>
+      <b>
+       2)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  She should stop admiring the lives of celebrities.
+       </label>
+       <label>
+        B.  She should learn from the lives of celebrities.
+       </label>
+       <label>
+        C.  She should have more confidence in life.
+       </label>
+       <label class="green">
+        D.  She should develop a new hobby or skill.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       2) D
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+     <p>
+      <b>
+       听力文本：
+      </b>
+     </p>
+     <p>
+      <p>
+       W: I’m really getting tired of wasting my days reading about the lives of celebrities, but I don’t know how to get over this stupid worship and get on with my own life.
+      </p>
+      <p>
+       M: Well, just use that time to start a new hobby or learn a new skill. It will give you a new sense of confidence.
+      </p>
+      <p>
+       Q: What does the man suggest to the woman?
+      </p>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="155255" qtype="102">
+   <span class="answer-video">
+    <div class="play" respath="https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/t_102/201511/ypemvu_30103421303.mp3">
+     <img class="playImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/play-1.png"/>
+     <img class="playingImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/playing02-fltrp.gif" style="display:none;"/>
+    </div>
+   </span>
+   <div class="Choice">
+    <div class="nu" id="t3">
+     <span>
+      <b>
+       3)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  Because his work experience met the course requirements.
+       </label>
+       <label>
+        B.  Because his tutor didn’t approve his choice.
+       </label>
+       <label>
+        C.  Because he found it hard to fulfill the course requirements.
+       </label>
+       <label>
+        D.  Because he needed more practical experience for the course.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       3) A
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+     <p>
+      <b>
+       听力文本：
+      </b>
+     </p>
+     <p>
+      <p>
+       W: Hi, Bill. I heard that you didn’t choose Film Studies, which is normally compulsory for students in this department. Why is that?
+      </p>
+      <p>
+       M: Oh, I worked for a couple of years in the movie business, so my tutor approved as my practical experience fulfilled the course requirements.
+      </p>
+      <p>
+       Q: Why didn’t the man choose the course?
+      </p>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="155254" qtype="102">
+   <span class="answer-video">
+    <div class="play" respath="https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_4/t_102/201510/37724401-f00e-4187-9bcf-5edc7e158554.mp3">
+     <img class="playImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/play-1.png"/>
+     <img class="playingImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/playing02-fltrp.gif" style="display:none;"/>
+    </div>
+   </span>
+   <div class="Choice">
+    <div class="nu" id="t4">
+     <span>
+      <b>
+       4)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  Because she likes to read books at her own pace.
+       </label>
+       <label class="green">
+        B.  Because she likes to add books to her own library.
+       </label>
+       <label>
+        C.  Because she doesn’t like reading in the library.
+       </label>
+       <label>
+        D.  Because she likes to collect rather than read books.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       4) B
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+     <p>
+      <b>
+       听力文本：
+      </b>
+     </p>
+     <p>
+      <p>
+       M: I prefer to read books online. It’s much cheaper.
+      </p>
+      <p>
+       W: But I like to keep the books at home, and once I finish reading, I can put them in my personal library. I’ll feel good about myself when I look at my library and think, “Ah, I’ve read so many books!”
+      </p>
+      <p>
+       Q: Why does the woman prefer to keep books at home?
+      </p>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+ </div>
+ <div class="Test">
+  <div class="TestTitle">
+   <div class="title" id="103">
+    长对话8题，总分值：8分
+   </div>
+   <div class="title-decrible">
+    <div class="directs">
+     Directions： In this section, you'll hear some long conversations. At the end of each conversation, some questions will be asked. Both the conversation and the questions will be spoken only once. After each question, choose the best answer from the four choices marked A, B, C, and D.
+    </div>
+   </div>
+  </div>
+  <div class="Question-Conversation" qid="155187" qtype="103">
+   <span class="answer-video">
+    <div class="play" respath="https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_4/t_103/201510/db80a68c-5648-4f06-9c0a-d4e01148ec3c.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_4/t_103/201510/09df459c-11dc-464b-a968-b179cd1929cf.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_4/t_103/201510/659f9deb-a2c2-4beb-aef5-4f0e3f79fdd6.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_4/t_103/201510/41a55277-4371-4baf-b126-9981cb6905da.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_4/t_103/201510/a65825b2-dbbb-486f-bad3-47a6aff3b220.mp3">
+     <img class="playImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/play-1.png"/>
+     <img class="playingImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/playing02-fltrp.gif" style="display:none;"/>
+    </div>
+   </span>
+   <div class="Choice">
+    <div class="nu" id="t5">
+     <span>
+      <b>
+       5)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  Play video games.
+       </label>
+       <label>
+        B.  See an action movie.
+       </label>
+       <label class="green">
+        C.  Watch a new comedy.
+       </label>
+       <label>
+        D.  See the new theater.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t6">
+     <span>
+      <b>
+       6)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  They give him a lot of fun.
+       </label>
+       <label>
+        B.  They help him solve problems.
+       </label>
+       <label>
+        C.  They are healthier than action movies.
+       </label>
+       <label>
+        D.  They are less violent than action movies.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t7">
+     <span>
+      <b>
+       7)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  It presents no risk to his health.
+       </label>
+       <label class="green">
+        B.  It is harmful to their relationship.
+       </label>
+       <label>
+        C.  It stops him from having fun.
+       </label>
+       <label>
+        D.  It takes his time away from other things.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t8">
+     <span>
+      <b>
+       8)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  It has a great location.
+       </label>
+       <label>
+        B.  It sells delicious popcorn.
+       </label>
+       <label>
+        C.  It shows lots of great movies.
+       </label>
+       <label class="green">
+        D.  It has a special sound system.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      5) C      6) A      7) B      8) D
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <div>
+      <pre>（无）</pre>
+     </div>
+     <p>
+      <b>
+       听力文本：
+      </b>
+     </p>
+     <p>
+      <p>
+       W: Have you finished playing your video game? Let’s go to see that new comedy at the movie theater.
+      </p>
+      <p>
+       M: Susan, did you say comedy? We’re not going to a comedy. We’re going to the new action movie, right?
+      </p>
+      <p>
+       W: Ugh! I hate those kinds of movies. I don’t want to see an action movie! You’ve played violent video games all day! Enough violence! You spend hours every day playing those violent video games, and then you want to go to see violent movies. Violence and more violence! It’s not healthy, John!
+      </p>
+      <p>
+       M: That’s not all I do. I just like those kinds of things – not real violence, but action movies and video games are fun. I don’t know why you don’t want me to have fun or play these games with me.
+      </p>
+      <p>
+       W: Why are you making it my problem? Of course I want you to have fun, but it needs to be healthy! All of this violence is not good for you, and it’s not good for us in our relationship. Honestly, John, how can you feel romantic toward me, your wife, after playing a violent video game for three hours?
+      </p>
+      <p>
+       M: OK, Susan, good point. I guess I’ve had enough violence for today.
+      </p>
+      <p>
+       W: Listen, let’s head out to the movies. I’m excited. Let’s go to the new movie theater with the special sound system at the corner of 8th Street and Main Street.
+      </p>
+      <p>
+       M: Yeah! That’s a great idea! I love seeing movies in a theater where the sound is all around you. And most of all, I like sitting next to the woman I love watching a great movie! How about some popcorn?
+      </p>
+      <p>
+       W: Absolutely! Love you!!
+      </p>
+      <p>
+       M: Love you, too! And hey, you look really beautiful tonight!
+      </p>
+      <p>
+       <br/>
+       <p>
+        What does the woman want to do with the man?
+       </p>
+       <p>
+        What does the man think about those violent video games?
+       </p>
+       <p>
+        What does the woman say about the man’s exposure to media violence?
+       </p>
+       <p>
+        What is special about the new movie theater?
+       </p>
+      </p>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="155186" qtype="103">
+   <span class="answer-video">
+    <div class="play" respath="https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_4/t_103/201510/f51446f0-5458-43af-b86a-9716ba372643.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_4/t_103/201510/8be97e84-0344-433d-8e37-13822420b774.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_4/t_103/201510/047a7047-7690-4e8f-84cd-20af8341aa24.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_4/t_103/201510/b9c8bedb-27e9-4c85-8df7-f8954d2d98db.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_4/t_103/201510/3f13563d-deb2-419e-90c4-7df430587b78.mp3">
+     <img class="playImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/play-1.png"/>
+     <img class="playingImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/playing02-fltrp.gif" style="display:none;"/>
+    </div>
+   </span>
+   <div class="Choice">
+    <div class="nu" id="t9">
+     <span>
+      <b>
+       9)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  His daughter cared too little about making money.
+       </label>
+       <label>
+        B.  His daughter used his credit card for an emergency.
+       </label>
+       <label class="green">
+        C.  His daughter spent too much with his credit card.
+       </label>
+       <label>
+        D.  His daughter knew little about what she really needed.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t10">
+     <span>
+      <b>
+       10)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  Spent $400 dealing with an emergency.
+       </label>
+       <label class="green">
+        B.  Posted new fashion colors and styles on her blog.
+       </label>
+       <label>
+        C.  Read some blogs to learn about new fashions.
+       </label>
+       <label>
+        D.  Looked for information on the new spring colors.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t11">
+     <span>
+      <b>
+       11)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  It keeps her updated about her blog readers.
+       </label>
+       <label>
+        B.  It helps her learn about new fashion trends.
+       </label>
+       <label>
+        C.  It gives her a chance to travel around the world.
+       </label>
+       <label class="green">
+        D.  It satisfies her fans to keep up with the new trends.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t12">
+     <span>
+      <b>
+       12)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  Learn to manage her money with a budget.
+       </label>
+       <label>
+        B.  Create a blog for her father on a new website.
+       </label>
+       <label>
+        C.  Take courses that can teach her how to budget.
+       </label>
+       <label>
+        D.  Go to the movies or out for coffee with friends.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      9) C      10) B      11) D      12) A
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <div>
+      <pre>（无）</pre>
+     </div>
+     <p>
+      <b>
+       听力文本：
+      </b>
+     </p>
+     <p>
+      <p>
+       M: Look at these charges on my credit card!
+      </p>
+      <p>
+       W: Yes, Daddy, I know. I had to use your credit card to buy what I needed.
+      </p>
+      <p>
+       M: To buy what you needed! Lisa, you have everything you need! More than you need! You charged $400 on my credit card in the month of September! I gave that card to you for emergencies only!
+      </p>
+      <p>
+       W: It was kind of like an emergency! New fashions were out for fall and I needed to get the new fall colors to show on my blog!
+      </p>
+      <p>
+       M: What’s so important about your blog to spend $400?
+      </p>
+      <p>
+       W: Well Daddy, you know that fashion is global these days. When a new color or a new style begins, it goes around the world in a few days on fashion blogs! I’m only a teenager, but over 7,000 people read my blog every week! So, I had to have the new fall colors and styles. So, you see it was an emergency!
+      </p>
+      <p>
+       M: Four hundred dollars’ worth of an emergency?
+      </p>
+      <p>
+       W: Dad! Fashion blogs like mine give information on the latest trends, colors, belts, handbags, and jewelry! Blogging isn’t easy. I have to work hard to make sure I keep current with the latest trends.
+      </p>
+      <p>
+       M: Well, I have a new website and blog for you. It teaches young people how to manage their money. There is an online budget. You print the budget and fill it out. Until you have a budget – you won’t have another penny from me.
+      </p>
+      <p>
+       W: That’s not fair! How can I go to the movies or out for coffee with friends?
+      </p>
+      <p>
+       M: Not my problem. You have to learn how to respect and manage your money.
+      </p>
+      <p>
+       W: OK, Dad. What’s that website with the budget?
+      </p>
+      <p>
+       <br/>
+       <p>
+        What does the man complain about?
+       </p>
+       <p>
+        What has the woman done?
+       </p>
+       <p>
+        What does the woman think of her blog?
+       </p>
+       <p>
+        What will the woman probably do next?
+       </p>
+      </p>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+ </div>
+ <div class="Test">
+  <div class="TestTitle">
+   <div class="title" id="308">
+    长文章8题，总分值：8分
+   </div>
+   <div class="title-decrible">
+    <div class="directs">
+     Directions： In this section, you’ll hear some passages. At the end of each passage, you'll hear some questions. Both the passage and the questions will be spoken only once. After each question, choose the best answer from the four choices marked A, B, C, and D.
+    </div>
+   </div>
+  </div>
+  <div class="Question-Conversation" qid="155321" qtype="308">
+   <span class="answer-video">
+    <div class="play" respath="https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_4/t_301/201510/9c3ca375-06d1-4e3c-b31a-d38fccfbfa5b.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_4/t_301/201510/83584db0-173e-4bff-b007-ec4446cf804a.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_4/t_301/201510/d598bc5a-336d-4db5-b7e7-3742b211fffa.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_4/t_301/201510/1734cd37-e925-4eb9-aaec-da5f8d9ad46d.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_4/t_301/201510/023d6b0c-8166-4ac0-b517-b9047f6ca055.mp3">
+     <img class="playImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/play-1.png"/>
+     <img class="playingImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/playing02-fltrp.gif" style="display:none;"/>
+    </div>
+   </span>
+   <div class="Choice">
+    <div class="nu" id="t13">
+     <span>
+      <b>
+       13)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  Those who went to fight in World War II.
+       </label>
+       <label>
+        B.  Those who came of age in the 1970s.
+       </label>
+       <label class="green">
+        C.  Those who grew up at the end of the 20th century.
+       </label>
+       <label>
+        D.  Those who invested in the stock market in the 1950s.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t14">
+     <span>
+      <b>
+       14)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  Reading others’ blogs and texts.
+       </label>
+       <label class="green">
+        B.  Sharing their creative works online.
+       </label>
+       <label>
+        C.  Learning from new creative websites.
+       </label>
+       <label>
+        D.  Searching for new hand-held devices.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t15">
+     <span>
+      <b>
+       15)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  Because they have made great contribution to the electronic age.
+       </label>
+       <label>
+        B.  Because they are average people who like to do everything by themselves.
+       </label>
+       <label class="green">
+        C.  Because they demand the same rights of being heard as famous authors and artists.
+       </label>
+       <label>
+        D.  Because they are passionate followers of established authors, musicians and filmmakers.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t16">
+     <span>
+      <b>
+       16)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  Use of hand-held devices for blogging and texting.
+       </label>
+       <label>
+        B.  Help of experts who are ready to share their skills.
+       </label>
+       <label>
+        C.  New media which are readily accessible online.
+       </label>
+       <label class="green">
+        D.  Program packages which are easy to get and use.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      13) C      14) B      15) C      16) D
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <div>
+      <pre>（无）</pre>
+     </div>
+     <p>
+      <b>
+       听力文本：
+      </b>
+     </p>
+     <p>
+      <p>
+       Americans like to give names to generations. We call those who lived through World War II the “Greatest Generation,” those who came of age in the 1950s the “Beat Generation,” those who took the bold stock market investors as role models in the 1970s the “Me Generation,” and those who grew up at the end of the 20th century “Generation X.”
+       <br/>
+      </p>
+      <p>
+       But we cannot seem to agree on a name for the millions of people today – young people who are flooding the Internet with their own stories, music, films and art. A survey by the American Life Project found that 44 percent of the Internet users are generating creative content and posting it on the web. The survey found that young people in the modern age spend most of their free waking hours on the Internet or using hand-held devices, blogging, texting or posting their original works.
+       <br/>
+      </p>
+      <p>
+       Some people use the term “Generation C” to name these “do-it-yourself” followers. “C” stands for “citizen media,” which means they’re average people posting creative materials online and sharing their observations with the world.
+       <br/>
+      </p>
+      <p>
+       Another name some have given them is “Generation E,” in which “E” stands for “entitled,” because these folks feel they have just as much right to be heard as established authors, musicians or filmmakers do.
+       <br/>
+      </p>
+      <p>
+       There are programming packages that enable “Generation E” to create works online. For example, there is a program for musicians, with which even those with little musical knowledge can make pretty good tunes on the web. There are also programs helping average people create and edit films, which is work that used to require the costly skills of experts. All these show that readily accessible and easy-to-use technology is giving a voice to what “Generation E” may really stand for: everyday people.
+      </p>
+      <p>
+       <br/>
+       <p>
+        Which group of Americans is called “Generation X”?
+       </p>
+       <p>
+        According to a survey, how do young people today spend most of their free time?
+       </p>
+       <p>
+        Why have young people today been given the name of “Generation E”?
+       </p>
+       <p>
+        According to the passage, what enables “Generation E” to create or edit their works?
+       </p>
+      </p>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="155320" qtype="308">
+   <span class="answer-video">
+    <div class="play" respath="https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_4/t_301/201510/08c3529a-6334-4fab-90f7-3ca4f9b45257.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_4/t_301/201510/fa7c06c2-371b-4717-98ca-6b8917fe50fe.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_4/t_301/201510/14001550-8bf1-4a89-b161-11e26265ec98.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_4/t_301/201510/e74f6174-b8d3-4a12-bf50-91eab5a712e3.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_4/t_301/201510/327d1e27-61ae-4f54-a5c7-e1de3c61a5eb.mp3">
+     <img class="playImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/play-1.png"/>
+     <img class="playingImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/playing02-fltrp.gif" style="display:none;"/>
+    </div>
+   </span>
+   <div class="Choice">
+    <div class="nu" id="t17">
+     <span>
+      <b>
+       17)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  It has made desktop computers less useful.
+       </label>
+       <label class="green">
+        B.  It has changed the way people obtain information.
+       </label>
+       <label>
+        C.  It has won potential customers for old products.
+       </label>
+       <label>
+        D.  It has made laptops and smart phones more popular.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t18">
+     <span>
+      <b>
+       18)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  A manual showing visitors how to use the website.
+       </label>
+       <label>
+        B.  A video showing how technical the website is.
+       </label>
+       <label>
+        C.  A newsletter offering easy solutions to technical problems.
+       </label>
+       <label class="green">
+        D.  An area permitting visitors to download files of products.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t19">
+     <span>
+      <b>
+       19)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  Because it exerts great impact on people’s buying decisions.
+       </label>
+       <label>
+        B.  Because it helps the growth of small businesses by word of mouth.
+       </label>
+       <label>
+        C.  Because it encourages customers to comment positively on products.
+       </label>
+       <label>
+        D.  Because it causes businesses to be less concerned about advertising.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t20">
+     <span>
+      <b>
+       20)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  Advertisers may post only the key information on their site.
+       </label>
+       <label>
+        B.  Businesses may launch more promotion campaigns.
+       </label>
+       <label class="green">
+        C.  New advertising strategies will continue to be created.
+       </label>
+       <label>
+        D.  Customers will be able to locate a store whenever they want.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      17) B      18) D      19) A      20) C
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <div>
+      <pre>（无）</pre>
+     </div>
+     <p>
+      <b>
+       听力文本：
+      </b>
+     </p>
+     <p>
+      <p style="text-align: justify;">
+       We now live in an age where our lives are going digital. The Internet, which could be accessed only from desktop computers just over a decade ago, is now almost ever present. Modern electronic devices such as laptops and smart phones have allowed users to bring the Internet with them. They have changed the way people get information, and hence have brought about new advertising strategies.
+       <br/>
+      </p>
+      <p style="text-align: justify;">
+       Suppose you are an owner of a small business. What should you do to properly advertise so that you can both keep your current customers and win new ones in the digital age?
+       <br/>
+      </p>
+      <p style="text-align: justify;">
+       One most important thing to do is to have your own website. Although this may sound hard and technical, it can be very easy. On your website, you should have an area that allows people to download a free newsletter, a free how-to video or even a free manual of your products.
+       <br/>
+      </p>
+      <p style="text-align: justify;">
+       In the past, many businesses were built through advertising by word of mouth, that is, what one heard from another. Now, the digital media may become the most powerful form of advertising. Businesses today have realized that the comments posted online can greatly influence people’s buying decisions. Hence, they are becoming increasingly concerned about what customers say on the Internet.
+       <br/>
+      </p>
+      <p style="text-align: justify;">
+       Posting videos on the website is effective, too. Video uses sight and sound to help promote your product like an expert. A great way to obtain and retain loyal customers is to regularly make a short how-to video and put it on your website. This not only keeps information updated on your site but also shows customers your dedication to providing them with solutions.
+       <br/>
+      </p>
+      <p style="text-align: justify;">
+       Online advertising innovation will continue as the Internet becomes more widely used. In the future, advertisers may even be able to precisely target consumers and locate where they are.
+      </p>
+      <p>
+       <br/>
+       <p>
+        What has the new digital technology done?
+       </p>
+       <p>
+        What should be provided on the website of your business?
+       </p>
+       <p>
+        Why can digital media be the most powerful form of advertising?
+       </p>
+       <p>
+        What may happen to online advertising in the future?
+       </p>
+      </p>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+ </div>
+ <div class="Test">
+  <div class="TestTitle">
+   <div class="title" id="107">
+    长篇阅读10题，总分值：10分
+   </div>
+   <div class="title-decrible">
+    <div class="directs">
+     Directions： You are going to read a passage with 10 statements attached to it. Each statement contains information given in one of the paragraphs. Identify the paragraph from which the information is derived. You may choose a paragraph more than once. Each paragraph is marked with a letter.
+    </div>
+   </div>
+  </div>
+  <div class="Question-Conversation" qid="155329" qtype="107">
+   <div class="Choice">
+    <div class="padding">
+     <p>
+      <p style="text-align:center">
+       <b>
+        Gains, and Drawbacks, for Female Professors
+       </b>
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       A) CAMBRIDGE, Mass. – When the Massachusetts Institute of Technology acknowledged 12 years ago that it had discriminated (歧视) against female professors in “subtle but pervasive” ways, it became a national model for addressing gender inequality. Now, an evaluation of those efforts shows substantial progress – and unintended consequences. Among other concerns, many female professors say that M.I.T.’s aggressive push to hire more women has created the sense that they are given an unfair advantage. Those who once complained about M.I.T.’s lag in recruiting women now worry about what one called “too much effort to recruit women.”
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       B) Much as a report accompanying M.I.T.’s acknowledgment more than a decade ago offered a rare window on an institution tackling gender discrimination, the new study, being released Monday, shows how difficult the problem is – and not just at M.I.T. “It’s almost as though the standard has changed, because things are so much better now,” said Hazel L. Sive, associate dean of the School of Science, who led one of the committees writing the report. “Because things are so much better now, we can see an entirely new set of issues.”
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       C) An array of prizes and professional honors among female professors has provided a powerful rebuttal (反驳) to critics who suggested after the earlier report that women simply lacked the aptitude for science. But with the emphasis on eliminating bias, women now say the assumption when they win important prizes or positions is that they did so because of their gender. Professors say that female undergraduates ask them how to answer male classmates who tell them they got into M.I.T. only because of affirmative (赞助性的) action.
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       D) Because it has now become all but the rule that every committee must include a woman, and there are still relatively few women on the faculty, female professors say they are losing up to half of their research time, as well as the outside consultancies that earn their male colleagues a lot of money.
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       E) While women on the tenure (终身职位) track 12 years ago feared that having a child would affect their careers, today’s generous policies have made families the norm: The university provides a year-long pause in the tenure clock, and everyone gets a term-long leave after the arrival of a child. There is day care on campus and subsidies for child care while traveling on business. Yet now women say they are uneasy with the frequent invitations to appear on campus panels to discuss their work-life balance. In interviews for the study, they expressed frustration that parenthood remained a women’s issue, rather than a family one.
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       F) Despite an effort to educate colleagues about bias in letters of recommendation for tenure, those for men tend to focus on intellect while those for women dwell on temperament. “To women in my generation, these remaining issues can sound small because we see so much progress,” said Nancy H. Hopkins, a molecular biologist who started the first report. “But they’re not small; they still create an unequal playing field for women – not just at universities, and certainly not just at M.I.T. And they’re harder to change because they are a reflection of where women stand in society.”
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       G) The original effort started in 1994, when Professor Hopkins was frustrated that the university had resisted giving her lab space for new research, and that a course she developed had been given to a male professor. She considered herself a scientist, not a feminist, and only tentatively shared her concerns with another female professor.
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       H) Finding common complaints, they reached out to other women on the School of Science faculty – and discovered that it was remarkably easy to survey them, because there were only 15 women with tenure, compared with 197 men. Women undergraduates outnumbered men in some departments, but the percentage of women on the faculty had remained relatively flat for 20 years. The school had never had a woman in any position of leadership.
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       I) The women gathered more data – crawling on the floor with tape measures to compare lab space for men and for women. They took their concerns to the dean, Robert J. Birgeneau, who did his own study, which backed up the women's conclusions that there were wide differences in salary and resources and a general marginalization (边缘化) of women. “I have always believed that contemporary gender discrimination within universities is part reality and part perception,” the university’s president, Charles M. Vest, wrote in the 1999 report. “True, but I now understand that reality is by far the greater part of the balance.”
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       J) That unusual admission by one of the nation’s most prestigious universities echoed far beyond campus. The National Science Foundation and the National Academies began significant efforts to increase opportunities for women in science. Major philanthropies (慈善团体) gave $1 million to help M.I.T. spread the word, and other universities replicated (复制) the effort. The women who started it all at M.I.T. are still being called to other campuses seeking to evaluate the treatment of women.
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       K) While the original study looked at just the School of Science, one of five schools at M.I.T., the institute later did similar evaluations of the School of Engineering, and then the other faculties. Women at the Schools of Science and Engineering decided to repeat the study of their schools this year after the head of physics, Edmund Bertschinger, suggested a two-day conference on the women of M.I.T. to help mark the institute’s 150th anniversary.
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       L) In what the new study calls “stunning” progress, the number of female faculty members has nearly doubled in the School of Science since 1999 and in the School of Engineering since its original study was completed in 2002. More women are in critical decision-making positions at M.I.T. – there is a female president, and women who are deans and department heads. Inequities in salaries, resources, lab space and teaching loads have largely been eliminated. “I thought things might get better, I thought people had good will, but I never dreamed we’d make this much progress in 10 years,” said Lorna J. Gibson, who led the Engineering School study.
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       M) Some of the problems noted in the report are brought on by progress: The university now struggles to accommodate two-career couples; a decade ago, women with tenure tended to be married only to their careers. But the primary issue in the report is the perception that correcting bias means lowering standards for women. In fact, administrators say they have increased the number of women by broadening their searches. No one is given tenure without what Marc A. Kastner, the dean of the School of Science, called “off-scale” recommendations from at least 15 scholars outside M.I.T.
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       N) Among women on the science and engineering faculties, there are more than two dozen members of the National Academy of Sciences; four winners of the National Medal of Science; the receiver of the top international award in computer science; and the winners of a host of other fellowships and prizes. “No one is getting tenure for diversity reasons, because the women themselves feel so strongly that the standards have to be maintained,” Professor Kastner said.
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       O) Faculty members said that the perception otherwise would change as more women were hired and the quality of their achievement became obvious. “The more fundamental issues are societal,” Professor Kastner said, “and M.I.T. can't solve them on its own.”
+      </p>
+     </p>
+    </div>
+    <div class="nu" id="t21">
+     <span>
+      <b>
+       21)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      The university offers adequate support and convenience for a teacher who has a child.
+      <span class="blankinput" type="text">
+       E
+      </span>
+     </p>
+    </div>
+    <div class="nu" id="t22">
+     <span>
+      <b>
+       22)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Research done by the dean of the School of Science confirmed the female professors’ discovery of discrimination against women teachers.
+      <span class="blankinput" type="text">
+       I
+      </span>
+     </p>
+    </div>
+    <div class="nu" id="t23">
+     <span>
+      <b>
+       23)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      The number of female faculty members has not been increased at the expense of lowering academic standards.
+      <span class="blankinput" type="text">
+       N
+      </span>
+     </p>
+    </div>
+    <div class="nu" id="t24">
+     <span>
+      <b>
+       24)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      In some people’s eyes, the reason why female professors have won major prizes and academic statuses is that they are women.
+      <span class="blankinput" type="text">
+       C
+      </span>
+     </p>
+    </div>
+    <div class="nu" id="t25">
+     <span>
+      <b>
+       25)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      The effort made by M.I.T to eliminate bias against women set a good example for other institutions.
+      <span class="blankinput" type="text">
+       J
+      </span>
+     </p>
+    </div>
+    <div class="nu" id="t26">
+     <span>
+      <b>
+       26)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      There is a concern that M.I.T. seems to have gone from one extreme to the other in terms of employing women.
+      <span class="blankinput" type="text">
+       A
+      </span>
+     </p>
+    </div>
+    <div class="nu" id="t27">
+     <span>
+      <b>
+       27)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Female teachers are often asked to talk about how they can strike a balance between their career and their family.
+      <span class="blankinput" type="text">
+       E
+      </span>
+     </p>
+    </div>
+    <div class="nu" id="t28">
+     <span>
+      <b>
+       28)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      According to a new study, impressive improvements have been made in women’s status at M.I.T since the end of the 20th century.
+      <span class="blankinput" type="text">
+       L
+      </span>
+     </p>
+    </div>
+    <div class="nu" id="t29">
+     <span>
+      <b>
+       29)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      A female professor who is on a committee has less time for doing research and working as consultant.
+      <span class="blankinput" type="text">
+       D
+      </span>
+     </p>
+    </div>
+    <div class="nu" id="t30">
+     <span>
+      <b>
+       30)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Men with tenure at the School of Science in M.I.T far outnumbered women with tenure in the early 1990s.
+      <span class="blankinput" type="text">
+       H
+      </span>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      21) E      22) I      23) N      24) C      25) J      26) A      27) E      28) L      29) D      30) H
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <div>
+      <pre>（无）</pre>
+     </div>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+ </div>
+ <div class="Test">
+  <div class="TestTitle">
+   <div class="title" id="152">
+    阅读理解10题，总分值：30分
+   </div>
+   <div class="title-decrible">
+    <div class="directs">
+     Directions： Read the following passages carefully. Each passage is followed by some questions or unfinished sentences. For each of them there are four choices marked A, B, C, and D. Choose the best answer to each question.
+    </div>
+   </div>
+  </div>
+  <div class="Question-Conversation" qid="155228" qtype="152">
+   <div class="Choice">
+    <div class="padding">
+     <p>
+      <p style="text-align:justify">
+       Few ideas from social science have dug their way into the public imagination like Dunbar’s Number, the famous finding that we humans can’t cope with a social circle much larger than 150 people. The average size of modern hunter-gatherer communities, it’s been calculated, is 148.8. The average size of army companies through history, from the Romans to the USSR, hovers around 150. And the average number of people to whom Britons send Christmas cards, according to a 2003 study, is 153.5. No wonder so many
+       <u>
+        panic-merchants
+       </u>
+       worry that online social networks will destroy society. To accumulate 1,000 Facebook friends, Dunbar’s Number suggests, is to violate a law as old as humanity itself.
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       In fact, the panic-merchants are wrong: Social networks don’t replace offline friendships. Nonetheless, Dunbar’s work does suggest something troubling about modern friendship. For centuries – and especially since the Industrial Revolution – we’ve been uprooting ourselves from the communities in which we were born. Until recently, on arriving in a new place, you’d inevitably lose your ties with the one you’d left; you’d be forced to invest fully in a new social circle. These days, however, thanks to email and Skype, you need never cut those ties. You never leave your old life behind, so your emotional investments are scattered.
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       One consequence is that the people in your circle of 150 are far less likely to know each other. Or, as Dunbar writes, “Our social networks are no longer as densely interconnected as they once were.” Anyone who’s ever fled small-town life might respond: Thank God for that. After all, there won’t be people who are always snooping (窥探) on your business.
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       Yet it turns out that when close friends know each other, good things happen. For example, Dunbar’s research shows that people are more altruistic (利他的) toward each other in dense social networks. Why are densely linked friends better friends? In a dense network, an act of friendship is two things at once: an expression of an individual bond, and another stitch in a bigger social fabric.
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       Now you have a good reason to introduce your friends to each other. True, they’ll probably gossip about you at some point, but then that strengthens the social fabric, too.
+      </p>
+     </p>
+    </div>
+    <div class="nu" id="t31">
+     <span>
+      <b>
+       31)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      According to the passage, Dunbar’s Number is ____________.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  a method to calculate the average size of modern human communities
+       </label>
+       <label>
+        B.  a public opinion on the potential influence of online social networks
+       </label>
+       <label class="green">
+        C.  a theory that states the limit of the size of one’s social circle
+       </label>
+       <label>
+        D.  a scientific concept that once influenced human society in history
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t32">
+     <span>
+      <b>
+       32)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      The word “panic-merchants” (Para. 1) refers to people ____________.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  who have an intense fear of meeting others through online social networks
+       </label>
+       <label class="green">
+        B.  who worry about the big size of social circles created by online networking
+       </label>
+       <label>
+        C.  who are afraid of the lack of privacy on social networking websites
+       </label>
+       <label>
+        D.  who disbelieve the power of densely connected social networks
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t33">
+     <span>
+      <b>
+       33)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Which of the following statements is true according to the passage?
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  Social networks are more scattered today than before the Industrial Revolution.
+       </label>
+       <label>
+        B.  Social networks are smaller today because people spend more time online.
+       </label>
+       <label>
+        C.  Social networks become denser today due to the extensive use of the Internet.
+       </label>
+       <label>
+        D.  Social networks bear stronger emotional bonds today than centuries ago.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t34">
+     <span>
+      <b>
+       34)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      According to the author, one bad thing about a dense social network is that ____________.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  one’s business is hard to develop
+       </label>
+       <label class="green">
+        B.  one’s privacy can be easily invaded
+       </label>
+       <label>
+        C.  one has few chances to meet new friends
+       </label>
+       <label>
+        D.  one has to cut ties with friends in distant places
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t35">
+     <span>
+      <b>
+       35)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      What is the author’s overall attitude toward dense social networks?
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  Indifferent.
+       </label>
+       <label>
+        B.  Unclear.
+       </label>
+       <label>
+        C.  Negative.
+       </label>
+       <label class="green">
+        D.  Positive.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      31) C      32) B      33) A      34) B      35) D
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <div>
+      <pre>（无）</pre>
+     </div>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="155227" qtype="152">
+   <div class="Choice">
+    <div class="padding">
+     <p>
+      <p style="text-align:justify">
+       The term “off the grid” refers to living in a self-sufficient manner without reliance on one or more public utilities. On 13 April 2006,
+       <i>
+        USA Today
+       </i>
+       reported that there were some 180,000 families living off-grid in America, a figure that has jumped 33 percent a year for a decade. Because many third-world citizens have never had the chance to go on the grid, current estimates are that 1.7 billion people live off-grid worldwide.
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       Off-the-grid homes do not rely on municipal water supply, natural gas, electrical power grid or similar utility services. A true “off the grid” house is able to operate independently of all traditional public services. Electrical power can be generated on-site with renewable sources such as solar, wind or geothermal (地热的) energy; with a generator and adequate fuel reserves; or simply done without. Such electricity system is called a stand-alone power system. On-site water sources can include a well, stream, or lake. Depending on the water source, this may include pumps and / or filtration. Rainwater can also be harvested.
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       In his book
+       <i>
+        How to Live Off-grid
+       </i>
+       , Nick Rosen lists seven reasons for going off-grid. The top two are saving money, and reducing the carbon footprint. Another is survivalism, which means preparing for emergencies such as disruptions in social or political order. Others include preparing for the collapse of the oil economy and bringing life back to the countryside.
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       Going off-grid can be done to lower the environmental impact of living, as the typically limited amount of on-site renewable energy available is an incentive to reduce its use. But if energy usage is not reduced, going off-grid actually has a larger environmental impact against using the grid, due to the lower efficiencies of the components. It is often done to residential buildings only occasionally occupied, such as vacation cabins, to avoid high initial costs of traditional utility connections. Other persons choose to live in houses where the cost of outside utilities is prohibitive, or of such a distance away as to be impractical.
+      </p>
+     </p>
+    </div>
+    <div class="nu" id="t36">
+     <span>
+      <b>
+       36)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      What does the passage say about people living in third-world countries?
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  About 1.7 billion of them are currently living off-grid.
+       </label>
+       <label class="green">
+        B.  Many of them have no access to modern public utilities.
+       </label>
+       <label>
+        C.  Their homes are getting more dependent on public utilities.
+       </label>
+       <label>
+        D.  The number of them living off-grid is increasing by 33 percent a year.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t37">
+     <span>
+      <b>
+       37)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      A house that is truly off the grid is able to operate ____________.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  without using any on-site renewable energy
+       </label>
+       <label>
+        B.  without using any water filtration equipment
+       </label>
+       <label class="green">
+        C.  without relying on traditional public utilities
+       </label>
+       <label>
+        D.  without relying on independent power supply
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t38">
+     <span>
+      <b>
+       38)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Which of the following is NOT a reason for going off-grid given by Nick Rosen?
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  Expanding public services.
+       </label>
+       <label>
+        B.  Reviving the countryside.
+       </label>
+       <label>
+        C.  Reducing carbon emission.
+       </label>
+       <label>
+        D.  Preparing for political instability.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t39">
+     <span>
+      <b>
+       39)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      According to the passage, what may be a negative effect of living off-grid?
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  It may discourage people from paying for traditional utility connections.
+       </label>
+       <label>
+        B.  It may limit the amount of on-site renewable energy available for the house.
+       </label>
+       <label>
+        C.  It may increase the cost of residential buildings only occasionally occupied.
+       </label>
+       <label class="green">
+        D.  It may do harm to the environment due to lower efficiencies of energy usage.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t40">
+     <span>
+      <b>
+       40)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      What is the author’s attitude toward “off the grid” life?
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  Positive.
+       </label>
+       <label class="green">
+        B.  Neutral.
+       </label>
+       <label>
+        C.  Negative.
+       </label>
+       <label>
+        D.  Indifferent.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      36) B      37) C      38) A      39) D      40) B
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <div>
+      <pre>（无）</pre>
+     </div>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+ </div>
+ <div class="Test">
+  <div class="TestTitle">
+   <div class="title" id="112">
+    完型填空20题，总分值：20分
+   </div>
+   <div class="title-decrible">
+    <div class="directs">
+     Directions： There are some blanks in the following passage. For each blank there are four choices marked A, B, C and D. You should choose the ONE that best fits into the passage.
+    </div>
+   </div>
+  </div>
+  <div class="Question-Conversation" qid="155222" qtype="112">
+   <div class="Choice">
+    <div class="padding">
+     <p>
+      <p style="text-align: justify;">
+       When did women first fly in the sky? No sooner
+       <b>
+        41)
+       </b>
+       <span class="blankinput" type="text">
+        had
+       </span>
+       the first male pilots safely returned to the earth than it seemed that women would start to challenge their
+       <b>
+        42)
+       </b>
+       <span class="blankinput" type="text">
+        throne
+       </span>
+       . From mere spectators they became willing passengers and finally
+       <b>
+        43)
+       </b>
+       <span class="blankinput" type="text">
+        displaced
+       </span>
+       male pilots in some important journey. These women pilots plotted their skills and daring line against the hazards of the air and the
+       <b>
+        44)
+       </b>
+       <span class="blankinput" type="text">
+        continuance
+       </span>
+       of doubt from their male counterparts. In doing so, they
+       <b>
+        45)
+       </b>
+       <span class="blankinput" type="text">
+        enlarged
+       </span>
+       the traditional bounds of a women’s world, won for their sex a new sense of competence and achievement, and
+       <b>
+        46)
+       </b>
+       <span class="blankinput" type="text">
+        contributed
+       </span>
+       to the progress of the aviation industry.
+       <br/>
+      </p>
+      <p style="text-align: justify;">
+       But
+       <b>
+        47)
+       </b>
+       <span class="blankinput" type="text">
+        recognition
+       </span>
+       of women’s abilities did not come easily. “Women are
+       <b>
+        48)
+       </b>
+       <span class="blankinput" type="text">
+        discriminated
+       </span>
+       in different ways,” the famous pilot Amelia Earhart once told a friend. “I’m not an extreme
+       <b>
+        49)
+       </b>
+       <span class="blankinput" type="text">
+        feminist
+       </span>
+       , but it is a sad fact that women are
+       <b>
+        50)
+       </b>
+       <span class="blankinput" type="text">
+        seldom
+       </span>
+       trusted to do an efficient job.” She was right: It is indeed a(n)
+       <b>
+        51)
+       </b>
+       <span class="blankinput" type="text">
+        distilled
+       </span>
+       truth that old attitudes die hard. When Charles Lindbergh visited the Soviet Union in 1938 with his wife, Anne – herself a pilot – he was
+       <b>
+        52)
+       </b>
+       <span class="blankinput" type="text">
+        astonished
+       </span>
+       to discover both men and women flying in the Soviet Air Force.
+       <br/>
+      </p>
+      <p style="text-align: justify;">
+       It has been difficult for women to
+       <b>
+        53)
+       </b>
+       <span class="blankinput" type="text">
+        overthrow
+       </span>
+       long held social conventions and to compete on an equal
+       <b>
+        54)
+       </b>
+       <span class="blankinput" type="text">
+        basis
+       </span>
+       with men. They had to make endless effort to
+       <b>
+        55)
+       </b>
+       <span class="blankinput" type="text">
+        emancipate
+       </span>
+       themselves both physically and spiritually. They did compete, and some of them triumphed despite the
+       <b>
+        56)
+       </b>
+       <span class="blankinput" type="text">
+        odds
+       </span>
+       . For instance, Ruth Law, whose 590-mile flight from Chicago to Hornell, New York,
+       <b>
+        57)
+       </b>
+       <span class="blankinput" type="text">
+        set
+       </span>
+       a new nonstop distance record in 1916. And when she addressed the Aero Club of America after completing her
+       <b>
+        58)
+       </b>
+       <span class="blankinput" type="text">
+        historic
+       </span>
+       journey, her plainspoken words testified to a universal human motivation that was
+       <b>
+        59)
+       </b>
+       <span class="blankinput" type="text">
+        unaffected
+       </span>
+       by gender: “My flight was done with no expectation of reward,” she declared, “just
+       <b>
+        60)
+       </b>
+       <span class="blankinput" type="text">
+        purely
+       </span>
+       for the love of accomplishment.”
+      </p>
+     </p>
+    </div>
+    <div class="nu" id="t41">
+     <span>
+      <b>
+       41)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  did
+       </label>
+       <label class="green">
+        B.  had
+       </label>
+       <label>
+        C.  have
+       </label>
+       <label>
+        D.  do
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t42">
+     <span>
+      <b>
+       42)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  isolation
+       </label>
+       <label>
+        B.  identity
+       </label>
+       <label class="green">
+        C.  throne
+       </label>
+       <label>
+        D.  tension
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t43">
+     <span>
+      <b>
+       43)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  discovered
+       </label>
+       <label class="green">
+        B.  displaced
+       </label>
+       <label>
+        C.  dispersed
+       </label>
+       <label>
+        D.  distinguished
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t44">
+     <span>
+      <b>
+       44)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  confidence
+       </label>
+       <label>
+        B.  confusion
+       </label>
+       <label>
+        C.  conclusion
+       </label>
+       <label class="green">
+        D.  continuance
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t45">
+     <span>
+      <b>
+       45)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  endured
+       </label>
+       <label>
+        B.  enforced
+       </label>
+       <label class="green">
+        C.  enlarged
+       </label>
+       <label>
+        D.  endowed
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t46">
+     <span>
+      <b>
+       46)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  allocated
+       </label>
+       <label>
+        B.  lubricated
+       </label>
+       <label>
+        C.  attributed
+       </label>
+       <label class="green">
+        D.  contributed
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t47">
+     <span>
+      <b>
+       47)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  recognition
+       </label>
+       <label>
+        B.  awareness
+       </label>
+       <label>
+        C.  appraisal
+       </label>
+       <label>
+        D.  realization
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t48">
+     <span>
+      <b>
+       48)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  disapproved
+       </label>
+       <label>
+        B.  distinguished
+       </label>
+       <label class="green">
+        C.  discriminated
+       </label>
+       <label>
+        D.  discharged
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t49">
+     <span>
+      <b>
+       49)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  humanism
+       </label>
+       <label>
+        B.  feminism
+       </label>
+       <label class="green">
+        C.  feminist
+       </label>
+       <label>
+        D.  humanist
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t50">
+     <span>
+      <b>
+       50)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  seldom
+       </label>
+       <label>
+        B.  widely
+       </label>
+       <label>
+        C.  much
+       </label>
+       <label>
+        D.  arbitrarily
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t51">
+     <span>
+      <b>
+       51)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  refilled
+       </label>
+       <label class="green">
+        B.  distilled
+       </label>
+       <label>
+        C.  fulfilled
+       </label>
+       <label>
+        D.  installed
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t52">
+     <span>
+      <b>
+       52)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  ejected
+       </label>
+       <label>
+        B.  involved
+       </label>
+       <label class="green">
+        C.  astonished
+       </label>
+       <label>
+        D.  contented
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t53">
+     <span>
+      <b>
+       53)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  overwhelm
+       </label>
+       <label class="green">
+        B.  overthrow
+       </label>
+       <label>
+        C.  overview
+       </label>
+       <label>
+        D.  overstate
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t54">
+     <span>
+      <b>
+       54)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  hypothesis
+       </label>
+       <label>
+        B.  crisis
+       </label>
+       <label>
+        C.  analysis
+       </label>
+       <label class="green">
+        D.  basis
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t55">
+     <span>
+      <b>
+       55)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  participate
+       </label>
+       <label>
+        B.  elaborate
+       </label>
+       <label>
+        C.  illustrate
+       </label>
+       <label class="green">
+        D.  emancipate
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t56">
+     <span>
+      <b>
+       56)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  nods
+       </label>
+       <label>
+        B.  bets
+       </label>
+       <label class="green">
+        C.  odds
+       </label>
+       <label>
+        D.  ends
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t57">
+     <span>
+      <b>
+       57)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  set
+       </label>
+       <label>
+        B.  sat
+       </label>
+       <label>
+        C.  sits
+       </label>
+       <label>
+        D.  sets
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t58">
+     <span>
+      <b>
+       58)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  historical
+       </label>
+       <label class="green">
+        B.  historic
+       </label>
+       <label>
+        C.  economic
+       </label>
+       <label>
+        D.  economical
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t59">
+     <span>
+      <b>
+       59)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  unaffected
+       </label>
+       <label>
+        B.  unloaded
+       </label>
+       <label>
+        C.  affected
+       </label>
+       <label>
+        D.  loaded
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t60">
+     <span>
+      <b>
+       60)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  positively
+       </label>
+       <label class="green">
+        B.  purely
+       </label>
+       <label>
+        C.  presently
+       </label>
+       <label>
+        D.  promptly
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      41) B      42) C      43) B      44) D      45) C      46) D      47) A      48) C      49) C      50) A      51) B      52) C      53) B      54) D      55) D      56) C      57) A      58) B      59) A      60) B
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <div>
+      <pre>（无）</pre>
+     </div>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+ </div>
+ <div class="Test">
+  <div class="TestTitle">
+   <div class="title" id="305">
+    词汇与结构20题，总分值：20分
+   </div>
+   <div class="title-decrible">
+    <div class="directs">
+     Directions： For each of the following sentences there are four choices marked A, B, C and D. Choose the best one to complete each sentence.
+    </div>
+   </div>
+  </div>
+  <div class="Question-Conversation" qid="155217" qtype="305">
+   <div class="Choice">
+    <div class="nu" id="t61">
+     <span>
+      <b>
+       61)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      When the clock struck 12 at midnight on the New Year’s Eve, the colored lights around the city hall were suddenly illumined, accompanied by a ________ of cheers.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  amount
+       </label>
+       <label>
+        B.  crowd
+       </label>
+       <label>
+        C.  noise
+       </label>
+       <label class="green">
+        D.  chorus
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       61) D
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="155216" qtype="305">
+   <div class="Choice">
+    <div id="t62">
+     <span>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      School officials argue that it is absolutely necessary to ________ school if anyone is caught doing deliberate damage to school properties.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  eject from
+       </label>
+       <label>
+        B.  liberate from
+       </label>
+       <label>
+        C.  cancel from
+       </label>
+       <label>
+        D.  escape from
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       62) A
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="155215" qtype="305">
+   <div class="Choice">
+    <div id="t63">
+     <span>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      It is a real pity that though some reforms could ease social ________, others will still work to reinforce it and deepen inequality.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  prediction
+       </label>
+       <label class="green">
+        B.  segregation
+       </label>
+       <label>
+        C.  liberation
+       </label>
+       <label>
+        D.  innovation
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       63) B
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="155214" qtype="305">
+   <div class="Choice">
+    <div id="t64">
+     <span>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Living off the ________ might sound fashionable, but in fact it requires great ability of managing one’s life under unpredictable conditions.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  grip
+       </label>
+       <label class="green">
+        B.  grid
+       </label>
+       <label>
+        C.  grind
+       </label>
+       <label>
+        D.  grab
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       64) B
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="155213" qtype="305">
+   <div class="Choice">
+    <div id="t65">
+     <span>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Computers are smart enough to play chess or ________ speech, but a general theory of machine intelligence still remains beyond our reach.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  ascribe
+       </label>
+       <label>
+        B.  prescribe
+       </label>
+       <label>
+        C.  describe
+       </label>
+       <label class="green">
+        D.  transcribe
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       65) D
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="155212" qtype="305">
+   <div class="Choice">
+    <div id="t66">
+     <span>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      The young businessman considered starting with the local city government as the best way to get involved in politics and decided to ________ mayor.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  run on
+       </label>
+       <label>
+        B.  run at
+       </label>
+       <label class="green">
+        C.  run for
+       </label>
+       <label>
+        D.  run as
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       66) C
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="155211" qtype="305">
+   <div class="Choice">
+    <div id="t67">
+     <span>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      No matter how successful he was as an entrepreneur, he was still ________ upon by his contemporaries because he turned a deaf ear to his employees’ needs.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  looked at
+       </label>
+       <label class="green">
+        B.  looked down
+       </label>
+       <label>
+        C.  looked up
+       </label>
+       <label>
+        D.  looked for
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       67) B
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="155210" qtype="305">
+   <div class="Choice">
+    <div class="nu" id="t68">
+     <span>
+      <b>
+       68)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Alan has got ________ with a new computer game recently and spent all the days and nights hanging on the Internet, which greatly annoys his parents.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  coiled in
+       </label>
+       <label>
+        B.  coiling on
+       </label>
+       <label class="green">
+        C.  coiled up
+       </label>
+       <label>
+        D.  coiling at
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       68) C
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="155209" qtype="305">
+   <div class="Choice">
+    <div id="t69">
+     <span>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      If women continue to allow their employers to carry out ________ policies against them, then the problem of bias on gender will never cease.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  disciplined
+       </label>
+       <label>
+        B.  distinctive
+       </label>
+       <label class="green">
+        C.  discriminatory
+       </label>
+       <label>
+        D.  discreet
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       69) C
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="155208" qtype="305">
+   <div class="Choice">
+    <div id="t70">
+     <span>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      When he used the Internet for the first time, he felt he entered a completely ________ and exciting world he’d never visited before by just clicking the mouse.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  apart
+       </label>
+       <label>
+        B.  alert
+       </label>
+       <label>
+        C.  aware
+       </label>
+       <label class="green">
+        D.  alien
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       70) D
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="155207" qtype="305">
+   <div class="Choice">
+    <div id="t71">
+     <span>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      According to the court records, the ________ of the murderer was carried out one month after the court declared a death sentence.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  objection
+       </label>
+       <label class="green">
+        B.  execution
+       </label>
+       <label>
+        C.  legislation
+       </label>
+       <label>
+        D.  conviction
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       71) B
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="155206" qtype="305">
+   <div class="Choice">
+    <div id="t72">
+     <span>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      I will do nothing but ________ you all not to take thought for your own properties, but to care about the greatest improvement of the soul.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  persuade
+       </label>
+       <label>
+        B.  persuading
+       </label>
+       <label>
+        C.  to persuade
+       </label>
+       <label>
+        D.  persuaded
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       72) A
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="155205" qtype="305">
+   <div class="Choice">
+    <div class="nu" id="t73">
+     <span>
+      <b>
+       73)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      In the joint session of the US Congress, the ________ took a different stand from the Democrats as they strongly supported building at least a limited national defense.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  Republic
+       </label>
+       <label>
+        B.  academicians
+       </label>
+       <label>
+        C.  academic
+       </label>
+       <label class="green">
+        D.  Republicans
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       73) D
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="155204" qtype="305">
+   <div class="Choice">
+    <div id="t74">
+     <span>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Distilled to its ________, relativism is the concept that points of view have no absolute truth, but only relative, subjective value according to differences in perception.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  core
+       </label>
+       <label class="green">
+        B.  essence
+       </label>
+       <label>
+        C.  focus
+       </label>
+       <label>
+        D.  content
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       74) B
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="155203" qtype="305">
+   <div class="Choice">
+    <div id="t75">
+     <span>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      The old entrepreneur didn’t ________ any of his employees during that serious recession, which won him high respect in local communities.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  lay on
+       </label>
+       <label>
+        B.  lay out
+       </label>
+       <label class="green">
+        C.  lay off
+       </label>
+       <label>
+        D.  lay away
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       75) C
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="155202" qtype="305">
+   <div class="Choice">
+    <div class="nu" id="t76">
+     <span>
+      <b>
+       76)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      The boys brought with them drums and guitars, and determined to make a ________ at the school party that day.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  rocket
+       </label>
+       <label>
+        B.  rock
+       </label>
+       <label class="green">
+        C.  racket
+       </label>
+       <label>
+        D.  crack
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       76) C
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="155201" qtype="305">
+   <div class="Choice">
+    <div id="t77">
+     <span>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Kate’s $370-per-week unemployment payments started coming in, and we saw that we could just ________ on them if we squeezed out every penny.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  stand out
+       </label>
+       <label class="green">
+        B.  scrape by
+       </label>
+       <label>
+        C.  catch up
+       </label>
+       <label>
+        D.  pass by
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       77) B
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="155200" qtype="305">
+   <div class="Choice">
+    <div class="nu" id="t78">
+     <span>
+      <b>
+       78)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Although the heads of the ________ made every effort to win public recognition for their objectives, they were still to blame for causing social disorder.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  insurgency
+       </label>
+       <label>
+        B.  incompetence
+       </label>
+       <label>
+        C.  insurance
+       </label>
+       <label>
+        D.  intellect
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       78) A
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="155199" qtype="305">
+   <div class="Choice">
+    <div id="t79">
+     <span>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Of course, not all gifted children are ________ to be a scientist in the future, but this does not mean that the spirit of science is of no use to them.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  defined
+       </label>
+       <label>
+        B.  reminded
+       </label>
+       <label>
+        C.  refined
+       </label>
+       <label class="green">
+        D.  destined
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       79) D
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="155198" qtype="305">
+   <div class="Choice">
+    <div id="t80">
+     <span>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      The role of a professional ________ is to help two parties solve conflict or appease dispute through skillful use of language.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  investor
+       </label>
+       <label>
+        B.  senator
+       </label>
+       <label>
+        C.  tutor
+       </label>
+       <label class="green">
+        D.  mediator
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       80) D
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+ </div>
+</div>
+
+                <!-- 题型列表结束 -->
+                <!-- 评论区开始 -->
+                <div class="container">
+                    <div id="vcomments" class="tow">
+                        <script>
+                            new Valine({
+                                el: '#vcomments',
+                                appId: 'jphqw5DgcOz2TwIRuwPvVusb-gzGzoHsz',
+                                appKey: 'e6WOjatXeFfe7C5ukXcmLGCE',
+                                notify: false,
+                                verify: false,
+                                avatar: 'wavatar',
+                                visitor: true,
+                                avatarForce: true,
+                                recordIP: true,
+                                enableQQ: true,
+                                requiredFields: ['nick'],
+                            })
+                        </script>
+                        <span id="/" class="leancloud_visitors" data-flag-title="U校园答案导航" style="position:relative;float:right;top:-10px;font-size: 12px;color:#808080">
+                        <em class="post-meta-item-text">访问量</em>
+                        <i class="leancloud-visitors-count">0</i>
+                    </span>
+                    </div>
+                </div>
+                <!-- 评论区结束 -->
+            </div>
+            <br>
+            <!-- 主体部分结束 -->
+            <div class="container">
+                <div style="text-align: center;color:white;font-size: small;">Copyright&nbsp;© 2021 abiscuit</div>
+            </div>
+            <br>
+            <!--jplayer播放期div-->
+            <div style="width: 0px; height:0px;" id="jplayer"></div>
+            </body>
+
+            <script>
+            function initPlayerAciton() {
+                // 音频资源播放
+                var allPlayButton = $("div.play");
+                allPlayButton.click(function(event) {
+                    var self = this;
+                    var resPath = $(this).attr("resPath");
+                    var pFlag = $(this).attr("playing");
+                    if (pFlag && pFlag == 1) { // 正在播放，需要停止播放
+                        $("#jplayer").jPlayer("stop", 0);
+                        $(self).attr("playing", "0");
+                        $(self).find("img.playImg").show();
+                        $(self).find("img.playingImg").hide();
+                        return false;
+                    }
+                    allPlayButton.attr("playing", "0");
+                    allPlayButton.find("img.playImg").show();
+                    allPlayButton.find("img.playingImg").hide();
+                    $(self).attr("playing", "1");
+                    $(self).find("img.playImg").hide();
+                    $(self).find("img.playingImg").show();
+                    // 获取音频播放列表
+                    var res_arr = new Array();
+                    res_arr = resPath.split(",");
+                    var play_resPath = new Array();
+                    for (var i = 0; i < res_arr.length; i++) {
+                        play_resPath.push(res_arr[i]);
+                    }
+                    myPlayer.play(play_resPath, function() {
+                        $(self).find("img.playImg").show();
+                        $(self).find("img.playingImg").hide();
+                    });
+                    $('#jplayer').find('object').height(10);
+                    return false;
+                });
+            }
+
+            function initStaticReturn() {
+                // 返回
+                $("#staticReturn").click(function() {
+                    staticReturn();
+                });
+                // 返回
+                $("#staticPageReturn").click(function() {
+                    staticReturn();
+                });
+            }
+            </script>
+
+            </html>

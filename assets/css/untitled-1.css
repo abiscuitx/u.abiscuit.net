@@ -1,0 +1,17 @@
+body {
+  font-family: Lora,Helvetica Neue,Helvetica,Arial,sans-serif;
+  position: relative;
+  color: rgb(73, 80, 87);
+  background-color: #000;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+  color: #02bce2;
+  background-color: #fff;
+  border-color: #dee2e6 #dee2e6 #fff;
+}
+

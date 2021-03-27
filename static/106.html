@@ -1,0 +1,2522 @@
+<!DOCTYPE html>
+            <html lang="zh-cn">
+
+            <head>
+            <meta charset="utf-8">
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+            <title>读写3-朱哲-B3</title>
+            <meta name="MSSmartTagsPreventParsing" content="True" />
+            <meta http-equiv="MSThemeCompatible" content="Yes" />
+            <meta name="renderer" content="webkit">
+            <script src="https://uexercise.unipus.cn/static/its/lib/jquery/jquery.js"></script>
+            <script src="https://uexercise.unipus.cn/static/its/lib/zui/js/zui.js"></script>
+            <script src="https://uexercise.unipus.cn/static/its/lib/chosen/chosen.js"></script>
+            <script src="https://uexercise.unipus.cn/static/its/lib/jquery/jquery.form.js"></script>
+            <script>
+                window.CTX = 'https://uexercise.unipus.cn';
+            </script>
+            <script src="https://uexercise.unipus.cn/static/its/lib/itest/js/itest_common.js"></script>
+            <script src="https://uexercise.unipus.cn/static/its/lib/layer/layer.js"></script>
+            <script src="https://uexercise.unipus.cn/static/its/lib/layer/laytpl.js"></script>
+            <script src="https://uexercise.unipus.cn/static/its/lib/layer/extend/layer.ext.js"></script>
+            <script src="https://uexercise.unipus.cn/static/its/lib/fltrp/js/js.js"></script>
+            <script src="https://uexercise.unipus.cn/static/its/lib/fltrp/js/stopic.js"></script>
+            <script src="https://uexercise.unipus.cn/static/its/lib/jplayer/jquery.jplayer.min.js"></script>
+            <script type="text/javascript" src="//player.youku.com/jsapi"></script>
+            <script src='https://uexercise.unipus.cn/static/its/lib/fltrp/js/uploadXX.js'></script>
+            <script>
+                var _hmt = _hmt || [];
+                (function() {
+                    var hm = document.createElement("script");
+                    hm.src = "https://hm.baidu.com/hm.js?c402237d180d562bcdd7e9d5fe8780f8";
+                    var s = document.getElementsByTagName("script")[0];
+                    s.parentNode.insertBefore(hm, s);
+                })();
+            </script>
+            <script src="../assets/js/Valine.min.js"></script>
+            <link rel="shortcut icon" href="../assets/images/favicon.ico">
+            <link href="../assets/css/main.css" rel="stylesheet">
+            <link href="../assets/css/part.css" rel="stylesheet">
+            <link href="../assets/css/topic.css" rel="stylesheet">
+            <link href="../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+            <style>
+                ul {
+                    padding-left: 0px;
+                }
+                
+                .playButton {
+                    width: 35px;
+                    height: 35px;
+                    cursor: pointer;
+                    float: left;
+                    margin: 25px 10px 0 35px;
+                }
+                
+                .answer-video .playButton {
+                    margin: 0 10px;
+                }
+                
+                input.blankinput {
+                    -moz-border-bottom-colors: none;
+                    -moz-border-left-colors: none;
+                    -moz-border-right-colors: none;
+                    -moz-border-top-colors: none;
+                    border-color: -moz-use-text-color -moz-use-text-color #000000;
+                    border-image: none;
+                    border-style: none none solid;
+                    border-width: 0 0 1px;
+                    margin: 0 0px;
+                    font-weight: bold;
+                    text-align: center;
+                    outline: none;
+                    height: 24px;
+                    resize: none;
+                    color: #333;
+                }
+                
+                span.blankinput {
+                    border-color: -moz-use-text-color -moz-use-text-color #000000;
+                    border-image: none;
+                    border-style: none none solid;
+                    border-width: 0 0 1px;
+                    margin: 0 0px;
+                    font-weight: bold;
+                    text-align: center;
+                    outline: none;
+                    height: 24px;
+                    resize: none;
+                    color: white;
+                }
+                
+                .form-horizontal .form-group {
+                    margin-right: 0;
+                    margin-left: 0;
+                    margin-top: 20px;
+                }
+            </style>
+            </head>
+
+            <body>
+            <nav class="navbar navbar-light navbar-expand-md fixed-top" id="mainNav" style="background: rgba(0,0,0,0);">
+                <div class="container">
+                    <a class="navbar-brand d-xl-flex justify-content-xl-center align-items-xl-center js-scroll-trigger" data-aos="zoom-in-right" href="https://u.abiscuit.net" style="font-family: Roboto, sans-serif;text-shadow: 0px 0px 5px var(--red);"><img class="rounded-circle d-xl-flex justify-content-xl-center align-items-xl-center" src="https://gravatar.loli.net/avatar/058e7772431faa1fcf6ef8e6ceed6552" style="max-height: auto;width: 40px;height: 40px;margin-right: 10px;">u校园答案导航</a>
+                    <button data-toggle="collapse" class="navbar-toggler navbar-toggler-right" data-target="#navbarResponsive" data-aos="fade-left" type="button" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" value="Menu" style="box-shadow: 0px 0px 5px var(--red);"><i class="fa fa-bars" style="box-shadow: 0px 0px 5px var(--red);"></i></button>
+                    <div class="collapse navbar-collapse" id="navbarResponsive">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item nav-link js-scroll-trigger"><a class="nav-link js-scroll-trigger" data-aos="zoom-out-left" href="https://kxz.atcumt.com/" style="font-family: Roboto, sans-serif;text-shadow: 0px 0px 5px var(--primary);">友情推荐：矿小助</a></li>
+                            <li class="nav-item nav-link js-scroll-trigger"><a class="nav-link js-scroll-trigger" data-aos="zoom-out-left" href="mailto:abiscuit@vip.qq.com" style="font-family: Roboto, sans-serif;text-shadow: 0px 0px 5px var(--blue);">邮箱联系</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- 主体部分开始 -->
+            <div class="main">
+                <div class="topclass">读写3-朱哲-B3</div>
+                <!-- 题型列表开始 --><div class="content Question">
+ <div class="Test">
+  <div class="TestTitle">
+   <div class="title" id="303">
+    听句子填空8题，总分值：8分
+   </div>
+   <div class="title-decrible">
+    <div class="directs">
+     Directions： In this section, you’ll hear some sentences. In each sentence there is a word or phrase missing. You are going to listen to the recording twice. When you listen for the first time, write down the missing words that you hear. When you listen for the second time, check your answers.
+    </div>
+   </div>
+  </div>
+  <div class="Question-Conversation" qid="156284" qtype="303">
+   <span class="answer-video">
+    <div class="play" respath="https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_3/t_300/201510/d427fbfd-4b1d-46ff-b093-99c6c126202e.mp3">
+     <img class="playImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/play-1.png">
+      <img class="playingImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/playing02-fltrp.gif" style="display:none;"/>
+     </img>
+    </div>
+   </span>
+   <div class="Choice">
+    <div class="nu" id="t1">
+     <span>
+      <b>
+       1)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Relieved and overwhelmed, he grabs his son and lifts him off the ground in a moment of
+      <span class="blankinput" type="text">
+       salvation
+      </span>
+      and triumph.
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       1) salvation
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="156282" qtype="303">
+   <span class="answer-video">
+    <div class="play" respath="https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_3/t_300/201510/5243e563-9ab0-4df2-a159-447564fbd6de.mp3">
+     <img class="playImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/play-1.png"/>
+     <img class="playingImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/playing02-fltrp.gif" style="display:none;"/>
+    </div>
+   </span>
+   <div class="Choice">
+    <div class="nu" id="t2">
+     <span>
+      <b>
+       2)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Where there is no vision, people will
+      <span class="blankinput" type="text">
+       perish
+      </span>
+      .
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       2) perish
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="156283" qtype="303">
+   <span class="answer-video">
+    <div class="play" respath="https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_3/t_300/201510/1234b2a5-26b2-441f-bb87-bcee957956f6.mp3">
+     <img class="playImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/play-1.png"/>
+     <img class="playingImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/playing02-fltrp.gif" style="display:none;"/>
+    </div>
+   </span>
+   <div class="Choice">
+    <div class="nu" id="t3">
+     <span>
+      <b>
+       3)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      She went to about 40 patients, who were well enough to endure a bit of travel, and got their permission to
+      <span class="blankinput" type="text">
+       escort
+      </span>
+      them.
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       3) escort
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="156281" qtype="303">
+   <span class="answer-video">
+    <div class="play" respath="https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_3/t_300/201510/f081330c-f31f-4400-8d70-eb5d80e1fa28.mp3">
+     <img class="playImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/play-1.png"/>
+     <img class="playingImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/playing02-fltrp.gif" style="display:none;"/>
+    </div>
+   </span>
+   <div class="Choice">
+    <div class="nu" id="t4">
+     <span>
+      <b>
+       4)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Any attempt to hinder the implementation of the policy is threatening to
+      <span class="blankinput" type="text">
+       derail
+      </span>
+      the reform plans.
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       4) derail
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="156280" qtype="303">
+   <span class="answer-video">
+    <div class="play" respath="https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_3/t_300/201510/f039ec0d-a565-41bf-82f3-4499494ab420.mp3">
+     <img class="playImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/play-1.png"/>
+     <img class="playingImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/playing02-fltrp.gif" style="display:none;"/>
+    </div>
+   </span>
+   <div class="Choice">
+    <div class="nu" id="t5">
+     <span>
+      <b>
+       5)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      It has to be admitted that the drafting of contracts has not always been perfect, particularly in the simpler forms, where
+      <span class="blankinput" type="text">
+       clarity
+      </span>
+      has sometimes been sacrificed to brevity (简洁).
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       5) clarity
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="156279" qtype="303">
+   <span class="answer-video">
+    <div class="play" respath="https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_3/t_300/201510/4ab3589e-57b3-436d-b229-1a437e48404a.mp3">
+     <img class="playImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/play-1.png"/>
+     <img class="playingImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/playing02-fltrp.gif" style="display:none;"/>
+    </div>
+   </span>
+   <div class="Choice">
+    <div class="nu" id="t6">
+     <span>
+      <b>
+       6)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      The civil war exploded into the most
+      <span class="blankinput" type="text">
+       vicious
+      </span>
+      confrontation in the country’s history.
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       6) vicious
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="156278" qtype="303">
+   <span class="answer-video">
+    <div class="play" respath="https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_3/t_300/201510/98e6fe06-cce3-43cb-8427-2b28630d060d.mp3">
+     <img class="playImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/play-1.png"/>
+     <img class="playingImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/playing02-fltrp.gif" style="display:none;"/>
+    </div>
+   </span>
+   <div class="Choice">
+    <div class="nu" id="t7">
+     <span>
+      <b>
+       7)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      He expressed
+      <span class="blankinput" type="text">
+       dismay
+      </span>
+      at the damage done to his health by such minor illness.
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       7) dismay
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="156275" qtype="303">
+   <span class="answer-video">
+    <div class="play" respath="https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_3/t_300/201510/54ec6c13-c6e0-47e9-ad15-5f38d63cc442.mp3">
+     <img class="playImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/play-1.png"/>
+     <img class="playingImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/playing02-fltrp.gif" style="display:none;"/>
+    </div>
+   </span>
+   <div class="Choice">
+    <div id="t8">
+     <span>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Thinking too much about the speech you have to give can actually “
+      <b>
+       8)
+      </b>
+      <span class="blankinput" type="text">
+       paralyze
+      </span>
+      ” your brain, making it impossible for you to get the words out, no matter how many times you’ve practiced.
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       8) paralyze
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+ </div>
+ <div class="Test">
+  <div class="TestTitle">
+   <div class="title" id="103">
+    长对话8题，总分值：16分
+   </div>
+   <div class="title-decrible">
+    <div class="directs">
+     Directions： In this section, you'll hear some long conversations. At the end of each conversation, some questions will be asked. Both the conversation and the questions will be spoken only once. After each question, choose the best answer from the four choices marked A, B, C, and D.
+    </div>
+   </div>
+  </div>
+  <div class="Question-Conversation" qid="156245" qtype="103">
+   <span class="answer-video">
+    <div class="play" respath="https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_3/t_103/201510/a776d85b-0787-4926-9913-efeb25973dfe.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_3/t_103/201510/48c76394-ec57-491c-98ac-126d469134b9.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_3/t_103/201510/02d0e681-211c-4afe-8478-20784c8d7023.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_3/t_103/201510/3ad8fa11-28c4-45da-93c6-617bb65a749c.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_3/t_103/201510/f6c6452e-b20f-453f-acf4-40a1e655433a.mp3">
+     <img class="playImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/play-1.png"/>
+     <img class="playingImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/playing02-fltrp.gif" style="display:none;"/>
+    </div>
+   </span>
+   <div class="Choice">
+    <div class="nu" id="t9">
+     <span>
+      <b>
+       9)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  Because he is too anxious to show himself for an interview.
+       </label>
+       <label>
+        B.  Because he is too sure of his intelligence and concentration.
+       </label>
+       <label>
+        C.  Because he is interrupted by the woman yelling at him.
+       </label>
+       <label>
+        D.  Because he is worried for limited years of experience.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t10">
+     <span>
+      <b>
+       10)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  He has only 50,000 dollars.
+       </label>
+       <label>
+        B.  He has just paid off his debt.
+       </label>
+       <label class="green">
+        C.  He is in great need of money.
+       </label>
+       <label>
+        D.  He is in debt for his new house.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t11">
+     <span>
+      <b>
+       11)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  They continued to work together in a small cafe.
+       </label>
+       <label>
+        B.  They went out after their third day of work together.
+       </label>
+       <label class="green">
+        C.  They talked for two hours in a small cafe.
+       </label>
+       <label>
+        D.  They found out that they had the same dream.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t12">
+     <span>
+      <b>
+       12)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  Pessimistic.
+       </label>
+       <label>
+        B.  Doubtful.
+       </label>
+       <label class="green">
+        C.  Encouraging.
+       </label>
+       <label>
+        D.  Indifferent.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      9) A      10) C      11) C      12) C
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <div>
+      <pre>（无）</pre>
+     </div>
+     <p>
+      <b>
+       听力文本：
+      </b>
+     </p>
+     <p>
+      <p style="text-align:justify">
+       W: Alright, try again. “Tell me Mr. Anderson, why you feel you are the right man for this –
+      </p>
+      <p style="text-align:justify">
+       M: I am the right man for this job because I am intelligent, focused, a hard worker. I...I have over five years of experience –
+      </p>
+      <p style="text-align:justify">
+       W: Wait, wait, you’re yelling and interrupting again.
+      </p>
+      <p style="text-align:justify">
+       M: Sorry! Thanks for helping me practice for my job interview. I’m just nervous!
+      </p>
+      <p style="text-align:justify">
+       W: Honey. I’m absolutely confident that you can do this. Okay, close your eyes.
+      </p>
+      <p style="text-align:justify">
+       M: What? What? Close my eyes? I don’t have time for that, I need to practice!
+      </p>
+      <p style="text-align:justify">
+       W: I know, honey. We will. First, you need to be calm. Your skills and wonderful personality cannot shine when you’re so nervous.
+      </p>
+      <p style="text-align:justify">
+       M: Of course I’m nervous, we really need this! Together, we have $50K in student debt to pay off and our car is nine years old! I’m tired of living in a tiny apartment. With this job, we could pay off our debt and afford to buy a "real" house!
+      </p>
+      <p style="text-align:justify">
+       W: I know babe, just hear me out. I want you to remember when we first met three years ago. We went out after our second day of work together to a small cafe and talked for two hours. You told me about how much you loved your job. Do you remember?
+      </p>
+      <p style="text-align:justify">
+       M: Ohhhhh… Yes… I told you that I’d been dreaming of being an engineer since I was a 9-year-old and how I’d climbed my way up at Environmental Engineering Learning Systems through sheer determination. I knew that no new skill was too hard for me to learn and no problem was too much for me to overcome.
+      </p>
+      <p style="text-align:justify">
+       W: There you go! You just did a great job interview with me. You were calm, convincing, everything they’re looking for!
+      </p>
+      <p>
+       <br/>
+       <p>
+        Why is the man so nervous at the beginning of the conversation?
+       </p>
+       <p>
+        What is the man’s current financial situation?
+       </p>
+       <p>
+        What did the woman and the man do after two days’ of working together?
+       </p>
+       <p>
+        How is the woman’s attitude toward the man throughout the conversation?
+       </p>
+      </p>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="156246" qtype="103">
+   <span class="answer-video">
+    <div class="play" respath="https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_3/t_103/201510/c69f0038-c1b0-4c40-a5f6-9391a9157ab4.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_3/t_103/201510/c1221177-a042-4c39-b451-b3895355d06c.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_3/t_103/201510/2b62c15a-d09d-4564-b67f-531c8e4d6511.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_1031/t_103/201702/mrafca_09110718394.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_1031/t_103/201702/rlmjhs_09110718395.mp3">
+     <img class="playImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/play-1.png"/>
+     <img class="playingImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/playing02-fltrp.gif" style="display:none;"/>
+    </div>
+   </span>
+   <div class="Choice">
+    <div class="nu" id="t13">
+     <span>
+      <b>
+       13)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  He picked up the engagement ring from Tiffany’s on 6th Avenue.
+       </label>
+       <label>
+        B.  He took Molly to his favorite place for an early dinner.
+       </label>
+       <label class="green">
+        C.  He took Molly to their favorite place in Central Park.
+       </label>
+       <label>
+        D.  He said something wrong like “bury me” or “scary me”.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t14">
+     <span>
+      <b>
+       14)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  Because he was too frustrated.
+       </label>
+       <label class="green">
+        B.  Because he was too nervous.
+       </label>
+       <label>
+        C.  Because he was too crazy.
+       </label>
+       <label>
+        D.  Because he was too scared.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t15">
+     <span>
+      <b>
+       15)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  Molly took out a flash light and found the ring.
+       </label>
+       <label>
+        B.  Nathan took out a flash light and found the ring.
+       </label>
+       <label>
+        C.  Molly finally found the ring in her purse.
+       </label>
+       <label>
+        D.  Nathan finally found the ring in the box.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t16">
+     <span>
+      <b>
+       16)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  She was careless and didn’t care to marry Nathan.
+       </label>
+       <label class="green">
+        B.  She was considerate and happy to marry Nathan.
+       </label>
+       <label>
+        C.  She was indifferent to Nathan’s proposal.
+       </label>
+       <label>
+        D.  She was prepared to marry Nathan without a ring.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      13) C      14) B      15) A      16) B
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <div>
+      <pre>（无）</pre>
+     </div>
+     <p>
+      <b>
+       听力文本：
+      </b>
+     </p>
+     <p>
+      <p style="text-align:justify">
+       W: Nathan? How’d it go? Did she say “yes”?
+      </p>
+      <p style="text-align:justify">
+       M: Hi Mom. It wasn’t exactly as planned.
+      </p>
+      <p style="text-align:justify">
+       W: Oh no! She didn’t say “no”, did she? What happened?
+      </p>
+      <p style="text-align:justify">
+       M: Wait, Let me tell you from the beginning, Mom. Step by step. First, at 3 P.M., I picked up the engagement ring from Tiffany’s on fifth Avenue here in New York City.
+      </p>
+      <p style="text-align:justify">
+       W: Right, right, but did she say “yes”?
+      </p>
+      <p style="text-align:justify">
+       M: Next, I took Molly for an early dinner to her favorite place to eat in New York City. And then just as the sun was beginning to set, we went for a walk to our favorite place in Central Park.
+      </p>
+      <p style="text-align:justify">
+       W: Nathan… What did she say?!
+      </p>
+      <p style="text-align:justify">
+       M: Wait Mom! I’m almost there! Well, you know I was so excited – worried I’d say something wrong like “bury me” or “scary me” instead of “marry me.”
+      </p>
+      <p style="text-align:justify">
+       W: “Scary me” instead of “marry me”?
+      </p>
+      <p style="text-align:justify">
+       M: Well you know me, Mom, I worry sometimes. So, when I brought the ring out, my hands were shaking and sweating. I dropped the ring in the grass! Of course it was already sunset, and getting dark…. Couldn’t see it…
+      </p>
+      <p style="text-align:justify">
+       W: What? So you’re down on one knee, with an empty ring box in your hand, your brand-new engagement ring lost in the grass? What a disaster!
+      </p>
+      <p style="text-align:justify">
+       M: Well, almost. Molly looks at me, says: “Nathan, you’re holding an empty box and asking me to marry you?” I told her “Yes! – Trying to, at least!” You know Molly, always prepared, – pulled out a small flash light from her purse, found the ring, put it on her own finger. Said: “Yes!” Kissed me. Then, we both burst out crying.
+      </p>
+      <p style="text-align:justify">
+       W: Oh Nathan! She’s just the woman for you!
+      </p>
+      <p>
+       <br/>
+       <p>
+        What did Nathan do before he brought out the engagement ring?
+       </p>
+       <p>
+        Why did Nathan drop his engagement ring?
+       </p>
+       <p>
+        How did they find the engagement ring at last?
+       </p>
+       <p>
+        What do we learn about Molly from the conversation?
+       </p>
+      </p>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+ </div>
+ <div class="Test">
+  <div class="TestTitle">
+   <div class="title" id="308">
+    长文章8题，总分值：16分
+   </div>
+   <div class="title-decrible">
+    <div class="directs">
+     Directions： In this section, you’ll hear some passages. At the end of each passage, you'll hear some questions. Both the passage and the questions will be spoken only once. After each question, choose the best answer from the four choices marked A, B, C, and D.
+    </div>
+   </div>
+  </div>
+  <div class="Question-Conversation" qid="156248" qtype="308">
+   <span class="answer-video">
+    <div class="play" respath="https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_3/t_301/201510/502d17d5-2be2-467f-b73d-7608edd7df0d.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_3/t_301/201510/91fb66bf-3b5b-4dbb-99c8-8917b1e18a83.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_3/t_301/201510/23fb45e5-aa52-45a7-9219-54268096960e.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_1031/t_308/201702/yhlweh_09092627176.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_1031/t_308/201702/tibexb_09092627177.mp3">
+     <img class="playImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/play-1.png"/>
+     <img class="playingImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/playing02-fltrp.gif" style="display:none;"/>
+    </div>
+   </span>
+   <div class="Choice">
+    <div class="nu" id="t17">
+     <span>
+      <b>
+       17)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  Parents are out of touch with their children’s daily life.
+       </label>
+       <label>
+        B.  Parents can’t understand their children’s sense of humor.
+       </label>
+       <label>
+        C.  Parents rarely talk about certain problems with their children.
+       </label>
+       <label class="green">
+        D.  Parents don’t trust their children to tackle any problems.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t18">
+     <span>
+      <b>
+       18)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  Because they want to prove themselves superior in style and taste.
+       </label>
+       <label class="green">
+        B.  Because they choose to be different from their parents.
+       </label>
+       <label>
+        C.  Because they want to make their parents appreciate them.
+       </label>
+       <label>
+        D.  Because they want to make them leaders of their parents.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t19">
+     <span>
+      <b>
+       19)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  Because they don’t want to betray the adult world.
+       </label>
+       <label class="green">
+        B.  Because they want to be responsible for themselves.
+       </label>
+       <label>
+        C.  Because they don’t care about being taken as losers.
+       </label>
+       <label>
+        D.  Because they are completely under parents’ control.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t20">
+     <span>
+      <b>
+       20)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  Be obedient.
+       </label>
+       <label>
+        B.  Be charming.
+       </label>
+       <label class="green">
+        C.  Be cooperative.
+       </label>
+       <label>
+        D.  Be impressive.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      17) D      18) B      19) B      20) C
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <div>
+      <pre>（无）</pre>
+     </div>
+     <p>
+      <b>
+       听力文本：
+      </b>
+     </p>
+     <p>
+      <p style="text-align:justify">
+       Teenagers are critical of their parents at times and blame them for most of the misunderstandings between them. For example, parents are out of touch with modern ways; they are so possessive and dominant that they do not trust their children to deal with any problems; they talk too much about certain problems; they have no sense of humor in parent-child relationships.
+       <br/>
+       <br/>
+       I think it is true that parents often underestimate their teenage children and also forget how they themselves felt when they were young.
+       <br/>
+       <br/>
+       Young people often annoy their parents with their choice of clothes, hairstyles, entertainment and music. This is not their motive. They feel cut off from the adult world into which they have not yet been accepted. So they create a culture and society of their own. Then, if it turns out that their music, entertainment, vocabulary, clothes or hairstyles upset their parents, this gives them additional enjoyment. They feel that they are superior, at least in a small way, and that they are leaders in style and taste.
+       <br/>
+       <br/>
+       Sometimes they are resistant and proud because they do not want their parents to approve of what they do. If their parents do approve, it looks as if they are betraying their own age group. But in that case, they are assuming that they are the likely loser. They can’t win but at least they can keep their honor. This is a passive way of looking at things. It is natural enough that, after long years of childhood, they are completely under their parents’ control. But it ignores the fact that they are now beginning to be responsible for themselves.
+       <br/>
+       <br/>
+       If they plan to control their life, cooperation can be part of that plan. They can charm others, especially their parents, into doing things the way they want. They can impress others with their sense of responsibility and initiative, so that people will give them the authority to do what they want to.
+      </p>
+      <p>
+       <br/>
+       <p>
+        Which of the following is one of the causes that teenagers blame their parents?
+       </p>
+       <p>
+        Why do young people tend to have strange clothes and hairstyles?
+       </p>
+       <p>
+        Why do teenagers not want their parents to approve of whatever they do?
+       </p>
+       <p>
+        What are teenagers advised to do to improve parent-child relationships?
+       </p>
+      </p>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="156247" qtype="308">
+   <span class="answer-video">
+    <div class="play" respath="https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_3/t_301/201510/03f612f8-865a-4e04-980f-fbd00b90d21c.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_3/t_301/201510/a0c3b025-1a46-4160-a448-24ea9e70aeac.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_3/t_301/201510/0f2b8948-9595-4f9d-8aa4-5b8552fe0305.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_3/t_301/201510/19416788-ed03-46f9-b39e-1b0b8008dedb.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_3/t_301/201510/4a6451db-b29c-470a-97c5-102e694ca983.mp3">
+     <img class="playImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/play-1.png"/>
+     <img class="playingImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/playing02-fltrp.gif" style="display:none;"/>
+    </div>
+   </span>
+   <div class="Choice">
+    <div class="nu" id="t21">
+     <span>
+      <b>
+       21)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  The feelings of peace, love and goodwill during holiday seasons.
+       </label>
+       <label class="green">
+        B.  The feelings of stress, fatigue and pressure during holiday seasons.
+       </label>
+       <label>
+        C.  The feelings of physical confusion during holiday seasons.
+       </label>
+       <label>
+        D.  The feelings of seasonal disorder that comes from holiday seasons.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t22">
+     <span>
+      <b>
+       22)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  Shopping and decorating.
+       </label>
+       <label>
+        B.  Cooking at late night.
+       </label>
+       <label>
+        C.  Winter’s shorter nights.
+       </label>
+       <label>
+        D.  Doing spiritual tasks.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t23">
+     <span>
+      <b>
+       23)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  Family reunions becoming too frequent.
+       </label>
+       <label>
+        B.  The eagerness to have more family gatherings.
+       </label>
+       <label class="green">
+        C.  Families becoming much more complex.
+       </label>
+       <label>
+        D.  The anxiety to help families without jobs or in debts.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t24">
+     <span>
+      <b>
+       24)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  By arranging family reunions more frequently.
+       </label>
+       <label class="green">
+        B.  By accepting the feelings and trying to deal with them.
+       </label>
+       <label>
+        C.  By denying that there are any feelings of holiday blues.
+       </label>
+       <label>
+        D.  By doing things such as exercises to satisfy other people.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      21) B      22) A      23) C      24) B
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <div>
+      <pre>（无）</pre>
+     </div>
+     <p>
+      <b>
+       听力文本：
+      </b>
+     </p>
+     <p>
+      <p style="text-align:justify">
+       For most of us, the purpose of the holiday season is to bring peace, love and goodwill towards all. Yet, for many, the holiday season often means stress, fatigue, pressure, disappointment and loneliness. These feelings, often known as the “holiday blues,” may be even more common, due to the emotional confusion of the past few months, not to mention the unsteady economy. Experts say even the more ritual tasks of shopping, decorating, late-night parties, cooking, planning and family gatherings can be sources of holiday stress. In addition, the psychological phenomenon known as seasonal emotional disorder may bring a specific type of depression related to winter’s shorter days and longer nights.
+       <br/>
+       <br/>
+       Certainly just because it’s the holidays doesn’t mean that people are going to be happy. And this will be particularly hard for those who are dealing with a lost job, debt, or even a lost loved one. With family reunions becoming less frequent events over the years, there is now the added pressure of getting just one chance to get it all right. Since families are becoming more complex now, the disappointment and even strangeness that often result from family gatherings are actually a realization that the fantasy is not met.
+       <br/>
+       <br/>
+       Still the blues should be addressed. The most essential step is for the individual to acknowledge their feelings and try to deal with them. Denial will only increase the stress they’re feeling. People need to do things that are normally comforting in order to get a handle on their holiday stress. If they’re feeling a little blue, they should try to do things personally satisfying for them. Maybe this is exercise, cooking, reading a book, etc.
+      </p>
+      <p>
+       <br/>
+       <p>
+        What does the passage tell us about the holiday blues?
+       </p>
+       <p>
+        What can be accounted as a cause for holiday blues according to the passage?
+       </p>
+       <p>
+        What is probably the cause for disappointment resulting from family gatherings?
+       </p>
+       <p>
+        How should holiday blues be addressed according to the passage?
+       </p>
+      </p>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+ </div>
+ <div class="Test">
+  <div class="TestTitle">
+   <div class="title" id="305">
+    词汇与结构10题，总分值：10分
+   </div>
+   <div class="title-decrible">
+    <div class="directs">
+     Directions： For each of the following sentences there are four choices marked A, B, C and D. Choose the best one to complete each sentence.
+    </div>
+   </div>
+  </div>
+  <div class="Question-Conversation" qid="156122" qtype="305">
+   <div class="Choice">
+    <div id="t25">
+     <span>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      I suggest we put the scheme into effect, for it is quite ________.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  vulnerable
+       </label>
+       <label>
+        B.  probable
+       </label>
+       <label class="green">
+        C.  practicable
+       </label>
+       <label>
+        D.  sustainable
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       25) C
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="156126" qtype="305">
+   <div class="Choice">
+    <div id="t26">
+     <span>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      The police were alerted that the escaped criminal might be in the ________.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  vain
+       </label>
+       <label class="green">
+        B.  proximity
+       </label>
+       <label>
+        C.  jail
+       </label>
+       <label>
+        D.  court
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       26) B
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="156128" qtype="305">
+   <div class="Choice">
+    <div id="t27">
+     <span>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Some researchers feel that certain people have nervous systems particularly ________ to hot, dry winds. They are what we call weather-sensitive people.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  subjective
+       </label>
+       <label>
+        B.  liable
+       </label>
+       <label>
+        C.  inferior
+       </label>
+       <label class="green">
+        D.  vulnerable
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       27) D
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="156123" qtype="305">
+   <div class="Choice">
+    <div id="t28">
+     <span>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      That part of the city has long been ________ for its street violence.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  responsible
+       </label>
+       <label>
+        B.  illegal
+       </label>
+       <label>
+        C.  historical
+       </label>
+       <label class="green">
+        D.  notorious
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       28) D
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="156125" qtype="305">
+   <div class="Choice">
+    <div id="t29">
+     <span>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Rumors are everywhere, spreading fear, damaging reputations, and turning calm situations into ________ ones.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  vulnerable
+       </label>
+       <label class="green">
+        B.  turbulent
+       </label>
+       <label>
+        C.  suspicious
+       </label>
+       <label>
+        D.  tragic
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       29) B
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="156129" qtype="305">
+   <div class="Choice">
+    <div id="t30">
+     <span>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      In spite of the ________ economic forecasts, manufacturing output has risen slightly.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  bleak
+       </label>
+       <label>
+        B.  feeble
+       </label>
+       <label>
+        C.  obscure
+       </label>
+       <label>
+        D.  shadowy
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       30) A
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="156131" qtype="305">
+   <div class="Choice">
+    <div id="t31">
+     <span>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Here he was stressing ________ his original principle that his unit should be used strategically.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  regrettably
+       </label>
+       <label class="green">
+        B.  forcibly
+       </label>
+       <label>
+        C.  graciously
+       </label>
+       <label>
+        D.  gravely
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       31) B
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="156132" qtype="305">
+   <div class="Choice">
+    <div id="t32">
+     <span>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      All the people in the stadium cheered up when they saw hundreds of colorful balloons ________ slowly into the sky.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  elevating
+       </label>
+       <label>
+        B.  lingering
+       </label>
+       <label class="green">
+        C.  ascending
+       </label>
+       <label>
+        D.  escalating
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       32) C
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="156146" qtype="305">
+   <div class="Choice">
+    <div id="t33">
+     <span>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Each member of the alliance agrees to take such action as it ________ necessary, including the use of armed force.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  suggests
+       </label>
+       <label class="green">
+        B.  deems
+       </label>
+       <label>
+        C.  requires
+       </label>
+       <label>
+        D.  appraise
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       33) B
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="156145" qtype="305">
+   <div class="Choice">
+    <div id="t34">
+     <span>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      The excuse was too ________ for the teacher to believe.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  subtle
+       </label>
+       <label>
+        B.  detailed
+       </label>
+       <label class="green">
+        C.  feeble
+       </label>
+       <label>
+        D.  slender
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       34) C
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+ </div>
+ <div class="Test">
+  <div class="TestTitle">
+   <div class="title" id="309">
+    选词填空（15选10）10题，总分值：20分
+   </div>
+   <div class="title-decrible">
+    <div class="directs">
+     Directions： Fill in the blanks in the following passage by selecting suitable words from the word bank. Each word can be used only once.
+    </div>
+   </div>
+  </div>
+  <div class="Question-Conversation" qid="156092" qtype="309">
+   <div class="Choice">
+    <div id="t35">
+     <span>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <p style="text-align: justify;">
+       The campaign for the midterm elections remains
+       <b>
+        35)
+       </b>
+       <span class="blankinput" type="text">
+        grim
+       </span>
+       for Democrats, but they have two factors working in their favor. First, the
+       <b>
+        36)
+       </b>
+       <span class="blankinput" type="text">
+        pathetic
+       </span>
+       state of the Republican Party and second, and more importantly, the
+       <b>
+        37)
+       </b>
+       <span class="blankinput" type="text">
+        advantages
+       </span>
+       of incumbency (任职). The main reasons for that are gerrymandered (选区未公正划分的) districts and the
+       <b>
+        38)
+       </b>
+       <span class="blankinput" type="text">
+        fundraising
+       </span>
+       edge incumbents enjoy. “There are two parties now, the Ins and the Outs,” a congressional staff officer told me. “The Ins can command huge sums of special interest money to
+       <b>
+        39)
+       </b>
+       <span class="blankinput" type="text">
+        finance
+       </span>
+       their re-elections, whether it’s business money for the Republicans or labor money for the Democrats.”
+       <br/>
+      </p>
+      <p style="text-align: justify;">
+       As to gerrymandering, the same officer said, “Thanks to increased computer capability and experience in drawing
+       <b>
+        40)
+       </b>
+       <span class="blankinput" type="text">
+        boundary
+       </span>
+       lines, state legislatures and campaign professionals have perfected the art. There’s a whole industry
+       <b>
+        41)
+       </b>
+       <span class="blankinput" type="text">
+        intent
+       </span>
+       on drawing district lines, so politicians can pick their own voters.”
+       <br/>
+      </p>
+      <p style="text-align: justify;">
+       The number of incumbents defeated since 1994 has
+       <b>
+        42)
+       </b>
+       <span class="blankinput" type="text">
+        ranged
+       </span>
+       from a low of six in both 1998 and 2000, to a high of 22 in 2006, the year Democrats made huge overall gains and won back control of the House.
+       <br/>
+      </p>
+      <p style="text-align: justify;">
+       Democrats have
+       <b>
+        43)
+       </b>
+       <span class="blankinput" type="text">
+        reaped
+       </span>
+       the primary advantages of incumbency. Of incumbents who lost between 1996 and 2008, a mere 21 were Democrats. Nine of the losers were redistricted out of their seats and five were involved in
+       <b>
+        44)
+       </b>
+       <span class="blankinput" type="text">
+        notorious
+       </span>
+       scandals.
+      </p>
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <ul class="Wordli">
+       <li>
+        A.  fundraising
+       </li>
+       <li>
+        B.  reaped
+       </li>
+       <li>
+        C.  ranged
+       </li>
+       <li>
+        D.  feeble
+       </li>
+       <li>
+        E.  notorious
+       </li>
+       <li>
+        F.  ascend
+       </li>
+       <li>
+        G.  grim
+       </li>
+       <li>
+        H.  weary
+       </li>
+       <li>
+        I.  pathetic
+       </li>
+       <li>
+        J.  practicable
+       </li>
+       <li>
+        K.  boundary
+       </li>
+       <li>
+        L.  intent
+       </li>
+       <li>
+        M.  finance
+       </li>
+       <li>
+        N.  advantages
+       </li>
+       <li>
+        O.  brink
+       </li>
+      </ul>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      35) grim      36) pathetic      37) advantages      38) fundraising      39) finance      40) boundary      41) intent      42) ranged      43) reaped      44) notorious
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+ </div>
+ <div class="Test">
+  <div class="TestTitle">
+   <div class="title" id="107">
+    长篇阅读10题，总分值：20分
+   </div>
+   <div class="title-decrible">
+    <div class="directs">
+     Directions： You are going to read a passage with 10 statements attached to it. Each statement contains information given in one of the paragraphs. Identify the paragraph from which the information is derived. You may choose a paragraph more than once. Each paragraph is marked with a letter.
+    </div>
+   </div>
+  </div>
+  <div class="Question-Conversation" qid="156194" qtype="107">
+   <div class="Choice">
+    <div class="padding">
+     <p>
+      <p style="text-align: center;">
+       <b>
+        The Courage to Know Oneself
+       </b>
+       <br/>
+      </p>
+      <p style="text-align: justify;">
+       A) I have had a lot of fear in my life. Much of the fear started when I was about nine years old and developed into an unbearable fear of dying. I would lie in bed at night, knowing that I was eventually going to lose everything I owned. Then I cherished life itself very much. “Why was I born if only to die?” was the question that plagued me. I literally could not sleep at night. And I could find no comfort from either of my parents. So I learned to deal with it by controlling my breath (I thought if I kept breathing, I would stay alive). This habitual activity deadened (使麻木) my spontaneity and inner freedom for decades to come.
+       <br/>
+      </p>
+      <p style="text-align: justify;">
+       B) This issue wasn’t resolved until I finally faced death directly within myself and saw what I was really afraid of was not death, but aloneness – existential aloneness – being all alone forever. And when I opened to this aloneness, needing to know what it really was, my consciousness opened to my wholeness and my interconnectedness with all existence. And I have not been lonely or afraid in the way I used to be since that defining moment.
+       <br/>
+      </p>
+      <p style="text-align: justify;">
+       C) This story exemplifies the underlying principle of courage. Having courage does not mean that one does not have fear. It means that one is willing to face fear – to face fear itself in order to know the truth about something. In a very real sense, one could say that fear is the separation from the truth, and that courage is the willingness to go through fear to get to the truth. All fears, then, refer back to the one fear that is our separation from the truth of who and what we really are – our true nature, our undivided and interconnected self.
+       <br/>
+      </p>
+      <p style="text-align: justify;">
+       D) The word “courage” comes from Latin and French derivatives that mean “heart”. So when people ask me what courage is, I often tell them that it is heart-work, learning how to move through fear.
+       <br/>
+      </p>
+      <p style="text-align: justify;">
+       E) Every little fear becomes a doorway to a larger, less fearful part of ourselves, if we can just allow ourselves to be open and vulnerable to it, curious about it – needing to understand it and having to know the truth. Every time we face a fear, we learn that we have the ability to move through fear, we become a little more courageous in our lives, and we get a little closer to the truth.
+       <br/>
+      </p>
+      <p style="text-align: justify;">
+       F) I often say that the difference between a child and an adult is that the child retreats from fear – chooses to stay stuck in their fear of the fear whereas the adult faces fear – chooses to move through their fear of the fear, into and through the fear itself.
+       <br/>
+      </p>
+      <p style="text-align: justify;">
+       G) So, in order to fully understand courage, we need to understand why we would choose to not face our fear, but to continue to be afraid of it. Why would we choose to stay stuck in a limited, tight, fearful place when we could be free and open and joyous?
+       <br/>
+      </p>
+      <p style="text-align: justify;">
+       H) This, of course, is a huge question. But I think there are a few key things we can see that will be very useful. The first question that arises in this inquiry is, “What is it that we’re really afraid of, anyway?”
+       <br/>
+      </p>
+      <p style="text-align: justify;">
+       I) There’s an old Jewish expression that translates roughly into “Don’t look too deep”. I think the expression is based on the belief that what is deepest inside of us is fundamentally not good – original sin (罪恶), the id, etc. So, if one should sincerely seek the truth, what he will ultimately discover is that one’s true nature is bad. And how could one live with that knowledge? And so we are afraid of looking into things for fear that we won’t like what we find. From my experience, however, what I have found to be deepest inside myself (and all beings) is pure love, compassion, wisdom, and understanding. It’s just a matter of looking deeply enough to see what’s there.
+       <br/>
+      </p>
+      <p style="text-align: justify;">
+       J) We are also afraid of letting go of the known – what we have known. Even though we may be aware of our suffering, at least we are familiar with it. We may even have become comfortable with it in a peculiar sort of way. We have made a kind of pact with our suffering: “I won’t bother challenging you if you promise not to get any worse.” In essence, we are afraid to change because we have an unconscious belief that things will get worse if we let go of what we know. What I have learned, however, is that the only place where there is true peace is in the place of absolute letting go of what we have known. From this place, I am able to respond freely and directly to the circumstances of my life.
+       <br/>
+      </p>
+      <p style="text-align: justify;">
+       K) We have taken on an identity, an image, a set of beliefs about what we and the surrounding world are all about. We see our lives through this set of beliefs. If we were to let go of these ideas about what reality is, we are afraid we would no longer know what is real. And that is a frightening prospect for us. We are afraid that our world would be chaotic and even terrifying. We are afraid that the universe is not a benevolent (慈善的) place.
+       <br/>
+      </p>
+      <p style="text-align: justify;">
+       L) And so we cling desperately to a set of beliefs about who we are and what the world is. All the beliefs were created (primarily in an attempt to protect ourselves from experiencing pain) very early in our childhood, and are buried deep in our subconscious. These beliefs or self-images serve to separate us from the reality and are actually the source of all our fears and all our sufferings. It is only by challenging or inquiring into these beliefs that we can move through our fears and come to know our true, courageous, free, open, loving, and peaceful self. The great poet, Rainer Maria Rilke once said, “The spiritual path is one of being defeated by greater and greater beings.” In the process of inquiring into, seeing into and letting go of our false selves, one’s awareness opens increasingly to the beauty and awe that is always present.
+       <br/>
+      </p>
+      <p style="text-align: justify;">
+       M) One could then say that courage is being more committed to knowing the truth than protecting one’s cherished ideas and images about oneself and the world. What beliefs do you cling to? And are you courageous enough to challenge them?
+      </p>
+     </p>
+    </div>
+    <div class="nu" id="t45">
+     <span>
+      <b>
+       45)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      The author, based on his experience, believes that what lies the deepest inside of human beings is nothing but good qualities.
+      <span class="blankinput" type="text">
+       I
+      </span>
+     </p>
+    </div>
+    <div class="nu" id="t46">
+     <span>
+      <b>
+       46)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      If we can absolutely let go of what we have know, we can find a place where there is true peace.
+      <span class="blankinput" type="text">
+       J
+      </span>
+     </p>
+    </div>
+    <div class="nu" id="t47">
+     <span>
+      <b>
+       47)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Kids and grown-ups respond differently in the face of fear.
+      <span class="blankinput" type="text">
+       F
+      </span>
+     </p>
+    </div>
+    <div class="nu" id="t48">
+     <span>
+      <b>
+       48)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Deeply-rooted in our mind since childhood, the beliefs about who we are and what the world is separate us from the reality and cause all our fears and sufferings.
+      <span class="blankinput" type="text">
+       L
+      </span>
+     </p>
+    </div>
+    <div class="nu" id="t49">
+     <span>
+      <b>
+       49)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      What really frightened the author was the loneliness rather than death itself.
+      <span class="blankinput" type="text">
+       B
+      </span>
+     </p>
+    </div>
+    <div class="nu" id="t50">
+     <span>
+      <b>
+       50)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      We are unwilling to change in life because we are preoccupied with the belief that things will change for the worse if we let go of what we have known.
+      <span class="blankinput" type="text">
+       J
+      </span>
+     </p>
+    </div>
+    <div class="nu" id="t51">
+     <span>
+      <b>
+       51)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Facing fears can make us less fearful, more courageous and more likely to get to the truth.
+      <span class="blankinput" type="text">
+       E
+      </span>
+     </p>
+    </div>
+    <div class="nu" id="t52">
+     <span>
+      <b>
+       52)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      We are afraid that we would be thrown into a chaotic and terrifying world if we give up the set of our beliefs.
+      <span class="blankinput" type="text">
+       K
+      </span>
+     </p>
+    </div>
+    <div class="nu" id="t53">
+     <span>
+      <b>
+       53)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Ever since childhood, the author has been subject to intense and irrational fear of dying.
+      <span class="blankinput" type="text">
+       A
+      </span>
+     </p>
+    </div>
+    <div class="nu" id="t54">
+     <span>
+      <b>
+       54)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Courage means the willingness to conquer fear to get to the truth.
+      <span class="blankinput" type="text">
+       C
+      </span>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      45) I      46) J      47) F      48) L      49) B      50) J      51) E      52) K      53) A      54) C
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <div>
+      <pre>（无）</pre>
+     </div>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+ </div>
+ <div class="Test">
+  <div class="TestTitle">
+   <div class="title" id="152">
+    阅读理解5题，总分值：10分
+   </div>
+   <div class="title-decrible">
+    <div class="directs">
+     Directions： Read the following passages carefully. Each passage is followed by some questions or unfinished sentences. For each of them there are four choices marked A, B, C, and D. Choose the best answer to each question.
+    </div>
+   </div>
+  </div>
+  <div class="Question-Conversation" qid="156170" qtype="152">
+   <div class="Choice">
+    <div class="padding">
+     <p>
+      <p style="text-align:justify">
+       There is something grimly ridiculous as well as pathetic in the messy way we manage things in our crude attempt as civilization. While we are spending hundreds of thousands of dollars of the people’s money annually in improving the breed of pig, or in fighting cattle disease, we are neglecting the most valuable asset of all, the children of the nation. A million dollars of the people’s money can be spent upon a speedway so that rich people might have an opportunity of exercising their blooded stock, while not a penny can be found in the State appropriations (拨款) to find food for starving children.
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       This foolish state of affairs was brought out in strong relief when the school teachers organized themselves into a relief committee to find ways and means for supplying food to the hungry children under their charge. This organization was brought about by the pitiable plight of the children, many of whom had become so weakened for lack of proper nourishment that they fainted at their desks while trying to study their lessons. The teachers have called their organization the “Children’s Relief Society,” and the day after the organization was perfected they were enabled to issue tickets to the most destitute (赤贫的) of the children which entitled them to immediate relief.
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       Besides this effort on the part of the teachers, emergency measures for the relief of hundreds of pupils in other schools have been adopted by the committee of school board members. The newspapers reported that relief came in this case in the form of two soup kitchens which were opened and equipped so as to provide for hundreds of the starving children.
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       Destitution has visited hundreds of families as the result of the business depression. Not only have the educational authorities taken up the matter, but various generous societies have begun active work for relieving the distress. All of which is excellent in every way, yet it is not enough; it does not go far enough, for it ought not to be left to charity, but ought to be made a State duty.
+      </p>
+     </p>
+    </div>
+    <div class="nu" id="t55">
+     <span>
+      <b>
+       55)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      We learn from the first paragraph that _____.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  we manage things well as civilization
+       </label>
+       <label>
+        B.  we are rich enough to spend money freely
+       </label>
+       <label class="green">
+        C.  we need to care for the starving children
+       </label>
+       <label>
+        D.  rich people should exercise their blooded stock
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t56">
+     <span>
+      <b>
+       56)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      What motivated school teachers to organize the “Children’s Relief Society”?
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  The distressing situation of the children.
+       </label>
+       <label>
+        B.  The improper ways of supplying food to the children.
+       </label>
+       <label>
+        C.  The charge of food unaffordable for children.
+       </label>
+       <label>
+        D.  The weak performance of children in study.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t57">
+     <span>
+      <b>
+       57)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      What would the Children’s Relief Society do after its establishment?
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  They would provide food directly to poor children.
+       </label>
+       <label>
+        B.  They would teach lessons to poor children for free.
+       </label>
+       <label class="green">
+        C.  They would give poor children tickets to get food.
+       </label>
+       <label>
+        D.  They would relieve poor children’s pressure.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t58">
+     <span>
+      <b>
+       58)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      What other effort for the relief of children is mentioned in the passage?
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  The committee of school board members has taken emergency measures.
+       </label>
+       <label>
+        B.  People from the newspapers have built soup kitchens to provide for starving children.
+       </label>
+       <label>
+        C.  The educational authorities have set up funds to provide help.
+       </label>
+       <label>
+        D.  Generous societies have adopted hundreds of pupils in schools.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t59">
+     <span>
+      <b>
+       59)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      According to the passage, who should be most responsible for the relief of children’s starvation?
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  The teacher.
+       </label>
+       <label>
+        B.  Children’s Relief Society.
+       </label>
+       <label>
+        C.  Charitable societies.
+       </label>
+       <label class="green">
+        D.  The State.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      55) C      56) A      57) C      58) A      59) D
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <div>
+      <pre>（无）</pre>
+     </div>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+ </div>
+</div>
+
+                <!-- 题型列表结束 -->
+                <!-- 评论区开始 -->
+                <div class="container">
+                    <div id="vcomments" class="tow">
+                        <script>
+                            new Valine({
+                                el: '#vcomments',
+                                appId: 'jphqw5DgcOz2TwIRuwPvVusb-gzGzoHsz',
+                                appKey: 'e6WOjatXeFfe7C5ukXcmLGCE',
+                                notify: false,
+                                verify: false,
+                                avatar: 'wavatar',
+                                visitor: true,
+                                avatarForce: true,
+                                recordIP: true,
+                                enableQQ: true,
+                                requiredFields: ['nick'],
+                            })
+                        </script>
+                        <span id="/" class="leancloud_visitors" data-flag-title="U校园答案导航" style="position:relative;float:right;top:-10px;font-size: 12px;color:#808080">
+                        <em class="post-meta-item-text">访问量</em>
+                        <i class="leancloud-visitors-count">0</i>
+                    </span>
+                    </div>
+                </div>
+                <!-- 评论区结束 -->
+            </div>
+            <br>
+            <!-- 主体部分结束 -->
+            <div class="container">
+                <div style="text-align: center;color:white;font-size: small;">Copyright&nbsp;© 2021 abiscuit</div>
+            </div>
+            <br>
+            <!--jplayer播放期div-->
+            <div style="width: 0px; height:0px;" id="jplayer"></div>
+            </body>
+
+            <script>
+            function initPlayerAciton() {
+                // 音频资源播放
+                var allPlayButton = $("div.play");
+                allPlayButton.click(function(event) {
+                    var self = this;
+                    var resPath = $(this).attr("resPath");
+                    var pFlag = $(this).attr("playing");
+                    if (pFlag && pFlag == 1) { // 正在播放，需要停止播放
+                        $("#jplayer").jPlayer("stop", 0);
+                        $(self).attr("playing", "0");
+                        $(self).find("img.playImg").show();
+                        $(self).find("img.playingImg").hide();
+                        return false;
+                    }
+                    allPlayButton.attr("playing", "0");
+                    allPlayButton.find("img.playImg").show();
+                    allPlayButton.find("img.playingImg").hide();
+                    $(self).attr("playing", "1");
+                    $(self).find("img.playImg").hide();
+                    $(self).find("img.playingImg").show();
+                    // 获取音频播放列表
+                    var res_arr = new Array();
+                    res_arr = resPath.split(",");
+                    var play_resPath = new Array();
+                    for (var i = 0; i < res_arr.length; i++) {
+                        play_resPath.push(res_arr[i]);
+                    }
+                    myPlayer.play(play_resPath, function() {
+                        $(self).find("img.playImg").show();
+                        $(self).find("img.playingImg").hide();
+                    });
+                    $('#jplayer').find('object').height(10);
+                    return false;
+                });
+            }
+
+            function initStaticReturn() {
+                // 返回
+                $("#staticReturn").click(function() {
+                    staticReturn();
+                });
+                // 返回
+                $("#staticPageReturn").click(function() {
+                    staticReturn();
+                });
+            }
+            </script>
+
+            </html>

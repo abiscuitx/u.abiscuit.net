@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <title>读写2-刘楠-B2U4</title>
+    <meta name="MSSmartTagsPreventParsing" content="True" />
+    <meta http-equiv="MSThemeCompatible" content="Yes" />
+    <meta name="renderer" content="webkit">
+    <script src="https://uexercise.unipus.cn/static/its/lib/jquery/jquery.js"></script>
+    <script src="https://uexercise.unipus.cn/static/its/lib/zui/js/zui.js"></script>
+    <script src="https://uexercise.unipus.cn/static/its/lib/chosen/chosen.js"></script>
+    <script src="https://uexercise.unipus.cn/static/its/lib/jquery/jquery.form.js"></script>
+    <script>
+        window.CTX = 'https://uexercise.unipus.cn';
+    </script>
+    <script src="https://uexercise.unipus.cn/static/its/lib/itest/js/itest_common.js"></script>
+    <script src="https://uexercise.unipus.cn/static/its/lib/layer/layer.js"></script>
+    <script src="https://uexercise.unipus.cn/static/its/lib/layer/laytpl.js"></script>
+    <script src="https://uexercise.unipus.cn/static/its/lib/layer/extend/layer.ext.js"></script>
+    <script src="https://uexercise.unipus.cn/static/its/lib/fltrp/js/js.js"></script>
+    <script src="https://uexercise.unipus.cn/static/its/lib/fltrp/js/stopic.js"></script>
+    <script src="https://uexercise.unipus.cn/static/its/lib/jplayer/jquery.jplayer.min.js"></script>
+    <script type="text/javascript" src="//player.youku.com/jsapi"></script>
+    <script src='https://uexercise.unipus.cn/static/its/lib/fltrp/js/uploadXX.js'></script>
+    <script src="../assets/js/Valine.min.js"></script>
+    <link href="../assets/css/main.css" rel="stylesheet">
+    <link href="../assets/css/part.css" rel="stylesheet">
+    <link href="../assets/css/topic.css" rel="stylesheet">
+    <link href="../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        ul {
+            padding-left: 0px;
+        }
+        
+        .playButton {
+            width: 35px;
+            height: 35px;
+            cursor: pointer;
+            float: left;
+            margin: 25px 10px 0 35px;
+        }
+        
+        .answer-video .playButton {
+            margin: 0 10px;
+        }
+        
+        input.blankinput {
+            -moz-border-bottom-colors: none;
+            -moz-border-left-colors: none;
+            -moz-border-right-colors: none;
+            -moz-border-top-colors: none;
+            border-color: -moz-use-text-color -moz-use-text-color #000000;
+            border-image: none;
+            border-style: none none solid;
+            border-width: 0 0 1px;
+            margin: 0 0px;
+            font-weight: bold;
+            text-align: center;
+            outline: none;
+            height: 24px;
+            resize: none;
+            color: #333;
+        }
+        
+        span.blankinput {
+            border-color: -moz-use-text-color -moz-use-text-color #000000;
+            border-image: none;
+            border-style: none none solid;
+            border-width: 0 0 1px;
+            margin: 0 0px;
+            font-weight: bold;
+            text-align: center;
+            outline: none;
+            height: 24px;
+            resize: none;
+            color: white;
+        }
+        
+        .form-horizontal .form-group {
+            margin-right: 0;
+            margin-left: 0;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-light navbar-expand-lg fixed-top bg-white clean-navbar">
+        <div class="container"><a class="navbar-brand logo" href="index.html" style="background: #ffffff;">U校园答案导航</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="navcol-1">
+                <ul class="nav navbar-nav ml-auto" style="text-align: left;">
+                    <li class="nav-item"><a class="nav-link" href="https://kxz.atcumt.com/" style="text-align: center;font-size: 18px;"><strong>校园助手：矿小助</strong></a></li>
+                    <li class="nav-item"><a class="nav-link" href="mailto:abiscuit@vip.qq.com" style="text-align: center;font-size: 18px;"><strong>邮箱联系</strong></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- 主体部分开始 -->
+    <div class="main">
+        <!-- 题型列表开始 -->
+
+        <!-- 题型列表结束 -->
+        <!-- 评论区开始 -->
+        <div class="container">
+            <div id="vcomments" class="tow">
+                <script>
+                    new Valine({
+                        el: '#vcomments',
+                        appId: 'jphqw5DgcOz2TwIRuwPvVusb-gzGzoHsz',
+                        appKey: 'e6WOjatXeFfe7C5ukXcmLGCE',
+                        notify: false,
+                        verify: false,
+                        avatar: 'robohash',
+                        placeholder: '✧(≖ ◡ ≖✿答案都给你抄了，不来感谢一下作者吗?',
+                        visitor: true,
+                        avatarForce: true,
+                        recordIP: true,
+                        enableQQ: true,
+                    })
+                </script>
+                <span id="/" class="leancloud_visitors" data-flag-title="U校园答案导航" style="position:relative;float:right;top:-10px;font-size: 12px;color:#808080">
+                <em class="post-meta-item-text">访问量</em>
+                <i class="leancloud-visitors-count">0</i>
+            </span>
+            </div>
+        </div>
+        <!-- 评论区结束 -->
+    </div>
+    <br>
+    <!-- 主体部分结束 -->
+    <div class="container">
+        <div style="text-align: center;color:white;font-size: small;">Copyright&nbsp;© 2021 abiscuit</div>
+    </div>
+    <br>
+    <!--jplayer播放期div-->
+    <div style="width: 0px; height:0px;" id="jplayer"></div>
+</body>
+
+<script>
+    function initPlayerAciton() {
+        // 音频资源播放
+        var allPlayButton = $("div.play");
+        allPlayButton.click(function(event) {
+            var self = this;
+            var resPath = $(this).attr("resPath");
+            var pFlag = $(this).attr("playing");
+            if (pFlag && pFlag == 1) { // 正在播放，需要停止播放
+                $("#jplayer").jPlayer("stop", 0);
+                $(self).attr("playing", "0");
+                $(self).find("img.playImg").show();
+                $(self).find("img.playingImg").hide();
+                return false;
+            }
+            allPlayButton.attr("playing", "0");
+            allPlayButton.find("img.playImg").show();
+            allPlayButton.find("img.playingImg").hide();
+            $(self).attr("playing", "1");
+            $(self).find("img.playImg").hide();
+            $(self).find("img.playingImg").show();
+            // 获取音频播放列表
+            var res_arr = new Array();
+            res_arr = resPath.split(",");
+            var play_resPath = new Array();
+            for (var i = 0; i < res_arr.length; i++) {
+                play_resPath.push(res_arr[i]);
+            }
+            myPlayer.play(play_resPath, function() {
+                $(self).find("img.playImg").show();
+                $(self).find("img.playingImg").hide();
+            });
+            $('#jplayer').find('object').height(10);
+            return false;
+        });
+    }
+
+    function initStaticReturn() {
+        // 返回
+        $("#staticReturn").click(function() {
+            staticReturn();
+        });
+        // 返回
+        $("#staticPageReturn").click(function() {
+            staticReturn();
+        });
+    }
+</script>
+
+</html>

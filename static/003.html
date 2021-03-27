@@ -1,0 +1,2512 @@
+<!DOCTYPE html>
+            <html lang="zh-cn">
+
+            <head>
+            <meta charset="utf-8">
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+            <title>读写2-刘楠-B2U3</title>
+            <meta name="MSSmartTagsPreventParsing" content="True" />
+            <meta http-equiv="MSThemeCompatible" content="Yes" />
+            <meta name="renderer" content="webkit">
+            <script src="https://uexercise.unipus.cn/static/its/lib/jquery/jquery.js"></script>
+            <script src="https://uexercise.unipus.cn/static/its/lib/zui/js/zui.js"></script>
+            <script src="https://uexercise.unipus.cn/static/its/lib/chosen/chosen.js"></script>
+            <script src="https://uexercise.unipus.cn/static/its/lib/jquery/jquery.form.js"></script>
+            <script>
+                window.CTX = 'https://uexercise.unipus.cn';
+            </script>
+            <script src="https://uexercise.unipus.cn/static/its/lib/itest/js/itest_common.js"></script>
+            <script src="https://uexercise.unipus.cn/static/its/lib/layer/layer.js"></script>
+            <script src="https://uexercise.unipus.cn/static/its/lib/layer/laytpl.js"></script>
+            <script src="https://uexercise.unipus.cn/static/its/lib/layer/extend/layer.ext.js"></script>
+            <script src="https://uexercise.unipus.cn/static/its/lib/fltrp/js/js.js"></script>
+            <script src="https://uexercise.unipus.cn/static/its/lib/fltrp/js/stopic.js"></script>
+            <script src="https://uexercise.unipus.cn/static/its/lib/jplayer/jquery.jplayer.min.js"></script>
+            <script type="text/javascript" src="//player.youku.com/jsapi"></script>
+            <script src='https://uexercise.unipus.cn/static/its/lib/fltrp/js/uploadXX.js'></script>
+            <script>
+                var _hmt = _hmt || [];
+                (function() {
+                    var hm = document.createElement("script");
+                    hm.src = "https://hm.baidu.com/hm.js?c402237d180d562bcdd7e9d5fe8780f8";
+                    var s = document.getElementsByTagName("script")[0];
+                    s.parentNode.insertBefore(hm, s);
+                })();
+            </script>
+            <script src="../assets/js/Valine.min.js"></script>
+            <link rel="shortcut icon" href="../assets/images/favicon.ico">
+            <link href="../assets/css/main.css" rel="stylesheet">
+            <link href="../assets/css/part.css" rel="stylesheet">
+            <link href="../assets/css/topic.css" rel="stylesheet">
+            <link href="../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+            <style>
+                ul {
+                    padding-left: 0px;
+                }
+                
+                .playButton {
+                    width: 35px;
+                    height: 35px;
+                    cursor: pointer;
+                    float: left;
+                    margin: 25px 10px 0 35px;
+                }
+                
+                .answer-video .playButton {
+                    margin: 0 10px;
+                }
+                
+                input.blankinput {
+                    -moz-border-bottom-colors: none;
+                    -moz-border-left-colors: none;
+                    -moz-border-right-colors: none;
+                    -moz-border-top-colors: none;
+                    border-color: -moz-use-text-color -moz-use-text-color #000000;
+                    border-image: none;
+                    border-style: none none solid;
+                    border-width: 0 0 1px;
+                    margin: 0 0px;
+                    font-weight: bold;
+                    text-align: center;
+                    outline: none;
+                    height: 24px;
+                    resize: none;
+                    color: #333;
+                }
+                
+                span.blankinput {
+                    border-color: -moz-use-text-color -moz-use-text-color #000000;
+                    border-image: none;
+                    border-style: none none solid;
+                    border-width: 0 0 1px;
+                    margin: 0 0px;
+                    font-weight: bold;
+                    text-align: center;
+                    outline: none;
+                    height: 24px;
+                    resize: none;
+                    color: white;
+                }
+                
+                .form-horizontal .form-group {
+                    margin-right: 0;
+                    margin-left: 0;
+                    margin-top: 20px;
+                }
+            </style>
+            </head>
+
+            <body>
+            <nav class="navbar navbar-light navbar-expand-md fixed-top" id="mainNav" style="background: rgba(0,0,0,0);">
+                <div class="container">
+                    <a class="navbar-brand d-xl-flex justify-content-xl-center align-items-xl-center js-scroll-trigger" data-aos="zoom-in-right" href="https://u.abiscuit.net" style="font-family: Roboto, sans-serif;text-shadow: 0px 0px 5px var(--red);"><img class="rounded-circle d-xl-flex justify-content-xl-center align-items-xl-center" src="https://gravatar.loli.net/avatar/058e7772431faa1fcf6ef8e6ceed6552" style="max-height: auto;width: 40px;height: 40px;margin-right: 10px;">u校园答案导航</a>
+                    <button data-toggle="collapse" class="navbar-toggler navbar-toggler-right" data-target="#navbarResponsive" data-aos="fade-left" type="button" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" value="Menu" style="box-shadow: 0px 0px 5px var(--red);"><i class="fa fa-bars" style="box-shadow: 0px 0px 5px var(--red);"></i></button>
+                    <div class="collapse navbar-collapse" id="navbarResponsive">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item nav-link js-scroll-trigger"><a class="nav-link js-scroll-trigger" data-aos="zoom-out-left" href="https://kxz.atcumt.com/" style="font-family: Roboto, sans-serif;text-shadow: 0px 0px 5px var(--primary);">友情推荐：矿小助</a></li>
+                            <li class="nav-item nav-link js-scroll-trigger"><a class="nav-link js-scroll-trigger" data-aos="zoom-out-left" href="mailto:abiscuit@vip.qq.com" style="font-family: Roboto, sans-serif;text-shadow: 0px 0px 5px var(--blue);">邮箱联系</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- 主体部分开始 -->
+            <div class="main">
+                <div class="topclass">读写2-刘楠-B2U3</div>
+                <!-- 题型列表开始 --><div class="content Question">
+ <div class="Test">
+  <div class="TestTitle">
+   <div class="title" id="303">
+    听句子填空8题，总分值：8分
+   </div>
+   <div class="title-decrible">
+    <div class="directs">
+     Directions： In this section, you’ll hear some sentences. In each sentence there is a word or phrase missing. You are going to listen to the recording twice. When you listen for the first time, write down the missing words that you hear. When you listen for the second time, check your answers.
+    </div>
+   </div>
+  </div>
+  <div class="Question-Conversation" qid="152448" qtype="303">
+   <span class="answer-video">
+    <div class="play" respath="https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_300/c_2/t_300/201509/71dc0dad-ce95-4e73-9d05-199e34b51965.mp3">
+     <img class="playImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/play-1.png">
+      <img class="playingImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/playing02-fltrp.gif" style="display:none;"/>
+     </img>
+    </div>
+   </span>
+   <div class="Choice">
+    <div class="nu" id="t1">
+     <span>
+      <b>
+       1)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Senior middle school in China
+      <span class="blankinput" type="text">
+       parallels
+      </span>
+      high school in the American system which may sometimes include year nine as a transition year.
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       1) parallels
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="152446" qtype="303">
+   <span class="answer-video">
+    <div class="play" respath="https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_300/c_2/t_300/201509/346821f2-4691-4737-a5bc-7106e21b3b32.mp3">
+     <img class="playImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/play-1.png"/>
+     <img class="playingImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/playing02-fltrp.gif" style="display:none;"/>
+    </div>
+   </span>
+   <div class="Choice">
+    <div class="nu" id="t2">
+     <span>
+      <b>
+       2)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      This news report actually says nothing new about the recent political incident; what it contains is more or less the same as the
+      <span class="blankinput" type="text">
+       previous
+      </span>
+      one.
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       2) previous
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="152444" qtype="303">
+   <span class="answer-video">
+    <div class="play" respath="https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_300/c_2/t_300/201509/b6209b6a-ba3b-4869-a0fa-bdc8cbd2a8d0.mp3">
+     <img class="playImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/play-1.png"/>
+     <img class="playingImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/playing02-fltrp.gif" style="display:none;"/>
+    </div>
+   </span>
+   <div class="Choice">
+    <div id="t3">
+     <span>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      The recent big growth of tourism has stimulated
+      <b>
+       3)
+      </b>
+      <span class="blankinput" type="text">
+       equivalent
+      </span>
+      developments in the hotel and leisure-related sectors such as cruise lines.
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       3) equivalent
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="152442" qtype="303">
+   <span class="answer-video">
+    <div class="play" respath="https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_300/c_2/t_300/201509/f8aff08e-cd48-4409-b57f-34d214ef4b28.mp3">
+     <img class="playImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/play-1.png"/>
+     <img class="playingImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/playing02-fltrp.gif" style="display:none;"/>
+    </div>
+   </span>
+   <div class="Choice">
+    <div class="nu" id="t4">
+     <span>
+      <b>
+       4)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      They need time to understand and think about the
+      <span class="blankinput" type="text">
+       radical
+      </span>
+      change; otherwise, they would not be able to decide their immediate actions.
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       4) radical
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="152439" qtype="303">
+   <span class="answer-video">
+    <div class="play" respath="https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_300/c_2/t_300/201509/dade6dda-03c5-4fc2-841e-c3b4d05496c6.mp3">
+     <img class="playImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/play-1.png"/>
+     <img class="playingImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/playing02-fltrp.gif" style="display:none;"/>
+    </div>
+   </span>
+   <div class="Choice">
+    <div class="nu" id="t5">
+     <span>
+      <b>
+       5)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Many middle-income and high-skilled employees face fewer opportunities as companies
+      <span class="blankinput" type="text">
+       shift
+      </span>
+      work to subcontractors and move white-collar jobs to China and India.
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       5) shift
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="152437" qtype="303">
+   <span class="answer-video">
+    <div class="play" respath="https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_300/c_2/t_300/201509/4de4e3a4-56b5-46eb-b67e-2c0b7b0733bd.mp3">
+     <img class="playImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/play-1.png"/>
+     <img class="playingImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/playing02-fltrp.gif" style="display:none;"/>
+    </div>
+   </span>
+   <div class="Choice">
+    <div class="nu" id="t6">
+     <span>
+      <b>
+       6)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      They all believed that internal peace and
+      <span class="blankinput" type="text">
+       stability
+      </span>
+      cannot be guaranteed by force and by denying the people a voice.
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       6) stability
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="152434" qtype="303">
+   <span class="answer-video">
+    <div class="play" respath="https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_300/c_2/t_300/201509/2d2e970b-5e7f-44a9-98c4-f742b1318a37.mp3">
+     <img class="playImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/play-1.png"/>
+     <img class="playingImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/playing02-fltrp.gif" style="display:none;"/>
+    </div>
+   </span>
+   <div class="Choice">
+    <div class="nu" id="t7">
+     <span>
+      <b>
+       7)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      If you just use offensive language to your boy whenever he does something wrong, he might become more and more
+      <span class="blankinput" type="text">
+       rebellious
+      </span>
+      .
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       7) rebellious
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="152432" qtype="303">
+   <span class="answer-video">
+    <div class="play" respath="https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_300/c_2/t_300/201509/33a98b03-1019-4108-9cf9-29df6ea2c11c.mp3">
+     <img class="playImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/play-1.png"/>
+     <img class="playingImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/playing02-fltrp.gif" style="display:none;"/>
+    </div>
+   </span>
+   <div class="Choice">
+    <div class="nu" id="t8">
+     <span>
+      <b>
+       8)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      It is impossible for me to
+      <span class="blankinput" type="text">
+       predict
+      </span>
+      whether concentrating on enhancing your abilities will lead to a more productive and enjoyable future.
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       8) predict
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+ </div>
+ <div class="Test">
+  <div class="TestTitle">
+   <div class="title" id="103">
+    长对话8题，总分值：16分
+   </div>
+   <div class="title-decrible">
+    <div class="directs">
+     Directions： In this section, you'll hear some long conversations. At the end of each conversation, some questions will be asked. Both the conversation and the questions will be spoken only once. After each question, choose the best answer from the four choices marked A, B, C, and D.
+    </div>
+   </div>
+  </div>
+  <div class="Question-Conversation" qid="153948" qtype="103">
+   <span class="answer-video">
+    <div class="play" respath="https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_300/c_2/t_103/201509/0ba28ae1-595c-458e-b8c0-f1b7e8218275.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_300/c_2/t_103/201509/0be9166c-ba52-4ccb-9d8c-3fce26611acb.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_300/c_2/t_103/201509/e2f443f8-63aa-42f6-a690-5b6094b3e2c5.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_300/c_2/t_103/201509/047f3583-7b76-40f7-ba03-efd292911463.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_300/c_2/t_103/201509/882dd400-57e4-46d0-b7dd-e1cfd7094053.mp3">
+     <img class="playImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/play-1.png"/>
+     <img class="playingImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/playing02-fltrp.gif" style="display:none;"/>
+    </div>
+   </span>
+   <div class="Choice">
+    <div class="nu" id="t9">
+     <span>
+      <b>
+       9)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  That he always feels hungry.
+       </label>
+       <label>
+        B.  That he has lost his sense of humor.
+       </label>
+       <label class="green">
+        C.  That he is getting annoyed very easily.
+       </label>
+       <label>
+        D.  That he has trouble remembering things.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t10">
+     <span>
+      <b>
+       10)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  Lack of fun.
+       </label>
+       <label>
+        B.  Lack of sleep.
+       </label>
+       <label>
+        C.  Lack of exercise.
+       </label>
+       <label class="green">
+        D.  Lack of relaxation.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t11">
+     <span>
+      <b>
+       11)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  Advice for his projects.
+       </label>
+       <label class="green">
+        B.  Some pills to help him.
+       </label>
+       <label>
+        C.  Ways to heal naturally.
+       </label>
+       <label>
+        D.  Leisure time to relax.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t12">
+     <span>
+      <b>
+       12)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  Take pills for classic signs of stress.
+       </label>
+       <label>
+        B.  Apply to college for more research.
+       </label>
+       <label class="green">
+        C.  Slow down, relax and have exercises.
+       </label>
+       <label>
+        D.  Change to regular rhythm of breathing.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      9) C      10) D      11) B      12) C
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <div>
+      <pre>（无）</pre>
+     </div>
+     <p>
+      <b>
+       听力文本：
+      </b>
+     </p>
+     <p>
+      <p style="text-align: justify;">
+       W: Good to see you again Clark. What brings you to my office today?
+      </p>
+      <p style="text-align: justify;">
+       M: Doctor Johnson, I’m feeling a little achy, having trouble focusing but mostly — can’t sleep at night— just keep waking up thinking about things. What’s wrong with me?
+      </p>
+      <p style="text-align: justify;">
+       W: Experiencing other changes like in your mood? Lost your sense of humor? Feeling angry? How’s your appetite?
+      </p>
+      <p style="text-align: justify;">
+       M: Actually, I’ve been losing my temper a lot lately – even at small things…. And I just don’t feel like eating.
+      </p>
+      <p style="text-align: justify;">
+       W: Well, I’ve got some good news! These are classic signs of stress. You need to take some time to slow down and relax.
+      </p>
+      <p style="text-align: justify;">
+       M: Time? I don’t have time to slow down! I manage four projects at work, I’m decorating the kitchen at home, and my twin girls, Beth and Jennifer, are applying to college! Please Dr. Johnson, I just need some pills for the aches and pains and some pills to help me sleep.
+      </p>
+      <p style="text-align: justify;">
+       W: Look, I know it seems overwhelming right now, but the thing you need most is leisure time to relax and heal naturally. There are simply no pills for the problem of stress. Tell me, what do you do for fun?
+      </p>
+      <p style="text-align: justify;">
+       M: Fun? Ten years ago, I used to train very hard, I’d bike down to the city pool and swim twice a week. Those few hours were so relaxing, just me, the rhythm of breathing, working out, focusing on a simple goal.
+      </p>
+      <p style="text-align: justify;">
+       W: That’s perfect! A little exercise, some time to yourself. That’s exactly what you need. Back to training for you, Clark, doctor’s orders!
+      </p>
+      <p style="text-align: justify;">
+       New words:
+      </p>
+      <p style="text-align: justify;">
+       achy a. 疼痛的
+      </p>
+      <p style="text-align: justify;">
+       appetite n. 食欲
+      </p>
+      <p>
+       <br/>
+       <p>
+        What did Clark complain to the doctor about?
+       </p>
+       <p>
+        What was the main cause of Clark’s problem according to the doctor?
+       </p>
+       <p>
+        What does Clark think he needs?
+       </p>
+       <p>
+        What does the doctor advise Clark to do?
+       </p>
+      </p>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="153947" qtype="103">
+   <span class="answer-video">
+    <div class="play" respath="https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_300/c_2/t_103/201509/ee52ffbf-f28a-4fc1-b9db-e2e507412da1.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_300/c_2/t_103/201509/67f627fb-a840-4871-8674-e42dd84c8f90.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_300/c_2/t_103/201509/88a4f72b-3190-4750-85c2-49d5d308e171.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_300/c_2/t_103/201509/d3ebd75f-661f-4ec9-9bd8-b35cc789259b.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_300/c_2/t_103/201509/0c7ad3e2-eb09-4ec7-8de0-4b8a74bd0e42.mp3">
+     <img class="playImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/play-1.png"/>
+     <img class="playingImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/playing02-fltrp.gif" style="display:none;"/>
+    </div>
+   </span>
+   <div class="Choice">
+    <div class="nu" id="t13">
+     <span>
+      <b>
+       13)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  People.
+       </label>
+       <label>
+        B.  Animals.
+       </label>
+       <label>
+        C.  Plants.
+       </label>
+       <label>
+        D.  Landscape.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t14">
+     <span>
+      <b>
+       14)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  Create beautiful paintings.
+       </label>
+       <label>
+        B.  Earn millions of dollars.
+       </label>
+       <label>
+        C.  Become a famous artist.
+       </label>
+       <label class="green">
+        D.  Make himself happy.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t15">
+     <span>
+      <b>
+       15)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  Cakes.
+       </label>
+       <label>
+        B.  Candies.
+       </label>
+       <label>
+        C.  Ice cream.
+       </label>
+       <label class="green">
+        D.  Chocolate desserts.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t16">
+     <span>
+      <b>
+       16)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  Bake some delicious desserts.
+       </label>
+       <label class="green">
+        B.  Trade for the woman’s desserts.
+       </label>
+       <label>
+        C.  Draw a tiger eating a bar of chocolate.
+       </label>
+       <label>
+        D.  Put up a picture of a tiger in his kitchen.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      13) A      14) D      15) D      16) B
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <div>
+      <pre>（无）</pre>
+     </div>
+     <p>
+      <b>
+       听力文本：
+      </b>
+     </p>
+     <p>
+      <p style="text-align:justify">
+       W: Wow Charles, did you really draw that landscape? I didn’t know you were so talented!
+      </p>
+      <p style="text-align:justify">
+       M: Thank you, but it’s nothing really. I just sketch for fun between classes or after work at the computer lab… mostly animals, or landscapes. I like drawing but I never draw people though, since I can never get their faces quite right.
+      </p>
+      <p style="text-align:justify">
+       W: What do you mean, “just for fun”? Don’t you want to be a famous artist like Picasso? Your sketches could be worth millions!
+      </p>
+      <p style="text-align:justify">
+       M: Definitely not! I only sketch to relax. If I became famous, I’d have to concentrate on making beautiful paintings instead of fun ones and then what would I do for leisure and relaxation at the end of the day? Don’t you do anything just because it makes you happy, regardless of what other people think?
+      </p>
+      <p style="text-align:justify">
+       W: Hmmm… Well… Yes, I do love to cook, even when it’s not a special occasion. I love to make fancy desserts, like special candies or ice cream or cakes! And I especially love chocolate desserts. Sometimes I’ll bake all weekend and make seven or eight different chocolate desserts, from biscuits to pies, and cookies. Then I share it all with my friends!
+      </p>
+      <p style="text-align:justify">
+       M: Wow! You can always bring me some dessert the next time you bake desserts! I know! We’ll make a trade! I’ll make you a special drawing of a tiger eating a chocolate cake that you can hang up in your kitchen and you can make me something delicious to eat while I’m sketching! I love all desserts, just nothing with peach in it.
+      </p>
+      <p style="text-align:justify">
+       New words:
+      </p>
+      <p style="text-align:justify">
+       Picasso 毕加索(西班牙画家)
+      </p>
+      <p>
+       <br/>
+       <p>
+        What does the man never draw?
+       </p>
+       <p>
+        For what purpose does the man draw?
+       </p>
+       <p>
+        What dessert does the woman especially love?
+       </p>
+       <p>
+        What does the man want to do?
+       </p>
+      </p>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+ </div>
+ <div class="Test">
+  <div class="TestTitle">
+   <div class="title" id="308">
+    长文章8题，总分值：16分
+   </div>
+   <div class="title-decrible">
+    <div class="directs">
+     Directions： In this section, you’ll hear some passages. At the end of each passage, you'll hear some questions. Both the passage and the questions will be spoken only once. After each question, choose the best answer from the four choices marked A, B, C, and D.
+    </div>
+   </div>
+  </div>
+  <div class="Question-Conversation" qid="153949" qtype="308">
+   <span class="answer-video">
+    <div class="play" respath="https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_300/c_2/t_301/201509/70bcc95f-ab15-4a39-9262-8af6f44e5eec.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_300/c_2/t_301/201509/329eda12-4e08-444b-9fad-0216538171d8.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_300/c_2/t_301/201509/0afa6428-2324-4b90-bc19-a6b4df93817a.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_300/c_2/t_301/201509/a9aaf82a-f7e1-44ca-8200-834b5338f7ac.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_300/c_2/t_301/201509/2a14c595-ee7c-4d8f-86ff-a1b7c7e9be09.mp3">
+     <img class="playImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/play-1.png"/>
+     <img class="playingImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/playing02-fltrp.gif" style="display:none;"/>
+    </div>
+   </span>
+   <div class="Choice">
+    <div class="nu" id="t17">
+     <span>
+      <b>
+       17)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  Watching sports matches with their friends.
+       </label>
+       <label>
+        B.  Playing with their children in gardens.
+       </label>
+       <label>
+        C.  Having drinks in the quieter bar.
+       </label>
+       <label class="green">
+        D.  Sitting in the pub gardens.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t18">
+     <span>
+      <b>
+       18)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  It is normal for people to take turns to buy drinks for their friends.
+       </label>
+       <label>
+        B.  People have to queue to get their drinks when pubs are busy.
+       </label>
+       <label>
+        C.  The bar staff will give you another drink if yours is spilled.
+       </label>
+       <label>
+        D.  It is good manners to offer to buy drinks for strangers.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t19">
+     <span>
+      <b>
+       19)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  A person buys alcohol without a photographic ID.
+       </label>
+       <label class="green">
+        B.  A pub sells alcohol to someone who seems drunk.
+       </label>
+       <label>
+        C.  An adult orders a glass of wine for a 16-year-old.
+       </label>
+       <label>
+        D.  Staff who serve alcohol in bars or shops get drunk.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t20">
+     <span>
+      <b>
+       20)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  Children under 14 accompanied by an adult can have free meals.
+       </label>
+       <label>
+        B.  Children eating with their parents can stay at a pub until 10 p.m.
+       </label>
+       <label>
+        C.  Children eating alone can enjoy meals at a reasonable discount.
+       </label>
+       <label class="green">
+        D.  Children at fourteen and above can have meals alone at pubs.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      17) D      18) A      19) B      20) D
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <div>
+      <pre>（无）</pre>
+     </div>
+     <p>
+      <b>
+       听力文本：
+      </b>
+     </p>
+     <p>
+      <p style="text-align:justify">
+       Pubs are an important part of British life. People talk, eat, drink, meet their friends, watch sports matches and relax there. Pubs often have two bars, one usually quieter than the other. Many have a garden where most people enjoy sitting in the summer. Children can go in pub gardens with their parents.
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       Groups of friends normally buy “rounds” of drinks, where the person whose turn it is will buy drinks for all the members of the group. It is sometimes difficult to get served when pubs are busy: people do not queue, but the bar staff will serve those who have been waiting the longest at the bar first. If you spill a stranger’s drink by accident, it is good manners and strongly advisable to offer to buy them another drink.
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       The legal age to purchase alcohol in Britain is 18. People aged 16 and 17 may consume only one glass of wine or beer providing they’re with an adult and the adult orders it. It is illegal to sell alcohol to someone who already appears drunk. All staff who serve alcohol, be it in bars or shops are advised to ask customers for photographic ID if they look under 21. Purchasing alcohol on behalf of a person under 18 will result in an ￡80 on-the-spot fine.
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       14-year-olds may enter a pub unaccompanied by an adult if they order a meal. Children may enter a pub with their parents until 9 p.m., which lets families enjoy reasonably priced pub meals together, and allows pubs to continue in their traditional roles as community centers.
+      </p>
+      <p>
+       <br/>
+       <p>
+        What do most people enjoy doing in pubs in the summer?
+       </p>
+       <p>
+        What do we know from this passage about drinking conventions in pubs?
+       </p>
+       <p>
+        Which of following is considered illegal in an English pub?
+       </p>
+       <p>
+        What is the regulation for children having meals at pubs?
+       </p>
+      </p>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="153950" qtype="308">
+   <span class="answer-video">
+    <div class="play" respath="https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_300/c_2/t_301/201509/f0c5dddf-0de5-43fb-81ac-b784403d30cd.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_300/c_2/t_301/201509/138de56c-0619-4261-8634-13f6cff3ccbc.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_300/c_2/t_301/201509/e5a92053-af21-43a3-b198-d1fe1ad4ce85.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_300/c_2/t_301/201509/b60b525a-6851-4f3f-a161-2802505ecf46.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_300/c_2/t_301/201509/2a104924-6f88-439b-b183-ab1287ab69a1.mp3">
+     <img class="playImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/play-1.png"/>
+     <img class="playingImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/playing02-fltrp.gif" style="display:none;"/>
+    </div>
+   </span>
+   <div class="Choice">
+    <div class="nu" id="t21">
+     <span>
+      <b>
+       21)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  Organize suitable activities for a range of different age groups.
+       </label>
+       <label>
+        B.  Arrange excursions to impressive attractions and locations
+       </label>
+       <label>
+        C.  Provide canoeing, fishing, golfing facilities and services.
+       </label>
+       <label class="green">
+        D.  Offer holidaymakers various camping—related services.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t22">
+     <span>
+      <b>
+       22)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  Fishing.
+       </label>
+       <label>
+        B.  Walking.
+       </label>
+       <label class="green">
+        C.  Cycling.
+       </label>
+       <label>
+        D.  Canoeing.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t23">
+     <span>
+      <b>
+       23)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  Excursions to impressive attractions and locations.
+       </label>
+       <label>
+        B.  Different camping sites across numerous locations.
+       </label>
+       <label>
+        C.  Outdoor activities for people of different age groups.
+       </label>
+       <label class="green">
+        D.  A wide variety of accommodation available for choice.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t24">
+     <span>
+      <b>
+       24)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  Attract many more holidaymakers to Keycamp.
+       </label>
+       <label>
+        B.  Describe facilities Keycamp has for holidaymakers.
+       </label>
+       <label>
+        C.  Encourage people to take breaks from work or study.
+       </label>
+       <label>
+        D.  Offer all—weather camping choices for holidaymakers.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      21) D      22) C      23) D      24) A
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <div>
+      <pre>（无）</pre>
+     </div>
+     <p>
+      <b>
+       听力文本：
+      </b>
+     </p>
+     <p>
+      <p style="text-align:justify">
+       Keycamp has been providing holidays full of freedom and fun since 1976, offering holidaymakers an impressive selection of choice.
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       Keycamp offers a range of different camping sites across numerous locations, all of which provide access to a number of activities. These will be suitable for a range of different age groups, meaning that there is something for everyone. Activities and events for adults include walking and wine tasting, waters-sports, canoeing, fishing, golf and retreats. For children and teenagers, activities such as visiting theme parks, cycling and horse riding are perfect. Alongside this a number of events and excursions to impressive attractions and locations will be available, allowing you to enjoy some of the more traditional holiday activities as part of your new camping experience.
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       However, perhaps the best improvement to the camping experience offered by Keycamp is the range of accommodation that is available. Far more than just offering a standard camping site, Keycamp makes sure that you are able to take advantage of the best possible accommodation for your needs. Accommodation includes luxurious tent structures; tree houses; mountain cottages; mobile homes; and even apartment resorts.
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       These choices help to improve the camping experience by offering holidaymakers the chance to enjoy all of the benefits and beauty of the outdoors without encountering any of the difficulties or problems. Camping experiences can sometimes be made worse by bad weather or uncomfortable settings, ruining the overall experience for the holidaymakers. With such a vast selection of accommodation, all offering luxury and comfort, this will never be the case on a modern camping trip.
+      </p>
+      <p style="text-align:justify">
+       New words:
+      </p>
+      <p style="text-align:justify">
+       accommodation n. 住处
+      </p>
+      <p>
+       <br/>
+       <p>
+        What does Keycamp do?
+       </p>
+       <p>
+        Which activity is suitable for teenagers according to Keycamp?
+       </p>
+       <p>
+        What is the best improvement offered by Keycamp?
+       </p>
+       <p>
+        What is the purpose of this passage?
+       </p>
+      </p>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+ </div>
+ <div class="Test">
+  <div class="TestTitle">
+   <div class="title" id="305">
+    词汇与结构10题，总分值：10分
+   </div>
+   <div class="title-decrible">
+    <div class="directs">
+     Directions： For each of the following sentences there are four choices marked A, B, C and D. Choose the best one to complete each sentence.
+    </div>
+   </div>
+  </div>
+  <div class="Question-Conversation" qid="152226" qtype="305">
+   <div class="Choice">
+    <div id="t25">
+     <span>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      The student is working very hard as he knows that how well he is doing today can have a considerable __________ on his future.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  bore
+       </label>
+       <label>
+        B.  born
+       </label>
+       <label class="green">
+        C.  bearing
+       </label>
+       <label>
+        D.  bear
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       25) C
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="152225" qtype="305">
+   <div class="Choice">
+    <div id="t26">
+     <span>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Because of its geographical position, Germany’s __________ on the situation in Eastern Europe is rather different from Britain’s.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  prospect
+       </label>
+       <label>
+        B.  prosperity
+       </label>
+       <label>
+        C.  prospective
+       </label>
+       <label class="green">
+        D.  perspective
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       26) D
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="152224" qtype="305">
+   <div class="Choice">
+    <div id="t27">
+     <span>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      I usually keep my place clean, but I’m afraid I’ve rather __________ the house this week, and it’s kind of a mess now.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  forgot
+       </label>
+       <label>
+        B.  discarded
+       </label>
+       <label class="green">
+        C.  neglected
+       </label>
+       <label>
+        D.  missed
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       27) C
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="152223" qtype="305">
+   <div class="Choice">
+    <div id="t28">
+     <span>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      We insist that students should give a truthful answer ___________ with what they understand about the reality of global economy.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  constant
+       </label>
+       <label>
+        B.  consecutive
+       </label>
+       <label class="green">
+        C.  consistent
+       </label>
+       <label>
+        D.  conservative
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       28) C
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="152222" qtype="305">
+   <div class="Choice">
+    <div id="t29">
+     <span>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      The workers of this steel and iron factory are working __________ the clock to fulfill their plan before the New Year’s Eve.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  against
+       </label>
+       <label>
+        B.  forward
+       </label>
+       <label>
+        C.  after
+       </label>
+       <label>
+        D.  before
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       29) A
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="152221" qtype="305">
+   <div class="Choice">
+    <div id="t30">
+     <span>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      After a year of bitter arguments and careful planning, preparations for the Olympic Games are now __________ smoothly.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  processing
+       </label>
+       <label>
+        B.  preceding
+       </label>
+       <label>
+        C.  pressing
+       </label>
+       <label class="green">
+        D.  proceeding
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       30) D
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="152220" qtype="305">
+   <div class="Choice">
+    <div class="nu" id="t31">
+     <span>
+      <b>
+       31)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      The head of the delegation from Africa said, “We are __________ grateful to you for your warm welcome and gracious hospitality.”
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  executively
+       </label>
+       <label>
+        B.  exclusively
+       </label>
+       <label>
+        C.  excessively
+       </label>
+       <label class="green">
+        D.  exceedingly
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       31) D
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="152213" qtype="305">
+   <div class="Choice">
+    <div id="t32">
+     <span>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      He wanted to become a writer, but his father didn’t think it was a __________ profession, so he had to give it a second thought.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  respectful
+       </label>
+       <label>
+        B.  respective
+       </label>
+       <label class="green">
+        C.  respectable
+       </label>
+       <label>
+        D.  respecting
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       32) C
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="152218" qtype="305">
+   <div class="Choice">
+    <div class="nu" id="t33">
+     <span>
+      <b>
+       33)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      The young man soon regretted his __________ decision to get married as he had known his girlfriend for only three days.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  prompt
+       </label>
+       <label class="green">
+        B.  hasty
+       </label>
+       <label>
+        C.  instant
+       </label>
+       <label>
+        D.  quick
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       33) B
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="152216" qtype="305">
+   <div class="Choice">
+    <div id="t34">
+     <span>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      I don’t like to buy things with a label of “the latest technology”, since they are usually __________ to problems.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  likely
+       </label>
+       <label class="green">
+        B.  prone
+       </label>
+       <label>
+        C.  potential
+       </label>
+       <label>
+        D.  possible
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       34) B
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+ </div>
+ <div class="Test">
+  <div class="TestTitle">
+   <div class="title" id="309">
+    选词填空（15选10）10题，总分值：20分
+   </div>
+   <div class="title-decrible">
+    <div class="directs">
+     Directions： Fill in the blanks in the following passage by selecting suitable words from the word bank. Each word can be used only once.
+    </div>
+   </div>
+  </div>
+  <div class="Question-Conversation" qid="152385" qtype="309">
+   <div class="Choice">
+    <div id="t35">
+     <span>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <p style="text-align:justify">
+       Teenagers are different from people of other age groups. The differences can be
+       <b>
+        35)
+       </b>
+       <span class="blankinput" type="text">
+        demonstrated
+       </span>
+       from how they behave. In fact, the brains of teenagers are very different from those of children or adults.
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       Once people believed it was
+       <b>
+        36)
+       </b>
+       <span class="blankinput" type="text">
+        sensible
+       </span>
+       that the human brain was fully developed by the age of three. According to this theory, teenager behaviors like risk-taking, a lack of sensitivity to how their actions
+       <b>
+        37)
+       </b>
+       <span class="blankinput" type="text">
+        affect
+       </span>
+       both themselves and others, increased aggressive deeds,
+       <b>
+        38)
+       </b>
+       <span class="blankinput" type="text">
+        diminished
+       </span>
+       concentration and a negative attitude were thought to be due to bad parenting or changes in body chemistry.
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       However, new technology has allowed researchers to examine the healthy brain at work. What they have discovered is something
+       <b>
+        39)
+       </b>
+       <span class="blankinput" type="text">
+        radical
+       </span>
+       : Not only does the brain continue to grow beyond the age of three, but the research also
+       <b>
+        40)
+       </b>
+       <span class="blankinput" type="text">
+        affirms
+       </span>
+       that the brain of a teenager is larger than that of an adult.
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       As teen brains are
+       <b>
+        41)
+       </b>
+       <span class="blankinput" type="text">
+        soaked
+       </span>
+       with chemicals during adolescence phase, the brain grows. However, only the cells that are used the most will
+       <b>
+        42)
+       </b>
+       <span class="blankinput" type="text">
+        survive
+       </span>
+       the competition within the brain. Those that are used less begin to die off until the brain reaches what will be its adult size.
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       The way that teens spend their time
+       <b>
+        43)
+       </b>
+       <span class="blankinput" type="text">
+        somehow
+       </span>
+       influences which connections remain and which disappear. On the basis of this knowledge, experts advise parents to be
+       <b>
+        44)
+       </b>
+       <span class="blankinput" type="text">
+        alert
+       </span>
+       on how their teenagers spend their time. What teens do today will affect their brains for the rest of their lives.
+      </p>
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <ul class="Wordli">
+       <li>
+        A.  diminished
+       </li>
+       <li>
+        B.  demonstrated
+       </li>
+       <li>
+        C.  alert
+       </li>
+       <li>
+        D.  radical
+       </li>
+       <li>
+        E.  surrender
+       </li>
+       <li>
+        F.  survive
+       </li>
+       <li>
+        G.  affirms
+       </li>
+       <li>
+        H.  afford
+       </li>
+       <li>
+        I.  affect
+       </li>
+       <li>
+        J.  effect
+       </li>
+       <li>
+        K.  soaked
+       </li>
+       <li>
+        L.  soaped
+       </li>
+       <li>
+        M.  sensitive
+       </li>
+       <li>
+        N.  sensible
+       </li>
+       <li>
+        O.  somehow
+       </li>
+      </ul>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      35) demonstrated      36) sensible      37) affect      38) diminished      39) radical      40) affirms      41) soaked      42) survive      43) somehow      44) alert
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+ </div>
+ <div class="Test">
+  <div class="TestTitle">
+   <div class="title" id="107">
+    长篇阅读10题，总分值：20分
+   </div>
+   <div class="title-decrible">
+    <div class="directs">
+     Directions： You are going to read a passage with 10 statements attached to it. Each statement contains information given in one of the paragraphs. Identify the paragraph from which the information is derived. You may choose a paragraph more than once. Each paragraph is marked with a letter.
+    </div>
+   </div>
+  </div>
+  <div class="Question-Conversation" qid="1000012" qtype="107">
+   <div class="Choice">
+    <div class="padding">
+     <p>
+      <div style="text-align:center">
+       <b>
+        Teens Give up Traditional Summer Jobs to Build Careers
+       </b>
+      </div>
+      <div style="text-align:justify">
+       <br/>
+       (A) Pikesville Josh Borris is working this summer, but he won’t be paid. Completing a second summer as an intern (实习生) at Correct Rx Pharmacy Services Inc., he said, is more valuable than earning money at a traditional summer job. “I want to one day be a pharmacist (药剂师) researcher figuring out how drugs interact with the human body,” he said of his summer work at the institutional pharmacy company. “This internship is an experience for the future.” Even as fewer teens seek to work during the summer, some like Borris are pursuing internships or other experiences. They hope such experiences will give them a leg up on their intended careers. “Right now, there is pressure on finding a career,” said John A. Challenger, CEO of the employment-consulting firm. “People worry that there won’t be something for them coming out of school.”
+       <br/>
+       <br/>
+       (B) But not everyone. Many teenagers simply don’t want to work. Only about a million of the 11 million youths between 16 and 19 who were neither employed nor actively seeking work last year wanted a job, according to the US Bureau of Labor Statistics (BLS). The rest, according to surveys conducted by the bureau, said they did not want to work. The percentage of youths in the workforce has declined steadily since 1994, according to the BLS. It hit an all-time low record last year and may be headed even lower this summer.
+       <br/>
+       <br/>
+       (C) Still, there are jobs for teens – and teens who want to take them. Nearly 1.1 million teens found work last summer, up from 960,000 in 2010, according to the BLS. In a report issued in late April, John A. Challenger, CEO of the firm Challenger, Gray &amp; Christmas employment consulting projected more would find jobs this summer, even though they face increased competition from older, more experienced applicants, including people in their 20s looking for any kind of work and “retirees who are seeking low-skilled, low-pressure jobs to supplement their retirement income”. Not counted in the data are the teens who win internships. While most internships go to college and graduate school students, some high-schoolers also are in the hunt.
+       <br/>
+       <br/>
+       (D) “There may be as many as two million interns employed each year,” wrote Ross Eisenbrey, vice president of the Economic Policy Institute, in a report issued May 23. “Experts agree that the internship phenomenon was growing even before the Great Recession and has accelerated since. Yet, few can provide any information on the impact of internships, paid or unpaid, on the labor market or the wages and employment prospects of young people.” More and more teenagers are keen on filling their resumés with work experience beyond the traditional summer jobs of scooping (用勺舀) ice cream and waiting tables, Challenger said.
+       <br/>
+       <br/>
+       (E) Riley Drake, a senior, got an unpaid internship last June at the Johns Hopkins University School of Medicine through family connections. She still works there on an immunology (免疫学) project, developing and testing tumor-targeted antibodies (抗体). “I was excited to just be a lab monkey,” Drake said, “but I ended up getting to work on my own project. This is valuable because not only am I finding something no one has found before, but I’m learning interpersonal skills, lab skills and how to interact with people older than I am.”
+       <br/>
+       <br/>
+       (F) Yvette Schein, a senior at Baltimore’s Bryn Mawr School, also has used her summers as an opportunity to pursue what interests her: global health. “For the past three summers I’ve gone to Tanzania for five weeks,” she said. “I help with a public health research project called ‘Partnership for the Rapid Elimination of Trachoma’.” Schein’s father, Dr. Oliver Schein, a professor at the Hopkins medical school, connected her with the project but doesn’t go on the trips with her. Her first summer, she mostly handed out forms to patients. The past two years, she performed tests on patients with trachoma, an eye disease. This summer she is going to help map how the disease spreads by marking infected homes with a Global-Positioning System. “I get to see an entirely different perspective on the world,” she said. “This has changed my life.”
+       <br/>
+       <br/>
+       (G) Not everyone is fortunate enough to have connections like those. Baltimore has developed a program to find real-world work experience for city teenagers called ‘Baltimore City Youth Works’, which finds paying summer jobs for young people between 14 and 21 in the public and private sectors. The program, which runs from June 25 to August 3, aims to give young people “the chance to put a stamp on what our future workforce will look like,” said Brice Freeman, spokesman for the mayor’s office of employment development. “We’ve secured jobs for around 5,000 people this summer.”
+       <br/>
+       <br/>
+       (H) Jasmine Lane, a senior at the Academy for College and Career Exploration in Baltimore, got a job through the program at Veolia Transportation, which provides taxi and other public transportation services in the city. She’s worked at the front desk for the company, answering phones, assisting customers, filling out paperwork and taking inventory. “It’s a great program,” Lane said. “It really boosts teens’ skills and gives teens more experience to put on their resumés. When you don’t have experience, you can’t get certain jobs.”
+       <br/>
+       <br/>
+       (I) Of course, not every teen focuses exclusively on career-oriented experience. Danielle Moses, a junior at Du Bois High School in Baltimore, who has obtained positions through Youth Works in the past, wants a paying job at McDonald’s or at a hairstyling school this summer. “I like having my own money, and a job gives me something to do during the summer,” she said. Still, Moses said, in the future she hopes to pursue a summer job or an internship related to her intended career: nursing. If she does, Moses would be joining what Challenger said is a growing number of teens choosing a career-oriented internship or job. “Jobs right now,” he said, “are trials for future roles.”
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t45">
+     <span>
+      <b>
+       45)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      An increasing number of teenagers are more aware of the importance of real-work experience than traditional summer jobs.
+      <span class="blankinput" type="text">
+       D
+      </span>
+     </p>
+    </div>
+    <div class="nu" id="t46">
+     <span>
+      <b>
+       46)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Some teens hope to get a summer job with some payment because they want to have money of their own.
+      <span class="blankinput" type="text">
+       I
+      </span>
+     </p>
+    </div>
+    <div class="nu" id="t47">
+     <span>
+      <b>
+       47)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      According to Challenger, some retired people are also hunting for jobs in order to earn some extra money for their better retirement life.
+      <span class="blankinput" type="text">
+       C
+      </span>
+     </p>
+    </div>
+    <div class="nu" id="t48">
+     <span>
+      <b>
+       48)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Internship is very important for it helps young people master a lot of skills such as how to communicate with other people and how to work in the lab.
+      <span class="blankinput" type="text">
+       E
+      </span>
+     </p>
+    </div>
+    <div class="nu" id="t49">
+     <span>
+      <b>
+       49)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      The number of the young people who don’t want to work is on the rise since 1990s.
+      <span class="blankinput" type="text">
+       B
+      </span>
+     </p>
+    </div>
+    <div class="nu" id="t50">
+     <span>
+      <b>
+       50)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      The experience of internship has a big impact on interns’ life, which helps them see the world from a completely different perspective.
+      <span class="blankinput" type="text">
+       F
+      </span>
+     </p>
+    </div>
+    <div class="nu" id="t51">
+     <span>
+      <b>
+       51)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Quite a few students work as interns in order to gain experience for their future work.
+      <span class="blankinput" type="text">
+       A
+      </span>
+     </p>
+    </div>
+    <div class="nu" id="t52">
+     <span>
+      <b>
+       52)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      According to experts internship first appeared before the Great Recession and since then it has been developing at a faster rate.
+      <span class="blankinput" type="text">
+       D
+      </span>
+     </p>
+    </div>
+    <div class="nu" id="t53">
+     <span>
+      <b>
+       53)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Some city government has offered a program intended to help young people gain some work experience.
+      <span class="blankinput" type="text">
+       G
+      </span>
+     </p>
+    </div>
+    <div class="nu" id="t54">
+     <span>
+      <b>
+       54)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Internships are popular among college graduates but there is also a chance for high school students.
+      <span class="blankinput" type="text">
+       C
+      </span>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      45) D      46) I      47) C      48) E      49) B      50) F      51) A      52) D      53) G      54) C
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <div>
+      <pre>（无）</pre>
+     </div>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+ </div>
+ <div class="Test">
+  <div class="TestTitle">
+   <div class="title" id="152">
+    阅读理解5题，总分值：10分
+   </div>
+   <div class="title-decrible">
+    <div class="directs">
+     Directions： Read the following passages carefully. Each passage is followed by some questions or unfinished sentences. For each of them there are four choices marked A, B, C, and D. Choose the best answer to each question.
+    </div>
+   </div>
+  </div>
+  <div class="Question-Conversation" qid="152312" qtype="152">
+   <div class="Choice">
+    <div class="padding">
+     <p>
+      <p style="text-align:justify">
+       As the first generations to grow up in a wired world, teenagers hardly know a time when computers weren’t around, and they leap at the chance to spend hours online, chatting with friends and searching the web for their interested topics. So what?
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       But researchers nationwide are increasingly concerned that teenagers are becoming more isolated, less skillful at interpersonal relationships, and perhaps numb to the small-or-big cheating that is so much a part of the e-mail world. Researchers are asking just how the futures of teenagers are changed when so many of them are spending hours on the Internet each day, replacing face-to-face contact with computer contact.
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       Teens, who used computers even just a few hours a week, showed increased signs of loneliness and social isolation. These teens have fewer friends to hang around with, possibly because their computer time has replaced the hours they would have spent with others. They don’t see anything strange in the fact that the computer screen occupies a central place in their social lives. They think school is stressful and busy. There’s almost no time to just hang out. Talking online is just catch-up time.
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       Many teens acknowledge there’s an unreal quality to their cyberspace communication, including their odd shorthand terms, such as POS (parent over shoulder) or LOL (laughing out loud). This code is considered as part of the exclusive shared language that teenagers love. When it comes to e-mail exchanges, teens also show a remarkable tolerance for each other’s excuses or tricks. Nor are they surprised when a mere acquaintance unloads a personal secret through e-mail. Nobody seems to expect the online world to be the same as the real world.
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       Teens say they also appreciate the ability to edit what they say online, or take the time to think about a response. As cowardly as it may seem, some teens admit that asking someone for a date, or breaking up, can be easier in message form. But they insist there’s no harm intended, and cyberspace has become just another medium, like the telephone, in the world of teenagers.
+      </p>
+     </p>
+    </div>
+    <div class="nu" id="t55">
+     <span>
+      <b>
+       55)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Why are researchers asking how the futures of teenagers are changed?
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  Teens don’t know about a life without computers around.
+       </label>
+       <label>
+        B.  Teens are becoming more isolated and less skillful.
+       </label>
+       <label>
+        C.  Teens can easily get trapped into the e-mail world.
+       </label>
+       <label class="green">
+        D.  Teens are spending too much time on the Internet each day.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t56">
+     <span>
+      <b>
+       56)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Why do teens spend much time on the Internet?
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  They have fewer friends to hang out with.
+       </label>
+       <label>
+        B.  They don’t see their social life strange.
+       </label>
+       <label>
+        C.  They think school is too stressful and busy.
+       </label>
+       <label class="green">
+        D.  They think talking online can catch up time.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t57">
+     <span>
+      <b>
+       57)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Which statement illustrates how teens think about the Internet?
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  Cyberspace communication is not the real world.
+       </label>
+       <label>
+        B.  The Internet enables them to share their odd shorthand terms.
+       </label>
+       <label>
+        C.  They enjoy uploading their own information through email.
+       </label>
+       <label>
+        D.  Excuses and tricks in emails are normal and tolerable.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t58">
+     <span>
+      <b>
+       58)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Why has cyberspace become another medium for teens?
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  Breaking up with girlfriends or boyfriends is easier.
+       </label>
+       <label class="green">
+        B.  Using cyberspace brings them a lot of convenience.
+       </label>
+       <label>
+        C.  They can easily edit what they want to say online.
+       </label>
+       <label>
+        D.  They feel more comfortable when express ideas by messages.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t59">
+     <span>
+      <b>
+       59)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      What is the major negative effect on teenagers using cyberspace?
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  They don’t spend time doing homework.
+       </label>
+       <label>
+        B.  They don’t hand out with their friends.
+       </label>
+       <label class="green">
+        C.  They become more isolated and socially awkward.
+       </label>
+       <label>
+        D.  They become more cowered in communication.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      55) D      56) D      57) A      58) B      59) C
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <div>
+      <pre>（无）</pre>
+     </div>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+ </div>
+</div>
+
+                <!-- 题型列表结束 -->
+                <!-- 评论区开始 -->
+                <div class="container">
+                    <div id="vcomments" class="tow">
+                        <script>
+                            new Valine({
+                                el: '#vcomments',
+                                appId: 'jphqw5DgcOz2TwIRuwPvVusb-gzGzoHsz',
+                                appKey: 'e6WOjatXeFfe7C5ukXcmLGCE',
+                                notify: false,
+                                verify: false,
+                                avatar: 'wavatar',
+                                visitor: true,
+                                avatarForce: true,
+                                recordIP: true,
+                                enableQQ: true,
+                                requiredFields: ['nick'],
+                            })
+                        </script>
+                        <span id="/" class="leancloud_visitors" data-flag-title="U校园答案导航" style="position:relative;float:right;top:-10px;font-size: 12px;color:#808080">
+                        <em class="post-meta-item-text">访问量</em>
+                        <i class="leancloud-visitors-count">0</i>
+                    </span>
+                    </div>
+                </div>
+                <!-- 评论区结束 -->
+            </div>
+            <br>
+            <!-- 主体部分结束 -->
+            <div class="container">
+                <div style="text-align: center;color:white;font-size: small;">Copyright&nbsp;© 2021 abiscuit</div>
+            </div>
+            <br>
+            <!--jplayer播放期div-->
+            <div style="width: 0px; height:0px;" id="jplayer"></div>
+            </body>
+
+            <script>
+            function initPlayerAciton() {
+                // 音频资源播放
+                var allPlayButton = $("div.play");
+                allPlayButton.click(function(event) {
+                    var self = this;
+                    var resPath = $(this).attr("resPath");
+                    var pFlag = $(this).attr("playing");
+                    if (pFlag && pFlag == 1) { // 正在播放，需要停止播放
+                        $("#jplayer").jPlayer("stop", 0);
+                        $(self).attr("playing", "0");
+                        $(self).find("img.playImg").show();
+                        $(self).find("img.playingImg").hide();
+                        return false;
+                    }
+                    allPlayButton.attr("playing", "0");
+                    allPlayButton.find("img.playImg").show();
+                    allPlayButton.find("img.playingImg").hide();
+                    $(self).attr("playing", "1");
+                    $(self).find("img.playImg").hide();
+                    $(self).find("img.playingImg").show();
+                    // 获取音频播放列表
+                    var res_arr = new Array();
+                    res_arr = resPath.split(",");
+                    var play_resPath = new Array();
+                    for (var i = 0; i < res_arr.length; i++) {
+                        play_resPath.push(res_arr[i]);
+                    }
+                    myPlayer.play(play_resPath, function() {
+                        $(self).find("img.playImg").show();
+                        $(self).find("img.playingImg").hide();
+                    });
+                    $('#jplayer').find('object').height(10);
+                    return false;
+                });
+            }
+
+            function initStaticReturn() {
+                // 返回
+                $("#staticReturn").click(function() {
+                    staticReturn();
+                });
+                // 返回
+                $("#staticPageReturn").click(function() {
+                    staticReturn();
+                });
+            }
+            </script>
+
+            </html>

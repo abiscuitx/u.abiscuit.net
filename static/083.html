@@ -1,0 +1,3836 @@
+<!DOCTYPE html>
+            <html lang="zh-cn">
+
+            <head>
+            <meta charset="utf-8">
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+            <title>读写2-张新祥-重修Unit5</title>
+            <meta name="MSSmartTagsPreventParsing" content="True" />
+            <meta http-equiv="MSThemeCompatible" content="Yes" />
+            <meta name="renderer" content="webkit">
+            <script src="https://uexercise.unipus.cn/static/its/lib/jquery/jquery.js"></script>
+            <script src="https://uexercise.unipus.cn/static/its/lib/zui/js/zui.js"></script>
+            <script src="https://uexercise.unipus.cn/static/its/lib/chosen/chosen.js"></script>
+            <script src="https://uexercise.unipus.cn/static/its/lib/jquery/jquery.form.js"></script>
+            <script>
+                window.CTX = 'https://uexercise.unipus.cn';
+            </script>
+            <script src="https://uexercise.unipus.cn/static/its/lib/itest/js/itest_common.js"></script>
+            <script src="https://uexercise.unipus.cn/static/its/lib/layer/layer.js"></script>
+            <script src="https://uexercise.unipus.cn/static/its/lib/layer/laytpl.js"></script>
+            <script src="https://uexercise.unipus.cn/static/its/lib/layer/extend/layer.ext.js"></script>
+            <script src="https://uexercise.unipus.cn/static/its/lib/fltrp/js/js.js"></script>
+            <script src="https://uexercise.unipus.cn/static/its/lib/fltrp/js/stopic.js"></script>
+            <script src="https://uexercise.unipus.cn/static/its/lib/jplayer/jquery.jplayer.min.js"></script>
+            <script type="text/javascript" src="//player.youku.com/jsapi"></script>
+            <script src='https://uexercise.unipus.cn/static/its/lib/fltrp/js/uploadXX.js'></script>
+            <script>
+                var _hmt = _hmt || [];
+                (function() {
+                    var hm = document.createElement("script");
+                    hm.src = "https://hm.baidu.com/hm.js?c402237d180d562bcdd7e9d5fe8780f8";
+                    var s = document.getElementsByTagName("script")[0];
+                    s.parentNode.insertBefore(hm, s);
+                })();
+            </script>
+            <script src="../assets/js/Valine.min.js"></script>
+            <link rel="shortcut icon" href="../assets/images/favicon.ico">
+            <link href="../assets/css/main.css" rel="stylesheet">
+            <link href="../assets/css/part.css" rel="stylesheet">
+            <link href="../assets/css/topic.css" rel="stylesheet">
+            <link href="../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+            <style>
+                ul {
+                    padding-left: 0px;
+                }
+                
+                .playButton {
+                    width: 35px;
+                    height: 35px;
+                    cursor: pointer;
+                    float: left;
+                    margin: 25px 10px 0 35px;
+                }
+                
+                .answer-video .playButton {
+                    margin: 0 10px;
+                }
+                
+                input.blankinput {
+                    -moz-border-bottom-colors: none;
+                    -moz-border-left-colors: none;
+                    -moz-border-right-colors: none;
+                    -moz-border-top-colors: none;
+                    border-color: -moz-use-text-color -moz-use-text-color #000000;
+                    border-image: none;
+                    border-style: none none solid;
+                    border-width: 0 0 1px;
+                    margin: 0 0px;
+                    font-weight: bold;
+                    text-align: center;
+                    outline: none;
+                    height: 24px;
+                    resize: none;
+                    color: #333;
+                }
+                
+                span.blankinput {
+                    border-color: -moz-use-text-color -moz-use-text-color #000000;
+                    border-image: none;
+                    border-style: none none solid;
+                    border-width: 0 0 1px;
+                    margin: 0 0px;
+                    font-weight: bold;
+                    text-align: center;
+                    outline: none;
+                    height: 24px;
+                    resize: none;
+                    color: white;
+                }
+                
+                .form-horizontal .form-group {
+                    margin-right: 0;
+                    margin-left: 0;
+                    margin-top: 20px;
+                }
+            </style>
+            </head>
+
+            <body>
+            <nav class="navbar navbar-light navbar-expand-md fixed-top" id="mainNav" style="background: rgba(0,0,0,0);">
+                <div class="container">
+                    <a class="navbar-brand d-xl-flex justify-content-xl-center align-items-xl-center js-scroll-trigger" data-aos="zoom-in-right" href="https://u.abiscuit.net" style="font-family: Roboto, sans-serif;text-shadow: 0px 0px 5px var(--red);"><img class="rounded-circle d-xl-flex justify-content-xl-center align-items-xl-center" src="https://gravatar.loli.net/avatar/058e7772431faa1fcf6ef8e6ceed6552" style="max-height: auto;width: 40px;height: 40px;margin-right: 10px;">u校园答案导航</a>
+                    <button data-toggle="collapse" class="navbar-toggler navbar-toggler-right" data-target="#navbarResponsive" data-aos="fade-left" type="button" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" value="Menu" style="box-shadow: 0px 0px 5px var(--red);"><i class="fa fa-bars" style="box-shadow: 0px 0px 5px var(--red);"></i></button>
+                    <div class="collapse navbar-collapse" id="navbarResponsive">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item nav-link js-scroll-trigger"><a class="nav-link js-scroll-trigger" data-aos="zoom-out-left" href="https://kxz.atcumt.com/" style="font-family: Roboto, sans-serif;text-shadow: 0px 0px 5px var(--primary);">友情推荐：矿小助</a></li>
+                            <li class="nav-item nav-link js-scroll-trigger"><a class="nav-link js-scroll-trigger" data-aos="zoom-out-left" href="mailto:abiscuit@vip.qq.com" style="font-family: Roboto, sans-serif;text-shadow: 0px 0px 5px var(--blue);">邮箱联系</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- 主体部分开始 -->
+            <div class="main">
+                <div class="topclass">读写2-张新祥-重修Unit5</div>
+                <!-- 题型列表开始 --><div class="content Question">
+ <div class="Test">
+  <div class="TestTitle">
+   <div class="title" id="102">
+    短对话8题，总分值：8分
+   </div>
+   <div class="title-decrible">
+    <div class="directs">
+     Directions： In this section, you'll hear some short conversations. At the end of each conversation, one question will be asked. Both the conversation and the question will be spoken only once. After each question, choose the best answer from the four choices marked A, B, C, and D.
+    </div>
+   </div>
+  </div>
+  <div class="Question-Conversation" qid="152734" qtype="102">
+   <span class="answer-video">
+    <div class="play" respath="https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_300/c_2/t_102/201509/f25a5601-d258-4735-854c-09eb48cbc444.mp3">
+     <img class="playImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/play-1.png">
+      <img class="playingImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/playing02-fltrp.gif" style="display:none;"/>
+     </img>
+    </div>
+   </span>
+   <div class="Choice">
+    <div class="nu" id="t1">
+     <span>
+      <b>
+       1)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  Bike lanes should be greatly widened.
+       </label>
+       <label>
+        B.  Bike lanes can be used as express lanes.
+       </label>
+       <label>
+        C.  It is illegal for cyclists to compete with cars.
+       </label>
+       <label class="green">
+        D.  It is not safe for cyclists to ride in express lanes.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       1) D
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+     <p>
+      <b>
+       听力文本：
+      </b>
+     </p>
+     <p>
+      <p>
+       W: It is the third time this month that a cyclist was knocked down and killed by a truck. There are separate bike lanes. I just don’t understand why bikes always compete with cars for space on the roads.
+      </p>
+      <p>
+       M: Some cyclists seem to think the bike lanes are a mile wide.
+      </p>
+      <p>
+       Q: What does the man imply?
+      </p>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="152733" qtype="102">
+   <span class="answer-video">
+    <div class="play" respath="https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_300/c_2/t_102/201509/d95ae381-bdf4-4432-9af4-882d072979dd.mp3">
+     <img class="playImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/play-1.png"/>
+     <img class="playingImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/playing02-fltrp.gif" style="display:none;"/>
+    </div>
+   </span>
+   <div class="Choice">
+    <div class="nu" id="t2">
+     <span>
+      <b>
+       2)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  We’ll quite often have fast food on the go.
+       </label>
+       <label>
+        B.  We’ll often eat out at fast-food restaurants.
+       </label>
+       <label>
+        C.  We’ll still prepare and have meals at home.
+       </label>
+       <label class="green">
+        D.  We’ll have more ready-to-eat meals at home.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       2) D
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+     <p>
+      <b>
+       听力文本：
+      </b>
+     </p>
+     <p>
+      <p>
+       M: The fast pace of life has had a great impact on our eating habits. We now have an ever increasing need for convenience when it comes to eating.
+      </p>
+      <p>
+       W: That’s why we fully expect the trend to continue that ready-to-eat meals are prepared outside the home and eaten at home.
+      </p>
+      <p>
+       Q: What does the woman mean about our future eating habits?
+      </p>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="152732" qtype="102">
+   <span class="answer-video">
+    <div class="play" respath="https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_300/c_2/t_102/201509/a1a79b0a-feac-4ee6-af5f-38d6d750b533.mp3">
+     <img class="playImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/play-1.png"/>
+     <img class="playingImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/playing02-fltrp.gif" style="display:none;"/>
+    </div>
+   </span>
+   <div class="Choice">
+    <div class="nu" id="t3">
+     <span>
+      <b>
+       3)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  Doubtful.
+       </label>
+       <label>
+        B.  Negative.
+       </label>
+       <label class="green">
+        C.  Affirmative.
+       </label>
+       <label>
+        D.  Wait-and-see.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       3) C
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+     <p>
+      <b>
+       听力文本：
+      </b>
+     </p>
+     <p>
+      <p>
+       W: It is reported that an estimated 230 million Chinese farmers have migrated to cities in recent years.
+      </p>
+      <p>
+       M: These farmers provide the cheap labor that cities need to fuel economic growth. And they keep villages going by providing money for relatives at home.
+      </p>
+      <p>
+       Q: What’s the man’s attitude toward the migration?
+      </p>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="152731" qtype="102">
+   <span class="answer-video">
+    <div class="play" respath="https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_300/c_2/t_102/201509/c6067e4b-2ae9-497d-a353-52a93936151c.mp3">
+     <img class="playImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/play-1.png"/>
+     <img class="playingImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/playing02-fltrp.gif" style="display:none;"/>
+    </div>
+   </span>
+   <div class="Choice">
+    <div class="nu" id="t4">
+     <span>
+      <b>
+       4)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  She prefers outdoor parking.
+       </label>
+       <label>
+        B.  She has scratches on her back.
+       </label>
+       <label>
+        C.  She is a very experienced driver.
+       </label>
+       <label>
+        D.  She often has nightmares at night.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       4) A
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+     <p>
+      <b>
+       听力文本：
+      </b>
+     </p>
+     <p>
+      <p>
+       M: There seems to be nowhere to park outdoors. Shall we try underground parking?
+      </p>
+      <p>
+       W: Underground parking is always a nightmare for inexperienced drivers like me. More than once my car has been scratched on the side when driving down the narrow slopes.
+      </p>
+      <p>
+       Q: What do we know from what the woman said?
+      </p>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="152730" qtype="102">
+   <span class="answer-video">
+    <div class="play" respath="https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_300/c_2/t_102/201509/e5d25771-7c91-4a71-8b0d-6942c885e106.mp3">
+     <img class="playImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/play-1.png"/>
+     <img class="playingImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/playing02-fltrp.gif" style="display:none;"/>
+    </div>
+   </span>
+   <div class="Choice">
+    <div class="nu" id="t5">
+     <span>
+      <b>
+       5)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  Access to various forms of entertainment.
+       </label>
+       <label>
+        B.  Access to efficient public transportation.
+       </label>
+       <label>
+        C.  Access to food from various cultures.
+       </label>
+       <label>
+        D.  Access to modern conveniences.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       5) A
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+     <p>
+      <b>
+       听力文本：
+      </b>
+     </p>
+     <p>
+      <p>
+       W: I love the modern conveniences and efficient public transportation the big city offers, and above all, much greater access to a variety of entertainment.
+      </p>
+      <p>
+       M: The greatest advantage of living in a large city is that I can eat a huge variety of food from different cultures.
+      </p>
+      <p>
+       Q: What attracts the woman most in a big city?
+      </p>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="152729" qtype="102">
+   <span class="answer-video">
+    <div class="play" respath="https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_300/c_2/t_102/201509/e4c8e310-eeb1-4fb9-b12a-3f006aab39cf.mp3">
+     <img class="playImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/play-1.png"/>
+     <img class="playingImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/playing02-fltrp.gif" style="display:none;"/>
+    </div>
+   </span>
+   <div class="Choice">
+    <div class="nu" id="t6">
+     <span>
+      <b>
+       6)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  Convincing people of the health benefits of green spaces.
+       </label>
+       <label>
+        B.  Urging local authorities to spend money on green spaces.
+       </label>
+       <label>
+        C.  Persuading local authorities to make room for green spaces.
+       </label>
+       <label class="green">
+        D.  Discussing the pros and cons of building more green spaces.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       6) D
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+     <p>
+      <b>
+       听力文本：
+      </b>
+     </p>
+     <p>
+      <p>
+       M: Studies have shown that having more green spaces in cities could improve people’s physical and mental health, sense of well-being, and reduce air conditioning costs.
+      </p>
+      <p>
+       W: But that means the local authorities have to spend a lot of money in making room for green spaces.
+      </p>
+      <p>
+       Q: What are the two speakers most probably doing?
+      </p>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="152728" qtype="102">
+   <span class="answer-video">
+    <div class="play" respath="https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_300/c_2/t_102/201509/dbd62a1d-c629-49ff-96f8-2bfdf4767400.mp3">
+     <img class="playImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/play-1.png"/>
+     <img class="playingImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/playing02-fltrp.gif" style="display:none;"/>
+    </div>
+   </span>
+   <div class="Choice">
+    <div class="nu" id="t7">
+     <span>
+      <b>
+       7)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  Her mother will live in her apartment.
+       </label>
+       <label class="green">
+        B.  She shares an apartment with others.
+       </label>
+       <label>
+        C.  She will buy an expensive apartment.
+       </label>
+       <label>
+        D.  Her father has been ill for a long time.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       7) B
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+     <p>
+      <b>
+       听力文本：
+      </b>
+     </p>
+     <p>
+      <p>
+       W: Cindy is going to move back home to live with her mother. Her mother has been ill since her father passed away a month ago.
+      </p>
+      <p>
+       M: Poor Cindy! Then we need to find someone else to split the rent. We can’t afford to rent such an expensive apartment by ourselves.
+      </p>
+      <p>
+       Q: What do we know from the conversation about Cindy?
+      </p>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="152727" qtype="102">
+   <span class="answer-video">
+    <div class="play" respath="https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_300/c_2/t_102/201509/1e2db041-dc0d-4530-af57-fa354ab1ea56.mp3">
+     <img class="playImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/play-1.png"/>
+     <img class="playingImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/playing02-fltrp.gif" style="display:none;"/>
+    </div>
+   </span>
+   <div class="Choice">
+    <div class="nu" id="t8">
+     <span>
+      <b>
+       8)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  She drove fast in order not to be overtaken.
+       </label>
+       <label class="green">
+        B.  She was forced to slow down when driving.
+       </label>
+       <label>
+        C.  She had to drive at 120 kilometers per hour.
+       </label>
+       <label>
+        D.  She overtook a man on her way home.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       8) B
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+     <p>
+      <b>
+       听力文本：
+      </b>
+     </p>
+     <p>
+      <p>
+       M : You seem to be annoyed. What’s up?
+      </p>
+      <p>
+       W: On my way home a man drove at 120 kilometers per hour while overtaking me, but then he slowed down on purpose to below my speed when he got in front of me.
+      </p>
+      <p>
+       Q: What happened to the woman?
+      </p>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+ </div>
+ <div class="Test">
+  <div class="TestTitle">
+   <div class="title" id="103">
+    长对话8题，总分值：8分
+   </div>
+   <div class="title-decrible">
+    <div class="directs">
+     Directions： In this section, you'll hear some long conversations. At the end of each conversation, some questions will be asked. Both the conversation and the questions will be spoken only once. After each question, choose the best answer from the four choices marked A, B, C, and D.
+    </div>
+   </div>
+  </div>
+  <div class="Question-Conversation" qid="153955" qtype="103">
+   <span class="answer-video">
+    <div class="play" respath="https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_300/c_2/t_103/201509/844bb465-4f51-4f90-9834-a1fc24997e02.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_300/c_2/t_103/201509/edf61dc8-3462-4763-830d-73f8e78922d9.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_300/c_2/t_103/201509/67992f92-7e29-464d-afdc-c4d674be4e07.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_300/c_2/t_103/201509/557aa138-557a-4ed3-a86a-bbcd6b9b40bd.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_300/c_2/t_103/201509/1c99c4b8-da49-4e96-97a3-eb471942bc28.mp3">
+     <img class="playImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/play-1.png"/>
+     <img class="playingImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/playing02-fltrp.gif" style="display:none;"/>
+    </div>
+   </span>
+   <div class="Choice">
+    <div class="nu" id="t9">
+     <span>
+      <b>
+       9)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  A drive to raise environmental awareness.
+       </label>
+       <label>
+        B.  A campaign to provide more recycling bins.
+       </label>
+       <label>
+        C.  An activity to encourage cycling on campus.
+       </label>
+       <label>
+        D.  An effort to enhance the awareness of driving.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t10">
+     <span>
+      <b>
+       10)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  Print out and distribute hundreds of small posters on campus.
+       </label>
+       <label>
+        B.  Print out and distribute large posters with slogans on campus.
+       </label>
+       <label class="green">
+        C.  Take photos of students with wildflowers next to their posters.
+       </label>
+       <label>
+        D.  Encourage students to plant wildflowers outside the Students Union.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t11">
+     <span>
+      <b>
+       11)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  To remind students to keep recycling after Earth Day.
+       </label>
+       <label>
+        B.  To ask students to get the pictures taken on Earth Day.
+       </label>
+       <label>
+        C.  To show what they have done for the recycling drive.
+       </label>
+       <label>
+        D.  To praise people making a contribution to recycling.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t12">
+     <span>
+      <b>
+       12)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  It is easier for him to view the picture again and again.
+       </label>
+       <label>
+        B.  It is wonderful to see how the woman’s mind works.
+       </label>
+       <label>
+        C.  It is just like working indirectly in a triangle.
+       </label>
+       <label class="green">
+        D.  It can double the results in half the time.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      9) A      10) C      11) A      12) D
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <div>
+      <pre>（无）</pre>
+     </div>
+     <p>
+      <b>
+       听力文本：
+      </b>
+     </p>
+     <p>
+      <p style="text-align: justify;">
+       M: It’s Earth Day in three weeks. Every club needs an activity to encourage awareness of environmental issues. With green recycling bins all over campus, a recycling drive can raise awareness, reminding people to recycle all year long. As President of the Recycling Club at the University of Colorado, what do think?
+      </p>
+      <p style="text-align: justify;">
+       W: Great idea! But let’s not print out hundreds of small posters and waste paper!
+      </p>
+      <p style="text-align: justify;">
+       M: Agreed! Three large posters with our Recycle: It’s Cool! Slogan, one in the Science Building, one in the Student Union and one outside the Student Union.
+      </p>
+      <p style="text-align: justify;">
+       W: Great! So remember the wildflowers we planted that are blooming now outside the Student Union? I asked Dean Johnson for permission to put our Recycle: It’s Cool! poster there and to take photos of students, standing with the wildflowers next to the sign.
+      </p>
+      <p style="text-align: justify;">
+       M: Okay … Keep going …
+      </p>
+      <p style="text-align: justify;">
+       W: I was thinking we could have a professional photographer take people’s pictures standing with the wildflowers – next to the Recycle: It’s Cool! Poster.
+      </p>
+      <p style="text-align: justify;">
+       M: Okay … I’m loving this…
+      </p>
+      <p style="text-align: justify;">
+       W: Then the students go to our Recycling website the next day to get their photos off our website. That way they have a cool picture with the wildflowers AND our Recycle: It’s Cool! poster that reminds them to keep recycling long after Earth Day has passed!
+      </p>
+      <p style="text-align: justify;">
+       M: I love how your mind works! That’s like a triangle – three times reminding people to recycle! First, take a picture with the wildflowers next to the Recycle: It’s Cool! Poster. Second, visit our Recycling website to get the picture. Finally, view the picture and see the Recycling sign again and again!
+      </p>
+      <p>
+       <br/>
+       <p>
+        What are the two speakers talking about?
+       </p>
+       <p>
+        What will the Recycling Club do?
+       </p>
+       <p>
+        What is the purpose of the woman’s plan?
+       </p>
+       <p>
+        What does the man think of the plan?
+       </p>
+      </p>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="153956" qtype="103">
+   <span class="answer-video">
+    <div class="play" respath="https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_300/c_2/t_103/201509/f4f0d7ee-bb7e-43cc-a5ae-50158568a982.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_300/c_2/t_103/201509/59a3c082-fe81-4b96-99ec-bc553e252b8e.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_300/c_2/t_103/201509/f8d16ec8-5e4c-40b0-84a3-87306942d087.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_300/c_2/t_103/201509/89fd71ca-50a6-488c-80ce-8737888cc4d6.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_300/c_2/t_103/201509/2059319b-5ffe-41f3-95ee-670c8b1fb9a9.mp3">
+     <img class="playImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/play-1.png"/>
+     <img class="playingImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/playing02-fltrp.gif" style="display:none;"/>
+    </div>
+   </span>
+   <div class="Choice">
+    <div class="nu" id="t13">
+     <span>
+      <b>
+       13)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  He is confused about the importance of Thanksgiving in his family.
+       </label>
+       <label>
+        B.  He is curious about so many people having dinner together.
+       </label>
+       <label>
+        C.  He is worried about having so many people in one house.
+       </label>
+       <label class="green">
+        D.  He is very excited about having a traditional celebration.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t14">
+     <span>
+      <b>
+       14)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  They will set up four long tables so they can eat together.
+       </label>
+       <label>
+        B.  They will move the furniture out of the dining room.
+       </label>
+       <label>
+        C.  They will make about 20 pounds of sweet potatoes.
+       </label>
+       <label>
+        D.  They will make heaps of vegetable and fruit salad.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t15">
+     <span>
+      <b>
+       15)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  Apple pies.
+       </label>
+       <label class="green">
+        B.  Meat pies.
+       </label>
+       <label>
+        C.  Fruit salad.
+       </label>
+       <label>
+        D.  Sweet potatoes.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t16">
+     <span>
+      <b>
+       16)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  She tries new restaurants with her husband.
+       </label>
+       <label>
+        B.  She has apple pie and ice cream at home alone.
+       </label>
+       <label>
+        C.  She spends the holiday with her parents in Florida.
+       </label>
+       <label class="green">
+        D.  She eats out with her sister and her sister’s husband.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      13) D      14) A      15) B      16) D
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <div>
+      <pre>（无）</pre>
+     </div>
+     <p>
+      <b>
+       听力文本：
+      </b>
+     </p>
+     <p>
+      <p style="text-align: justify;">
+       M: I can’t wait for Thanksgiving! Only two more days!
+      </p>
+      <p style="text-align: justify;">
+       W: I didn’t realize Thanksgiving was such an important holiday for you.
+      </p>
+      <p style="text-align: justify;">
+       M: Oh, it’s the biggest day of the year for my family! Everyone at our parents’ home: my two sisters, my brother, all our families – it’s at least 23 people — More than 30 if aunts and uncles come over!
+      </p>
+      <p style="text-align: justify;">
+       W: Wow, sounds like a lot of people for one house!
+      </p>
+      <p style="text-align: justify;">
+       M: Yea, but we love it! We move all the furniture out of the big living room and set up four long tables so we can all eat together.
+      </p>
+      <p style="text-align: justify;">
+       W: Must be quite a wonderful dinner! Is it all the classics?
+      </p>
+      <p style="text-align: justify;">
+       M: You bet! We have two whole turkeys, and 10 pounds of sweet potatoes! Not to mention heaps of mom’s famous fruit salad. Aunt Peggy brings three meat pies and Uncle Charlie brings three apple pies.
+      </p>
+      <p style="text-align: justify;">
+       W: Haha, that’s so traditional! You guys are like the original Americans two hundred years ago!
+      </p>
+      <p style="text-align: justify;">
+       M: What do you do, if it’s not “so traditional?”
+      </p>
+      <p style="text-align: justify;">
+       W: Thanksgiving is never big for my family. My parents live in Florida on the other side of the country, so, my sister, her husband and I all go out to eat. We try a new restaurant every year. Last year was Greek – this year we’re trying Mexican food!
+      </p>
+      <p style="text-align: justify;">
+       M: Um … okay – but don’t you miss the turkey and the pie?
+      </p>
+      <p style="text-align: justify;">
+       W: Not really. I do sometimes miss the pie … So, the last few years I’ve baked an apple pie – and after dinner the three go back to my place and have apple pie with ice cream.
+      </p>
+      <br/>
+      New words:
+      <p style="text-align: justify;">
+       Turkey n. 火鸡
+      </p>
+      <p>
+       <br/>
+       <p>
+        How does the man feel about his family’s celebration of Thanksgiving?
+       </p>
+       <p>
+        What preparation will the man’s family make for Thanksgiving?
+       </p>
+       <p>
+        What will Aunt Peggy bring to the Thanksgiving dinner ?
+       </p>
+       <p>
+        How does the woman celebrate Thanksgiving?
+       </p>
+      </p>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+ </div>
+ <div class="Test">
+  <div class="TestTitle">
+   <div class="title" id="308">
+    长文章4题，总分值：4分
+   </div>
+   <div class="title-decrible">
+    <div class="directs">
+     Directions： In this section, you’ll hear some passages. At the end of each passage, you'll hear some questions. Both the passage and the questions will be spoken only once. After each question, choose the best answer from the four choices marked A, B, C, and D.
+    </div>
+   </div>
+  </div>
+  <div class="Question-Conversation" qid="153957" qtype="308">
+   <span class="answer-video">
+    <div class="play" respath="https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_300/c_2/t_301/201509/e0792559-f777-4903-bf58-d586f3a7d90a.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_300/c_2/t_301/201509/ec8bd6a7-be40-4d76-98d3-315807362a26.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_300/c_2/t_301/201509/e94b68aa-2d59-4c02-b42c-9e6efe973b60.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_300/c_2/t_301/201509/027c4d2d-d738-4daf-aa30-894951e72d02.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_300/c_2/t_301/201509/12bb13b7-7291-417a-9f56-ae5fa673d1d7.mp3">
+     <img class="playImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/play-1.png"/>
+     <img class="playingImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/playing02-fltrp.gif" style="display:none;"/>
+    </div>
+   </span>
+   <div class="Choice">
+    <div class="nu" id="t17">
+     <span>
+      <b>
+       17)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  They should assess their food production potential.
+       </label>
+       <label class="green">
+        B.  They should make foods healthy and affordable.
+       </label>
+       <label>
+        C.  They should make food prices more reasonable.
+       </label>
+       <label>
+        D.  They should ensure the security of junk food.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t18">
+     <span>
+      <b>
+       18)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  By starting more large farms in the center of cities.
+       </label>
+       <label>
+        B.  By building more high-density buildings in city centers.
+       </label>
+       <label>
+        C.  By tearing down high-density buildings in city centers.
+       </label>
+       <label class="green">
+        D.  By using unused open spaces in residential areas in cities.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t19">
+     <span>
+      <b>
+       19)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  It began as a result of growing demand for fresh food.
+       </label>
+       <label>
+        B.  It began in response to the efforts of governments.
+       </label>
+       <label>
+        C.  It began as a movement against social injustice.
+       </label>
+       <label class="green">
+        D.  It began among under-privileged communities.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t20">
+     <span>
+      <b>
+       20)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  Reduced energy needs and costs for refrigeration.
+       </label>
+       <label>
+        B.  Making use of unused land and water resources.
+       </label>
+       <label class="green">
+        C.  Clean air and lower temperatures in summer.
+       </label>
+       <label>
+        D.  A great opportunity for food cultivation.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      17) B      18) D      19) D      20) C
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <div>
+      <pre>（无）</pre>
+     </div>
+     <p>
+      <b>
+       听力文本：
+      </b>
+     </p>
+     <p>
+      <div style="text-align:justify">
+       In a country where, in some places, a sandwich barely costs a dollar while a bag of baby carrots is priced nearly three times as much, there’s plenty of work to be done to make healthy foods affordable and accessible. There is no denying that food insecurity, especially cheap and junk food is a great concern in the US. In fact, according to the US Department of Agriculture nearly 14.5 percent of Americans experienced food insecurity at some point in 2010.
+       <br/>
+       <br/>
+       To fight this, many cities across the US are assessing their food production potential and creating special laws for promoting urban agriculture. Let me clarify that “urban” agriculture does not imply tearing down high-density buildings in the city centers to build farms. As an urban planner I am a supporter of higher densities. However, the land around the cities or the residential open spaces with no other obvious use could be used as productive land within the cities.
+       <br/>
+       <br/>
+       In the US, urban agriculture began at the grassroots level as a social justice movement to fight food insecurity among under-privileged communities. Within a couple of decades, a growing demand resulted in local governments making an active effort to support urban agriculture.
+       <br/>
+       <br/>
+       Urban agriculture is not just about food security: it does great service to the cause of sustainable cities. For grocery stores, purchasing fresh and locally grown produce reduces energy needs and costs associated with long distance travel and refrigeration. City residents also benefit from cleaner air and cooler temperatures in summer. Also, urban agriculture provides a great opportunity to make use of unused land and water resources for food cultivation.
+      </div>
+      <p>
+       <br/>
+       <p>
+        What should Americans do about their food according to the speaker?
+       </p>
+       <p>
+        How should Americans develop urban agriculture according to the speaker?
+       </p>
+       <p>
+        How did urban agriculture begin?
+       </p>
+       <p>
+        What benefit will city residents get from urban agriculture?
+       </p>
+      </p>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+ </div>
+ <div class="Test">
+  <div class="TestTitle">
+   <div class="title" id="107">
+    长篇阅读10题，总分值：10分
+   </div>
+   <div class="title-decrible">
+    <div class="directs">
+     Directions： You are going to read a passage with 10 statements attached to it. Each statement contains information given in one of the paragraphs. Identify the paragraph from which the information is derived. You may choose a paragraph more than once. Each paragraph is marked with a letter.
+    </div>
+   </div>
+  </div>
+  <div class="Question-Conversation" qid="1000015" qtype="107">
+   <div class="Choice">
+    <div class="padding">
+     <p>
+      <div style="text-align:center">
+       <b>
+        How to Save Money while Visiting London
+       </b>
+      </div>
+      <div style="text-align:justify">
+       <br/>
+       A) Ah, London! For all the complaints about rain, smog, traffic and warm beer, it’s still surprising how many tourists make the trip to the capital of England every year. With the exchange rate fluctuating and an unfamiliar currency, it can be difficult for visitors to know if they are getting a good deal while they are in London. There are several ways to save money, whether you are visiting for a day trip or longer.
+       <br/>
+       <br/>
+       B) The best deals on flights are usually to be found outside peak holiday season. So if you can bear a little less sun and a little more rain (although neither are guaranteed) try to book your vacation for sometime between mid-September and May. Everything tends to be more expensive during the local school holidays, so it is wise if you can avoid those weeks as well. In the UK most schools have a week-long holiday at the end of October, 2-3 weeks over the Christmas and New Year period, and another week mid-February. If you are visiting from continental Europe, there are some reasonable deals on train tickets from Paris through the Chunnel. For those on a tight budget but with time to spare, it is possible to travel from as far east as Poland by bus to London though it will take you around 3 days to get there!
+       <br/>
+       <br/>
+       C) The most obvious way of saving money when you visit is to stay with friends instead of in a hotel. In the Internet age, this is becoming more commonplace, and really can help with the cost of travelling. It could also mean that you won’t need to hire a car, or to eat out for every meal (which is also notoriously expensive in the UK). But if that is not an option for you, then your accommodation will be a large sum of your expenses. Hotels are always more expensive than Bed and Breakfast (B&amp;B) accommodation, but have the advantage of allowing you access to your room at any time (many B&amp;Bs require that you are off the hotels during the day). If London is just one stop on a wider trip around the UK for you, then for other areas you may want to look at staying in a Youth Hostel. These are very basic, but also reasonably cheap, and can be a good way of meeting people and getting close to some of the National Parks such as the Lake District or Exmoor.
+       <br/>
+       <br/>
+       D) If you are only staying in London, then you really won’t need a car. There is an over-crowding charge for vehicles entering the inner city, but the streets are still very busy and it is far easier and cheaper to buy a pass to use on public transport. Despite all the horror stories, it really is a very safe way to travel around the city. Travel passes usually allow you to use the underground, buses, the Docklands light railway, and Tramlink in the city, and often you can also use the pass to get discount entry to some attractions, too. You can buy your pass online before you leave home. Taxis are the other way of getting around London, and everyone should take a ride in one if they can as it is all part of the experience. But make sure it is a licenced Black Hackney Cab, and be aware that cabbies are one of the UK exceptions to the “no-tipping” rule. No matter how far the journey, a tip of 5 pounds would be reasonable.
+       <br/>
+       <br/>
+       E) If you can get a good deal with your accommodation that includes breakfast and one other meal, you will save money on having to eat out in London. The British may not be known for their own cooking, but they do embrace a huge range of ethnic outlets and restaurants. In the UK almost everyone has their own website, so it should be quite easy to browse for restaurants in the area where you will be staying and look at sample menus and prices. It is advisable to book before you turn up, as many are small and the popular places are always busy. If you only have to find yourself lunch, then London has numerous sandwich bars as well as many larger stores that sell pre-packed sandwiches, drinks and snacks for 2-3 pounds.
+       <br/>
+       <br/>
+       F) So, you know where you are staying, what you will eat and even how to get around. Now, what do you want to see? The official London tourism website www.visitlondon.com should be your first stop. Here you will find details of events and places to see, as well as special offers on admissions. Several London attractions offer discounts if you visit more than one of them, so keep your tickets safe. There is also available at www.londonpass.com an inclusive ticket for up to 6 days that gives you entry to 55 attractions for around 100 and you can also use it on public transport, too. But London also has many things to see that are free, and you should take some time to walk around one of the 8 Royal Parks, or along the banks of the River Thames. Take an open-top bus ride around the capital to get a better view of the center. If you want to take in a West End show, why not try for a morning performance instead of an evening one; these are usually a little cheaper, and often if you go to the box office around 30 minutes before curtain-up, you can get very cheap tickets.
+       <br/>
+       <br/>
+       G) As for buying souvenirs, keep in mind that you may be limited to one piece of hand luggage when you fly home. All souvenirs in London are over priced, so however tempting they may be, try to restrict yourself to small things that won’t break on your journey home. The best souvenirs are photographs, guidebooks and memories.
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t21">
+     <span>
+      <b>
+       21)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Traveling by public transport in the inner city of London is more convenient and less expensive than traveling by a car.
+      <span class="blankinput" type="text">
+       D
+      </span>
+     </p>
+    </div>
+    <div class="nu" id="t22">
+     <span>
+      <b>
+       22)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      You’re suggested to make a restaurant reservation in London before leaving for it, because some popular restaurants are crowded with people all the time.
+      <span class="blankinput" type="text">
+       E
+      </span>
+     </p>
+    </div>
+    <div class="nu" id="t23">
+     <span>
+      <b>
+       23)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      If you want to visit London in a cheap way, you are advised not to go there during the local school holidays.
+      <span class="blankinput" type="text">
+       B
+      </span>
+     </p>
+    </div>
+    <div class="nu" id="t24">
+     <span>
+      <b>
+       24)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      When you visit attractions in London, you can save money by searching the official London tourism website and getting discounts tickets.
+      <span class="blankinput" type="text">
+       F
+      </span>
+     </p>
+    </div>
+    <div class="nu" id="t25">
+     <span>
+      <b>
+       25)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Although many people don’t like London very much, there are still many tourists visiting London every year.
+      <span class="blankinput" type="text">
+       A
+      </span>
+     </p>
+    </div>
+    <div class="nu" id="t26">
+     <span>
+      <b>
+       26)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      By searching the Internet, you can save money by staying with friends when you visit London.
+      <span class="blankinput" type="text">
+       C
+      </span>
+     </p>
+    </div>
+    <div class="nu" id="t27">
+     <span>
+      <b>
+       27)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Gifts in London are quite expensive and may probably get broken on your way home, so it is wise for you to buy just some small things.
+      <span class="blankinput" type="text">
+       G
+      </span>
+     </p>
+    </div>
+    <div class="nu" id="t28">
+     <span>
+      <b>
+       28)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      If you want to visit other places besides London in the UK, Youth Hostel is a good choice for accommodation, because it is cheaper and also easier for you to meet people.
+      <span class="blankinput" type="text">
+       C
+      </span>
+     </p>
+    </div>
+    <div class="nu" id="t29">
+     <span>
+      <b>
+       29)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Though it is cheaper and easier to get around London by travel passes, it is still worth taking a taxi to enjoy your visit.
+      <span class="blankinput" type="text">
+       D
+      </span>
+     </p>
+    </div>
+    <div class="nu" id="t30">
+     <span>
+      <b>
+       30)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      You can save money by buying cheaper tickets shortly before a West End show begins.
+      <span class="blankinput" type="text">
+       F
+      </span>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      21) D      22) E      23) B      24) F      25) A      26) C      27) G      28) C      29) D      30) F
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <div>
+      <pre>（无）</pre>
+     </div>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+ </div>
+ <div class="Test">
+  <div class="TestTitle">
+   <div class="title" id="152">
+    阅读理解10题，总分值：30分
+   </div>
+   <div class="title-decrible">
+    <div class="directs">
+     Directions： Read the following passages carefully. Each passage is followed by some questions or unfinished sentences. For each of them there are four choices marked A, B, C, and D. Choose the best answer to each question.
+    </div>
+   </div>
+  </div>
+  <div class="Question-Conversation" qid="152877" qtype="152">
+   <div class="Choice">
+    <div class="padding">
+     <p>
+      <p style="text-align:justify">
+       Diamonds! Even the word seems to shine. Diamonds have been fascinating people for centuries. Ancient people believed the stones had magical powers. Kings and queens have worn them to display power and wealth. Brides-to-be have received them as tokens of love for at least 500 years. Luck, power, wealth, love—people have sought these and more in diamonds.
+       <br/>
+       <br/>
+       The first diamonds were discovered in India more than 2,000 years ago. Because of their hardness, diamonds could not be polished as easily as other gems (宝石). Ancient Indian rulers wore the unpolished stones. Some Indians carried knives with edges and tips of diamond. Indians also use tools made with diamonds to cut hard materials.
+       <br/>
+       <br/>
+       Centuries later, people discovered that diamonds—and only diamonds—can cut other diamonds. They began shaping and polishing the gems by rubbing one diamond against another. The flat surfaces that resulted made the diamonds more shining than other stones. Hand polishing was slow, difficult work which could cause injury rubbing the hard stones against one another. Later, a flat, revolving disk coated with diamond dust was used. It was turned by hand. Today a polisher uses a similar piece of equipment turned by a machine.
+       <br/>
+       <br/>
+       A boy in what is now South Africa made one of the most important diamond discoveries of all time. One day in 1867, Erasmus Jacobs, 15, was resting beside a river when he saw a shining stone. He took the stone home, and his mother later gave it away. The stone turned out to be a diamond nearly as large as a golf ball. It was the first recorded discovery of a diamond in Africa.
+       <br/>
+       <br/>
+       That find started a diamond rush, which continues to the present. Today South Africa is a major diamond supplier. Africa and Russia now are the sources of most of the world’s diamonds. When most of us think of diamonds, we think of the expensive gems in rings and necklaces. Diamonds are valuable because they are rare and beautiful. To obtain an ounce of diamonds, miners must move many tons of rock. Then the diamonds are sorted by size, shape, color and clarity. Only one out of five rough diamonds is cut into a gem.
+      </p>
+     </p>
+    </div>
+    <div class="nu" id="t31">
+     <span>
+      <b>
+       31)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      People first cut diamonds ________.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  2,000 years ago
+       </label>
+       <label class="green">
+        B.  centuries after diamonds were first discovered
+       </label>
+       <label>
+        C.  in the 1800s
+       </label>
+       <label>
+        D.  about 500 years ago
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t32">
+     <span>
+      <b>
+       32)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      When Erasmus Jacobs found the sparkling stone by the river, ________.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  he knew it was a diamond because it was shining
+       </label>
+       <label>
+        B.  he sold it thinking it’s precious
+       </label>
+       <label class="green">
+        C.  he took it home to give it to his mother
+       </label>
+       <label>
+        D.  he left it by the river but came back later to get it
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t33">
+     <span>
+      <b>
+       33)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      What is indirectly said about a person who cuts diamonds?
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  He can expect to hurt his hands when rubbing and polishing the stones.
+       </label>
+       <label>
+        B.  He can ruin a good stone due to the lack of the tool to cut it.
+       </label>
+       <label>
+        C.  He should work in the diamond mines so that he can choose the best stones.
+       </label>
+       <label>
+        D.  He must be able to create beautiful jewelry.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t34">
+     <span>
+      <b>
+       34)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      What can be inferred from this passage?
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  Most diamonds are found by rivers.
+       </label>
+       <label>
+        B.  Most diamonds are found in ocean caves.
+       </label>
+       <label class="green">
+        C.  Most diamonds are dug out of deep mines.
+       </label>
+       <label>
+        D.  Most diamonds are made into jewelry.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t35">
+     <span>
+      <b>
+       35)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      What is the main idea of the passage?
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  Diamonds shine because of the way they are cut.
+       </label>
+       <label>
+        B.  Why diamonds are so valuable and rare.
+       </label>
+       <label>
+        C.  Most diamonds are found in Africa and Asia.
+       </label>
+       <label class="green">
+        D.  The precious diamonds have a long history.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      31) B      32) C      33) A      34) C      35) D
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <div>
+      <pre>（无）</pre>
+     </div>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="152876" qtype="152">
+   <div class="Choice">
+    <div class="padding">
+     <p>
+      <p style="text-align:justify">
+       Oil is essential for modern life. About 64 percent of the world’s oil is located in the Middle East. The problem lies in getting the oil from the countries that produce it to the countries that consume it. This is mainly done using oil tankers. There are roughly 4,000 oil tankers in use today, and every day more than 100 million tons of oil is shipped. Usually this oil is shipped safely and with no problems, but occasionally there is a disaster.
+       <br/>
+       <br/>
+       Every year millions of tons of oil are spilled into the ocean. This spilled oil can have terrible effects on ocean life, including the coastlines where the oil washes up onto shore. Some of the largest spills in history have been caused by oil tankers running into each other or by an oil tanker running onto the rocks in water. After these spills, officials try to discover who or what was at fault to help prevent similar accidents in the future.
+       <br/>
+       <br/>
+       One of the worst oil spills in history occurred along the Alaskan coastline in 1989, when the tanker stuck on the coast of Alaska, spilling 42 million liters of oil. Although it wasn’t the largest oil spill of all time, the disaster was terrible because it occurred in such a sensitive natural area. In this spill, the tanker’s captain, who was tired from overwork and drinking alcohol, had gone to take a rest. He gave control of the ship to another sailor, who was unfamiliar with the route the ship was taking.
+       <br/>
+       <br/>
+       Unfortunately, the ship ran onto a natural underwater rock wall near the Alaskan coast. Damaged by the rock, the ship leaked oil out into the ocean. More than 1,600 kilometers of coastline were affected by the oil spill. Some scientists who studied nature in the area estimate that 580,000 birds and 5,500 otters died as a result of the oil from the spill covering their skin. Smaller shellfish and other sea creatures living on the ocean floor were also affected, and these creatures were later eaten by seals, whales, and other animals.
+      </p>
+     </p>
+    </div>
+    <div class="nu" id="t36">
+     <span>
+      <b>
+       36)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      What is the main concern talking about oil?
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  Most of the world’s oil is located in the Middle East.
+       </label>
+       <label>
+        B.  There are too many oil tankers being used today.
+       </label>
+       <label class="green">
+        C.  It is hard to send oil to the countries that consume it.
+       </label>
+       <label>
+        D.  Oil is difficult to deal with in modern life.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t37">
+     <span>
+      <b>
+       37)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      According to the passage, oil spills ________.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  may involve one or two tankers
+       </label>
+       <label>
+        B.  usually occur during war time
+       </label>
+       <label>
+        C.  usually occur along the coastline
+       </label>
+       <label>
+        D.  are cause by wildlife
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t38">
+     <span>
+      <b>
+       38)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Why did the sailor run onto the rock wall?
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  He was very tired.
+       </label>
+       <label class="green">
+        B.  He didn’t know the area very well.
+       </label>
+       <label>
+        C.  He was somewhat drunk.
+       </label>
+       <label>
+        D.  He was watching carelessly.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t39">
+     <span>
+      <b>
+       39)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      What is true about the Alaskan spill?
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  More otters were killed than birds.
+       </label>
+       <label>
+        B.  Birds died from eating the oil.
+       </label>
+       <label class="green">
+        C.  It was the worst oil spill of all the time.
+       </label>
+       <label>
+        D.  Seals and whales were affected.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t40">
+     <span>
+      <b>
+       40)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      What is the main idea of the passage?
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  The worst oil spills in history.
+       </label>
+       <label>
+        B.  The ocean life affected by oil spills.
+       </label>
+       <label>
+        C.  How oil spills often occur.
+       </label>
+       <label class="green">
+        D.  The negative consequence of oil spills.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      36) C      37) A      38) B      39) C      40) D
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <div>
+      <pre>（无）</pre>
+     </div>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+ </div>
+ <div class="Test">
+  <div class="TestTitle">
+   <div class="title" id="112">
+    完型填空20题，总分值：20分
+   </div>
+   <div class="title-decrible">
+    <div class="directs">
+     Directions： There are some blanks in the following passage. For each blank there are four choices marked A, B, C and D. You should choose the ONE that best fits into the passage.
+    </div>
+   </div>
+  </div>
+  <div class="Question-Conversation" qid="152872" qtype="112">
+   <div class="Choice">
+    <div class="padding">
+     <p>
+      <p style="text-align:justify">
+       The first Starbucks coffee shop opened in 1971 in downtown Seattle, Washington, in the United States. It was not a(n)
+       <b>
+        41)
+       </b>
+       <span class="blankinput" type="text">
+        corporation
+       </span>
+       but a small coffee shop that roasted its own coffee beans. The coffee shop’s business did well since its
+       <b>
+        42)
+       </b>
+       <span class="blankinput" type="text">
+        output
+       </span>
+       went up steadily. By 1981 there were three more Starbucks stores in Seattle.
+       <br/>
+       <br/>
+       Things began to change staggeringly for the company in 1981, when Howard Schultz met the three men who
+       <b>
+        43)
+       </b>
+       <span class="blankinput" type="text">
+        ran
+       </span>
+       Starbucks. Howard Schultz worked for a company that
+       <b>
+        44)
+       </b>
+       <span class="blankinput" type="text">
+        manufactured
+       </span>
+       kitchen equipment in New York. He noticed that Starbucks ordered a sheer size of special coffee makers, and he was
+       <b>
+        45)
+       </b>
+       <span class="blankinput" type="text">
+        curious
+       </span>
+       about the company. Schultz went to Seattle to
+       <b>
+        46)
+       </b>
+       <span class="blankinput" type="text">
+        scout out
+       </span>
+       what Starbucks did, and he liked what he saw. He wanted to become part of the company
+       <b>
+        47)
+       </b>
+       <span class="blankinput" type="text">
+        administration
+       </span>
+       . In 1982, the original Starbucks owners hired Schultz as the company’s head of marketing.
+       <br/>
+       <br/>
+       In 1983, Schultz was
+       <b>
+        48)
+       </b>
+       <span class="blankinput" type="text">
+        entitled
+       </span>
+       to seek business opportunities in Europe, so he traveled to Italy. The
+       <b>
+        49)
+       </b>
+       <span class="blankinput" type="text">
+        unique
+       </span>
+       atmosphere of the espresso (蒸馏咖啡) bars there
+       <b>
+        50)
+       </b>
+       <span class="blankinput" type="text">
+        caught
+       </span>
+       his eye. To Schultz, it seemed that Italians’ daily lives usually went through three
+       <b>
+        51)
+       </b>
+       <span class="blankinput" type="text">
+        procedures
+       </span>
+       : home, work, and coffee bars. His experience in Italy gave Schultz a new
+       <b>
+        52)
+       </b>
+       <span class="blankinput" type="text">
+        vision
+       </span>
+       for Starbucks back in Seattle.
+       <br/>
+       <br/>
+       <b>
+        53)
+       </b>
+       <span class="blankinput" type="text">
+        Afterwards
+       </span>
+       , Schultz created an atmosphere for Starbucks coffee shops that was comfortable and
+       <b>
+        54)
+       </b>
+       <span class="blankinput" type="text">
+        casual
+       </span>
+       , and customers everywhere seemed to like it. Between 1987 and 1992, Starbucks
+       <b>
+        55)
+       </b>
+       <span class="blankinput" type="text">
+        started
+       </span>
+       another 150 new stores – and that was only the beginning.
+       <b>
+        56)
+       </b>
+       <span class="blankinput" type="text">
+        Eventually
+       </span>
+       , by the year 2000, three new Starbucks stores opened somewhere around the world every day!
+       <br/>
+       <br/>
+       Today, Starbucks has thousands of stores,
+       <b>
+        57)
+       </b>
+       <span class="blankinput" type="text">
+        scattering
+       </span>
+       in various countries. Does it sometimes feel
+       <b>
+        58)
+       </b>
+       <span class="blankinput" type="text">
+        manipulated
+       </span>
+       by local cities? Sure. However, the way Starbucks works with local stores and restaurants is the
+       <b>
+        59)
+       </b>
+       <span class="blankinput" type="text">
+        remedy
+       </span>
+       that helps Starbucks succeed in cities outside the United States. Starbucks is more
+       <b>
+        60)
+       </b>
+       <span class="blankinput" type="text">
+        autonomous
+       </span>
+       now by working together with a store already in the city. This helps Starbucks open stores in the right locations for their customers.
+      </p>
+     </p>
+    </div>
+    <div class="nu" id="t41">
+     <span>
+      <b>
+       41)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  operation
+       </label>
+       <label>
+        B.  decoration
+       </label>
+       <label class="green">
+        C.  corporation
+       </label>
+       <label>
+        D.  cooperation
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t42">
+     <span>
+      <b>
+       42)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  outcome
+       </label>
+       <label>
+        B.  income
+       </label>
+       <label>
+        C.  input
+       </label>
+       <label class="green">
+        D.  output
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t43">
+     <span>
+      <b>
+       43)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  ran
+       </label>
+       <label>
+        B.  raced
+       </label>
+       <label>
+        C.  moved
+       </label>
+       <label>
+        D.  tackled
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t44">
+     <span>
+      <b>
+       44)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  invented
+       </label>
+       <label class="green">
+        B.  manufactured
+       </label>
+       <label>
+        C.  collected
+       </label>
+       <label>
+        D.  connected
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t45">
+     <span>
+      <b>
+       45)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  strange
+       </label>
+       <label>
+        B.  mysterious
+       </label>
+       <label class="green">
+        C.  curious
+       </label>
+       <label>
+        D.  unusual
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t46">
+     <span>
+      <b>
+       46)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  take out
+       </label>
+       <label>
+        B.  watch out
+       </label>
+       <label>
+        C.  look out
+       </label>
+       <label class="green">
+        D.  scout out
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t47">
+     <span>
+      <b>
+       47)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  administration
+       </label>
+       <label>
+        B.  cooperation
+       </label>
+       <label>
+        C.  foundation
+       </label>
+       <label>
+        D.  formation
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t48">
+     <span>
+      <b>
+       48)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  abled
+       </label>
+       <label>
+        B.  labeled
+       </label>
+       <label class="green">
+        C.  entitled
+       </label>
+       <label>
+        D.  titled
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t49">
+     <span>
+      <b>
+       49)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  solitary
+       </label>
+       <label class="green">
+        B.  unique
+       </label>
+       <label>
+        C.  lonely
+       </label>
+       <label>
+        D.  alone
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t50">
+     <span>
+      <b>
+       50)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  caught
+       </label>
+       <label>
+        B.  got
+       </label>
+       <label>
+        C.  exposed
+       </label>
+       <label>
+        D.  discovered
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t51">
+     <span>
+      <b>
+       51)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  methods
+       </label>
+       <label>
+        B.  actions
+       </label>
+       <label>
+        C.  conducts
+       </label>
+       <label class="green">
+        D.  procedures
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t52">
+     <span>
+      <b>
+       52)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  image
+       </label>
+       <label class="green">
+        B.  vision
+       </label>
+       <label>
+        C.  concept
+       </label>
+       <label>
+        D.  illusion
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t53">
+     <span>
+      <b>
+       53)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  Presently
+       </label>
+       <label>
+        B.  Behind
+       </label>
+       <label class="green">
+        C.  Afterwards
+       </label>
+       <label>
+        D.  Eventually
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t54">
+     <span>
+      <b>
+       54)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  casual
+       </label>
+       <label>
+        B.  careless
+       </label>
+       <label>
+        C.  carefree
+       </label>
+       <label>
+        D.  relieved
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t55">
+     <span>
+      <b>
+       55)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  began
+       </label>
+       <label class="green">
+        B.  started
+       </label>
+       <label>
+        C.  created
+       </label>
+       <label>
+        D.  invented
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t56">
+     <span>
+      <b>
+       56)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  Mostly
+       </label>
+       <label>
+        B.  Lastly
+       </label>
+       <label>
+        C.  Lately
+       </label>
+       <label class="green">
+        D.  Eventually
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t57">
+     <span>
+      <b>
+       57)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  assembling
+       </label>
+       <label>
+        B.  spraying
+       </label>
+       <label class="green">
+        C.  scattering
+       </label>
+       <label>
+        D.  breaking
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t58">
+     <span>
+      <b>
+       58)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  manipulated
+       </label>
+       <label>
+        B.  multiplied
+       </label>
+       <label>
+        C.  admitted
+       </label>
+       <label>
+        D.  contained
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t59">
+     <span>
+      <b>
+       59)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  cure
+       </label>
+       <label class="green">
+        B.  remedy
+       </label>
+       <label>
+        C.  treatment
+       </label>
+       <label>
+        D.  medicine
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t60">
+     <span>
+      <b>
+       60)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  governing
+       </label>
+       <label>
+        B.  determining
+       </label>
+       <label>
+        C.  dependent
+       </label>
+       <label class="green">
+        D.  autonomous
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      41) C      42) D      43) A      44) B      45) C      46) D      47) A      48) C      49) B      50) A      51) D      52) B      53) C      54) A      55) B      56) D      57) C      58) A      59) B      60) D
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <div>
+      <pre>（无）</pre>
+     </div>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+ </div>
+ <div class="Test">
+  <div class="TestTitle">
+   <div class="title" id="305">
+    词汇与结构20题，总分值：20分
+   </div>
+   <div class="title-decrible">
+    <div class="directs">
+     Directions： For each of the following sentences there are four choices marked A, B, C and D. Choose the best one to complete each sentence.
+    </div>
+   </div>
+  </div>
+  <div class="Question-Conversation" qid="152789" qtype="305">
+   <div class="Choice">
+    <div class="nu" id="t61">
+     <span>
+      <b>
+       61)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      In this article we’ll learn what the chemical is, where it comes from, why it is used, and if makeup with it as an ________ is a good choice for you.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  element
+       </label>
+       <label class="green">
+        B.  ingredient
+       </label>
+       <label>
+        C.  material
+       </label>
+       <label>
+        D.  factor
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       61) B
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="152788" qtype="305">
+   <div class="Choice">
+    <div class="nu" id="t62">
+     <span>
+      <b>
+       62)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Don’t take it as an ________ if I go to sleep during your speech; I’m very tired.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  greeting
+       </label>
+       <label>
+        B.   invasion
+       </label>
+       <label class="green">
+        C.  insult
+       </label>
+       <label>
+        D.  aggression
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       62) C
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="152787" qtype="305">
+   <div class="Choice">
+    <div class="nu" id="t63">
+     <span>
+      <b>
+       63)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      The National Bureau of Statistics will release series of economic indicators, including inflation, investment and social ________.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  expense
+       </label>
+       <label>
+        B.  process
+       </label>
+       <label>
+        C.  economy
+       </label>
+       <label class="green">
+        D.  consumption
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       63) D
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="152786" qtype="305">
+   <div class="Choice">
+    <div class="nu" id="t64">
+     <span>
+      <b>
+       64)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Her proposal was turned down since all the board members thought it was ________ nonsense.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  pure
+       </label>
+       <label class="green">
+        B.  sheer
+       </label>
+       <label>
+        C.  unmixed
+       </label>
+       <label>
+        D.  unalloyed
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       64) B
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="152785" qtype="305">
+   <div class="Choice">
+    <div class="nu" id="t65">
+     <span>
+      <b>
+       65)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      We’ve done our ________ to make the process as simple as possible.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  terminal
+       </label>
+       <label class="green">
+        B.  utmost
+       </label>
+       <label>
+        C.  extreme
+       </label>
+       <label>
+        D.  supreme
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       65) B
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="152784" qtype="305">
+   <div class="Choice">
+    <div class="nu" id="t66">
+     <span>
+      <b>
+       66)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      After he was attacked, he managed to ________ to the phone and call for help.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  pound
+       </label>
+       <label>
+        B.  turn
+       </label>
+       <label>
+        C.  stabber
+       </label>
+       <label class="green">
+        D.  stagger
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       66) D
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="152783" qtype="305">
+   <div class="Choice">
+    <div class="nu" id="t67">
+     <span>
+      <b>
+       67)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      With its global influence and powers of ________, the WTO – not the UN – is likely to drive this program forward.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  sanction
+       </label>
+       <label>
+        B.  restriction
+       </label>
+       <label>
+        C.  penalty
+       </label>
+       <label>
+        D.  punishment
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       67) A
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="152782" qtype="305">
+   <div class="Choice">
+    <div class="nu" id="t68">
+     <span>
+      <b>
+       68)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      The more they ________ into his background, the more inflamed their suspicions would become.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  researched
+       </label>
+       <label class="green">
+        B.  probed
+       </label>
+       <label>
+        C.  examined
+       </label>
+       <label>
+        D.  explored
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       68) B
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="152781" qtype="305">
+   <div class="Choice">
+    <div class="nu" id="t69">
+     <span>
+      <b>
+       69)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Universities have offered ________ business courses to respond to students' demands for more business knowledge.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  optional
+       </label>
+       <label>
+        B.  conservative
+       </label>
+       <label>
+        C.  voluntary
+       </label>
+       <label>
+        D.  temporary
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       69) A
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="152780" qtype="305">
+   <div class="Choice">
+    <div class="nu" id="t70">
+     <span>
+      <b>
+       70)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      The stock price fluctuations have sparked the investor’s concern about insider trading and market ________.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  transaction
+       </label>
+       <label>
+        B.  management
+       </label>
+       <label class="green">
+        C.  manipulation
+       </label>
+       <label>
+        D.  treatment
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       70) C
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="152779" qtype="305">
+   <div class="Choice">
+    <div class="nu" id="t71">
+     <span>
+      <b>
+       71)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      AIDS has become one of the first killers to human beings. Despite their lack of success so far, scientists have ________ in their research for a cure for AIDS.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  suspended
+       </label>
+       <label>
+        B.  retained
+       </label>
+       <label>
+        C.  insisted
+       </label>
+       <label class="green">
+        D.  persevered
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       71) D
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="152778" qtype="305">
+   <div class="Choice">
+    <div class="nu" id="t72">
+     <span>
+      <b>
+       72)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Since the safety issue for school children has become more concerned by the public, in certain countries the law ________ parents to send their children to school.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  obliges
+       </label>
+       <label>
+        B.  conforms
+       </label>
+       <label>
+        C.  imposes
+       </label>
+       <label>
+        D.  submits
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       72) A
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="152776" qtype="305">
+   <div class="Choice">
+    <div class="nu" id="t73">
+     <span>
+      <b>
+       73)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      The house needs to be remodeled, but ________ the terms of the contract signed, the tenant must get prepared to do it himself, not the landlord.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  as a consequence of
+       </label>
+       <label class="green">
+        B.  in accordance with
+       </label>
+       <label>
+        C.  in the quest of
+       </label>
+       <label>
+        D.  in collaboration with
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       73) B
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="152777" qtype="305">
+   <div class="Choice">
+    <div class="nu" id="t74">
+     <span>
+      <b>
+       74)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      The politician was very skillful in persuading people, but this time people criticized him with severe comments as his speech was confusing and full of ________.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  contrary
+       </label>
+       <label>
+        B.  conflicts
+       </label>
+       <label>
+        C.  contrasts
+       </label>
+       <label class="green">
+        D.  contradictions
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       74) D
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="152775" qtype="305">
+   <div class="Choice">
+    <div class="nu" id="t75">
+     <span>
+      <b>
+       75)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      They attributed her success in her career ________ steady encouragement and generous help she received from her parents.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  on
+       </label>
+       <label>
+        B.  with
+       </label>
+       <label class="green">
+        C.  to
+       </label>
+       <label>
+        D.  into
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       75) C
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="152774" qtype="305">
+   <div class="Choice">
+    <div class="nu" id="t76">
+     <span>
+      <b>
+       76)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      It is reported that more than 50, 000 nuclear weapons in the hands of various nations today are more than ample ________ every city in the world several times over.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  destroying
+       </label>
+       <label>
+        B.  to be destroyed
+       </label>
+       <label>
+        C.  destroy
+       </label>
+       <label class="green">
+        D.  to destroy
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       76) D
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="152773" qtype="305">
+   <div class="Choice">
+    <div class="nu" id="t77">
+     <span>
+      <b>
+       77)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Despite much research, there are still elements in the life circle of the insect that ________ not fully understood or explained.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  is
+       </label>
+       <label class="green">
+        B.  are
+       </label>
+       <label>
+        C.  being
+       </label>
+       <label>
+        D.  to be
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       77) B
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="152772" qtype="305">
+   <div class="Choice">
+    <div class="nu" id="t78">
+     <span>
+      <b>
+       78)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Considering the rapid increase of private cars and the reconstruction of many new roads, it was my proposal that new traffic regulation ________ drafted.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  be
+       </label>
+       <label>
+        B.  to be
+       </label>
+       <label>
+        C.  were
+       </label>
+       <label>
+        D.  being
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       78) A
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="152771" qtype="305">
+   <div class="Choice">
+    <div class="nu" id="t79">
+     <span>
+      <b>
+       79)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      The best way for children to overcome the difficulty is by getting themselves properly informed, ________ they are less dependent on other people’s advice.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  as
+       </label>
+       <label class="green">
+        B.  so
+       </label>
+       <label>
+        C.  such
+       </label>
+       <label>
+        D.  that
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       79) B
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="152770" qtype="305">
+   <div class="Choice">
+    <div class="nu" id="t80">
+     <span>
+      <b>
+       80)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      ________ as a psychologist with all kinds of people, I’ve learned that successful people aren’t necessarily the ones with the greatest natural talent.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  Worked
+       </label>
+       <label class="green">
+        B.  Having worked
+       </label>
+       <label>
+        C.  To work
+       </label>
+       <label>
+        D.  Being worked
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       80) B
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+ </div>
+</div>
+
+                <!-- 题型列表结束 -->
+                <!-- 评论区开始 -->
+                <div class="container">
+                    <div id="vcomments" class="tow">
+                        <script>
+                            new Valine({
+                                el: '#vcomments',
+                                appId: 'jphqw5DgcOz2TwIRuwPvVusb-gzGzoHsz',
+                                appKey: 'e6WOjatXeFfe7C5ukXcmLGCE',
+                                notify: false,
+                                verify: false,
+                                avatar: 'wavatar',
+                                visitor: true,
+                                avatarForce: true,
+                                recordIP: true,
+                                enableQQ: true,
+                                requiredFields: ['nick'],
+                            })
+                        </script>
+                        <span id="/" class="leancloud_visitors" data-flag-title="U校园答案导航" style="position:relative;float:right;top:-10px;font-size: 12px;color:#808080">
+                        <em class="post-meta-item-text">访问量</em>
+                        <i class="leancloud-visitors-count">0</i>
+                    </span>
+                    </div>
+                </div>
+                <!-- 评论区结束 -->
+            </div>
+            <br>
+            <!-- 主体部分结束 -->
+            <div class="container">
+                <div style="text-align: center;color:white;font-size: small;">Copyright&nbsp;© 2021 abiscuit</div>
+            </div>
+            <br>
+            <!--jplayer播放期div-->
+            <div style="width: 0px; height:0px;" id="jplayer"></div>
+            </body>
+
+            <script>
+            function initPlayerAciton() {
+                // 音频资源播放
+                var allPlayButton = $("div.play");
+                allPlayButton.click(function(event) {
+                    var self = this;
+                    var resPath = $(this).attr("resPath");
+                    var pFlag = $(this).attr("playing");
+                    if (pFlag && pFlag == 1) { // 正在播放，需要停止播放
+                        $("#jplayer").jPlayer("stop", 0);
+                        $(self).attr("playing", "0");
+                        $(self).find("img.playImg").show();
+                        $(self).find("img.playingImg").hide();
+                        return false;
+                    }
+                    allPlayButton.attr("playing", "0");
+                    allPlayButton.find("img.playImg").show();
+                    allPlayButton.find("img.playingImg").hide();
+                    $(self).attr("playing", "1");
+                    $(self).find("img.playImg").hide();
+                    $(self).find("img.playingImg").show();
+                    // 获取音频播放列表
+                    var res_arr = new Array();
+                    res_arr = resPath.split(",");
+                    var play_resPath = new Array();
+                    for (var i = 0; i < res_arr.length; i++) {
+                        play_resPath.push(res_arr[i]);
+                    }
+                    myPlayer.play(play_resPath, function() {
+                        $(self).find("img.playImg").show();
+                        $(self).find("img.playingImg").hide();
+                    });
+                    $('#jplayer').find('object').height(10);
+                    return false;
+                });
+            }
+
+            function initStaticReturn() {
+                // 返回
+                $("#staticReturn").click(function() {
+                    staticReturn();
+                });
+                // 返回
+                $("#staticPageReturn").click(function() {
+                    staticReturn();
+                });
+            }
+            </script>
+
+            </html>

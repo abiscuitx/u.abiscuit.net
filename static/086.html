@@ -1,0 +1,3711 @@
+<!DOCTYPE html>
+            <html lang="zh-cn">
+
+            <head>
+            <meta charset="utf-8">
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+            <title>读写4-张新祥-重修Unit2</title>
+            <meta name="MSSmartTagsPreventParsing" content="True" />
+            <meta http-equiv="MSThemeCompatible" content="Yes" />
+            <meta name="renderer" content="webkit">
+            <script src="https://uexercise.unipus.cn/static/its/lib/jquery/jquery.js"></script>
+            <script src="https://uexercise.unipus.cn/static/its/lib/zui/js/zui.js"></script>
+            <script src="https://uexercise.unipus.cn/static/its/lib/chosen/chosen.js"></script>
+            <script src="https://uexercise.unipus.cn/static/its/lib/jquery/jquery.form.js"></script>
+            <script>
+                window.CTX = 'https://uexercise.unipus.cn';
+            </script>
+            <script src="https://uexercise.unipus.cn/static/its/lib/itest/js/itest_common.js"></script>
+            <script src="https://uexercise.unipus.cn/static/its/lib/layer/layer.js"></script>
+            <script src="https://uexercise.unipus.cn/static/its/lib/layer/laytpl.js"></script>
+            <script src="https://uexercise.unipus.cn/static/its/lib/layer/extend/layer.ext.js"></script>
+            <script src="https://uexercise.unipus.cn/static/its/lib/fltrp/js/js.js"></script>
+            <script src="https://uexercise.unipus.cn/static/its/lib/fltrp/js/stopic.js"></script>
+            <script src="https://uexercise.unipus.cn/static/its/lib/jplayer/jquery.jplayer.min.js"></script>
+            <script type="text/javascript" src="//player.youku.com/jsapi"></script>
+            <script src='https://uexercise.unipus.cn/static/its/lib/fltrp/js/uploadXX.js'></script>
+            <script>
+                var _hmt = _hmt || [];
+                (function() {
+                    var hm = document.createElement("script");
+                    hm.src = "https://hm.baidu.com/hm.js?c402237d180d562bcdd7e9d5fe8780f8";
+                    var s = document.getElementsByTagName("script")[0];
+                    s.parentNode.insertBefore(hm, s);
+                })();
+            </script>
+            <script src="../assets/js/Valine.min.js"></script>
+            <link rel="shortcut icon" href="../assets/images/favicon.ico">
+            <link href="../assets/css/main.css" rel="stylesheet">
+            <link href="../assets/css/part.css" rel="stylesheet">
+            <link href="../assets/css/topic.css" rel="stylesheet">
+            <link href="../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+            <style>
+                ul {
+                    padding-left: 0px;
+                }
+                
+                .playButton {
+                    width: 35px;
+                    height: 35px;
+                    cursor: pointer;
+                    float: left;
+                    margin: 25px 10px 0 35px;
+                }
+                
+                .answer-video .playButton {
+                    margin: 0 10px;
+                }
+                
+                input.blankinput {
+                    -moz-border-bottom-colors: none;
+                    -moz-border-left-colors: none;
+                    -moz-border-right-colors: none;
+                    -moz-border-top-colors: none;
+                    border-color: -moz-use-text-color -moz-use-text-color #000000;
+                    border-image: none;
+                    border-style: none none solid;
+                    border-width: 0 0 1px;
+                    margin: 0 0px;
+                    font-weight: bold;
+                    text-align: center;
+                    outline: none;
+                    height: 24px;
+                    resize: none;
+                    color: #333;
+                }
+                
+                span.blankinput {
+                    border-color: -moz-use-text-color -moz-use-text-color #000000;
+                    border-image: none;
+                    border-style: none none solid;
+                    border-width: 0 0 1px;
+                    margin: 0 0px;
+                    font-weight: bold;
+                    text-align: center;
+                    outline: none;
+                    height: 24px;
+                    resize: none;
+                    color: white;
+                }
+                
+                .form-horizontal .form-group {
+                    margin-right: 0;
+                    margin-left: 0;
+                    margin-top: 20px;
+                }
+            </style>
+            </head>
+
+            <body>
+            <nav class="navbar navbar-light navbar-expand-md fixed-top" id="mainNav" style="background: rgba(0,0,0,0);">
+                <div class="container">
+                    <a class="navbar-brand d-xl-flex justify-content-xl-center align-items-xl-center js-scroll-trigger" data-aos="zoom-in-right" href="https://u.abiscuit.net" style="font-family: Roboto, sans-serif;text-shadow: 0px 0px 5px var(--red);"><img class="rounded-circle d-xl-flex justify-content-xl-center align-items-xl-center" src="https://gravatar.loli.net/avatar/058e7772431faa1fcf6ef8e6ceed6552" style="max-height: auto;width: 40px;height: 40px;margin-right: 10px;">u校园答案导航</a>
+                    <button data-toggle="collapse" class="navbar-toggler navbar-toggler-right" data-target="#navbarResponsive" data-aos="fade-left" type="button" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" value="Menu" style="box-shadow: 0px 0px 5px var(--red);"><i class="fa fa-bars" style="box-shadow: 0px 0px 5px var(--red);"></i></button>
+                    <div class="collapse navbar-collapse" id="navbarResponsive">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item nav-link js-scroll-trigger"><a class="nav-link js-scroll-trigger" data-aos="zoom-out-left" href="https://kxz.atcumt.com/" style="font-family: Roboto, sans-serif;text-shadow: 0px 0px 5px var(--primary);">友情推荐：矿小助</a></li>
+                            <li class="nav-item nav-link js-scroll-trigger"><a class="nav-link js-scroll-trigger" data-aos="zoom-out-left" href="mailto:abiscuit@vip.qq.com" style="font-family: Roboto, sans-serif;text-shadow: 0px 0px 5px var(--blue);">邮箱联系</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- 主体部分开始 -->
+            <div class="main">
+                <div class="topclass">读写4-张新祥-重修Unit2</div>
+                <!-- 题型列表开始 --><div class="content Question">
+ <div class="Test">
+  <div class="TestTitle">
+   <div class="title" id="102">
+    短对话4题，总分值：4分
+   </div>
+   <div class="title-decrible">
+    <div class="directs">
+     Directions： In this section, you'll hear some short conversations. At the end of each conversation, one question will be asked. Both the conversation and the question will be spoken only once. After each question, choose the best answer from the four choices marked A, B, C, and D.
+    </div>
+   </div>
+  </div>
+  <div class="Question-Conversation" qid="154331" qtype="102">
+   <span class="answer-video">
+    <div class="play" respath="https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_4/t_102/201510/b56fb033-a4b6-481a-a2ea-3ac53ebccadd.mp3">
+     <img class="playImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/play-1.png">
+      <img class="playingImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/playing02-fltrp.gif" style="display:none;"/>
+     </img>
+    </div>
+   </span>
+   <div class="Choice">
+    <div class="nu" id="t1">
+     <span>
+      <b>
+       1)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  To stop the man from studying accounting.
+       </label>
+       <label>
+        B.  To show what she knows about college degrees.
+       </label>
+       <label class="green">
+        C.  To encourage the man to do what he wants.
+       </label>
+       <label>
+        D.  To persuade the man to learn until old age.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       1) C
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+     <p>
+      <b>
+       听力文本：
+      </b>
+     </p>
+     <p>
+      <p>
+       M: I am thinking of getting a degree in accounting. But I am already 34. Am I too old to go back to school?
+      </p>
+      <p>
+       W: Of course not. You’re never too old to learn. I just read in the newspaper that a woman in New Jersey got her bachelor’s degree at the age of 67.
+      </p>
+      <p>
+       Q: Why does the woman mention something she read in the newspaper?
+      </p>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="154330" qtype="102">
+   <span class="answer-video">
+    <div class="play" respath="https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_4/t_102/201510/7755c510-1347-4d30-b811-4fbd643fd872.mp3">
+     <img class="playImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/play-1.png"/>
+     <img class="playingImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/playing02-fltrp.gif" style="display:none;"/>
+    </div>
+   </span>
+   <div class="Choice">
+    <div class="nu" id="t2">
+     <span>
+      <b>
+       2)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  Complaining about housework.
+       </label>
+       <label class="green">
+        B.  Accepting what he has to do at his age.
+       </label>
+       <label>
+        C.  Escaping what he has to do at work.
+       </label>
+       <label>
+        D.  Enjoying doing the same things every day.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       2) B
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+     <p>
+      <b>
+       听力文本：
+      </b>
+     </p>
+     <p>
+      <p>
+       W: What’re you up to, Larry? I haven’t seen you for a while.
+      </p>
+      <p>
+       M: Nothing special. You know, the same things every day – work to finish, kids to take care of, and various things to do around the house. But I guess I cannot complain. This is how life is in your 40s.
+      </p>
+      <p>
+       Q: What’s the man’s attitude toward his life?
+      </p>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="154329" qtype="102">
+   <span class="answer-video">
+    <div class="play" respath="https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_4/t_102/201510/5507acf5-483b-43e7-ac7c-b66e6afde07f.mp3">
+     <img class="playImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/play-1.png"/>
+     <img class="playingImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/playing02-fltrp.gif" style="display:none;"/>
+    </div>
+   </span>
+   <div class="Choice">
+    <div class="nu" id="t3">
+     <span>
+      <b>
+       3)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  His daughter does nothing at weekend.
+       </label>
+       <label>
+        B.  His daughter is too young to go on a date.
+       </label>
+       <label>
+        C.  His son is dating a 15-year-old girl.
+       </label>
+       <label class="green">
+        D.  His son plays computer games too much.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       3) D
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+     <p>
+      <b>
+       听力文本：
+      </b>
+     </p>
+     <p>
+      <p>
+       W: Young people today are so different from what we were. My daughter is just a 15-year old, and she has started dating! I didn’t have my first date until I was 20.
+      </p>
+      <p>
+       M: I agree. My son, who is 17, spends the entire weekend doing nothing but playing computer games.
+      </p>
+      <p>
+       Q: What is the man’s problem?
+      </p>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="154328" qtype="102">
+   <span class="answer-video">
+    <div class="play" respath="https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_4/t_102/201510/e4965e65-c96f-471f-a5da-44141a2c286c.mp3">
+     <img class="playImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/play-1.png"/>
+     <img class="playingImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/playing02-fltrp.gif" style="display:none;"/>
+    </div>
+   </span>
+   <div class="Choice">
+    <div class="nu" id="t4">
+     <span>
+      <b>
+       4)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  They aren’t the best way for one to look young.
+       </label>
+       <label>
+        B.  They don’t work well for the hands and the eyes.
+       </label>
+       <label>
+        C.  They are typical things to keep the skin young.
+       </label>
+       <label>
+        D.  They must be used regularly in order to be effective.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       4) A
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+     <p>
+      <b>
+       听力文本：
+      </b>
+     </p>
+     <p>
+      <p>
+       M: I don’t understand my sister. Every month she buys lots of skincare products: things for the face, for the hands, for the eyes … She believes these things can make her skin look young.
+      </p>
+      <p>
+       W: That’s typical of women. But I’m different. I think the best ways to stay young are to get enough sleep and take regular exercise.
+      </p>
+      <p>
+       Q: What does the woman think of skincare products?
+      </p>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+ </div>
+ <div class="Test">
+  <div class="TestTitle">
+   <div class="title" id="103">
+    长对话8题，总分值：8分
+   </div>
+   <div class="title-decrible">
+    <div class="directs">
+     Directions： In this section, you'll hear some long conversations. At the end of each conversation, some questions will be asked. Both the conversation and the questions will be spoken only once. After each question, choose the best answer from the four choices marked A, B, C, and D.
+    </div>
+   </div>
+  </div>
+  <div class="Question-Conversation" qid="154245" qtype="103">
+   <span class="answer-video">
+    <div class="play" respath="https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_4/t_103/201510/4a032662-2cae-4908-b090-1d0cdc77256a.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_4/t_103/201510/968ca810-1e77-4087-b73a-a0cd1aa44474.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_4/t_103/201510/b1ef9ed0-e37a-4176-813b-ad3b35ba350f.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_4/t_103/201510/e31b1a68-88a0-478c-a394-73549534a646.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_4/t_103/201510/05e77299-a64a-4014-96a1-2cada6a4d20c.mp3">
+     <img class="playImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/play-1.png"/>
+     <img class="playingImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/playing02-fltrp.gif" style="display:none;"/>
+    </div>
+   </span>
+   <div class="Choice">
+    <div class="nu" id="t5">
+     <span>
+      <b>
+       5)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  Help to organize a club meeting.
+       </label>
+       <label>
+        B.  Meet some friends on the street.
+       </label>
+       <label class="green">
+        C.  Go to a meeting about world affairs.
+       </label>
+       <label>
+        D.  Get some drink from a coffee shop.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t6">
+     <span>
+      <b>
+       6)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  He thinks she is too young to understand.
+       </label>
+       <label>
+        B.  He thinks she prefers to play with dolls.
+       </label>
+       <label>
+        C.  He thinks she doesn’t care about world politics.
+       </label>
+       <label>
+        D.  He thinks she hasn’t taken the required courses.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t7">
+     <span>
+      <b>
+       7)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  She is ready to start high school.
+       </label>
+       <label>
+        B.  She is going to finish high school soon.
+       </label>
+       <label>
+        C.  She is two years older than the man.
+       </label>
+       <label class="green">
+        D.  She is two years younger than the man.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t8">
+     <span>
+      <b>
+       8)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  To help the man memorize a list of figures.
+       </label>
+       <label class="green">
+        B.  To convince the man that she is mature enough.
+       </label>
+       <label>
+        C.  To show that North America has a large population.
+       </label>
+       <label>
+        D.  To illustrate that she knows much about Asia and Africa.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      5) C      6) A      7) D      8) B
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <div>
+      <pre>（无）</pre>
+     </div>
+     <p>
+      <b>
+       听力文本：
+      </b>
+     </p>
+     <p>
+      <p>
+       W: Hi Albert, are you going to the meeting organized by the World Affairs Club at the coffee shop on Main Street tonight?
+      </p>
+      <p>
+       M: Yes. We’re discussing world politics and global population growth. And before you ask, NO! You can’t come with me.
+      </p>
+      <p>
+       W: What! Why not? I’m already 16, SIXTEEN! I’m not a uniformed, silly kid anymore! I’m ready! I’m a junior in high school. I’m mature, almost an adult. I’m taking world history and global economics now!
+      </p>
+      <p>
+       M: Megan. I know you think you’ve grown up a lot, and you are getting older … but you’re not ready yet. Only a few short years ago, you were a little girl playing with dolls! You’re just beginning to learn about the world.
+      </p>
+      <p>
+       W: Oh really! And only two years ago you were where I am now, Albert Johnston! Being 18 doesn’t make you more informed on all issues of the world.
+      </p>
+      <p>
+       M: Megan, look, I know you care a lot about world politics and global issues, but you’re still too young to understand important information.
+      </p>
+      <p>
+       W: Oh really? I’m too young to understand that there are seven billion people on the planet? That the population of Asia and Africa combined equals about 75 percent of the seven billion world population? OK. How about here in North America – What’s its percentage of the world population?
+      </p>
+      <p>
+       M: Wow… Ummmm … Ummmm …
+      </p>
+      <p>
+       W: Ha! Come on, Albert! You should know this! North America is just seven percent of the total world population. Soooo …, Albert, what do you think now?
+      </p>
+      <p>
+       M: Wow, Megan. I guess you know a lot more than I thought. Age isn’t everything! OK … come along then to our meeting! It sounds like you do have a lot to share!
+      </p>
+      <p>
+       <br/>
+       <p>
+        What does the woman want to do?
+       </p>
+       <p>
+        Why does the man refuse the woman at first?
+       </p>
+       <p>
+        What can we know about the woman?
+       </p>
+       <p>
+        Why does the woman talk about the population of some continent?
+       </p>
+      </p>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="154246" qtype="103">
+   <span class="answer-video">
+    <div class="play" respath="https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_4/t_103/201510/9e2cbf9d-2835-4a91-a45a-c26ee7f0d53a.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_4/t_103/201510/ccba0e17-56ae-444f-8f40-81afb9177323.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_4/t_103/201510/16029052-5cc5-4fbe-90e6-4fc203ec4267.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_4/t_103/201510/249d3cea-d4ed-442d-97cd-c2f05aba7a78.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_4/t_103/201510/6303916a-43a0-4326-8c12-7393cbd3fb2e.mp3">
+     <img class="playImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/play-1.png"/>
+     <img class="playingImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/playing02-fltrp.gif" style="display:none;"/>
+    </div>
+   </span>
+   <div class="Choice">
+    <div class="nu" id="t9">
+     <span>
+      <b>
+       9)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  Quite respectful.
+       </label>
+       <label>
+        B.  Full of interest.
+       </label>
+       <label class="green">
+        C.  Lack of enthusiasm.
+       </label>
+       <label>
+        D.  Somewhat apologetic.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t10">
+     <span>
+      <b>
+       10)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  By showing the difficulties in her life.
+       </label>
+       <label class="green">
+        B.  By sharing an experience of her own.
+       </label>
+       <label>
+        C.  By proving herself a perfect teenager.
+       </label>
+       <label>
+        D.  By explaining the thoughts of older people.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t11">
+     <span>
+      <b>
+       11)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  Her aunt saved her sister’s life.
+       </label>
+       <label>
+        B.  Her sister saved a teenager’s life.
+       </label>
+       <label>
+        C.  Her aunt fell into a frozen lake.
+       </label>
+       <label>
+        D.  Her sister died in a cold winter.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t12">
+     <span>
+      <b>
+       12)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  Teenagers should learn to be respectful to their elders.
+       </label>
+       <label>
+        B.  Teenagers should acquire wisdom from their own life.
+       </label>
+       <label>
+        C.  Young people should be prepared for difficulties in life.
+       </label>
+       <label class="green">
+        D.  Young people should listen to the advice of older people.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      9) C      10) B      11) A      12) D
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <div>
+      <pre>（无）</pre>
+     </div>
+     <p>
+      <b>
+       听力文本：
+      </b>
+     </p>
+     <p>
+      <p>
+       W: Jason! Guess who’s here from New York State?
+      </p>
+      <p>
+       M: Oh … Hi grandma.
+      </p>
+      <p>
+       W: Hello sweetheart! How’s school?
+      </p>
+      <p>
+       M: School was … whatever.
+      </p>
+      <p>
+       W: “Whatever?” Well, what did you learn today?
+      </p>
+      <p>
+       M: … I learned … stuff.
+      </p>
+      <p>
+       W: Good heavens! Where’s the sweet little boy who baked chocolate chip cookies with me when he was five? Where’s your respect? I’m your grandmother! I’m 68 years old!
+      </p>
+      <p>
+       M: I’m sorry, Grandma …
+      </p>
+      <p>
+       W: OK, sit down. Every teenager thinks they know things, and that their life is hard – but I have a story about age and experience that you need to hear, Jason.
+      </p>
+      <p>
+       M: Grandma, were you a perfect teenager?
+      </p>
+      <p>
+       W: No, that’s just the point! – but I did know to listen to older people speaking. If I hadn’t listened, my sister might have died.
+      </p>
+      <p>
+       M: Your sister?
+      </p>
+      <p>
+       W: Yes, my sister, Mary. That was when I was seven. On a cold winter morning, Mary and I were walking home across a frozen lake. Mary fell through the ice. I pulled her out. Back home I wanted to wrap Mary in an electric heating blanket on high heat…
+      </p>
+      <p>
+       M: Of course. Everyone knows. If someone is almost frozen from cold, you have to heat them up quickly to save them.
+      </p>
+      <p>
+       W: Yes, I thought so, too. But I was wrong. Luckily, 87-year-old great Aunt Lucy was there. She made a warm but NOT hot bath, and we gently lowered Mary into the warm bath. High heat on a person nearly frozen with cold can make their heart stop! My 87-year-old Aunt Lucy saved my sister’s life! I was a teenager just like you, Jason, but I did know to listen to older people’s wise advice!
+      </p>
+      <p>
+       M: Wow, grandma. That’s an amazing story! I will listen more to older people, especially you!
+      </p>
+      <p>
+       <br/>
+       <p>
+        Which best describes the man’s attitude toward the woman’s greeting?
+       </p>
+       <p>
+        How does the woman teach the man?
+       </p>
+       <p>
+        What happened according to the woman?
+       </p>
+       <p>
+        What is the main idea of the conversation?
+       </p>
+      </p>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+ </div>
+ <div class="Test">
+  <div class="TestTitle">
+   <div class="title" id="308">
+    长文章8题，总分值：8分
+   </div>
+   <div class="title-decrible">
+    <div class="directs">
+     Directions： In this section, you’ll hear some passages. At the end of each passage, you'll hear some questions. Both the passage and the questions will be spoken only once. After each question, choose the best answer from the four choices marked A, B, C, and D.
+    </div>
+   </div>
+  </div>
+  <div class="Question-Conversation" qid="154380" qtype="308">
+   <span class="answer-video">
+    <div class="play" respath="https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_4/t_301/201510/c3defef1-2be8-4ff3-83b7-1c114798a904.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_4/t_301/201510/6158fe08-7f4c-4c69-b5e1-664e0ad9aee7.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_4/t_301/201510/ef0210be-b8fe-4e6b-94fa-04bb023d58dc.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_4/t_301/201510/d171e9dd-734a-492f-a91c-7efd70b53425.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/t_308/201510/ivaqny_27165740204.mp3">
+     <img class="playImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/play-1.png"/>
+     <img class="playingImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/playing02-fltrp.gif" style="display:none;"/>
+    </div>
+   </span>
+   <div class="Choice">
+    <div class="nu" id="t13">
+     <span>
+      <b>
+       13)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  Lack of connections with good friends.
+       </label>
+       <label class="green">
+        B.  Having no exchanges of thoughts and feelings.
+       </label>
+       <label>
+        C.  Being unaware of the serious generation gap.
+       </label>
+       <label>
+        D.  Being unable to find enough time to be together.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t14">
+     <span>
+      <b>
+       14)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  Important things going on in everyone’s life.
+       </label>
+       <label>
+        B.  Building emotional links with each other.
+       </label>
+       <label>
+        C.  Interesting stories in the family history.
+       </label>
+       <label class="green">
+        D.  Limited practical needs in daily life.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t15">
+     <span>
+      <b>
+       15)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  His parents got less angry and less violent.
+       </label>
+       <label>
+        B.  His parents never cared about his concerns.
+       </label>
+       <label class="green">
+        C.  Everyone involved got unhappy and frustrated.
+       </label>
+       <label>
+        D.  Everyone understood the others’ desires better.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t16">
+     <span>
+      <b>
+       16)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  Sad.
+       </label>
+       <label>
+        B.  Patient.
+       </label>
+       <label>
+        C.  Hopeful.
+       </label>
+       <label>
+        D.  Indifferent.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      13) B      14) D      15) C      16) A
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <div>
+      <pre>（无）</pre>
+     </div>
+     <p>
+      <b>
+       听力文本：
+      </b>
+     </p>
+     <p>
+      <p style="text-align: justify;">
+       For a long time, one of my deepest wishes for my parents was that they could be my best friends, that they could connect openly and emotionally with me, and that I could share my deepest thoughts. Yet for some reason, my relationship with my parents for the past 15 years was nothing like that. It seemed there was a serious generation gap that was impossible to bridge.
+       <br/>
+      </p>
+      <p style="text-align: justify;">
+       While normal families would talk to one another at least once a day, I could go for months without ever talking to my parents, because I felt there was nothing to communicate with them.
+       <br/>
+      </p>
+      <p style="text-align: justify;">
+       While normal families would have meals together at the dinner table every evening, we would eat at different times, and at different places – usually the bedroom for me, the living room for my dad and the dining room for my mom.
+       <br/>
+      </p>
+      <p style="text-align: justify;">
+       While normal families would talk about what’s going on in each other’s lives, our conversations were limited to functional needs, such as when to do grocery shopping, or what to buy for dinner. These would just elicit short replies like “Yes”, “No”, or “Maybe”, and that would be where the communication ends.
+       <br/>
+      </p>
+      <p style="text-align: justify;">
+       We knew some facts about each other – like our birthdays and general life history, but the emotional aspect of the relationship was missing. In terms of our inner thoughts, my parents had no idea what was going on in my life, and neither would I know what was going on in theirs.
+       <br/>
+      </p>
+      <p style="text-align: justify;">
+       I wished I could tell them about my passions, desires, dreams, fears and concerns. But whenever I attempted to do so, the result would be frustration with each other, unhappy arguments, and violent outburst of anger.
+       <br/>
+      </p>
+      <p style="text-align: justify;">
+       Thus my wish as a child has never been fulfilled. I was once quite sad about it. Although I never talked about it with anyone, I always wished I had a more meaningful relationship with my parents.
+      </p>
+      <p>
+       <br/>
+       <p>
+        What did the man think was the main problem in his relationship with his parents?
+       </p>
+       <p>
+        What did the man’s family talk about most often?
+       </p>
+       <p>
+        What usually happened when the man tried to communicate with his parents?
+       </p>
+       <p>
+        How did the man feel about his relationship with his parents?
+       </p>
+      </p>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="154381" qtype="308">
+   <span class="answer-video">
+    <div class="play" respath="https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_4/t_301/201510/4cd19d50-d933-44ea-be34-e87f1b7671e4.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_4/t_301/201510/4069668a-0d8d-4bfc-8d1b-ec99c26ef325.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_4/t_301/201510/dd591adf-75fc-4ba2-89cc-80c499ec9a30.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_4/t_301/201510/d0ce6adc-85e6-4bf0-adaf-7716cfa4346c.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_4/t_301/201510/d7f293d1-cfd5-4bb0-8a34-18dc445a3e56.mp3">
+     <img class="playImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/play-1.png"/>
+     <img class="playingImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/playing02-fltrp.gif" style="display:none;"/>
+    </div>
+   </span>
+   <div class="Choice">
+    <div class="nu" id="t17">
+     <span>
+      <b>
+       17)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  Women holding a full-time job.
+       </label>
+       <label>
+        B.  Women with financial problems.
+       </label>
+       <label>
+        C.  Women with family heath issues.
+       </label>
+       <label class="green">
+        D.  Women aged between 45 and 60.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t18">
+     <span>
+      <b>
+       18)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  They have no spare time for their kids.
+       </label>
+       <label class="green">
+        B.  They have many obligations to fulfill.
+       </label>
+       <label>
+        C.  They are less strong than their mothers.
+       </label>
+       <label>
+        D.  They are always worried about themselves.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t19">
+     <span>
+      <b>
+       19)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  They may have a shorter lifespan.
+       </label>
+       <label>
+        B.  They may lose advantages in career.
+       </label>
+       <label>
+        C.  They may become more concerned about aging.
+       </label>
+       <label>
+        D.  They may have no time to care for their aging relatives.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t20">
+     <span>
+      <b>
+       20)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  Take all of their spare time for fun.
+       </label>
+       <label>
+        B.  Deal with everything all by themselves.
+       </label>
+       <label class="green">
+        C.  Seek help from friends and relatives.
+       </label>
+       <label>
+        D.  Create more happy time for their parents.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      17) D      18) B      19) A      20) C
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <div>
+      <pre>（无）</pre>
+     </div>
+     <p>
+      <b>
+       听力文本：
+      </b>
+     </p>
+     <p>
+      <p style="text-align: justify;">
+       It’s no surprise that people are stressed out these days. We’re struggling between jobs, financial problems, families and heath issues. But of all the people in America, one group stands out as the most stressed: women between the ages of 45 and 60.
+       <br/>
+      </p>
+      <p style="text-align: justify;">
+       Are you wondering why? Here is the answer. Women of this age group are caught up with a storm of obligations, which make them less healthy than their mothers were at the same age. They work a full-time job, and meanwhile they take care of the kids and the elderly. They have a constant feeling that they’re never doing enough for others – children, husband, parents ... Hence, they seldom spare some time for themselves, which makes them the group who has the lowest well-being.
+       <br/>
+      </p>
+      <p style="text-align: justify;">
+       The stress could have a bad effect on women. It may shave years off their lives. Women generally have an edge in living longer than males at every age span. But now the concern is that they may well lose this advantage and have a shorter lifespan than the aging relatives they’re taking care of.
+       <br/>
+      </p>
+      <p style="text-align: justify;">
+       Is there anything that can be done to make life easier for these women? Medical experts made the following suggestions. They say women should take care of themselves first. It’s like flying on a plane. They need to put their own oxygen mask on first before they assist others. They also suggest that women can ask relatives or friends to help with child care or parental obligations rather than deal with everything all by themselves. And finally, women should take some time to have fun. For example, for at least one hour every day, they should do something for pleasure. All of these may create more happy time in their life and help them live longer.
+      </p>
+      <p>
+       <br/>
+       <p>
+        Which group of American women suffers the greatest stress?
+       </p>
+       <p>
+        Why does this group of women have the lowest well-being among all Americans?
+       </p>
+       <p>
+        What may be a bad effect on women if they face too much stress?
+       </p>
+       <p>
+        According to medical experts, what can this group of women do?
+       </p>
+      </p>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+ </div>
+ <div class="Test">
+  <div class="TestTitle">
+   <div class="title" id="107">
+    长篇阅读10题，总分值：10分
+   </div>
+   <div class="title-decrible">
+    <div class="directs">
+     Directions： You are going to read a passage with 10 statements attached to it. Each statement contains information given in one of the paragraphs. Identify the paragraph from which the information is derived. You may choose a paragraph more than once. Each paragraph is marked with a letter.
+    </div>
+   </div>
+  </div>
+  <div class="Question-Conversation" qid="154383" qtype="107">
+   <div class="Choice">
+    <div class="padding">
+     <p>
+      <p style="text-align:center">
+       <b>
+        Scott Adams’ secret of success: failure
+       </b>
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       A) If you’re already as successful as you want to be, both personally and professionally, congratulations! Here’s the not-so-good news: All you are likely to get from this article is a semi-entertaining tale about a guy who failed his way to success. But you might also notice some familiar patterns in my story that will give you confirmation (or confirmation bias) that your own success wasn’t entirely luck.
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       B) If you’re just starting your journey toward success – however you define it – or you’re wondering what you’ve been doing wrong until now, you might find some novel ideas here. Maybe the combination of what you know plus what I think I know will be enough to keep you out of the wood chipper.
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       C) Let me start with some tips on what not to do. Beware of advice about successful people and their methods. For example, you often hear them say that you should “follow your passion” That sounds perfectly reasonable the first time you hear it. Passion will presumably give you high energy, high resistance to rejection and high determination. Passionate people are more persuasive, too. Those are all good things, right?
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       D) Here’s the counterargument: When I was a commercial loan officer for a large bank, my boss taught us that you should never make a loan to someone who is following his passion. For example, you don’t want to give money to a sports enthusiast who is starting a sports store to pursue his passion for all things sporty. That guy is a bad bet, passion and all. He’s in business for the wrong reason. My boss, who had been a commercial lender for over 30 years, said that the best loan customer is someone who has no passion whatsoever, just a desire to work hard at something that looks good on a spreadsheet (电子数据表). Maybe the loan customer wants to start a dry-cleaning store or invest in a fast-food franchise (专卖权，特许经营权) – boring stuff. That’s the person you bet on. You want the grinder, not the guy who loves his job.
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       E) For most people, it’s easy to be passionate about things that are working out, and that distorts our impression of the importance of passion. Objectively, my passion level moved with my success. Success caused passion more than passion caused success. So forget about passion. And while you're at it, forget about goals, too.
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       F) Just after college, I took my first airplane trip, destination California, in search of a job. I was seated next to a businessman who was probably in his early 60s. I suppose I looked like an odd duck with my serious demeanor, bad haircut and cheap suit, clearly out of my element. I asked what he did for a living, and he told me he was the CEO of a company that made screws. He offered me some career advice. He said that every time he got a new job, he immediately started looking for a better one. For him, job seeking was not something one did when necessary. It was a continuing process. This makes perfect sense if you do the math. Chances are that the best job for you won’t become available at precisely the time you declare yourself ready. Your best bet, he explained, was to always be looking for a better deal. The better deal has its own schedule. I believe the way he explained it is that your job is not your job; your job is to find a better job.
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       G) This was my first exposure to the idea that one should have a system instead of a goal. The system was to continually look for better options. Throughout my career I’ve had my antennae up, looking for examples of people who use systems as opposed to goals. In most cases, as far as I can tell, the people who use systems do better. The systems-driven people have found a way to look at the familiar in new and more useful ways.
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       H) To put it bluntly, goals are for losers. That’s literally true most of the time. For example, if your goal is to lose 10 pounds, you will spend every moment until you reach the goal – if you reach it at all – feeling as if you were short of your goal. In other words, goal-oriented people exist in a state of nearly continuous failure that they hope will be temporary. If you achieve your goal, you celebrate and feel terrific, but only until you realize that you just lost the thing that gave you purpose and direction. Your options are to feel empty and useless, perhaps enjoying the spoils of your success until they bore you, or to set new goals and re-enter the cycle of permanent presuccess failure.
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       I) As for my own system, when I graduated from college, I outlined my entrepreneurial plan. The idea was to create something the public wants and reproduce it in large quantities. My system nearly guaranteed a string of failures. By design, all of my efforts were long shots. Had I been goal-oriented instead of system-oriented, I imagine I would have given up after the first several failures. It would have felt like banging my head against a brick wall. But being system-oriented, I felt myself growing more capable every day, no matter the fate of the project that I happened to be working on. And every day during those years I woke up with the same thought, literally, as I rubbed the sleep from my eyes and slapped the alarm clock off.
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       Today’s the day.
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       J) If you drill down on any success story, you always discover that luck was a huge part of it. You can’t control luck, but you can move from a game with bad odds to one with better odds. You can make it easier for luck to find you. The most useful thing you can do is stay in the game. If your current get-rich project fails, take what you learned and try something else. Keep repeating until something lucky happens. The universe has plenty of luck to go around; you just need to keep your hand raised until it’s your turn. It helps to see failure as a road and not a wall. I’m an optimist by nature, or perhaps by upbringing – it’s hard to know where one leaves off and the other begins – but whatever the cause, I’ve long seen failure as a tool, not an outcome. I believe that viewing the world in that way can be useful for you too.
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       K) Nietzsche famously said, “What doesn’t kill us makes us stronger” Becoming stronger is obviously a good thing, but it’s only barely optimistic. I do want my failures to make me stronger, of course, but I also want to become smarter, more talented, better networked, healthier and more energized. If I find a cow turd（粪块） on my front steps, I’m not satisfied knowing that I’ll be mentally prepared to find some future cow turd. I want to shovel that turd onto my garden and hope the cow returns every week so I never have to buy fertilizer again. Failure is a resource that can be managed.
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       L) As for you, I’d like to think that reading this will set you on the path of your own magnificent screw-ups（一团糟）and cavernous（大而深的）disappointments. You’re welcome! And if I forgot to mention it earlier, that’s exactly where you want to be: steeped to your eyebrows in failure. It’s a good place to be because failure is where success likes to hide in plain sight. Everything you want out of life is in that huge, bubbling vat（大桶）of failure. The trick is to get the good stuff out.
+      </p>
+     </p>
+    </div>
+    <div class="nu" id="t21">
+     <span>
+      <b>
+       21)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      According to my boss, a loan should be made to a customer who has no passion at all.
+      <span class="blankinput" type="text">
+       D
+      </span>
+     </p>
+    </div>
+    <div class="nu" id="t22">
+     <span>
+      <b>
+       22)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Failure can be managed so that I become stronger, smarter and more talented.
+      <span class="blankinput" type="text">
+       K
+      </span>
+     </p>
+    </div>
+    <div class="nu" id="t23">
+     <span>
+      <b>
+       23)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      During my first flight, I learned from a businessman that one’s job is to seek a better job.
+      <span class="blankinput" type="text">
+       F
+      </span>
+     </p>
+    </div>
+    <div class="nu" id="t24">
+     <span>
+      <b>
+       24)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Passion may do a lot of good, such as giving people high determination.
+      <span class="blankinput" type="text">
+       C
+      </span>
+     </p>
+    </div>
+    <div class="nu" id="t25">
+     <span>
+      <b>
+       25)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      After graduation from college, my system made me become more and more capable.
+      <span class="blankinput" type="text">
+       I
+      </span>
+     </p>
+    </div>
+    <div class="nu" id="t26">
+     <span>
+      <b>
+       26)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Learn to get everything possible out of failure.
+      <span class="blankinput" type="text">
+       L
+      </span>
+     </p>
+    </div>
+    <div class="nu" id="t27">
+     <span>
+      <b>
+       27)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      My experience will offer new ideas for those who are just starting their way to success.
+      <span class="blankinput" type="text">
+       B
+      </span>
+     </p>
+    </div>
+    <div class="nu" id="t28">
+     <span>
+      <b>
+       28)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      It is advised that one should forget about both passion and goals if one wants to achieve success.
+      <span class="blankinput" type="text">
+       E
+      </span>
+     </p>
+    </div>
+    <div class="nu" id="t29">
+     <span>
+      <b>
+       29)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      See failure as a road or a tool, and success and luck will find you.
+      <span class="blankinput" type="text">
+       J
+      </span>
+     </p>
+    </div>
+    <div class="nu" id="t30">
+     <span>
+      <b>
+       30)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Goal-oriented people almost always live in failure.
+      <span class="blankinput" type="text">
+       H
+      </span>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      21) D      22) K      23) F      24) C      25) I      26) L      27) B      28) E      29) J      30) H
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <div>
+      <pre>（无）</pre>
+     </div>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+ </div>
+ <div class="Test">
+  <div class="TestTitle">
+   <div class="title" id="152">
+    阅读理解10题，总分值：30分
+   </div>
+   <div class="title-decrible">
+    <div class="directs">
+     Directions： Read the following passages carefully. Each passage is followed by some questions or unfinished sentences. For each of them there are four choices marked A, B, C, and D. Choose the best answer to each question.
+    </div>
+   </div>
+  </div>
+  <div class="Question-Conversation" qid="154287" qtype="152">
+   <div class="Choice">
+    <div class="padding">
+     <p>
+      <p style="text-align:justify">
+       Reality television is a genre of television programming which presents dramatic or humorous situations without any pre-written script, documents actual events, and features ordinary people rather than professional actors. It could be described as a form of “heightened” documentary. It covers a wide range of formats, from game or quiz shows to productions which focus on careful observation of the participants. Although the genre has existed in some form or another since the early years of television, the current explosion of popularity just started a decade ago.
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       Critics comment that the term “reality television” is somewhat of a misnomer. Such programs do not actually present reality as it is, but rather show a modified and highly influenced form of reality. The participants are often put in exotic locations or unusual situations, sometimes coached to act in certain ways by off-screen handlers. The events on screen are also manipulated through editing and other post-production techniques.
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       Part of reality television’s appeal lies in its ability to place ordinary people in extraordinary situations. For example, on the ABC show, The Bachelor, an eligible man dates a dozen women simultaneously, traveling to beautiful places on various dates. Reality television also has the potential to turn its participants into national celebrities, especially in talent and performance programs such as Pop Idol.
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       Some critics have said that the name “reality television” is an inaccurate description for several styles of program included in the genre. In competition-based programs such as Big Brother and Survivor, and other special-living-environment shows like The Real World, the producers design the format of the show and control the day-to-day activities and the environment. These types of show create a completely fabricated (虚构的) world in which the competition plays out. Producers specifically select the participants, and use carefully designed scenarios, challenges, events and settings to encourage particular behaviors and conflicts. Mark Burnett, creator of Survivor and other reality shows, agrees with this comment and avoids the word “reality” to describe his shows. He once said, “I tell good stories. It really is not reality TV. It really is unscripted drama.”
+      </p>
+     </p>
+    </div>
+    <div class="nu" id="t31">
+     <span>
+      <b>
+       31)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      This passage mainly discusses ___________.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  a definition of a new art
+       </label>
+       <label class="green">
+        B.  a type of television show
+       </label>
+       <label>
+        C.  the influence of television
+       </label>
+       <label>
+        D.  the history of television dramas
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t32">
+     <span>
+      <b>
+       32)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      By using the word “misnomer” (Line 1, Para. 2), the author means that ___________.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  reality television contains events purposely selected by ordinary people
+       </label>
+       <label>
+        B.  reality television contains scenes carefully chosen by national celebrities
+       </label>
+       <label class="green">
+        C.  reality television is not an accurate description of what happens in real life
+       </label>
+       <label>
+        D.  reality television is not designed to be produced in strange or unusual situations
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t33">
+     <span>
+      <b>
+       33)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      The program named “The Bachelor” is mentioned as an example to ___________.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  explain why reality television attracts people
+       </label>
+       <label>
+        B.  illustrate what ordinary people can do on the screen
+       </label>
+       <label>
+        C.  describe how participants can become famous instantly
+       </label>
+       <label>
+        D.  show how talent and performance programs compete
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t34">
+     <span>
+      <b>
+       34)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      According to the passage, producers of competition-based programs may ___________.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  do their best to prevent participates from having conflicts
+       </label>
+       <label>
+        B.  avoid having any invented element in the design
+       </label>
+       <label>
+        C.  encourage the participants to create the settings
+       </label>
+       <label class="green">
+        D.  induce participants to behave in a particular way
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t35">
+     <span>
+      <b>
+       35)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Which of the following will probably NOT be considered as a reality television show?
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  A program in which the participants play a certain game or quiz.
+       </label>
+       <label>
+        B.  A program that puts ordinary people in an invented environment.
+       </label>
+       <label class="green">
+        C.  A program in which actors play according to a script written in advance.
+       </label>
+       <label>
+        D.  A program that controls the day-to-day activities of the participants.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      31) B      32) C      33) A      34) D      35) C
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <div>
+      <pre>（无）</pre>
+     </div>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="154286" qtype="152">
+   <div class="Choice">
+    <div class="padding">
+     <p>
+      <p style="text-align:justify">
+       The notion that the great apes, such as chimpanzees and gorillas, can imitate one another might seem unsurprising to anyone who has watched these animals playing at the zoo. But in scientific circles, the question of whether apes really do “
+       <u>
+        ape
+       </u>
+       ” has become controversial.
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       Consider a young chimpanzee watching his mother crack open a cola nut, as has been observed in the Tai Forest of Africa. In most cases, the youth will eventually take up the practice himself. How does he learn this? Is it because he copies it from his mother, or does the skill originate solely from trial and error? If the young animal copies adult behavior, then chimpanzees must have the ability to develop cultural traits, i.e. knowledge or skills passed down from generation to generation, instead of by genetic inheritance. However, if the young learns how to crack the nut exclusively by trial and error, then chimpanzees must, in a sense, reinvent the method each time they deal with a nut, and hence, no real cumulative culture can ever develop.
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       The clearest way to establish how chimpanzees learn is through laboratory experiments. A team of scientists at Goldsmith’s College, University of London, used artificial fruits to determine whether chimpanzees imitate or not. In a typical experiment, one group of chimpanzees watched a complex technique for opening a fruit, while a second group observed a very different method. Then the researchers recorded the extent to which the chimpanzees had been influenced by the method they observed. They also conducted similar experiments with three-year-old children as subjects. The results demonstrate that six-year-old chimpanzees show imitative behavior markedly like that seen in the children, although the preciseness of their copying tends to be poorer. In another experiment, chimpanzees copied an entire sequence of actions they had witnessed, but did so only after trying some alternatives. This suggests that they tended to imitate what they had observed others doing at the expense of their own trial-and-error discoveries.
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       In the researchers’ view, these findings indicate that apes do ape and that this ability forms one strand in cultural transmission. In other words, learning from elders is crucial to growing up as a competent wild chimpanzee.
+      </p>
+     </p>
+    </div>
+    <div class="nu" id="t36">
+     <span>
+      <b>
+       36)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      The word “ape” (Line 3, Para. 1) probably means ___________.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  play at the zoo
+       </label>
+       <label>
+        B.  crack a nut
+       </label>
+       <label class="green">
+        C.  imitate
+       </label>
+       <label>
+        D.  transmit
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t37">
+     <span>
+      <b>
+       37)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      If a chimpanzee cracks a nut solely by trial and error, it suggests that ___________.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  the skill is genetically inherited
+       </label>
+       <label>
+        B.  the skill is learned from others
+       </label>
+       <label>
+        C.  the skill is unique to humans
+       </label>
+       <label>
+        D.  the skill is unique to wild animals
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t38">
+     <span>
+      <b>
+       38)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Results from the research mentioned in Para. 3 show that ___________.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  chimpanzees have little ability to imitate although they can open fruits skillfully
+       </label>
+       <label class="green">
+        B.  chimpanzees do imitate although their copying is less faithful than that of children
+       </label>
+       <label>
+        C.  chimpanzees can open artificial fruits only after observing how others do it
+       </label>
+       <label>
+        D.  chimpanzees imitate their elders in a manner different from how children do
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t39">
+     <span>
+      <b>
+       39)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      It can be concluded from the passage that ___________.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  chimpanzees in the laboratory are better imitators than those in the wild
+       </label>
+       <label>
+        B.  chimpanzees in the laboratory crack nuts differently from those in the wild
+       </label>
+       <label>
+        C.  cultural transmission happens at the expense of individual discoveries
+       </label>
+       <label class="green">
+        D.  cultural transmission exists both among wild chimpanzees and in human society
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t40">
+     <span>
+      <b>
+       40)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      The main purpose of the passage is ___________.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  to answer a scientific question by providing research findings
+       </label>
+       <label>
+        B.  to explain the procedure of food gathering used by wild animals
+       </label>
+       <label>
+        C.  to compare the differences between animal culture and human culture
+       </label>
+       <label>
+        D.  to illustrate the methods of analyzing young animals’ behavior
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      36) C      37) A      38) B      39) D      40) A
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <div>
+      <pre>（无）</pre>
+     </div>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+ </div>
+ <div class="Test">
+  <div class="TestTitle">
+   <div class="title" id="112">
+    完型填空20题，总分值：20分
+   </div>
+   <div class="title-decrible">
+    <div class="directs">
+     Directions： There are some blanks in the following passage. For each blank there are four choices marked A, B, C and D. You should choose the ONE that best fits into the passage.
+    </div>
+   </div>
+  </div>
+  <div class="Question-Conversation" qid="154281" qtype="112">
+   <div class="Choice">
+    <div class="padding">
+     <p>
+      <p style="text-align:justify">
+       A man often has to struggle to comment on a woman’s appearance. He is puzzled about how he should talk to her about it. Compliment her looks? Why did she seem to
+       <b>
+        41)
+       </b>
+       <span class="blankinput" type="text">
+        affix
+       </span>
+       such great value to being complimented on her looks when she was in fact smart,
+       <b>
+        42)
+       </b>
+       <span class="blankinput" type="text">
+        successful
+       </span>
+       and creative? Why couldn’t he respond properly no matter how many
+       <b>
+        43)
+       </b>
+       <span class="blankinput" type="text">
+        rehearsals
+       </span>
+       he had done? In my view, the answers lie in what can only be described as an
+       <b>
+        44)
+       </b>
+       <span class="blankinput" type="text">
+        obsession
+       </span>
+       with beauty.
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       Women would rather be dead than be seen as not
+       <b>
+        45)
+       </b>
+       <span class="blankinput" type="text">
+        beautiful
+       </span>
+       . Sometimes I talk to my girlfriends about aging. Without any
+       <b>
+        46)
+       </b>
+       <span class="blankinput" type="text">
+        hesitation
+       </span>
+       , they all said, “Oh, no, I don’t want to get old. I’d rather die early than grow old and no longer be good-looking.” Women are even willing to
+       <b>
+        47)
+       </b>
+       <span class="blankinput" type="text">
+        sacrifice
+       </span>
+       health and nutrition in order to have an ideal waist size. An estimated 65 percent of women have an eating
+       <b>
+        48)
+       </b>
+       <span class="blankinput" type="text">
+        disorder
+       </span>
+       because they have an unnatural fear of being considered unattractive by the
+       <b>
+        49)
+       </b>
+       <span class="blankinput" type="text">
+        opposite
+       </span>
+       sex. They are so worried about being not beautiful enough
+       <b>
+        50)
+       </b>
+       <span class="blankinput" type="text">
+        that
+       </span>
+       they can’t eat. In a certain sense, they are simply
+       <b>
+        51)
+       </b>
+       <span class="blankinput" type="text">
+        addicted
+       </span>
+       to the pursuit of an ideal look. To women beauty is the essential quality that attracts and
+       <b>
+        52)
+       </b>
+       <span class="blankinput" type="text">
+        appeases
+       </span>
+       men.
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       In fact, men love women for much more than
+       <b>
+        53)
+       </b>
+       <span class="blankinput" type="text">
+        external
+       </span>
+       beauty. They love women in all their
+       <b>
+        54)
+       </b>
+       <span class="blankinput" type="text">
+        complexity
+       </span>
+       , for their intelligence, their creativity, their power, their force of personality. This seems to
+       <b>
+        55)
+       </b>
+       <span class="blankinput" type="text">
+        imply
+       </span>
+       that women must be both beautiful AND smart, and that beauty is somehow essential for women to be
+       <b>
+        56)
+       </b>
+       <span class="blankinput" type="text">
+        noticed
+       </span>
+       . That is why women spend a large amount of time
+       <b>
+        57)
+       </b>
+       <span class="blankinput" type="text">
+        grooming
+       </span>
+       themselves. They can sit for hours to dye their hair, to shape their eyebrows, to apply
+       <b>
+        58)
+       </b>
+       <span class="blankinput" type="text">
+        cosmetics
+       </span>
+       and perfume.
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       I am not being critical of women or men here, not in the
+       <b>
+        59)
+       </b>
+       <span class="blankinput" type="text">
+        least
+       </span>
+       . It is not wrong to want beauty in one’s life
+       <b>
+        60)
+       </b>
+       <span class="blankinput" type="text">
+        however
+       </span>
+       you define that. But this is how I see it if men are wondering why it’s difficult to get the conversation about beauty right.
+      </p>
+     </p>
+    </div>
+    <div class="nu" id="t41">
+     <span>
+      <b>
+       41)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  offend
+       </label>
+       <label>
+        B.  offer
+       </label>
+       <label>
+        C.  afford
+       </label>
+       <label class="green">
+        D.  affix
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t42">
+     <span>
+      <b>
+       42)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  successful
+       </label>
+       <label>
+        B.  cheerful
+       </label>
+       <label>
+        C.  respective
+       </label>
+       <label>
+        D.  extensive
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t43">
+     <span>
+      <b>
+       43)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  revisions
+       </label>
+       <label class="green">
+        B.  rehearsals
+       </label>
+       <label>
+        C.  reactions
+       </label>
+       <label>
+        D.  regulations
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t44">
+     <span>
+      <b>
+       44)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  option
+       </label>
+       <label>
+        B.  objection
+       </label>
+       <label>
+        C.  occasion
+       </label>
+       <label class="green">
+        D.  obsession
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t45">
+     <span>
+      <b>
+       45)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  faithful
+       </label>
+       <label>
+        B.  respectful
+       </label>
+       <label class="green">
+        C.  beautiful
+       </label>
+       <label>
+        D.  powerful
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t46">
+     <span>
+      <b>
+       46)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  identification
+       </label>
+       <label class="green">
+        B.  hesitation
+       </label>
+       <label>
+        C.  indication
+       </label>
+       <label>
+        D.  depression
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t47">
+     <span>
+      <b>
+       47)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  stress
+       </label>
+       <label>
+        B.  stimulate
+       </label>
+       <label class="green">
+        C.  sacrifice
+       </label>
+       <label>
+        D.  speculate
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t48">
+     <span>
+      <b>
+       48)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  disguise
+       </label>
+       <label class="green">
+        B.  disorder
+       </label>
+       <label>
+        C.  disposal
+       </label>
+       <label>
+        D.  distress
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t49">
+     <span>
+      <b>
+       49)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  optional
+       </label>
+       <label>
+        B.  optimistic
+       </label>
+       <label>
+        C.  opposing
+       </label>
+       <label class="green">
+        D.  opposite
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t50">
+     <span>
+      <b>
+       50)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  as
+       </label>
+       <label>
+        B.  but
+       </label>
+       <label class="green">
+        C.  that
+       </label>
+       <label>
+        D.  so
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t51">
+     <span>
+      <b>
+       51)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  addicted
+       </label>
+       <label>
+        B.  exposed
+       </label>
+       <label>
+        C.  alerted
+       </label>
+       <label>
+        D.  extended
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t52">
+     <span>
+      <b>
+       52)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  applies
+       </label>
+       <label>
+        B.  appoints
+       </label>
+       <label>
+        C.  appears
+       </label>
+       <label class="green">
+        D.  appeases
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t53">
+     <span>
+      <b>
+       53)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  external
+       </label>
+       <label>
+        B.  extreme
+       </label>
+       <label>
+        C.  deliberate
+       </label>
+       <label>
+        D.  definite
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t54">
+     <span>
+      <b>
+       54)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  competition
+       </label>
+       <label class="green">
+        B.  complexity
+       </label>
+       <label>
+        C.  contact
+       </label>
+       <label>
+        D.  conviction
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t55">
+     <span>
+      <b>
+       55)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  imply
+       </label>
+       <label>
+        B.  magnify
+       </label>
+       <label>
+        C.  verify
+       </label>
+       <label>
+        D.  defy
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t56">
+     <span>
+      <b>
+       56)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  promised
+       </label>
+       <label class="green">
+        B.  noticed
+       </label>
+       <label>
+        C.  imagined
+       </label>
+       <label>
+        D.  managed
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t57">
+     <span>
+      <b>
+       57)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  glimpsing
+       </label>
+       <label>
+        B.  granting
+       </label>
+       <label>
+        C.  gripping
+       </label>
+       <label class="green">
+        D.  grooming
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t58">
+     <span>
+      <b>
+       58)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  coverage
+       </label>
+       <label>
+        B.  costume
+       </label>
+       <label class="green">
+        C.  cosmetics
+       </label>
+       <label>
+        D.  compounds
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t59">
+     <span>
+      <b>
+       59)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  best
+       </label>
+       <label class="green">
+        B.  least
+       </label>
+       <label>
+        C.  worst
+       </label>
+       <label>
+        D.  last
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t60">
+     <span>
+      <b>
+       60)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  however
+       </label>
+       <label>
+        B.  whatever
+       </label>
+       <label>
+        C.  because
+       </label>
+       <label>
+        D.  although
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      41) D      42) A      43) B      44) D      45) C      46) B      47) C      48) B      49) D      50) C      51) A      52) D      53) A      54) B      55) A      56) B      57) D      58) C      59) B      60) A
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <div>
+      <pre>（无）</pre>
+     </div>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+ </div>
+ <div class="Test">
+  <div class="TestTitle">
+   <div class="title" id="305">
+    词汇与结构20题，总分值：20分
+   </div>
+   <div class="title-decrible">
+    <div class="directs">
+     Directions： For each of the following sentences there are four choices marked A, B, C and D. Choose the best one to complete each sentence.
+    </div>
+   </div>
+  </div>
+  <div class="Question-Conversation" qid="154276" qtype="305">
+   <div class="Choice">
+    <div id="t61">
+     <span>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      It was no surprise that they were perceived as rude and ________ because they always boasted about the glory of their past achievements.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  addicted
+       </label>
+       <label>
+        B.  absorbed
+       </label>
+       <label>
+        C.  absolute
+       </label>
+       <label class="green">
+        D.  arrogant
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       61) D
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="154275" qtype="305">
+   <div class="Choice">
+    <div id="t62">
+     <span>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      The new drug could extend life significantly, but the problem was ________ the treatment was too expensive to be made available to patients in the developing world.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  that
+       </label>
+       <label>
+        B.  which
+       </label>
+       <label>
+        C.  what
+       </label>
+       <label>
+        D.  when
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       62) A
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="154274" qtype="305">
+   <div class="Choice">
+    <div id="t63">
+     <span>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      My sister likes visiting the art museum, and she always says real art gives people not just ________ pleasure but also intellectual stimulation.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  sensitive
+       </label>
+       <label class="green">
+        B.  sensual
+       </label>
+       <label>
+        C.  sensational
+       </label>
+       <label>
+        D.  sensible
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       63) B
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="154273" qtype="305">
+   <div class="Choice">
+    <div id="t64">
+     <span>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      On the wall of his office, there was a big picture of a(n) ________ of soldiers, and another of a man in an air-force uniform standing in the park.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  enrollment
+       </label>
+       <label>
+        B.  arrangement
+       </label>
+       <label class="green">
+        C.  regiment
+       </label>
+       <label>
+        D.  recruitment
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       64) C
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="154272" qtype="305">
+   <div class="Choice">
+    <div id="t65">
+     <span>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Your personal sense of photographic ________ helps you determine how you will depict the subject and whether your image is acceptable.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  esthetics
+       </label>
+       <label>
+        B.  ethics
+       </label>
+       <label>
+        C.  exploration
+       </label>
+       <label>
+        D.  exposition
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       65) A
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="154271" qtype="305">
+   <div class="Choice">
+    <div id="t66">
+     <span>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Mrs. McBride, my neighbor, was a fanatic (狂热的) gardener, planting lots of flowers and vegetables on the ________ at the back of her house.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  installment
+       </label>
+       <label>
+        B.  segment
+       </label>
+       <label class="green">
+        C.  allotment
+       </label>
+       <label>
+        D.  fragment
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       66) C
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="154270" qtype="305">
+   <div class="Choice">
+    <div id="t67">
+     <span>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      As a top industrial designer in the world today, he thinks design is ________ just making attractive products. It can also help change the way people live.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  more than
+       </label>
+       <label>
+        B.  less than
+       </label>
+       <label>
+        C.  fewer than
+       </label>
+       <label>
+        D.  better than
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       67) A
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="154269" qtype="305">
+   <div class="Choice">
+    <div id="t68">
+     <span>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      A key point that should be ________ in all population and development planning for this region is the provision of and access to basic social services.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  underestimated
+       </label>
+       <label>
+        B.  undertaken
+       </label>
+       <label class="green">
+        C.  underscored
+       </label>
+       <label>
+        D.  undermined
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       68) C
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="154268" qtype="305">
+   <div class="Choice">
+    <div id="t69">
+     <span>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Until age 14, Dennis lived in an orphanage, and then he moved to a slum neighborhood of racial ________ between whites, blacks, and Hispanics.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  campaign
+       </label>
+       <label class="green">
+        B.  warfare
+       </label>
+       <label>
+        C.  contest
+       </label>
+       <label>
+        D.  awareness
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       69) B
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="154267" qtype="305">
+   <div class="Choice">
+    <div id="t70">
+     <span>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      They started joking about his house at the end of the dinner, partly out of respect for his brilliance, partly out of ________ for his success.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  aspect
+       </label>
+       <label>
+        B.  prospect
+       </label>
+       <label>
+        C.  sympathy
+       </label>
+       <label class="green">
+        D.  jealousy
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       70) D
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="154266" qtype="305">
+   <div class="Choice">
+    <div id="t71">
+     <span>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Her job at the clothing factory was just standing on the assembly line and ________ labels to clothes in precisely the same place.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  affix
+       </label>
+       <label>
+        B.  accord
+       </label>
+       <label>
+        C.  acquire
+       </label>
+       <label>
+        D.  approach
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       71) A
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="154265" qtype="305">
+   <div class="Choice">
+    <div id="t72">
+     <span>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      To play sports is ________ winning and losing a game. More importantly, it is ________ doing your best and building your character.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  not on … on
+       </label>
+       <label>
+        B.  about … not about
+       </label>
+       <label>
+        C.  on … not on
+       </label>
+       <label class="green">
+        D.  not about … about
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       72) D
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="154264" qtype="305">
+   <div class="Choice">
+    <div id="t73">
+     <span>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      These gas transmission lines were mostly installed before 1970, which means that many pipes may have started to ________ and that the need to inspect them is urgent.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  collide
+       </label>
+       <label class="green">
+        B.  corrode
+       </label>
+       <label>
+        C.  convert
+       </label>
+       <label>
+        D.  conflict
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       73) B
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="154263" qtype="305">
+   <div class="Choice">
+    <div id="t74">
+     <span>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      The two teams each have their strengths and their weaknesses, and thus they can ________ each other when working on the project together.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  conceive
+       </label>
+       <label>
+        B.  confront
+       </label>
+       <label class="green">
+        C.  complement
+       </label>
+       <label>
+        D.  compliment
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       74) C
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="154262" qtype="305">
+   <div class="Choice">
+    <div id="t75">
+     <span>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      The United Nations World Assembly on Aging has forecast a much older population on a global scale than now, with many people ________ beyond 80 by the year 2050.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  lived
+       </label>
+       <label class="green">
+        B.  living
+       </label>
+       <label>
+        C.  are living
+       </label>
+       <label>
+        D.  being lived
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       75) B
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="154261" qtype="305">
+   <div class="Choice">
+    <div id="t76">
+     <span>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      She didn’t set out to have a child-centered marriage, but it just happened when commercial and cultural pressures ________ with her own intentions.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  collided
+       </label>
+       <label>
+        B.  confirmed
+       </label>
+       <label>
+        C.  clustered
+       </label>
+       <label>
+        D.  consented
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       76) A
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="154260" qtype="305">
+   <div class="Choice">
+    <div id="t77">
+     <span>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Last December, the company completed a successful test flight of a reusable ________ capable of carrying up to seven people to the space.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  council
+       </label>
+       <label>
+        B.  venue
+       </label>
+       <label class="green">
+        C.  capsule
+       </label>
+       <label>
+        D.  avenue
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       77) C
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="154259" qtype="305">
+   <div class="Choice">
+    <div id="t78">
+     <span>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Temporary workers of the company were once not entitled to decent health care because they were just short-term “contractors” ________ how long they kept the same job.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  no problem
+       </label>
+       <label class="green">
+        B.  no matter
+       </label>
+       <label>
+        C.  whatever
+       </label>
+       <label>
+        D.  however
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       78) B
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="154258" qtype="305">
+   <div class="Choice">
+    <div id="t79">
+     <span>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Stomach and intestinal (肠的) problems, insufficient intake of iron from daily foods, as well as other factors may all cause ________ levels of stored iron in the body.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  effective
+       </label>
+       <label>
+        B.  efficient
+       </label>
+       <label>
+        C.  defective
+       </label>
+       <label class="green">
+        D.  deficient
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       79) D
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="154257" qtype="305">
+   <div class="Choice">
+    <div id="t80">
+     <span>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      He recalled his own experience of seeing a television for the very first time 30 years ago, when it was still a ________. He felt delight and fascination.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  necessity
+       </label>
+       <label>
+        B.  neglect
+       </label>
+       <label class="green">
+        C.  novelty
+       </label>
+       <label>
+        D.  notation
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       80) C
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+ </div>
+</div>
+
+                <!-- 题型列表结束 -->
+                <!-- 评论区开始 -->
+                <div class="container">
+                    <div id="vcomments" class="tow">
+                        <script>
+                            new Valine({
+                                el: '#vcomments',
+                                appId: 'jphqw5DgcOz2TwIRuwPvVusb-gzGzoHsz',
+                                appKey: 'e6WOjatXeFfe7C5ukXcmLGCE',
+                                notify: false,
+                                verify: false,
+                                avatar: 'wavatar',
+                                visitor: true,
+                                avatarForce: true,
+                                recordIP: true,
+                                enableQQ: true,
+                                requiredFields: ['nick'],
+                            })
+                        </script>
+                        <span id="/" class="leancloud_visitors" data-flag-title="U校园答案导航" style="position:relative;float:right;top:-10px;font-size: 12px;color:#808080">
+                        <em class="post-meta-item-text">访问量</em>
+                        <i class="leancloud-visitors-count">0</i>
+                    </span>
+                    </div>
+                </div>
+                <!-- 评论区结束 -->
+            </div>
+            <br>
+            <!-- 主体部分结束 -->
+            <div class="container">
+                <div style="text-align: center;color:white;font-size: small;">Copyright&nbsp;© 2021 abiscuit</div>
+            </div>
+            <br>
+            <!--jplayer播放期div-->
+            <div style="width: 0px; height:0px;" id="jplayer"></div>
+            </body>
+
+            <script>
+            function initPlayerAciton() {
+                // 音频资源播放
+                var allPlayButton = $("div.play");
+                allPlayButton.click(function(event) {
+                    var self = this;
+                    var resPath = $(this).attr("resPath");
+                    var pFlag = $(this).attr("playing");
+                    if (pFlag && pFlag == 1) { // 正在播放，需要停止播放
+                        $("#jplayer").jPlayer("stop", 0);
+                        $(self).attr("playing", "0");
+                        $(self).find("img.playImg").show();
+                        $(self).find("img.playingImg").hide();
+                        return false;
+                    }
+                    allPlayButton.attr("playing", "0");
+                    allPlayButton.find("img.playImg").show();
+                    allPlayButton.find("img.playingImg").hide();
+                    $(self).attr("playing", "1");
+                    $(self).find("img.playImg").hide();
+                    $(self).find("img.playingImg").show();
+                    // 获取音频播放列表
+                    var res_arr = new Array();
+                    res_arr = resPath.split(",");
+                    var play_resPath = new Array();
+                    for (var i = 0; i < res_arr.length; i++) {
+                        play_resPath.push(res_arr[i]);
+                    }
+                    myPlayer.play(play_resPath, function() {
+                        $(self).find("img.playImg").show();
+                        $(self).find("img.playingImg").hide();
+                    });
+                    $('#jplayer').find('object').height(10);
+                    return false;
+                });
+            }
+
+            function initStaticReturn() {
+                // 返回
+                $("#staticReturn").click(function() {
+                    staticReturn();
+                });
+                // 返回
+                $("#staticPageReturn").click(function() {
+                    staticReturn();
+                });
+            }
+            </script>
+
+            </html>

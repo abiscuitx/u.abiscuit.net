@@ -1,0 +1,3237 @@
+<!DOCTYPE html>
+            <html lang="zh-cn">
+
+            <head>
+            <meta charset="utf-8">
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+            <title>读写2-罗建波-B2U1</title>
+            <meta name="MSSmartTagsPreventParsing" content="True" />
+            <meta http-equiv="MSThemeCompatible" content="Yes" />
+            <meta name="renderer" content="webkit">
+            <script src="https://uexercise.unipus.cn/static/its/lib/jquery/jquery.js"></script>
+            <script src="https://uexercise.unipus.cn/static/its/lib/zui/js/zui.js"></script>
+            <script src="https://uexercise.unipus.cn/static/its/lib/chosen/chosen.js"></script>
+            <script src="https://uexercise.unipus.cn/static/its/lib/jquery/jquery.form.js"></script>
+            <script>
+                window.CTX = 'https://uexercise.unipus.cn';
+            </script>
+            <script src="https://uexercise.unipus.cn/static/its/lib/itest/js/itest_common.js"></script>
+            <script src="https://uexercise.unipus.cn/static/its/lib/layer/layer.js"></script>
+            <script src="https://uexercise.unipus.cn/static/its/lib/layer/laytpl.js"></script>
+            <script src="https://uexercise.unipus.cn/static/its/lib/layer/extend/layer.ext.js"></script>
+            <script src="https://uexercise.unipus.cn/static/its/lib/fltrp/js/js.js"></script>
+            <script src="https://uexercise.unipus.cn/static/its/lib/fltrp/js/stopic.js"></script>
+            <script src="https://uexercise.unipus.cn/static/its/lib/jplayer/jquery.jplayer.min.js"></script>
+            <script type="text/javascript" src="//player.youku.com/jsapi"></script>
+            <script src='https://uexercise.unipus.cn/static/its/lib/fltrp/js/uploadXX.js'></script>
+            <script>
+                var _hmt = _hmt || [];
+                (function() {
+                    var hm = document.createElement("script");
+                    hm.src = "https://hm.baidu.com/hm.js?c402237d180d562bcdd7e9d5fe8780f8";
+                    var s = document.getElementsByTagName("script")[0];
+                    s.parentNode.insertBefore(hm, s);
+                })();
+            </script>
+            <script src="../assets/js/Valine.min.js"></script>
+            <link rel="shortcut icon" href="../assets/images/favicon.ico">
+            <link href="../assets/css/main.css" rel="stylesheet">
+            <link href="../assets/css/part.css" rel="stylesheet">
+            <link href="../assets/css/topic.css" rel="stylesheet">
+            <link href="../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+            <style>
+                ul {
+                    padding-left: 0px;
+                }
+                
+                .playButton {
+                    width: 35px;
+                    height: 35px;
+                    cursor: pointer;
+                    float: left;
+                    margin: 25px 10px 0 35px;
+                }
+                
+                .answer-video .playButton {
+                    margin: 0 10px;
+                }
+                
+                input.blankinput {
+                    -moz-border-bottom-colors: none;
+                    -moz-border-left-colors: none;
+                    -moz-border-right-colors: none;
+                    -moz-border-top-colors: none;
+                    border-color: -moz-use-text-color -moz-use-text-color #000000;
+                    border-image: none;
+                    border-style: none none solid;
+                    border-width: 0 0 1px;
+                    margin: 0 0px;
+                    font-weight: bold;
+                    text-align: center;
+                    outline: none;
+                    height: 24px;
+                    resize: none;
+                    color: #333;
+                }
+                
+                span.blankinput {
+                    border-color: -moz-use-text-color -moz-use-text-color #000000;
+                    border-image: none;
+                    border-style: none none solid;
+                    border-width: 0 0 1px;
+                    margin: 0 0px;
+                    font-weight: bold;
+                    text-align: center;
+                    outline: none;
+                    height: 24px;
+                    resize: none;
+                    color: white;
+                }
+                
+                .form-horizontal .form-group {
+                    margin-right: 0;
+                    margin-left: 0;
+                    margin-top: 20px;
+                }
+            </style>
+            </head>
+
+            <body>
+            <nav class="navbar navbar-light navbar-expand-md fixed-top" id="mainNav" style="background: rgba(0,0,0,0);">
+                <div class="container">
+                    <a class="navbar-brand d-xl-flex justify-content-xl-center align-items-xl-center js-scroll-trigger" data-aos="zoom-in-right" href="https://u.abiscuit.net" style="font-family: Roboto, sans-serif;text-shadow: 0px 0px 5px var(--red);"><img class="rounded-circle d-xl-flex justify-content-xl-center align-items-xl-center" src="https://gravatar.loli.net/avatar/058e7772431faa1fcf6ef8e6ceed6552" style="max-height: auto;width: 40px;height: 40px;margin-right: 10px;">u校园答案导航</a>
+                    <button data-toggle="collapse" class="navbar-toggler navbar-toggler-right" data-target="#navbarResponsive" data-aos="fade-left" type="button" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" value="Menu" style="box-shadow: 0px 0px 5px var(--red);"><i class="fa fa-bars" style="box-shadow: 0px 0px 5px var(--red);"></i></button>
+                    <div class="collapse navbar-collapse" id="navbarResponsive">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item nav-link js-scroll-trigger"><a class="nav-link js-scroll-trigger" data-aos="zoom-out-left" href="https://kxz.atcumt.com/" style="font-family: Roboto, sans-serif;text-shadow: 0px 0px 5px var(--primary);">友情推荐：矿小助</a></li>
+                            <li class="nav-item nav-link js-scroll-trigger"><a class="nav-link js-scroll-trigger" data-aos="zoom-out-left" href="mailto:abiscuit@vip.qq.com" style="font-family: Roboto, sans-serif;text-shadow: 0px 0px 5px var(--blue);">邮箱联系</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- 主体部分开始 -->
+            <div class="main">
+                <div class="topclass">读写2-罗建波-B2U1</div>
+                <!-- 题型列表开始 --><div class="content Question">
+ <div class="Test">
+  <div class="TestTitle">
+   <div class="title" id="173">
+    新闻报道5题，总分值：5分
+   </div>
+   <div class="title-decrible">
+    <div class="directs">
+     Directions： In this section, you will hear some news reports. At the end of each news report, you will hear some questions. Both the news and the question will be spoken only once. After each question, Choose the best answer from the four choices marked A, B, C, and D.
+    </div>
+   </div>
+  </div>
+  <div class="Question-Conversation" qid="19131892" qtype="173">
+   <span class="answer-video">
+    <div class="play" respath="https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_1096/paper/201807/p_10102169/plostm_17155313192.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_1096/paper/201807/p_10102169/tnvtmn_17155313194.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_1096/paper/201807/p_10102169/otzbbq_17155313194.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_1096/paper/201807/p_10102169/qvrapu_17155313194.mp3">
+     <img class="playImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/play-1.png">
+      <img class="playingImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/playing02-fltrp.gif" style="display:none;"/>
+     </img>
+    </div>
+   </span>
+   <div class="Choice">
+    <div class="nu" id="t1">
+     <span>
+      <b>
+       1)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  It infected mainly company computers.
+       </label>
+       <label>
+        B.  It affected about 200,000 companies worldwide.
+       </label>
+       <label class="green">
+        C.  It would infect more computers on Monday morning.
+       </label>
+       <label>
+        D.  Its spread was stopped by a cyber security researcher.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t2">
+     <span>
+      <b>
+       2)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  Damage the computer software.
+       </label>
+       <label>
+        B.  Slow down Microsoft Windows.
+       </label>
+       <label class="green">
+        C.  Lock up computers and ask for money.
+       </label>
+       <label>
+        D.  Prevent users from surfing the Internet.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t3">
+     <span>
+      <b>
+       3)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  Some international companies.
+       </label>
+       <label>
+        B.  Some international banks.
+       </label>
+       <label>
+        C.  Some western governments.
+       </label>
+       <label>
+        D.  Some banks in Russia.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      1) C      2) C      3) A
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <div>
+      <pre><p>1) 细节题。音频中提到，在网络安全研究员的遏制下，这次网络病毒的传播速度有所减缓，不过专家们担心周一上班后感染病毒的电脑数量会急剧增加，所以选C。</p><p>2) 细节题。音频中提到，这次网络病毒是由一种可以损坏电脑系统的软件引起的，它通过锁住电脑然后索要赎金来获利。所以选C。</p><p>3) 细节题。音频最后部分提到，FedEx和Nissan等跨国公司被视为该病毒攻击的目标，所以选A。</p></pre>
+     </div>
+     <p>
+      <b>
+       听力文本：
+      </b>
+     </p>
+     <p>
+      <div style="text-align: justify;">
+       Let’s get started with the virus that’s already affected more than 200,000 victims worldwide. But it’s not a biological outbreak that makes people sick, it’s a cyber attack. It started on Friday.
+       <br/>
+       <br/>
+       Its spread was temporarily slowed down over the weekend by a cyber security researcher, but the criminals behind the attack found a way to get the virus spreading again. And experts were concerned that Monday morning, when people got back to work, and started up their computers, the number of infected machines would jump.
+       <br/>
+       <br/>
+       The problem is caused by a type of software that can damage computer systems. What it’s doing is locking up computers that used Microsoft Windows and asking for payment. If owners pay between $300 and $600, they’ll get access to their machines back.
+       <br/>
+       <br/>
+       The thing has spread far and wide. It’s been detected in at least 150 countries. International companies like FedEx and Nissan had been targeted. Russia’s Central Bank was reportedly attacked but wasn’t hurt by the virus. Other governments and businesses were taking steps to either contain or prevent the virus altogether.
+      </div>
+      <p>
+       <br/>
+       <p>
+        What do we know about the virus from the news?
+       </p>
+       <p>
+        How did the virus work?
+       </p>
+       <p>
+        What has been targeted by the virus?
+       </p>
+      </p>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="19131891" qtype="173">
+   <span class="answer-video">
+    <div class="play" respath="https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_1096/paper/201807/p_10102169/kdqpzd_17155004029.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_1096/paper/201807/p_10102169/dxjnzb_17155004030.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_1096/paper/201807/p_10102169/yvxywf_17155004031.mp3">
+     <img class="playImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/play-1.png"/>
+     <img class="playingImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/playing02-fltrp.gif" style="display:none;"/>
+    </div>
+   </span>
+   <div class="Choice">
+    <div class="nu" id="t4">
+     <span>
+      <b>
+       4)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  The gunman was shot dead by the police.
+       </label>
+       <label class="green">
+        B.  The shooting aimed at people in the concert.
+       </label>
+       <label>
+        C.  Fifty-nine people were seriously injured in the shooting.
+       </label>
+       <label>
+        D.  The shooting was proved to have links to terrorism.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t5">
+     <span>
+      <b>
+       5)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  He called on people to fight against terrorism.
+       </label>
+       <label>
+        B.  He observed a moment of silence in Las Vegas.
+       </label>
+       <label>
+        C.  He visited Las Vegas immediately after the incident.
+       </label>
+       <label class="green">
+        D.  He praised the speed and efforts of the emergency services.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      4) B      5) D
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <div>
+      <pre><p>4) 细节题。音频中提到，这场在音乐会上发生的大规模枪击事件至少造成59人死亡，527人受伤，而枪手也在警察冲进房间时自杀，但是调查者并没有发现这次枪击事件与国际恐怖主义之间有任何关联，所以选B。</p><p>5) 细节题。音频中提到，特朗普总统夸赞了应急服务的迅速反应以及所付出的努力，同时宣布会在周三到访拉斯维加斯，随后他和第一夫人在白宫草坪上默哀片刻。所以选D。</p></pre>
+     </div>
+     <p>
+      <b>
+       听力文本：
+      </b>
+     </p>
+     <p>
+      <div style="text-align: justify;">
+       At least 59 people have been killed and another 527 injured in a mass shooting at a Las Vegas concert.
+       <br/>
+       <br/>
+       A gunman, named as 64-year-old Nevada resident Stephen Paddock, opened fire from the 32nd floor of the Mandalay Bay Hotel towards an open-air music festival attended by 22,000.
+       <br/>
+       <br/>
+       He killed himself as police stormed the room where 10 guns were found. Investigators have found no link to international terrorism, despite a claim from so-called Islamic State.
+       <br/>
+       <br/>
+       In an address from the White House, President Donald Trump described the attack as “pure evil”. He praised the efforts of the emergency services, saying their “miraculous” speed saved lives, and announced he would be visiting Las Vegas on Wednesday. With First Lady Melania by his side, he later observed a moment of silence on the White House lawn.
+      </div>
+      <p>
+       <br/>
+       <p>
+        What do we know about the mass shooting incident?
+       </p>
+       <p>
+        What did President Donald Trump do after the shooting?
+       </p>
+      </p>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+ </div>
+ <div class="Test">
+  <div class="TestTitle">
+   <div class="title" id="103">
+    长对话8题，总分值：8分
+   </div>
+   <div class="title-decrible">
+    <div class="directs">
+     Directions： In this section, you'll hear some long conversations. At the end of each conversation, some questions will be asked. Both the conversation and the questions will be spoken only once. After each question, choose the best answer from the four choices marked A, B, C, and D.
+    </div>
+   </div>
+  </div>
+  <div class="Question-Conversation" qid="156025" qtype="103">
+   <span class="answer-video">
+    <div class="play" respath="https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_3/t_103/201510/e2293f6b-4a40-4557-8e34-e9427440cc82.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_3/t_103/201510/74631a25-e203-4652-beaa-3fcaef456c51.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_3/t_103/201510/ab35b458-7d10-4d4e-95cd-55dfee4327c4.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_3/t_103/201510/ae9ce780-0ee2-4148-8f0e-3a3e230bf940.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_3/t_103/201510/459d1a16-336f-4734-b24a-27335201e7c6.mp3">
+     <img class="playImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/play-1.png"/>
+     <img class="playingImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/playing02-fltrp.gif" style="display:none;"/>
+    </div>
+   </span>
+   <div class="Choice">
+    <div class="nu" id="t6">
+     <span>
+      <b>
+       6)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  Because she has an appointment with Oprah Winfrey.
+       </label>
+       <label>
+        B.  Because she is studying the life of Oprah Winfrey.
+       </label>
+       <label class="green">
+        C.  Because she is attending a discussion by Oprah Winfrey.
+       </label>
+       <label>
+        D.  Because she is having a break with Oprah Winfrey.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t7">
+     <span>
+      <b>
+       7)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  She eats and exercises in a way influenced by Oprah Winfrey.
+       </label>
+       <label>
+        B.  She's set up a book club under the influence of Oprah Winfrey.
+       </label>
+       <label>
+        C.  She’s influenced to recommend Oprah Winfrey’s magazine to others.
+       </label>
+       <label>
+        D.  She’s influenced to read books written by Oprah Winfrey.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t8">
+     <span>
+      <b>
+       8)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  Because she’s finished 25 years of her daily show by 32.
+       </label>
+       <label class="green">
+        B.  Because she’s an inspiring success story of giving and sharing.
+       </label>
+       <label>
+        C.  Because she knows what poverty is through her poor childhood.
+       </label>
+       <label>
+        D.  Because she helps girls in South America with their education.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t9">
+     <span>
+      <b>
+       9)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  He is convinced.
+       </label>
+       <label>
+        B.  He is still doubtful.
+       </label>
+       <label>
+        C.  He is impressive.
+       </label>
+       <label>
+        D.  He is persuasive.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      6) C      7) A      8) B      9) A
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <div>
+      <pre>（无）</pre>
+     </div>
+     <p>
+      <b>
+       听力文本：
+      </b>
+     </p>
+     <p>
+      <p style="text-align:justify">
+       M: You look happy Melissa. What’s going on?
+      </p>
+      <p style="text-align:justify">
+       W: Oh, I’m so excited! I’m attending one of Oprah Winfrey’s live seminars! I might even meet Oprah herself! This will be life changing.
+      </p>
+      <p style="text-align:justify">
+       M: Give me a break. I’ve never understood why people get so excited about her. She’s just a talk show host.
+      </p>
+      <p style="text-align:justify">
+       W: Just a host? Are you kidding? She’s one of the most heart-felt and influential women of all time. She’s changed the way I eat and exercise! I’ve been getting her magazine since August of 2005. And there’s her book club. Two of my favorite books Oprah recommended are
+       <i>
+        A New Earth
+       </i>
+       by Eckhart Tolle and
+       <i>
+        East of Eden
+       </i>
+       by John Steinbeck.
+      </p>
+      <p style="text-align:justify">
+       M: But why do you care about her opinion so much?
+      </p>
+      <p style="text-align:justify">
+       W: Well, she’s such an inspiring success story. She was born in 1954 in Mississippi to a teenage mother who was so poor that Oprah had to wear dresses made from potato sacks!
+      </p>
+      <p style="text-align:justify">
+       M: Wow, and I thought I had it tough growing up in Chicago without a car! I can’t even imagine not having real clothes.
+      </p>
+      <p style="text-align:justify">
+       W: I know. Through hard work and a hopeful attitude, Oprah moved up through local radio at Tennessee State University all the way to the
+       <i>
+        6 PM News
+       </i>
+       in Baltimore before she began hosting her own show in 1978 at the age of 24.
+      </p>
+      <p style="text-align:justify">
+       M: 24 when she got her own show? That’s amazing!
+      </p>
+      <p style="text-align:justify">
+       W: And a millionaire by 32! She’s just finished 25 years of her daily show, owns a magazine, website, and radio show. She’s even founded a girl’s high school in South Africa! And she gives millions away to charity. Oprah’s biggest success is the way she gives and shares her heart and self.
+      </p>
+      <p style="text-align:justify">
+       M: Okay. Oprah is impressive.
+      </p>
+      <p style="text-align:justify">
+       W: Told you so!
+      </p>
+      <p>
+       <br/>
+       <p>
+        Why is the woman so excited?
+       </p>
+       <p>
+        How is the woman influenced by Oprah Winfrey?
+       </p>
+       <p>
+        Why does the woman care so much about Oprah Winfrey’s opinion?
+       </p>
+       <p>
+        What can be learned about the man at the end of the conversation?
+       </p>
+      </p>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="156024" qtype="103">
+   <span class="answer-video">
+    <div class="play" respath="https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_3/t_103/201510/a86fbc7b-b6f4-43a2-ab52-ca065fe60096.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_3/t_103/201510/60c23c25-6bdc-4f4b-9ef8-1bec516608e3.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_3/t_103/201510/4ab400e0-9e73-43ae-8e4f-acb1835ec875.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_3/t_103/201510/e27c3a3f-40ec-4f93-85bb-67cf34f3cf33.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_3/t_103/201510/f9cadd03-79cd-42e4-8fce-9360434847d1.mp3">
+     <img class="playImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/play-1.png"/>
+     <img class="playingImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/playing02-fltrp.gif" style="display:none;"/>
+    </div>
+   </span>
+   <div class="Choice">
+    <div class="nu" id="t10">
+     <span>
+      <b>
+       10)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  Uncle and nephew.
+       </label>
+       <label>
+        B.  Father and daughter.
+       </label>
+       <label class="green">
+        C.  Uncle and niece.
+       </label>
+       <label>
+        D.  Teacher and student.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t11">
+     <span>
+      <b>
+       11)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  It is stressful.
+       </label>
+       <label>
+        B.  It is fascinating.
+       </label>
+       <label>
+        C.  It is boring.
+       </label>
+       <label>
+        D.  It is marvelous.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t12">
+     <span>
+      <b>
+       12)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  Because she was too late for her daughter’s birthday party.
+       </label>
+       <label>
+        B.  Because she bought her daughter a dress that was too cheap.
+       </label>
+       <label>
+        C.  Because she forgot to invite her daughter to the movies.
+       </label>
+       <label class="green">
+        D.  Because she refused to buy a dress her daughter preferred.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t13">
+     <span>
+      <b>
+       13)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  Buy another new dress that her daughter loves.
+       </label>
+       <label class="green">
+        B.  Have patience and put a lot of heart into the matter.
+       </label>
+       <label>
+        C.  Give her daughter even more money.
+       </label>
+       <label>
+        D.  Go travelling with her daughter to New Orleans.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      10) C      11) A      12) D      13) B
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <div>
+      <pre>（无）</pre>
+     </div>
+     <p>
+      <b>
+       听力文本：
+      </b>
+     </p>
+     <p>
+      <p style="text-align:justify">
+       M: Hey sister! Good to hear from you! How old is Karen now? Is she 12?
+      </p>
+      <p style="text-align:justify">
+       W: No, she’s 13! Seems like yesterday she was blowing out pink candles on her 5th birthday cake.
+      </p>
+      <p style="text-align:justify">
+       M: Yeah, time passes by so quickly… we’ve really missed you…
+      </p>
+      <p style="text-align:justify">
+       W: So busy at work. Finally I’ve reached my present position.
+      </p>
+      <p style="text-align:justify">
+       M: Wow! My sister in New York City! What a success: a single mom and a senior partner in a law firm in New York City! You must be making at least $300,000 a year!
+      </p>
+      <p style="text-align:justify">
+       W: $650,000 actually, but it’s cost me a lot to get where I am…
+      </p>
+      <p style="text-align:justify">
+       M: Well, you just missed three family reunions in Louisiana, but compared to a marvelous life in New York City...
+      </p>
+      <p style="text-align:justify">
+       W: Oh, it’s not that fascinating and exciting, working until midnight, no vacations for two years, picking up dinner when I’m too tired to cook. That’s why I called you…
+      </p>
+      <p style="text-align:justify">
+       M: What’s wrong?
+      </p>
+      <p style="text-align:justify">
+       W: I’m really worried about Karen. Last year, I decided I wanted to spend more time with her. I invited her to movies and dinner, and she said that it was “too late – I’d missed too much”. We fought a "huge" fight because she wanted a $4,000 dress for the school dance. I’d just bought her a $2,500 dress for her birthday party and told her she could only spend $2,000 for the school dance party dress… but maybe I’ll just give her the $4,000 for the school dance dress.
+      </p>
+      <p style="text-align:justify">
+       M: No way! This isn’t a money problem. You need time, patience, and a lot of heart to succeed. Jump on a plane to New Orleans this weekend. We’ll work this out.
+      </p>
+      <p style="text-align:justify">
+       W: Okay. Perfect! Karen said she loves you and your boys more than anything in this world. See you Saturday!
+      </p>
+      <p>
+       <br/>
+       <p>
+        What is the relationship between the man and Karen?
+       </p>
+       <p>
+        What does the woman think of her career?
+       </p>
+       <p>
+        Why did the woman and her daughter have a huge fight last year?
+       </p>
+       <p>
+        What does the man suggest that the woman should do to improve the relationship between her and her daughter?
+       </p>
+      </p>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+ </div>
+ <div class="Test">
+  <div class="TestTitle">
+   <div class="title" id="104">
+    短文理解8题，总分值：8分
+   </div>
+   <div class="title-decrible">
+    <div class="directs">
+     Directions： In this section, you’ll hear some passages. At the end of each passage, you'll hear some questions. Both the passage and the questions will be spoken only once. After each question, choose the best answer from the four choices marked A, B, C, and D.
+    </div>
+   </div>
+  </div>
+  <div class="Question-Conversation" qid="10122777" qtype="104">
+   <span class="answer-video">
+    <div class="play" respath="https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_1647/paper/201708/p_10101111/ghsqpr_02093456719.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_1647/paper/201708/p_10101111/upjbnr_02093456722.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_1647/paper/201708/p_10101111/vmbazq_02093456722.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_1647/paper/201708/p_10101111/qfkjzh_02093456723.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_1647/paper/201708/p_10101111/hrqdyc_02093456724.mp3">
+     <img class="playImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/play-1.png"/>
+     <img class="playingImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/playing02-fltrp.gif" style="display:none;"/>
+    </div>
+   </span>
+   <div class="Choice">
+    <div class="nu" id="t14">
+     <span>
+      <b>
+       14)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  The company wants to test if robots can work well.
+       </label>
+       <label>
+        B.  The company wants to test cameras and instruments.
+       </label>
+       <label>
+        C.  The company wants to create special sidewalk maps.
+       </label>
+       <label class="green">
+        D.  The company wants to save money spent on delivery.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t15">
+     <span>
+      <b>
+       15)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  The robot uses a camera to send a picture to him.
+       </label>
+       <label>
+        B.  The robot opens the lid of the box to make a noise.
+       </label>
+       <label class="green">
+        C.  The robot sends a message to the customer’s phone.
+       </label>
+       <label>
+        D.  The robot goes to the customer and pushes a button.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t16">
+     <span>
+      <b>
+       16)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  To make sure that each robot has an alarm on it.
+       </label>
+       <label class="green">
+        B.  To make sure that each robot is not too valuable.
+       </label>
+       <label>
+        C.  To make sure that each robot won’t cost over $40.
+       </label>
+       <label>
+        D.  To make sure robots only deliver smaller products.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t17">
+     <span>
+      <b>
+       17)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  Because the robots can only deliver smaller products.
+       </label>
+       <label>
+        B.  Because it’s still unknown whether it will be successful.
+       </label>
+       <label>
+        C.  Because only a few countries are trying this new system.
+       </label>
+       <label>
+        D.  Because the production of the current robots is too small.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      14) D      15) C      16) B      17) A
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <div>
+      <pre>（无）</pre>
+     </div>
+     <p>
+      <b>
+       听力文本：
+      </b>
+     </p>
+     <p>
+      <div style="text-align:justify">
+       With online purchases becoming more popular each year, companies need to find ways to reduce their delivery costs. One company has begun testing robots to deliver products to customers in order to save money. One of the founders of Skype thinks his company has a solution to reduce costs by eliminating trucks and drivers. They want to use robots. The robot is like a box with six wheels. It has nine cameras and instruments to help guide it on the sidewalk and avoid hitting people and objects on the sidewalks. The company had to create their own special sidewalk maps for the robots to use because most other maps are street maps.
+       <br/>
+       <br/>
+       When the robot arrives at the delivery destination, it sends a message to the customer’s phone. The customer goes to the robot and pushes a button on the cell phone’s message. This unlocks the lid, so the customer can open it to collect his order.
+       <br/>
+       <br/>
+       People may consider this a bad idea because they believe many robots would probably be stolen. However, the company has tried to make this unlikely to happen. Since there are cameras, if someone tries to steal it, their picture would be taken by the robot. The robots also have GPS so they can be located if they are taken. One of the biggest solutions to the possibility of theft is cost. The company made sure that each robot was not too valuable.  The company claims that the most expensive part of the robot costs just $40, so people may be less motivated to steal it.
+       <br/>
+       <br/>
+       The robot delivery system may help delivery costs to decrease; however, it’s limited because the current robots are rather small, so only smaller products can be delivered using this method. Currently only a few countries are trying this new system. If it’s successful, it’ll expand to more countries in the future.
+      </div>
+      <p>
+       <br/>
+       <p>
+        Why has the company begun to deliver products by robots?
+       </p>
+       <p>
+        How can the customer know the delivery has arrived?
+       </p>
+       <p>
+        What’s one of the biggest solutions to the possibility of theft?
+       </p>
+       <p>
+        Why is using robots to help decrease delivery costs limited?
+       </p>
+      </p>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="10122736" qtype="104">
+   <span class="answer-video">
+    <div class="play" respath="https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_1647/paper/201707/p_10101094/peeoof_02083617009.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_1647/paper/201707/p_10101094/wezkrr_02085612801.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_1647/paper/201707/p_10101094/poiiji_02085612802.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_1647/paper/201707/p_10101094/wgcjwr_02085612802.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_1647/paper/201707/p_10101094/ulywss_02085612803.mp3">
+     <img class="playImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/play-1.png"/>
+     <img class="playingImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/playing02-fltrp.gif" style="display:none;"/>
+    </div>
+   </span>
+   <div class="Choice">
+    <div class="nu" id="t18">
+     <span>
+      <b>
+       18)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  When American children started to buy ice cream.
+       </label>
+       <label>
+        B.  When people preferred the soft quality of ice cream.
+       </label>
+       <label>
+        C.  When buying ice cream became part of children’s lives.
+       </label>
+       <label class="green">
+        D.  When Thomas’ truck filled with ice cream got a flat tire.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t19">
+     <span>
+      <b>
+       19)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  They loudly sang songs out of the truck window.
+       </label>
+       <label class="green">
+        B.  They put bells on their trucks and later used music.
+       </label>
+       <label>
+        C.  They used music and later put bells on their trucks.
+       </label>
+       <label>
+        D.  They shouted to let children know they were coming.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t20">
+     <span>
+      <b>
+       20)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  They play songs from each culture.
+       </label>
+       <label>
+        B.  They change music styles frequently.
+       </label>
+       <label class="green">
+        C.  They only play old, traditional music.
+       </label>
+       <label>
+        D.  They only play modern, popular songs.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t21">
+     <span>
+      <b>
+       21)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  Children can easily hear the music of an ice cream truck.
+       </label>
+       <label class="green">
+        B.  Ice cream truck drivers have begun to send text messages.
+       </label>
+       <label>
+        C.  Children now like to stay inside their home eating ice cream.
+       </label>
+       <label>
+        D.  More children buy ice cream because they receive text messages.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      18) D      19) B      20) C      21) B
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <div>
+      <pre>（无）</pre>
+     </div>
+     <p>
+      <b>
+       听力文本：
+      </b>
+     </p>
+     <p>
+      <div style="text-align:justify">
+       Buying ice cream from a truck has been part of the lives of American children since the early 1920s. No one is exactly sure when and where the first ice cream truck appeared, but many believe that it began when a New York man named Thomas Carvellos was driving a truck full of ice cream when it got a flat tire. Even though the ice cream was melting, Thomas decided to sell it, and people seemed to prefer this soft quality to the hard, frozen one. An idea was born, and soon trucks of ice cream were driven on the streets.
+       <br/>
+       <br/>
+       However, the ice cream truck drivers needed to get the attention of the customers, so they put bells on their trucks so customers would know they were in the neighbourhood. Soon afterwards, a company began using music to signal to children that an ice cream truck was coming down the street.
+       <br/>
+       <br/>
+       In the late 1950s, a British man opened his own ice cream truck business in England after he visited the US and saw how successful they were. Eventually, he took his business to Australia and New Zealand.
+       <br/>
+       <br/>
+       One thing interesting about all of these ice cream trucks is that they play a specific kind of music. They are usual traditional songs from each culture, and this same kind of music is still used today. They don’t use modern, popular songs; they haven’t changed like music styles have changed. People enjoy hearing these old songs because the songs remind them of their childhood when they used to get ice cream.
+       <br/>
+       <br/>
+       However, in a cold country like Sweden, ice cream truck drivers have begun to send text messages because it’s hard for children to hear the music of the ice cream truck because they’re inside, but people are wondering if this method gives the same motivation to buy ice cream as hearing music.
+      </div>
+      <p>
+       <br/>
+       <p>
+        When do people believe the idea for the ice cream truck first appeared?
+       </p>
+       <p>
+        How did the ice cream truck drivers get the customers’ attention?
+       </p>
+       <p>
+        What’s something interesting about these ice cream trucks?
+       </p>
+       <p>
+        What is something new regarding ice cream in Sweden?
+       </p>
+      </p>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+ </div>
+ <div class="Test">
+  <div class="TestTitle">
+   <div class="title" id="107">
+    长篇阅读10题，总分值：10分
+   </div>
+   <div class="title-decrible">
+    <div class="directs">
+     Directions： You are going to read a passage with 10 statements attached to it. Each statement contains information given in one of the paragraphs. Identify the paragraph from which the information is derived. You may choose a paragraph more than once. Each paragraph is marked with a letter.
+    </div>
+   </div>
+  </div>
+  <div class="Question-Conversation" qid="155960" qtype="107">
+   <div class="Choice">
+    <div class="padding">
+     <p>
+      <p style="text-align:center">
+       <b>
+        Failure Was A Stepping Stone to Success
+       </b>
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       A) On a sweltering (闷热的) evening in central London this week, smartly dressed young women gathered to discuss “Redefining Success Beyond Money and Power”. The keynote speaker contrasted the ancient Greek philosophers’ ideal of “a good life” with our modern misunderstanding that it means working 24/7, sleepless and stressed, soldered (焊接) to a BlackBerry. We need a revolution to redefine success, she told her audience. Rest, relaxation and meditation are the future. “Prioritize your health. Live your life as if everything is rigged (装配) in your favor. Burnt-out people do not create a sustainable planet.”
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       B) We meet the following day at the office of The Huffington Post UK, one of eight global offices producing one of the most popular English language news websites on the planet. Created in 2005, the website with an eclectic (博采众长的) mix of original journalism and links to other published articles and blogs by anyone from Barack Obama to a homeless teenager is now read by more than 75 million people every month, and was bought by AOL (American Online) in 2011 for $315 million.
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       C) Arianna Huffington has been confounding (混淆) expectations ever since she arrived in London from Greece as a 16-year-old with her mother and sister, saw a photo of Cambridge University and decided to apply. With the exception of her mother, everyone told her she didn’t stand a chance, not least because she could barely speak English. She won a place to study economics, joined the Union, a debating society in Cambridge, got laughed at for her accent and total ignorance of the rules of debating, but was elected its first foreign female president. She was soon appearing on TV panel shows, fell in love with the celebrated
+       <i>
+        The Times
+       </i>
+       columnist Bernard Levin and published her first bestseller at 23. By 30 her fourth book had been serialized in
+       <i>
+        The Sunday Times
+       </i>
+       for a record-breaking £150,000. But when Levin, twice her age, refused to marry and have children, off she went with her mother and sister to conquer New York.
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       D) Soon she was Manhattan’s premiere socialite (社会名流), and before long an oil billionaire’s wife. Relocating to Washington in the 1980s, she became the darling of the Republican right, getting her husband elected to Congress and establishing herself as a glamorous DC power broker. After 11 years and two daughters, the marriage ended amicably after her husband’s announcement that he was bisexual, prompting another move – to California, mother and sister still in tow – where she reinvented herself again as a passionate liberal and society queen. She ran against Arnold Schwarzenegger for state governor in 2003, before drawing on 40 years of high-octane (富有活力的) networking to get her rich and famous friends to fund and write for
+       <i>
+        The Huffington Post
+       </i>
+       , which she describes as her “last act” and the realization of her life’s work and dreams. “Everything,” as she puts it happily, “happens for a reason.”
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       E) How has she managed to pull all this off? People who know Huffington cite her charm as the answer – so I ask her to demonstrate. The first clue is a bundle of papers in her hand, which she was skimming as she arrived, and which are her research notes on me. This, I can safely say, has never happened before. She mentions articles I’ve written, and tells me she’s ordered a book I wrote years ago. “I love the title,” she purrs. “I love it. I think I’m going to learn a lot about you.”
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       F) Let’s pretend I were a powerful political player she had just met at a cocktail party, I suggest. What would she say to me? She dissolves into bashful (害羞的) giggles. “For me it is about how good a listener you are, how you listen. Because the worst thing you can do in terms of connecting with people is when you are looking over their shoulder to see if there is someone more interesting in the room. And I think what we all want is to be seen in a real way.”
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       G) She never bothers discussing current affairs. “Few people have really profound thoughts on the news of the day, right? They’re just rehashing (重复) whatever the editorial said. I want to talk to people about themselves and what’s happening in their lives. And I think that’s what people really talk about. I’m much more interested in having real conversations. I would want to talk to you about how you dealt with your mother’s death, or about your book.”
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       H) The real secret seems to be her astonishing resilience (恢复力) in the face of criticism or failure. “I think you have to understand – you have to think of my mother. She was an incredible force in my life because she’d given me this amazing, unconditional love, which was like a treasure trove (收藏品), so whatever else was going on I felt this incredible loving from her. The feeling she brought me and my sister up on was: try, whatever it is; failure is not the opposite of success but a stepping stone to success. So if you stand up at the Cambridge Union and they ridicule you, it doesn’t matter; you’ll stand up again and you’ll learn and get better at it.”
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       I) Her latest big idea is a movement she calls The "Third Metric" and describes as “the third wave of feminism”. “What we’re saying is we need to reshape the world in which women are participating. Not just break through ceilings in the current broken system. We have to get away from the way men have constructed work around war metaphors and sports metaphors and praising each other for working 24/7, working round the clock – these phrases simply encourage a very destructive way to lead our lives, and we are paying a very high price.”
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       J) She cites Steve Jobs and Bill Gates, whose best ideas apparently came after meditating or retreating to a technology-free log cabin. “We must learn to really think and connect with our wisdom, and I really believe we all have that deeper wisdom in us. My point is, it’s not a trade-off: Either you work really hard and are successful, or not. We are seeing that mindfulness and meditation are all also performance-enhancing techniques.”
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       K) Lots of journalists would love to stop working 24/7, but blame websites including
+       <i>
+        The Huffington Post
+       </i>
+       for taking their work and giving it away for free. She looks puzzled. “I’m surprised because that’s such a discredited argument. I’m a big believer in aggregation, but we always link back to the creators, so they would have a lot more traffic for their work. Beyond that,
+       <i>
+        The Huffington Post
+       </i>
+       has 800 jobs for journalists, editors and engineers, so that argument is really obsolete.” People are happy to talk about their ideas on Newsnight for free, she points out; she’s merely offering them a global platform.
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       L) At 63 she is a multimillionaire; her daughters are grown up and she cannot think of a single famous living person she would like to meet but has not. By any definition of success, she has surely reached the point at which she could stop, hasn’t she? “But what else would I be doing? I’d be bored to death lying on a beach in the south of France.”
+      </p>
+     </p>
+    </div>
+    <div class="nu" id="t22">
+     <span>
+      <b>
+       22)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Huffington thinks that few people have their own deep thoughts on the news, and they just echo whatever the editorial said.
+      <span class="blankinput" type="text">
+       G
+      </span>
+     </p>
+    </div>
+    <div class="nu" id="t23">
+     <span>
+      <b>
+       23)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Huffington once fought an election campaign against Arnold Schwarzenegger for state governor.
+      <span class="blankinput" type="text">
+       D
+      </span>
+     </p>
+    </div>
+    <div class="nu" id="t24">
+     <span>
+      <b>
+       24)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Huffington and her sister took every chance to try regardless of failure, believing that failure is a stepping stone to success because of their mother’s amazing and unconditional love.
+      <span class="blankinput" type="text">
+       H
+      </span>
+     </p>
+    </div>
+    <div class="nu" id="t25">
+     <span>
+      <b>
+       25)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      When Huffington decided to apply for Cambridge University, only her mother believed she had a chance.
+      <span class="blankinput" type="text">
+       C
+      </span>
+     </p>
+    </div>
+    <div class="nu" id="t26">
+     <span>
+      <b>
+       26)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Now Huffington has been so successful that she could stop working, but she wouldn’t.
+      <span class="blankinput" type="text">
+       L
+      </span>
+     </p>
+    </div>
+    <div class="nu" id="t27">
+     <span>
+      <b>
+       27)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <i>
+       The Huffington Post
+      </i>
+      , one of the most popular English language news websites, has attracted over 75 million people every month.
+      <span class="blankinput" type="text">
+       B
+      </span>
+     </p>
+    </div>
+    <div class="nu" id="t28">
+     <span>
+      <b>
+       28)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Huffington thinks that working round the clock just helps to develop a destructive way to lead a life, with a very high price to pay.
+      <span class="blankinput" type="text">
+       I
+      </span>
+     </p>
+    </div>
+    <div class="nu" id="t29">
+     <span>
+      <b>
+       29)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      People who know Huffington attribute her success to her charm.
+      <span class="blankinput" type="text">
+       E
+      </span>
+     </p>
+    </div>
+    <div class="nu" id="t30">
+     <span>
+      <b>
+       30)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Huffington believes she’s only offering a global platform for people to share their ideas for free.
+      <span class="blankinput" type="text">
+       K
+      </span>
+     </p>
+    </div>
+    <div class="nu" id="t31">
+     <span>
+      <b>
+       31)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      The main speaker at the gathering in central London advocated a revolution to redefine success.
+      <span class="blankinput" type="text">
+       A
+      </span>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      22) G      23) D      24) H      25) C      26) L      27) B      28) I      29) E      30) K      31) A
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <div>
+      <pre>（无）</pre>
+     </div>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+ </div>
+ <div class="Test">
+  <div class="TestTitle">
+   <div class="title" id="152">
+    阅读理解10题，总分值：20分
+   </div>
+   <div class="title-decrible">
+    <div class="directs">
+     Directions： Read the following passages carefully. Each passage is followed by some questions or unfinished sentences. For each of them there are four choices marked A, B, C, and D. Choose the best answer to each question.
+    </div>
+   </div>
+  </div>
+  <div class="Question-Conversation" qid="155938" qtype="152">
+   <div class="Choice">
+    <div class="padding">
+     <p>
+      <p style="text-align:justify">
+       Governments throughout the world act on the assumption that the welfare of their people depends largely on the economic strength and wealth of the community. Under modern conditions, this requires varying measures of centralized control and hence the help of specialized scientists such as economists and operational research experts. Furthermore, it is obvious that the strength of country’s economy is directly bound up with the efficiency of its agriculture and industry, and that this in turn rests upon the efforts of scientists and technologists of all kinds. It also means that governments are increasingly compelled to interfere in these sectors in order to step up production and ensure that it is utilized (利用) to the best advantage. For example, they may encourage research in various ways, including the setting up of their own research centers; they may alter the structure of education, or interfere in order to reduce the wastage of natural resources or develop resources hitherto (到目前为止) unexploited; or they may cooperate directly in the growing number of international projects related to scientific and technological manpower of all kinds.
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       Owing to the remarkable development in mass-communications, people everywhere are feeling new wants and are being exposed to new customs and ideas, while governments are often forced to introduce still further innovations (创新) for the reasons given above. At the same time, the normal rate of social change throughout the world is taking place at a vastly accelerated speed compared with the past. For example, in the early industrialized countries of Europe, the process of industrialization — with all the far-reaching changes in social patterns that followed — was spread over nearly a century, whereas nowadays a developing nation may undergo the same process in a decade or so. All this has the effect of building up unusual pressures and tensions within the community and consequently presents serious problems for the governments concerned. Additional social stresses may also occur because of the population explosion or problems arising from mass migration movements — themselves made relatively easy nowadays by modern means of transport. As a result of all these factors, governments are becoming increasingly dependent on biologists and social scientists for planning the appropriate programs and putting them into effect.
+      </p>
+     </p>
+    </div>
+    <div class="nu" id="t32">
+     <span>
+      <b>
+       32)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      What is believed to directly affect the welfare of people according to the passage?
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  Varying measures of centralized control.
+       </label>
+       <label class="green">
+        B.  Economic strength and wealth of the community.
+       </label>
+       <label>
+        C.  Economists and operational research experts.
+       </label>
+       <label>
+        D.  Help of specialized scientists.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t33">
+     <span>
+      <b>
+       33)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      How can the governments do to promote the production?
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  By interfering in different sectors that can promote science and technology to ensure smooth operation.
+       </label>
+       <label>
+        B.  By asking the scientists and technologists to improve efficiency.
+       </label>
+       <label>
+        C.  By utilizing natural resources to the best advantage.
+       </label>
+       <label>
+        D.  By changing the structure of education to train more scientists.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t34">
+     <span>
+      <b>
+       34)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      What can be inferred from the development in mass-communications?
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  People are constantly changing their customs and ideas.
+       </label>
+       <label>
+        B.  People always want something new and remarkable to feel better.
+       </label>
+       <label class="green">
+        C.  Governments are under greater pressure of bringing about new inventions.
+       </label>
+       <label>
+        D.  Governments are often forced to keep up with new customs and ideas.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t35">
+     <span>
+      <b>
+       35)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      What has posed pressures and problems for the governments concerned according to the passage?
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  Social changes throughout the world are speeding up compared with the past.
+       </label>
+       <label>
+        B.  The rate of social changes in the early industrialized countries is becoming slow now.
+       </label>
+       <label>
+        C.  The far-reaching changes in social patterns can be spread over in a developing country within a decade.
+       </label>
+       <label>
+        D.  The normal rate of social changes is taking place at a steady speed.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t36">
+     <span>
+      <b>
+       36)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Why are governments becoming increasingly dependent on biologists and social scientists?
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  Because governments need to handle social stresses and problems.
+       </label>
+       <label>
+        B.  Because governments want to learn from early industrialized countries.
+       </label>
+       <label>
+        C.  Because governments have to make modern means of transport relatively easy.
+       </label>
+       <label>
+        D.  Because governments need them for the industrialization of their own countries.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      32) B      33) A      34) C      35) A      36) A
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <div>
+      <pre>（无）</pre>
+     </div>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="155937" qtype="152">
+   <div class="Choice">
+    <div class="padding">
+     <p>
+      <p style="text-align:justify">
+       Why do smokers tend to weigh less than nonsmokers and gain weight when they give up the habit?
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       Contrary to “common knowledge”, nonsmokers do not generally eat more than smokers, nor do they exercise less, studies find. Research performed on smokers at rest indicates that nicotine (尼古丁) itself can increase basal metabolic (新陈代谢的) rates, meaning smokers burn more energy than nonsmokers during periods of inactivity. But surveys suggest most smokers smoke not while completely at rest, but while performing light activities such as desk work that can increase metabolic rates by two or three times. Unless nicotine’s metabolic effects increase proportionally with metabolic rates, its influence on weight might be insignificant.
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       Now a study shows that nicotine’s effects on body-fuel consumption indeed increase proportionally with increases in activity. “These results indicate that the metabolic effect of nicotine may play a greater part in accounting for body-weight differences between smokers and nonsmokers than was previously believed,” says Kenneth A. Perkins and his colleagues at the University of Pittsburgh School of Medicine.
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       The researchers gave a nicotine nose spray to individuals performing light work — in this case riding an exercise bicycle modified to allow easy riding while subjects remain seated in a comfortable armchair. The activity raised resting metabolic rates two to three times.
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       By analyzing air breathed out, the researchers calculated energy consumption in the armchair bicyclists before and after giving the nose spray and compared the relative changes with subjects in the control group given placebo (（试验药物用的）无效对照剂) nose sprays. Relative to their baseline bicycle expenditures, individuals in the nicotine group expended considerably more energy than did those in control group while doing the same amount of work. With nicotine, Perkins says, “It’s as if the body is becoming much less efficient in using its stored energy.”
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       While the results may seem discouraging to smokers who’d like to quit without gaining weight, Perkins notes that walking an extra mile a day should make up for the difference in metabolic efficiency. And he says smokers would have to gain “well more than 50 pounds” to counterbalance the health risks of continued smoking.
+      </p>
+     </p>
+    </div>
+    <div class="nu" id="t37">
+     <span>
+      <b>
+       37)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      What might “common knowledge” say about smokers and nonsmokers?
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  Smokers eat more and exercise less than nonsmokers.
+       </label>
+       <label class="green">
+        B.  Smokers eat less and exercise more than nonsmokers.
+       </label>
+       <label>
+        C.  Smokers eat more and exercise more than nonsmokers.
+       </label>
+       <label>
+        D.  Smokers eat less and exercise less than nonsmokers.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t38">
+     <span>
+      <b>
+       38)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      When might nicotine influence smokers’ weight significantly?
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  While smokers are at rest.
+       </label>
+       <label>
+        B.  While smokers are exercising.
+       </label>
+       <label class="green">
+        C.  When Nicotine’s metabolic effects and metabolic rates increase at the same rate.
+       </label>
+       <label>
+        D.  When Nicotine’s metabolic effects increase proportionally with the amount of light activities.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t39">
+     <span>
+      <b>
+       39)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      The word “subjects” in the fourth paragraph means          .
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  researchers
+       </label>
+       <label>
+        B.  addicted smokers
+       </label>
+       <label>
+        C.  people under medical treatment
+       </label>
+       <label class="green">
+        D.  people undergoing an experiment
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t40">
+     <span>
+      <b>
+       40)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      What have the researchers found out in their study?
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  People in the nicotine group consumed more energy.
+       </label>
+       <label>
+        B.  People in the control group breathed out more air.
+       </label>
+       <label>
+        C.  People without nicotine nose spray are becoming much less efficient in using energy.
+       </label>
+       <label>
+        D.  People in the armchair expended  more energy than people doing desk work.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t41">
+     <span>
+      <b>
+       41)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Why do the study results seem discouraging to some smokers according to the passage?
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  Because they want to keep fit without having to quit smoking.
+       </label>
+       <label class="green">
+        B.  Because they want to quit smoking and still keep fit.
+       </label>
+       <label>
+        C.  Because they want to gain weight to tackle the health risks of continued smoking.
+       </label>
+       <label>
+        D.  Because they want to walking an extra mile a day to lose some weight.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      37) B      38) C      39) D      40) A      41) B
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <div>
+      <pre>（无）</pre>
+     </div>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+ </div>
+ <div class="Test">
+  <div class="TestTitle">
+   <div class="title" id="309">
+    选词填空（15选10）10题，总分值：20分
+   </div>
+   <div class="title-decrible">
+    <div class="directs">
+     Directions： Fill in the blanks in the following passage by selecting suitable words from the word bank. Each word can be used only once.
+    </div>
+   </div>
+  </div>
+  <div class="Question-Conversation" qid="155852" qtype="309">
+   <div class="Choice">
+    <div id="t42">
+     <span>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <p style="text-align:justify">
+       Success means different things for different people. Some may equate (等同) it with fame, some with wealth and still some with
+       <b>
+        42)
+       </b>
+       <span class="blankinput" type="text">
+        accomplishments
+       </span>
+       . For me, it means fulfilling one’s dreams. Whatever your dreams are, you have a goal there and then focus all your attention on it. Dreams bring you hope and happiness. In the
+       <b>
+        43)
+       </b>
+       <span class="blankinput" type="text">
+        process
+       </span>
+       of struggling for it, you cry, sweat, complain or even curse, but the
+       <b>
+        44)
+       </b>
+       <span class="blankinput" type="text">
+        glamor
+       </span>
+       of harvesting makes you forget all the pains and troubles you have gone through. So an old proverb says that the greatest
+       <b>
+        45)
+       </b>
+       <span class="blankinput" type="text">
+        feat
+       </span>
+       is one that has undergone the bitterest
+       <b>
+        46)
+       </b>
+       <span class="blankinput" type="text">
+        misfortune
+       </span>
+       .
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       There are several keys to success. First, your goal must be practical. If you set your goal too high, chances are that you will never
+       <b>
+        47)
+       </b>
+       <span class="blankinput" type="text">
+        attain
+       </span>
+       it. Next, you have to make a plan of doing it. You can take some steps to realize it. Since the process is quite tough, you need to be
+       <b>
+        48)
+       </b>
+       <span class="blankinput" type="text">
+        consistently
+       </span>
+       diligent, patient and determined even when you are tired and want to
+       <b>
+        49)
+       </b>
+       <span class="blankinput" type="text">
+        slack
+       </span>
+       or the odds seem too large. Maintain the strong will to keep going. You can always tell yourself that where there’s a will, there’s a way. With hard work,
+       <b>
+        50)
+       </b>
+       <span class="blankinput" type="text">
+        dedication
+       </span>
+       and determination, you can triumph over the overwhelming failures and
+       <b>
+        51)
+       </b>
+       <span class="blankinput" type="text">
+        profound
+       </span>
+       difficulties.
+      </p>
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <ul class="Wordli">
+       <li>
+        A.  feat
+       </li>
+       <li>
+        B.  eloquently
+       </li>
+       <li>
+        C.  slack
+       </li>
+       <li>
+        D.  process
+       </li>
+       <li>
+        E.  profound
+       </li>
+       <li>
+        F.  attain
+       </li>
+       <li>
+        G.  accomplishments
+       </li>
+       <li>
+        H.  persuasive
+       </li>
+       <li>
+        I.  misfortune
+       </li>
+       <li>
+        J.  dedication
+       </li>
+       <li>
+        K.  glamor
+       </li>
+       <li>
+        L.  contain
+       </li>
+       <li>
+        M.  posture
+       </li>
+       <li>
+        N.  alleviate
+       </li>
+       <li>
+        O.  consistently
+       </li>
+      </ul>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      42) accomplishments      43) process      44) glamor      45) feat      46) misfortune      47) attain      48) consistently      49) slack      50) dedication      51) profound
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+ </div>
+ <div class="Test">
+  <div class="TestTitle">
+   <div class="title" id="305">
+    词汇与结构9题，总分值：9分
+   </div>
+   <div class="title-decrible">
+    <div class="directs">
+     Directions： For each of the following sentences there are four choices marked A, B, C and D. Choose the best one to complete each sentence.
+    </div>
+   </div>
+  </div>
+  <div class="Question-Conversation" qid="155915" qtype="305">
+   <div class="Choice">
+    <div id="t52">
+     <span>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      There is a standard method  ________ officers are selected for promotion.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  that
+       </label>
+       <label>
+        B.  where
+       </label>
+       <label>
+        C.  in that
+       </label>
+       <label class="green">
+        D.  whereby
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       52) D
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="155914" qtype="305">
+   <div class="Choice">
+    <div id="t53">
+     <span>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      One expert in psychology believes that people like jobs mainly because they need other people — to chat with, to ________ with, and to build relationships with.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  hang up
+       </label>
+       <label>
+        B.  hang in
+       </label>
+       <label class="green">
+        C.  hang out
+       </label>
+       <label>
+        D.  hang onto
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       53) C
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="155913" qtype="305">
+   <div class="Choice">
+    <div id="t54">
+     <span>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Members of society tend to cooperate ________ the goals they share.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  in reward of
+       </label>
+       <label class="green">
+        B.  in pursuit of
+       </label>
+       <label>
+        C.  in view of
+       </label>
+       <label>
+        D.  in light of
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       54) B
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="155912" qtype="305">
+   <div class="Choice">
+    <div id="t55">
+     <span>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      A national ________ is someone who, by the mere mention of his name, will remind people of his country.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  icon
+       </label>
+       <label>
+        B.  cowboy
+       </label>
+       <label>
+        C.  pedestrian
+       </label>
+       <label>
+        D.  senator
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       55) A
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="155911" qtype="305">
+   <div class="Choice">
+    <div id="t56">
+     <span>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      He realized that it was difficult to ________ on this infertile land any longer.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  inhibit
+       </label>
+       <label class="green">
+        B.  inhabit
+       </label>
+       <label>
+        C.  gather
+       </label>
+       <label>
+        D.  retreat
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       56) B
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="155910" qtype="305">
+   <div class="Choice">
+    <div id="t57">
+     <span>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Due to the ________ domestic market, the business has to adjust its import and export policies.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  diligent
+       </label>
+       <label>
+        B.  tedious
+       </label>
+       <label>
+        C.  suspicious
+       </label>
+       <label class="green">
+        D.  slack
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       57) D
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="155909" qtype="305">
+   <div class="Choice">
+    <div id="t58">
+     <span>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      His ________ to help the poor people earn him great prestige.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  dilemmas
+       </label>
+       <label>
+        B.  icons
+       </label>
+       <label class="green">
+        C.  endeavors
+       </label>
+       <label>
+        D.  accommodation
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       58) C
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="155908" qtype="305">
+   <div class="Choice">
+    <div id="t59">
+     <span>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      You must insist that students give a truthful answer ________ with the reality of their world.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  proficient
+       </label>
+       <label>
+        B.  insistent
+       </label>
+       <label class="green">
+        C.  consistent
+       </label>
+       <label>
+        D.  sufficient
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       59) C
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="155907" qtype="305">
+   <div class="Choice">
+    <div id="t60">
+     <span>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      They got themselves in a mess by losing millions on loans to foreign countries and ________ borrowers at home.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  prospective
+       </label>
+       <label>
+        B.  consistent
+       </label>
+       <label class="green">
+        C.  dubious
+       </label>
+       <label>
+        D.  glamorous
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       60) C
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+ </div>
+ <div class="Test">
+  <div class="TestTitle">
+   <div class="title" id="112">
+    完型填空20题，总分值：20分
+   </div>
+   <div class="title-decrible">
+    <div class="directs">
+     Directions： There are some blanks in the following passage. For each blank there are four choices marked A, B, C and D. You should choose the ONE that best fits into the passage.
+    </div>
+   </div>
+  </div>
+  <div class="Question-Conversation" qid="155933" qtype="112">
+   <div class="Choice">
+    <div class="padding">
+     <p>
+      <p style="text-align:justify">
+       German Chancellor
+       <i>
+       </i>
+       (首相) Otto Von Bismarck may be most
+       <b>
+        61)
+       </b>
+       <span class="blankinput" type="text">
+        renowned
+       </span>
+       for his military and diplomatic talent,
+       <b>
+        62)
+       </b>
+       <span class="blankinput" type="text">
+        but
+       </span>
+       his legacy (遗产) includes many of today’s social insurance programs. During the middle of the 19th century, Germany, along with other European nations, experienced a(n)
+       <b>
+        63)
+       </b>
+       <span class="blankinput" type="text">
+        unprecedented
+       </span>
+       occurrence of workplace deaths and
+       <b>
+        64)
+       </b>
+       <span class="blankinput" type="text">
+        tragic
+       </span>
+       accidents as a result of growing industrialization.
+       <b>
+        65)
+       </b>
+       <span class="blankinput" type="text">
+        Spurred
+       </span>
+       in part by Christian sympathy for the helpless as well as a practical political impulse to
+       <b>
+        66)
+       </b>
+       <span class="blankinput" type="text">
+        inhibit
+       </span>
+       the influence of the socialist labor movement, Chancellor Bismarck
+       <b>
+        67)
+       </b>
+       <span class="blankinput" type="text">
+        created
+       </span>
+       the world’s first workers’ compensation law in 1884.
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       By 1908, the United States was the only industrial nation in the world that
+       <b>
+        68)
+       </b>
+       <span class="blankinput" type="text">
+        lacked
+       </span>
+       workers’ compensation insurance. America’s injured workers could
+       <b>
+        69)
+       </b>
+       <span class="blankinput" type="text">
+        start
+       </span>
+       a legal case for damages in a court of law, but they still faced a number of tough legal
+       <b>
+        70)
+       </b>
+       <span class="blankinput" type="text">
+        barriers
+       </span>
+       . For example, employees had to prove that their injuries directly resulted
+       <b>
+        71)
+       </b>
+       <span class="blankinput" type="text">
+        from
+       </span>
+       employer negligence (疏忽) and that they themselves were ignorant about
+       <b>
+        72)
+       </b>
+       <span class="blankinput" type="text">
+        potential
+       </span>
+       hazards in the workplace. The first state workers’ compensation law in this country passed in 1911, and the program soon
+       <b>
+        73)
+       </b>
+       <span class="blankinput" type="text">
+        spread
+       </span>
+       throughout the nation.
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       After World War II, benefit payments to American workers did not keep up with the
+       <b>
+        74)
+       </b>
+       <span class="blankinput" type="text">
+        cost
+       </span>
+       of living. In 1970, President Richard Nixon
+       <b>
+        75)
+       </b>
+       <span class="blankinput" type="text">
+        appointed
+       </span>
+       a national commission to study the problems of workers’ compensation. The
+       <b>
+        76)
+       </b>
+       <span class="blankinput" type="text">
+        average
+       </span>
+       compensation benefit in America has climbed from 55 percent of the states’ average weekly wages in 1972 to 97 percent today. But,
+       <b>
+        77)
+       </b>
+       <span class="blankinput" type="text">
+        as
+       </span>
+       most studies show, every 10 percent increase in compensation benefits results in a 5 percent increase in the
+       <b>
+        78)
+       </b>
+       <span class="blankinput" type="text">
+        numbers
+       </span>
+       of workers who ask for claims. And with so much more money
+       <b>
+        79)
+       </b>
+       <span class="blankinput" type="text">
+        expended
+       </span>
+       in the workers’ compensation system, it’s not surprising that doctors and lawyers have helped themselves to a large
+       <b>
+        80)
+       </b>
+       <span class="blankinput" type="text">
+        slice
+       </span>
+       of the growing pie.
+      </p>
+     </p>
+    </div>
+    <div class="nu" id="t61">
+     <span>
+      <b>
+       61)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  envious
+       </label>
+       <label>
+        B.  unknown
+       </label>
+       <label class="green">
+        C.  renowned
+       </label>
+       <label>
+        D.  nameless
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t62">
+     <span>
+      <b>
+       62)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  thus
+       </label>
+       <label class="green">
+        B.  but
+       </label>
+       <label>
+        C.  so
+       </label>
+       <label>
+        D.  as
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t63">
+     <span>
+      <b>
+       63)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  prospective
+       </label>
+       <label>
+        B.  unconscious
+       </label>
+       <label>
+        C.  inward
+       </label>
+       <label class="green">
+        D.  unprecedented
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t64">
+     <span>
+      <b>
+       64)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  tragic
+       </label>
+       <label>
+        B.  uneasy
+       </label>
+       <label>
+        C.  indispensable
+       </label>
+       <label>
+        D.  humble
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t65">
+     <span>
+      <b>
+       65)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  Fired
+       </label>
+       <label class="green">
+        B.  Spurred
+       </label>
+       <label>
+        C.  Moved
+       </label>
+       <label>
+        D.  Pushed
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t66">
+     <span>
+      <b>
+       66)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  inhibit
+       </label>
+       <label>
+        B.  encourage
+       </label>
+       <label>
+        C.  deviate
+       </label>
+       <label>
+        D.  strengthen
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t67">
+     <span>
+      <b>
+       67)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  passed
+       </label>
+       <label>
+        B.  invented
+       </label>
+       <label>
+        C.  discovered
+       </label>
+       <label class="green">
+        D.  created
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t68">
+     <span>
+      <b>
+       68)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  brought
+       </label>
+       <label>
+        B.  took
+       </label>
+       <label class="green">
+        C.  lacked
+       </label>
+       <label>
+        D.  existed
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t69">
+     <span>
+      <b>
+       69)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  start
+       </label>
+       <label>
+        B.  use
+       </label>
+       <label>
+        C.  get
+       </label>
+       <label>
+        D.  ensure
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t70">
+     <span>
+      <b>
+       70)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  pursuit
+       </label>
+       <label class="green">
+        B.  barriers
+       </label>
+       <label>
+        C.  circuit
+       </label>
+       <label>
+        D.  stops
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t71">
+     <span>
+      <b>
+       71)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  in
+       </label>
+       <label>
+        B.  to
+       </label>
+       <label>
+        C.  up
+       </label>
+       <label class="green">
+        D.  from
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t72">
+     <span>
+      <b>
+       72)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  potential
+       </label>
+       <label>
+        B.  blunt
+       </label>
+       <label>
+        C.  stricken
+       </label>
+       <label>
+        D.  formal
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t73">
+     <span>
+      <b>
+       73)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  cross
+       </label>
+       <label>
+        B.  expand
+       </label>
+       <label class="green">
+        C.  spread
+       </label>
+       <label>
+        D.  travel
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t74">
+     <span>
+      <b>
+       74)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  style
+       </label>
+       <label>
+        B.  payment
+       </label>
+       <label>
+        C.  nature
+       </label>
+       <label class="green">
+        D.  cost
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t75">
+     <span>
+      <b>
+       75)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  cited
+       </label>
+       <label class="green">
+        B.  appointed
+       </label>
+       <label>
+        C.  named
+       </label>
+       <label>
+        D.  sought
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t76">
+     <span>
+      <b>
+       76)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  substantial
+       </label>
+       <label>
+        B.  ordinary
+       </label>
+       <label class="green">
+        C.  average
+       </label>
+       <label>
+        D.  even
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t77">
+     <span>
+      <b>
+       77)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  as
+       </label>
+       <label>
+        B.  for
+       </label>
+       <label>
+        C.  since
+       </label>
+       <label>
+        D.  while
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t78">
+     <span>
+      <b>
+       78)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  amounts
+       </label>
+       <label class="green">
+        B.  numbers
+       </label>
+       <label>
+        C.  quantities
+       </label>
+       <label>
+        D.  components
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t79">
+     <span>
+      <b>
+       79)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  cost
+       </label>
+       <label>
+        B.  rewarded
+       </label>
+       <label class="green">
+        C.  expended
+       </label>
+       <label>
+        D.  precluded
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t80">
+     <span>
+      <b>
+       80)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  pile
+       </label>
+       <label>
+        B.  block
+       </label>
+       <label>
+        C.  heap
+       </label>
+       <label class="green">
+        D.  slice
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      61) C      62) B      63) D      64) A      65) B      66) A      67) D      68) C      69) A      70) B      71) D      72) A      73) C      74) D      75) B      76) C      77) A      78) B      79) C      80) D
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <div>
+      <pre>（无）</pre>
+     </div>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+ </div>
+</div>
+
+                <!-- 题型列表结束 -->
+                <!-- 评论区开始 -->
+                <div class="container">
+                    <div id="vcomments" class="tow">
+                        <script>
+                            new Valine({
+                                el: '#vcomments',
+                                appId: 'jphqw5DgcOz2TwIRuwPvVusb-gzGzoHsz',
+                                appKey: 'e6WOjatXeFfe7C5ukXcmLGCE',
+                                notify: false,
+                                verify: false,
+                                avatar: 'wavatar',
+                                visitor: true,
+                                avatarForce: true,
+                                recordIP: true,
+                                enableQQ: true,
+                                requiredFields: ['nick'],
+                            })
+                        </script>
+                        <span id="/" class="leancloud_visitors" data-flag-title="U校园答案导航" style="position:relative;float:right;top:-10px;font-size: 12px;color:#808080">
+                        <em class="post-meta-item-text">访问量</em>
+                        <i class="leancloud-visitors-count">0</i>
+                    </span>
+                    </div>
+                </div>
+                <!-- 评论区结束 -->
+            </div>
+            <br>
+            <!-- 主体部分结束 -->
+            <div class="container">
+                <div style="text-align: center;color:white;font-size: small;">Copyright&nbsp;© 2021 abiscuit</div>
+            </div>
+            <br>
+            <!--jplayer播放期div-->
+            <div style="width: 0px; height:0px;" id="jplayer"></div>
+            </body>
+
+            <script>
+            function initPlayerAciton() {
+                // 音频资源播放
+                var allPlayButton = $("div.play");
+                allPlayButton.click(function(event) {
+                    var self = this;
+                    var resPath = $(this).attr("resPath");
+                    var pFlag = $(this).attr("playing");
+                    if (pFlag && pFlag == 1) { // 正在播放，需要停止播放
+                        $("#jplayer").jPlayer("stop", 0);
+                        $(self).attr("playing", "0");
+                        $(self).find("img.playImg").show();
+                        $(self).find("img.playingImg").hide();
+                        return false;
+                    }
+                    allPlayButton.attr("playing", "0");
+                    allPlayButton.find("img.playImg").show();
+                    allPlayButton.find("img.playingImg").hide();
+                    $(self).attr("playing", "1");
+                    $(self).find("img.playImg").hide();
+                    $(self).find("img.playingImg").show();
+                    // 获取音频播放列表
+                    var res_arr = new Array();
+                    res_arr = resPath.split(",");
+                    var play_resPath = new Array();
+                    for (var i = 0; i < res_arr.length; i++) {
+                        play_resPath.push(res_arr[i]);
+                    }
+                    myPlayer.play(play_resPath, function() {
+                        $(self).find("img.playImg").show();
+                        $(self).find("img.playingImg").hide();
+                    });
+                    $('#jplayer').find('object').height(10);
+                    return false;
+                });
+            }
+
+            function initStaticReturn() {
+                // 返回
+                $("#staticReturn").click(function() {
+                    staticReturn();
+                });
+                // 返回
+                $("#staticPageReturn").click(function() {
+                    staticReturn();
+                });
+            }
+            </script>
+
+            </html>

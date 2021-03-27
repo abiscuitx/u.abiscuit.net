@@ -1,0 +1,3786 @@
+<!DOCTYPE html>
+            <html lang="zh-cn">
+
+            <head>
+            <meta charset="utf-8">
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+            <title>读写2-张新祥-重修Unit6</title>
+            <meta name="MSSmartTagsPreventParsing" content="True" />
+            <meta http-equiv="MSThemeCompatible" content="Yes" />
+            <meta name="renderer" content="webkit">
+            <script src="https://uexercise.unipus.cn/static/its/lib/jquery/jquery.js"></script>
+            <script src="https://uexercise.unipus.cn/static/its/lib/zui/js/zui.js"></script>
+            <script src="https://uexercise.unipus.cn/static/its/lib/chosen/chosen.js"></script>
+            <script src="https://uexercise.unipus.cn/static/its/lib/jquery/jquery.form.js"></script>
+            <script>
+                window.CTX = 'https://uexercise.unipus.cn';
+            </script>
+            <script src="https://uexercise.unipus.cn/static/its/lib/itest/js/itest_common.js"></script>
+            <script src="https://uexercise.unipus.cn/static/its/lib/layer/layer.js"></script>
+            <script src="https://uexercise.unipus.cn/static/its/lib/layer/laytpl.js"></script>
+            <script src="https://uexercise.unipus.cn/static/its/lib/layer/extend/layer.ext.js"></script>
+            <script src="https://uexercise.unipus.cn/static/its/lib/fltrp/js/js.js"></script>
+            <script src="https://uexercise.unipus.cn/static/its/lib/fltrp/js/stopic.js"></script>
+            <script src="https://uexercise.unipus.cn/static/its/lib/jplayer/jquery.jplayer.min.js"></script>
+            <script type="text/javascript" src="//player.youku.com/jsapi"></script>
+            <script src='https://uexercise.unipus.cn/static/its/lib/fltrp/js/uploadXX.js'></script>
+            <script>
+                var _hmt = _hmt || [];
+                (function() {
+                    var hm = document.createElement("script");
+                    hm.src = "https://hm.baidu.com/hm.js?c402237d180d562bcdd7e9d5fe8780f8";
+                    var s = document.getElementsByTagName("script")[0];
+                    s.parentNode.insertBefore(hm, s);
+                })();
+            </script>
+            <script src="../assets/js/Valine.min.js"></script>
+            <link rel="shortcut icon" href="../assets/images/favicon.ico">
+            <link href="../assets/css/main.css" rel="stylesheet">
+            <link href="../assets/css/part.css" rel="stylesheet">
+            <link href="../assets/css/topic.css" rel="stylesheet">
+            <link href="../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+            <style>
+                ul {
+                    padding-left: 0px;
+                }
+                
+                .playButton {
+                    width: 35px;
+                    height: 35px;
+                    cursor: pointer;
+                    float: left;
+                    margin: 25px 10px 0 35px;
+                }
+                
+                .answer-video .playButton {
+                    margin: 0 10px;
+                }
+                
+                input.blankinput {
+                    -moz-border-bottom-colors: none;
+                    -moz-border-left-colors: none;
+                    -moz-border-right-colors: none;
+                    -moz-border-top-colors: none;
+                    border-color: -moz-use-text-color -moz-use-text-color #000000;
+                    border-image: none;
+                    border-style: none none solid;
+                    border-width: 0 0 1px;
+                    margin: 0 0px;
+                    font-weight: bold;
+                    text-align: center;
+                    outline: none;
+                    height: 24px;
+                    resize: none;
+                    color: #333;
+                }
+                
+                span.blankinput {
+                    border-color: -moz-use-text-color -moz-use-text-color #000000;
+                    border-image: none;
+                    border-style: none none solid;
+                    border-width: 0 0 1px;
+                    margin: 0 0px;
+                    font-weight: bold;
+                    text-align: center;
+                    outline: none;
+                    height: 24px;
+                    resize: none;
+                    color: white;
+                }
+                
+                .form-horizontal .form-group {
+                    margin-right: 0;
+                    margin-left: 0;
+                    margin-top: 20px;
+                }
+            </style>
+            </head>
+
+            <body>
+            <nav class="navbar navbar-light navbar-expand-md fixed-top" id="mainNav" style="background: rgba(0,0,0,0);">
+                <div class="container">
+                    <a class="navbar-brand d-xl-flex justify-content-xl-center align-items-xl-center js-scroll-trigger" data-aos="zoom-in-right" href="https://u.abiscuit.net" style="font-family: Roboto, sans-serif;text-shadow: 0px 0px 5px var(--red);"><img class="rounded-circle d-xl-flex justify-content-xl-center align-items-xl-center" src="https://gravatar.loli.net/avatar/058e7772431faa1fcf6ef8e6ceed6552" style="max-height: auto;width: 40px;height: 40px;margin-right: 10px;">u校园答案导航</a>
+                    <button data-toggle="collapse" class="navbar-toggler navbar-toggler-right" data-target="#navbarResponsive" data-aos="fade-left" type="button" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" value="Menu" style="box-shadow: 0px 0px 5px var(--red);"><i class="fa fa-bars" style="box-shadow: 0px 0px 5px var(--red);"></i></button>
+                    <div class="collapse navbar-collapse" id="navbarResponsive">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item nav-link js-scroll-trigger"><a class="nav-link js-scroll-trigger" data-aos="zoom-out-left" href="https://kxz.atcumt.com/" style="font-family: Roboto, sans-serif;text-shadow: 0px 0px 5px var(--primary);">友情推荐：矿小助</a></li>
+                            <li class="nav-item nav-link js-scroll-trigger"><a class="nav-link js-scroll-trigger" data-aos="zoom-out-left" href="mailto:abiscuit@vip.qq.com" style="font-family: Roboto, sans-serif;text-shadow: 0px 0px 5px var(--blue);">邮箱联系</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- 主体部分开始 -->
+            <div class="main">
+                <div class="topclass">读写2-张新祥-重修Unit6</div>
+                <!-- 题型列表开始 --><div class="content Question">
+ <div class="Test">
+  <div class="TestTitle">
+   <div class="title" id="102">
+    短对话8题，总分值：8分
+   </div>
+   <div class="title-decrible">
+    <div class="directs">
+     Directions： In this section, you'll hear some short conversations. At the end of each conversation, one question will be asked. Both the conversation and the question will be spoken only once. After each question, choose the best answer from the four choices marked A, B, C, and D.
+    </div>
+   </div>
+  </div>
+  <div class="Question-Conversation" qid="153006" qtype="102">
+   <span class="answer-video">
+    <div class="play" respath="https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_300/c_2/t_102/201509/93dc29a5-94f3-4ddd-8480-a992b9c99147.mp3">
+     <img class="playImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/play-1.png">
+      <img class="playingImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/playing02-fltrp.gif" style="display:none;"/>
+     </img>
+    </div>
+   </span>
+   <div class="Choice">
+    <div class="nu" id="t1">
+     <span>
+      <b>
+       1)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  Because the man gets more pay than most people do.
+       </label>
+       <label>
+        B.  Because the man enjoys his work than most people do.
+       </label>
+       <label>
+        C.  Because the man works for pleasure rather than for pay.
+       </label>
+       <label class="green">
+        D.  Because the man can have what he wants from his work.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       1) D
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+     <p>
+      <b>
+       听力文本：
+      </b>
+     </p>
+     <p>
+      <p>
+       M: I really enjoy my new job.
+      </p>
+      <p>
+       W: You are so lucky. Most people work for the pay, not for pleasure. You now belong to those whose work and pleasures are one, so you get the pay and pleasure from your job at the same time.
+      </p>
+      <p>
+       Q: Why does the woman say the man is lucky?
+      </p>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="153005" qtype="102">
+   <span class="answer-video">
+    <div class="play" respath="https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_300/c_2/t_102/201509/0a18e3d9-bcef-4ef3-b182-bccaf47ff94a.mp3">
+     <img class="playImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/play-1.png"/>
+     <img class="playingImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/playing02-fltrp.gif" style="display:none;"/>
+    </div>
+   </span>
+   <div class="Choice">
+    <div class="nu" id="t2">
+     <span>
+      <b>
+       2)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  An actress.
+       </label>
+       <label>
+        B.  A secretary.
+       </label>
+       <label class="green">
+        C.  A school teacher.
+       </label>
+       <label>
+        D.  A worker in a nursery.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       2) C
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+     <p>
+      <b>
+       听力文本：
+      </b>
+     </p>
+     <p>
+      <p>
+       M: I’ve never heard you complaining about your job, although you work so hard.
+      </p>
+      <p>
+       W: Why should I? I feel greatly rewarded when I see the boys and girls looking at me from their seats so attentively.
+      </p>
+      <p>
+       Q: What kind of job does the woman most probably do?
+      </p>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="153004" qtype="102">
+   <span class="answer-video">
+    <div class="play" respath="https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_300/c_2/t_102/201509/bd3cb23d-8c74-415c-97a3-7763025f09b9.mp3">
+     <img class="playImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/play-1.png"/>
+     <img class="playingImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/playing02-fltrp.gif" style="display:none;"/>
+    </div>
+   </span>
+   <div class="Choice">
+    <div class="nu" id="t3">
+     <span>
+      <b>
+       3)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  Seek professional advice.
+       </label>
+       <label class="green">
+        B.  Have confidence in herself.
+       </label>
+       <label>
+        C.  Consult books in the library.
+       </label>
+       <label>
+        D.  Get information on the Internet.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       3) B
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+     <p>
+      <b>
+       听力文本：
+      </b>
+     </p>
+     <p>
+      <p>
+       W: I’m going for the interview at the bank tomorrow. What advice can you give me?
+      </p>
+      <p>
+       M: There’re countless books in the library and numerous articles on the Internet that can give you professional advice. But what I think you should do is have faith in yourself.
+      </p>
+      <p>
+       Q: What advice does the man give to the woman?
+      </p>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="153003" qtype="102">
+   <span class="answer-video">
+    <div class="play" respath="https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_300/c_2/t_102/201509/ae3e962f-f366-492f-83e3-ef25100be587.mp3">
+     <img class="playImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/play-1.png"/>
+     <img class="playingImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/playing02-fltrp.gif" style="display:none;"/>
+    </div>
+   </span>
+   <div class="Choice">
+    <div class="nu" id="t4">
+     <span>
+      <b>
+       4)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  Go on with his current job.
+       </label>
+       <label>
+        B.  Get enough food on the table.
+       </label>
+       <label>
+        C.  Build a new roof over his house.
+       </label>
+       <label>
+        D.  Earn more income for his family.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       4) A
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+     <p>
+      <b>
+       听力文本：
+      </b>
+     </p>
+     <p>
+      <p>
+       M: I hate my job, even if it pays well. It makes me tired and frustrated, and sometimes I just take those feelings out on my family.
+      </p>
+      <p>
+       W: But your family needs the income to provide a roof over their heads and food on the table.
+      </p>
+      <p>
+       Q: What does the woman think the man should do?
+      </p>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="153002" qtype="102">
+   <span class="answer-video">
+    <div class="play" respath="https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_300/c_2/t_102/201509/714761cc-72b6-4d47-8971-30b47cd0483d.mp3">
+     <img class="playImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/play-1.png"/>
+     <img class="playingImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/playing02-fltrp.gif" style="display:none;"/>
+    </div>
+   </span>
+   <div class="Choice">
+    <div class="nu" id="t5">
+     <span>
+      <b>
+       5)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  Keeping things in order.
+       </label>
+       <label>
+        B.  Having a quite good memory.
+       </label>
+       <label>
+        C.  Being well organized in the work.
+       </label>
+       <label class="green">
+        D.  Knowing when it is proper to speak.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       5) D
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+     <p>
+      <b>
+       听力文本：
+      </b>
+     </p>
+     <p>
+      <p>
+       W: I don’t think I have what it takes to be a salesperson. Do you think I’d make a good secretary?
+      </p>
+      <p>
+       M: No, I’m sure you wouldn’t. A secretary should have a systematic way of doing things, not too forgetful and untidy, and above all know when to keep your mouth shut and when not to.
+      </p>
+      <p>
+       Q: What does the man think is the most important quality of a secretary?
+      </p>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="153001" qtype="102">
+   <span class="answer-video">
+    <div class="play" respath="https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_300/c_2/t_102/201509/a6830851-9332-44a3-89ba-22913e39cb08.mp3">
+     <img class="playImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/play-1.png"/>
+     <img class="playingImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/playing02-fltrp.gif" style="display:none;"/>
+    </div>
+   </span>
+   <div class="Choice">
+    <div class="nu" id="t6">
+     <span>
+      <b>
+       6)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  2003
+       </label>
+       <label>
+        B.  2005
+       </label>
+       <label>
+        C.  2006
+       </label>
+       <label class="green">
+        D.  2008
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       6) D
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+     <p>
+      <b>
+       听力文本：
+      </b>
+     </p>
+     <p>
+      <p>
+       M: Would you please tell us about your working experience?
+      </p>
+      <p>
+       W: After graduation from college in 2003, I first worked in a design studio as a designer. I left the job three years later to get married, and resumed my work two years later after the birth of my daughter.
+      </p>
+      <p>
+       Q: When did the woman begin to work again?
+      </p>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="153000" qtype="102">
+   <span class="answer-video">
+    <div class="play" respath="https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_300/c_2/t_102/201509/fa455d57-d229-4970-908d-5f416f18bdc3.mp3">
+     <img class="playImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/play-1.png"/>
+     <img class="playingImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/playing02-fltrp.gif" style="display:none;"/>
+    </div>
+   </span>
+   <div class="Choice">
+    <div class="nu" id="t7">
+     <span>
+      <b>
+       7)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  The man is looking for a job.
+       </label>
+       <label>
+        B.  The man travels a lot in his work.
+       </label>
+       <label>
+        C.  The man is going to have a bright future.
+       </label>
+       <label>
+        D.  The man is going to ask the salary of the job.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       7) A
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+     <p>
+      <b>
+       听力文本：
+      </b>
+     </p>
+     <p>
+      <p>
+       W: I think it is quite a good job which can bring you a bright future. Why didn’t you ask them about the salary in the interview this morning?
+      </p>
+      <p>
+       M: Because it’s not really the kind of job I want to do. It involves a lot of traveling.
+      </p>
+      <p>
+       Q: What is implied in the conversation?
+      </p>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="152999" qtype="102">
+   <span class="answer-video">
+    <div class="play" respath="https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_300/c_2/t_102/201509/dd69bc8d-c922-433f-bbba-2f0c6a737aa4.mp3">
+     <img class="playImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/play-1.png"/>
+     <img class="playingImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/playing02-fltrp.gif" style="display:none;"/>
+    </div>
+   </span>
+   <div class="Choice">
+    <div class="nu" id="t8">
+     <span>
+      <b>
+       8)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  A mechanic.
+       </label>
+       <label>
+        B.  A train driver.
+       </label>
+       <label class="green">
+        C.  A worker in a garage.
+       </label>
+       <label>
+        D.  A guest relations assistant.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       8) C
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+     <p>
+      <b>
+       听力文本：
+      </b>
+     </p>
+     <p>
+      <p>
+       M: Oh, great! Here, in the Morning Post, you see, Spring Inn needs a guest relations assistant. I’d like to try my luck.
+      </p>
+      <p>
+       W: You’re crazy. You want to quit your job at the garage? Mr. Brown’s promised to train you up to be a mechanic.
+      </p>
+      <p>
+       Q: What is the man?
+      </p>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+ </div>
+ <div class="Test">
+  <div class="TestTitle">
+   <div class="title" id="103">
+    长对话8题，总分值：8分
+   </div>
+   <div class="title-decrible">
+    <div class="directs">
+     Directions： In this section, you'll hear some long conversations. At the end of each conversation, some questions will be asked. Both the conversation and the questions will be spoken only once. After each question, choose the best answer from the four choices marked A, B, C, and D.
+    </div>
+   </div>
+  </div>
+  <div class="Question-Conversation" qid="153960" qtype="103">
+   <span class="answer-video">
+    <div class="play" respath="https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_300/c_2/t_103/201509/452c4ecd-233c-4b9e-90b3-3da035640b41.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_300/c_2/t_103/201509/a2c39d40-ad92-4953-bae1-db46efa8d6e5.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_300/c_2/t_103/201509/1ac4dd23-1f47-4d22-8eac-f242a99c1ad1.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_300/c_2/t_103/201509/6ce7f89c-d254-4fdf-b1b7-bb38a5fd8c4d.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_300/c_2/t_103/201509/1a3deac7-f7c7-40b8-910e-d9a6368c6c43.mp3">
+     <img class="playImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/play-1.png"/>
+     <img class="playingImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/playing02-fltrp.gif" style="display:none;"/>
+    </div>
+   </span>
+   <div class="Choice">
+    <div class="nu" id="t9">
+     <span>
+      <b>
+       9)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  For sales over the past six months.
+       </label>
+       <label>
+        B.  For annual employee evaluations.
+       </label>
+       <label>
+        C.  For the company picnic on Friday.
+       </label>
+       <label class="green">
+        D.  For check-up of work performance.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t10">
+     <span>
+      <b>
+       10)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  Which branch his boss had moved from.
+       </label>
+       <label>
+        B.  What serious topic they would discuss.
+       </label>
+       <label class="green">
+        C.  Whether he had annoyed his boss.
+       </label>
+       <label>
+        D.  How well the sales were going.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t11">
+     <span>
+      <b>
+       11)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  She didn’t like the way of life in Atlanta.
+       </label>
+       <label class="green">
+        B.  She didn’t get used to the new lifestyle.
+       </label>
+       <label>
+        C.  She is not pleased with Jim’s work.
+       </label>
+       <label>
+        D.  She is not satisfied with the sales.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t12">
+     <span>
+      <b>
+       12)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  Worried.
+       </label>
+       <label class="green">
+        B.  Relieved.
+       </label>
+       <label>
+        C.  Surprised.
+       </label>
+       <label>
+        D.  Confident.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      9) D      10) C      11) B      12) B
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <div>
+      <pre>（无）</pre>
+     </div>
+     <p>
+      <b>
+       听力文本：
+      </b>
+     </p>
+     <p>
+      <p style="text-align:justify">
+       W: Thanks for dropping by my office today, Jim. Please have a seat. Make yourself comfortable.
+       <br/>
+       M: Thanks. So why’d you want to see me today, Cindy?
+       <br/>
+       W: As you know, we do our annual employee evaluations every August, but since this is your first year here as a salesman at Door to Door Storage Units, we’re doing a six-month check-up to see how things are going and answer any questions you have so far. Anything you’d like to talk about, Jim?
+       <br/>
+       M: Well, sales are going well. Nothing serious to discuss, really, except… uh… well… I have been meaning to ask  about my boss, Susan Jones. She seems kind of worried and jumpy. I really _do_ like her as a boss – and just want to make sure I haven’t done anything to upset her…...
+       <br/>
+       W:  No, no Jim. In fact, I know that Susan is quite pleased with your work. It has nothing to do with you. It’s just that she recently moved here from our New York City sales branch and I think she’s having a little trouble adjusting to the southern lifestyle and slower way of life here in Atlanta, Georgia. Give her some time and she’ll be warm to you.
+       <br/>
+       M: Gosh – thanks for letting me know, Cindy. I feel a lot better! I’m from Atlanta and I can’t imagine how I’d feel if someone moved me and my family to New York City! I’ll spend some time getting to know Susan and her family at the company picnic on Friday.
+       <br/>
+       W: That would be really nice; I think she’d appreciate having a friendly face at the picnic. See you Friday!
+      </p>
+      <p style="text-align:justify">
+       New words:
+      </p>
+      <p style="text-align:justify">
+       Atlanta 亚特兰大（美国佐治亚州首府）
+      </p>
+      <p style="text-align:justify">
+       Georgia 美国佐治亚州
+      </p>
+      <p>
+       <br/>
+       <p>
+        For what reason did the woman want to see Jim?
+       </p>
+       <p>
+        What did Jim want to know from the woman?
+       </p>
+       <p>
+        Why did Susan seem to be worried?
+       </p>
+       <p>
+        How did Jim feel after the talk?
+       </p>
+      </p>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="153959" qtype="103">
+   <span class="answer-video">
+    <div class="play" respath="https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_300/c_2/t_103/201509/2c11c619-98bb-4aee-ba7b-c402f9e1ef00.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_300/c_2/t_103/201509/7579a7fc-4f97-4946-b734-37d1958ca929.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_300/c_2/t_103/201509/0935d0e4-6071-4542-ace3-4828c28b7f1b.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_300/c_2/t_103/201509/2fa10df6-d1d9-4d93-a336-7ce70094aa78.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_300/c_2/t_103/201509/e6b5f4f2-c887-46c3-8fa2-b42b535e0ad3.mp3">
+     <img class="playImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/play-1.png"/>
+     <img class="playingImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/playing02-fltrp.gif" style="display:none;"/>
+    </div>
+   </span>
+   <div class="Choice">
+    <div class="nu" id="t13">
+     <span>
+      <b>
+       13)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  She has a lot of housework to do after a long work day.
+       </label>
+       <label>
+        B.  She spends a long day commuting to and from work.
+       </label>
+       <label>
+        C.  She has no time for rest while working at her job.
+       </label>
+       <label>
+        D.  She has to keep working for 12 hours at her job.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t14">
+     <span>
+      <b>
+       14)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  Have a long vacation.
+       </label>
+       <label class="green">
+        B.  Have the kids help out more.
+       </label>
+       <label>
+        C.  Have a maid do the housework.
+       </label>
+       <label>
+        D.  Have the husband share the work.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t15">
+     <span>
+      <b>
+       15)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  His parents have bought him a new basketball.
+       </label>
+       <label>
+        B.  He has learned how to make his own lunch.
+       </label>
+       <label class="green">
+        C.  His parents will give him more allowance.
+       </label>
+       <label>
+        D.  He has learned how to clean the dishes.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t16">
+     <span>
+      <b>
+       16)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  She will fold the laundry.
+       </label>
+       <label>
+        B.  She will get the dinner ready.
+       </label>
+       <label>
+        C.  She will make a chart for housework.
+       </label>
+       <label class="green">
+        D.  She will finish reading her beloved book.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      13) A      14) B      15) C      16) D
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <div>
+      <pre>（无）</pre>
+     </div>
+     <p>
+      <b>
+       听力文本：
+      </b>
+     </p>
+     <p>
+      <p style="text-align:justify">
+       W: Oh  I am sooooooooooo glad to be home. I’ve been on my feet all day at the hospital. I’m glad for my three-day work week and four-days off – but the 12-hour shift plus the 45 minute drive to and from work makes for a very, very long day!  I’ve just got to get back up now and start some laundry and wash the dishes and get the kid’s lunches ready for school tomorrow.
+       <br/>
+       M: Ellen, honey – you shouldn’t do all of that after a 12-hour work day. I’ve got dinner ready. The laundry and dishes and kids’ lunches can wait until later. You need some personal time to rest and relax.
+       <br/>
+       W: I know, but the work does need to get done – and you work just as hard as I do at the computer factory! Joshua, we need a vacation, or maybe a maid!
+       <br/>
+       M: Well Michael is eight and Helen is six. The kids are old enough now to help out a lot more around the house. We’ll make a chart for their household work. They should make their own lunches every night for school the next day. And they should clean the dishes every night after dinner.
+       <br/>
+       W: Perfect! That’s a relief. So, the kids pack their own lunches for school and do the dishes after dinner. So, we can increase their allowance to $6 per week. Michael should be thrilled, he’s been saving up to buy that new basketball!
+       <br/>
+       M: Perfect! And one last thing – You need a break! Go relax and finish reading that book of yours, Europe Through the Back Door and I’ll finish folding the laundry tonight.
+      </p>
+      <p>
+       <br/>
+       <p>
+        What problem does the woman have?
+       </p>
+       <p>
+        What do the couple plan to do?
+       </p>
+       <p>
+        Why should Michael be excited?
+       </p>
+       <p>
+        What is the woman most likely to do after the conversation?
+       </p>
+      </p>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+ </div>
+ <div class="Test">
+  <div class="TestTitle">
+   <div class="title" id="308">
+    长文章4题，总分值：4分
+   </div>
+   <div class="title-decrible">
+    <div class="directs">
+     Directions： In this section, you’ll hear some passages. At the end of each passage, you'll hear some questions. Both the passage and the questions will be spoken only once. After each question, choose the best answer from the four choices marked A, B, C, and D.
+    </div>
+   </div>
+  </div>
+  <div class="Question-Conversation" qid="153962" qtype="308">
+   <span class="answer-video">
+    <div class="play" respath="https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_300/c_2/t_301/201509/73f8eaf5-20d3-477e-8869-d1e36d65a887.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_1030/t_308/201606/qjyirf_22095809573.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_1030/t_308/201606/gikhdb_22095818734.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_1030/t_308/201606/aqrtwv_22100218738.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/t_308/201509/kclhpk_21154203720.mp3">
+     <img class="playImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/play-1.png"/>
+     <img class="playingImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/playing02-fltrp.gif" style="display:none;"/>
+    </div>
+   </span>
+   <div class="Choice">
+    <div class="nu" id="t17">
+     <span>
+      <b>
+       17)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  The history and philosophy of Disneyland.
+       </label>
+       <label class="green">
+        B.  The use of proper language at Disneyland.
+       </label>
+       <label>
+        C.  The regulations and rules of Disneyland.
+       </label>
+       <label>
+        D.  The procedures of work at Disneyland.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t18">
+     <span>
+      <b>
+       18)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  Wear modest amounts of make-up.
+       </label>
+       <label>
+        B.  Refer to customers as guests.
+       </label>
+       <label>
+        C.  Call Disneyland a park.
+       </label>
+       <label class="green">
+        D.  Wear fancy jewelry.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t19">
+     <span>
+      <b>
+       19)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  Because they provided longer than usual rides.
+       </label>
+       <label>
+        B.  Because they didn’t give help when accidents arose.
+       </label>
+       <label>
+        C.  Because they addressed customers on first name terms.
+       </label>
+       <label>
+        D.  Because they didn’t provide approved responses to questions.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t20">
+     <span>
+      <b>
+       20)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  Kind smiles.
+       </label>
+       <label>
+        B.  Help from supervisors.
+       </label>
+       <label class="green">
+        C.  Minimum intelligence.
+       </label>
+       <label>
+        D.  A good sense of humor.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      17) B      18) D      19) A      20) C
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <div>
+      <pre>（无）</pre>
+     </div>
+     <p>
+      <b>
+       听力文本：
+      </b>
+     </p>
+     <p>
+      <p style="text-align:justify">
+       First opened in 1955, Disneyland has been a consistent money maker for Walt Disney. Most of those who apply to work at Disneyland are aware that if accepted they will be expected to obey a large number of rules that are supposed to guarantee that the theme park is the “Happiest Place on Earth.”
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       Once accepted new recruits are enrolled at the University of Disneyland where they undergo a forty-hour training program. In the classroom employees learn about the history and philosophy of Disneyland, and the regulations and procedures that govern work there. The most important of these concern the use of language. For example, employees are generally on first name terms, customers must be referred to as “guests,” rides are called “attractions” and Disneyland itself is a “park” not an amusement centre.
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       Classroom instruction also covers approved responses to probable questions ride operators will face from customers, and how to get assistance when accidents arise. Emphasis is also placed on checklists of appearance standards that must be learned, and which ban the wearing of fancy jewelry or anything more than very modest amounts of make-up.
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       New recruits soon realize that supervisors are not just there to help them, but to monitor and evaluate their performance. They also learn from old hands tales of some employees who have been fired for taking too long a break, not wearing part of the official uniform, or providing longer than usual rides.
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       After training, employees are generally willing to play the roles expected of them with good humor and kind smiles despite the fact that Disneyland does not pay well, the jobs require minimum intelligence and supervision is strict. (276 words)
+      </p>
+      <p style="text-align:justify">
+       New words:
+      </p>
+      <p style="text-align:justify">
+       supervisor n. 管理员
+      </p>
+      <p style="text-align:justify">
+       supervision n. 监督，管理
+      </p>
+      <p>
+       <br/>
+       <p>
+        What is the most important thing the new recruits learn in the classroom?
+       </p>
+       <p>
+        What are employees at Disneyland not allowed to do?
+       </p>
+       <p>
+        Why have some employees been fired according to tales from old hands?
+       </p>
+       <p>
+        What do employees at Disneyland need to meet their job requirement?
+       </p>
+      </p>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+ </div>
+ <div class="Test">
+  <div class="TestTitle">
+   <div class="title" id="107">
+    长篇阅读10题，总分值：10分
+   </div>
+   <div class="title-decrible">
+    <div class="directs">
+     Directions： You are going to read a passage with 10 statements attached to it. Each statement contains information given in one of the paragraphs. Identify the paragraph from which the information is derived. You may choose a paragraph more than once. Each paragraph is marked with a letter.
+    </div>
+   </div>
+  </div>
+  <div class="Question-Conversation" qid="1000017" qtype="107">
+   <div class="Choice">
+    <div class="padding">
+     <p>
+      <div style="text-align:center">
+       <b>
+        Self-Discipline: the Foundation for Success
+       </b>
+       <br/>
+      </div>
+      <div style="text-align:justify">
+       A) No personal success, achievement, or goal, can be realized without self-discipline. It is singularly the most important attribute needed to achieve any type of personal excellence, athletic accomplishment, virtuosity in the arts, or otherwise outstanding performance.
+       <br/>
+       <br/>
+       B) Self-discipline is the ability to control one’s impulses, emotions, desires and behavior. It is being able to turn down immediate pleasure and instant gratification in favor of gaining the long-term satisfaction and fulfillment from achieving higher and more meaningful goals.
+       <br/>
+       <br/>
+       C) To possess it is to be able to make the decisions, take the actions, and execute your game plan regardless of the obstacles, discomfort, or difficulties that may come your way. Certainly, being disciplined does not mean living a limiting or a restrictive lifestyle. Nor does it mean giving up everything you enjoy, or, to relinquish fun and relaxation. It does mean learning how to focus your mind and energies on your goals and persevere until they are accomplished. It also means cultivating a mindset whereby you are ruled by your deliberate choices rather than by your emotions, bad habits, or the sway of others. Self-discipline allows you to reach your goals in a reasonable time frame and to live a more orderly and satisfying life.
+       <br/>
+       <br/>
+       D) How to develop self-discipline? Start with baby steps. No process takes place overnight. Just as it takes time to build muscle, so does it take time to develop self-discipline. The more you train and build it, the stronger you become. In exercise, if you try to do too much at once, you could injure yourself and have a setback. Likewise, take it one step at a time in building self-discipline. So, begin by making the decision to go forward and learning what it takes to get there.
+       <br/>
+       <br/>
+       E) Learn what motivates you and what your bad triggers are. You can begin by learning about yourself! Sometimes it is very difficult to fight off urges and cravings, so know the areas where your resistance is low and how to avoid those situations. If you know you can’t resist cake, fries, or other temptations, stay away from them. Do not have them around to lure you in moments of weakness. If you also know that putting pressure on yourself does not work for you, then set yourself up in an environment that encourages the building of self-discipline rather than one that sabotages it. Remove the temptations and surround yourself with soothing and encouraging items such as motivating slogans and pictures of what you want to achieve.
+       <br/>
+       <br/>
+       F) Learn also what energizes and motivates you. Your willpower can go up and down with your energy levels so play energetic music to perk you up, move around, and laugh. Train yourself to enjoy what you are doing by being energized. This will make it easier to implement desirable and appropriate behaviors into your routine, which is really what self-discipline is all about.
+       <br/>
+       <br/>
+       G) Make certain behaviors a routine. Once you have decided what’s important to you and which goals to strive for, you may establish a daily routine that will help you achieve them. For example, if you want to eat healthily or lose weight, you need resolve to eat several servings of fruits and vegetables each day and exercise for at least half an hour. Make it part of your daily routine and part of your self-discipline building. Likewise, get rid of some of your bad, self-defeating habits, whatever they may be. They can put you in a negative frame of mind and hinder your self-discipline. A poor attitude can also be a bad habit.
+       <br/>
+       <br/>
+       H) Learn to say no to some of your feelings, impulses and urges. Train yourself to do what you know to be right, even if you don’t feel like doing it. Skip dessert some evenings. Limit your TV watching. Resist the urge to yell at someone who has irritated you. Stop and think before you act. Think about consequences. When you practice self-restraint it helps you develop the habit of keeping other things under control.
+       <br/>
+       <br/>
+       I) Sports are an excellent way to enhance self-discipline. They train you to set goals, focus your mental and emotional energies, become physically fit, and to get along well with others. Participating in sports provides a situation where you learn to work hard and strive to do your best, which in turn, teaches you to integrate the same thought processes and disciplines into your everyday life.
+       <br/>
+       <br/>
+       J) Learning to play a musical instrument can be another great way to practice self-discipline. The focus, repetition, and application required in learning to play an instrument is invaluable. Achieving self-discipline in any one area of your life reprograms your mind to choose what is right, rather than what is easy.
+       <br/>
+       <br/>
+       K) Get inspiration from those you admire. Michael Jordan has always maintained that his greatness as a basketball player came as much from his willingness to work hard at his craft, as it did his talent. It was his desire through discipline and focus that made him one of the best basketball players ever. If it worked for him, it could certainly work for the rest of us.
+       <br/>
+       <br/>
+       L) Visualize the rewards. There is nothing more gratifying than accomplishing your goals. Practice the technique that high achievers and top athletes do. Project yourself in the future. Visualize your desired outcome. Feel how rewarding it is and the countless benefits you will enjoy. Remind yourself what it takes to get there.
+       <br/>
+       <br/>
+       M) Here are the benefits you will get from building self-discipline. It will build self-confidence. You will accomplish more, and are therefore more productive. You are able to maintain a higher tolerance for frustration, obstacles and negative emotions. It allows you to obtain better health, better finances and a good work ethic. You are able to reach your most difficult goals more efficiently. The more disciplined you become, the easier life you get.
+       <br/>
+       <br/>
+       N) If you are to be masters of your own destiny, you must develop self-discipline and self-control. By focusing on long-term benefits instead of short-term discomfort, you can encourage yourselves to develop self-discipline. Ultimately your health and happiness depend on it.
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t21">
+     <span>
+      <b>
+       21)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Like training your muscle, developing our self-discipline is a step-by-step process.
+      <span class="blankinput" type="text">
+       D
+      </span>
+     </p>
+    </div>
+    <div class="nu" id="t22">
+     <span>
+      <b>
+       22)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Sports help you incorporate the thought of trying for the best in your daily life.
+      <span class="blankinput" type="text">
+       I
+      </span>
+     </p>
+    </div>
+    <div class="nu" id="t23">
+     <span>
+      <b>
+       23)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      One can get inspiration from his role model to build up his self-discipline.
+      <span class="blankinput" type="text">
+       K
+      </span>
+     </p>
+    </div>
+    <div class="nu" id="t24">
+     <span>
+      <b>
+       24)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Self-discipline is a necessary quality to achieve any personal excellence.
+      <span class="blankinput" type="text">
+       A
+      </span>
+     </p>
+    </div>
+    <div class="nu" id="t25">
+     <span>
+      <b>
+       25)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      You’re suggested to make what you decided important a daily routine which can help you achieve your objects and develop self-discipline.
+      <span class="blankinput" type="text">
+       G
+      </span>
+     </p>
+    </div>
+    <div class="nu" id="t26">
+     <span>
+      <b>
+       26)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Through developing self-discipline we can be in control of our own destiny.
+      <span class="blankinput" type="text">
+       N
+      </span>
+     </p>
+    </div>
+    <div class="nu" id="t27">
+     <span>
+      <b>
+       27)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Being self-disciplined involves both concentrating on your goals and habituating to making consideraed and rational choices.
+      <span class="blankinput" type="text">
+       C
+      </span>
+     </p>
+    </div>
+    <div class="nu" id="t28">
+     <span>
+      <b>
+       28)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Getting to know yourself, especially your low resistance to some temptation will help you develop self-discipline.
+      <span class="blankinput" type="text">
+       E
+      </span>
+     </p>
+    </div>
+    <div class="nu" id="t29">
+     <span>
+      <b>
+       29)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Training yourself to be energetic and enjoy what you are doing is a strategy to develop self-discipline.
+      <span class="blankinput" type="text">
+       F
+      </span>
+     </p>
+    </div>
+    <div class="nu" id="t30">
+     <span>
+      <b>
+       30)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Successful people practice the method of casting themselves into the future to develop their self-discipline.
+      <span class="blankinput" type="text">
+       L
+      </span>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      21) D      22) I      23) K      24) A      25) G      26) N      27) C      28) E      29) F      30) L
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <div>
+      <pre>（无）</pre>
+     </div>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+ </div>
+ <div class="Test">
+  <div class="TestTitle">
+   <div class="title" id="152">
+    阅读理解10题，总分值：30分
+   </div>
+   <div class="title-decrible">
+    <div class="directs">
+     Directions： Read the following passages carefully. Each passage is followed by some questions or unfinished sentences. For each of them there are four choices marked A, B, C, and D. Choose the best answer to each question.
+    </div>
+   </div>
+  </div>
+  <div class="Question-Conversation" qid="153164" qtype="152">
+   <div class="Choice">
+    <div class="padding">
+     <p>
+      <p style="text-align:justify">
+       Red, white, pink, purple – what is your favorite color? We are all sensitive to color. There are some colors we like a lot and some we don’t like at all. Some colors comfort us, others excite us, some make us happy, and others make us sad. People are affected by color more than they realize because color is tied to all aspects of our lives.
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       Experts in colorgenics, the study of the language of color, believe that the colors we wear say a lot about us. Do you know why you select a shirt or dress of a certain color when you look through your clothes in the morning? Colorgenics experts say that we unconsciously choose to wear certain colors in order to communicate our desires, emotions, and needs.
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       Colorgenics experts claim that our clothes send messages to others about our mood, personality, and desires. Pink expresses the peace and contentment of the wearer. People who often wear pink are supposed to be warm and understanding. The message is that you would like to share your peace and happiness with others. Red garments, on the other hand, indicate a high level of physical energy. People who wear red like to take life at a fast pace. Brown is the color of wealth, and it shows a need for independence and material security. Wearers of green have a love of nature and enjoy peaceful moments. They often like to be left alone with their thoughts.
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       Although colorgenics may be a recent area of study, associating colors with emotions is not new. Colors have always been used to describe not only our feelings but also our physical health and attitudes. “Red with rage” describes anger; “in the pink” means to be in good health; “feeling blue” is a sad way to feel; and “green with envy” indicates a jealous attitude.
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       In conclusion, the study of color can help us to understand ourselves and to improve our lives. It offers an alternative way to heal the body and spirit, and it can help us understand what others are trying to communicate.
+      </p>
+     </p>
+    </div>
+    <div class="nu" id="t31">
+     <span>
+      <b>
+       31)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Why are people affected by color more than they realize?
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  Colors make people more sensitive.
+       </label>
+       <label>
+        B.  Colors bring people different feelings.
+       </label>
+       <label class="green">
+        C.  Colors are everywhere in people’s lives.
+       </label>
+       <label>
+        D.  Colors give people excitement.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t32">
+     <span>
+      <b>
+       32)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      According to the passage, ________.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  people wear different colors to show their feelings.
+       </label>
+       <label>
+        B.  people communicate better when wearing their favorite colors.
+       </label>
+       <label>
+        C.  people like to wear different colors in the morning.
+       </label>
+       <label class="green">
+        D.  people choose different colors without knowing they do it purposely.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t33">
+     <span>
+      <b>
+       33)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Who want to share peace and happiness?
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  People who wear green clothes.
+       </label>
+       <label class="green">
+        B.  People who wear pink clothes.
+       </label>
+       <label>
+        C.  People who need security and independence.
+       </label>
+       <label>
+        D.  People who like to be left alone with their thoughts.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t34">
+     <span>
+      <b>
+       34)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      What is implied in the passage?
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  People started to associate colors with emotions long time ago.
+       </label>
+       <label>
+        B.  How colors show emotions is a new research topic.
+       </label>
+       <label>
+        C.  People wearing different colors usually feel happy.
+       </label>
+       <label>
+        D.  The colors people choose affect their physical health.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t35">
+     <span>
+      <b>
+       35)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      How might learning about color be useful in our lives?
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  It helps us to express our ideas more clearly.
+       </label>
+       <label>
+        B.  It helps us to control our emotions and desires.
+       </label>
+       <label>
+        C.  It helps us to feel happier and more excited.
+       </label>
+       <label class="green">
+        D.  It helps us to understand ourselves and others.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      31) C      32) D      33) B      34) A      35) D
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <div>
+      <pre>（无）</pre>
+     </div>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="153163" qtype="152">
+   <div class="Choice">
+    <div class="padding">
+     <p>
+      <p style="text-align:justify">
+       Mothers have known it for years. Give the children a hamburger, and they will love it; spend hours making a home-cooked meal, and they will leave it on the plate. Now French scientists have discovered why. According to researchers near Paris, the brain does not respond well to unfamiliar tastes. Sensations are not as strong when the mind is struggling to understand messages that come from the tongue. This provides little reason to taste new things.
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       Human beings are naturally like rats – we are afraid of anything new. If you give rats some food that they have never had before, they will turn their backs on it out of fear. We are the same. It is possible to introduce new foods, but only in the right psychological context, like a birthday. Once the introduction has been made, the fact of having a full stomach is physically pleasing, so the next time it is easier. However, some foods are more tempting than others. Scientists are sure that we are born with a sweet tooth. This is why children have a natural desire for sugar.
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       Another discovery is how a sense of smell affects our appetite. In one experiment, chemical substances were put on the tongues of human participants. At the same time, air was blown down the participants’ noses so they could not smell the chemical substances. As a result, no two people got the same sensation from the same food. Physical, psychological, and cultural differences shaped the response.
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       The intensity of feelings about food depends upon knowledge of it. The average student who eats a new dish will have only a cloudy image of it, but for some people whose tongues are trained to appreciate fine differences, they’ll have an exciting experience, much like someone who has a great musical ear. This is why someone who eats hamburgers everyday likes them and becomes a hamburger expert. They can tell the difference between a Big Mac and a Burger King, just like the Japanese can tell the difference between varieties of rice that taste the same to Europeans.
+      </p>
+     </p>
+    </div>
+    <div class="nu" id="t36">
+     <span>
+      <b>
+       36)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Why do children prefer a hamburger to a home-cooked meal?
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  The person doesn’t get the instruction from the brain.
+       </label>
+       <label class="green">
+        B.  The brain doesn’t respond well to unfamiliar tastes.
+       </label>
+       <label>
+        C.  The food made at home is not tasty.
+       </label>
+       <label>
+        D.  Children prefer food that is easy to make.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t37">
+     <span>
+      <b>
+       37)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      On what occasion are people willing to try new food?
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  When they are happy.
+       </label>
+       <label>
+        B.  When they are hungry.
+       </label>
+       <label>
+        C.  When they have already eaten.
+       </label>
+       <label>
+        D.  When they eat with friends.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t38">
+     <span>
+      <b>
+       38)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      What causes people to like certain foods but not others?
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  The fact whether they have a sweet tooth.
+       </label>
+       <label>
+        B.  The way how the food is cooked.
+       </label>
+       <label class="green">
+        C.  The differences in people who eat food.
+       </label>
+       <label>
+        D.  The color people see of the food.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t39">
+     <span>
+      <b>
+       39)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Why can some people appreciate the fine differences in food?
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  They like to try different kinds of food.
+       </label>
+       <label>
+        B.  They have an ear of music.
+       </label>
+       <label>
+        C.  They don’t eat a lot of food.
+       </label>
+       <label class="green">
+        D.  They know a lot about food.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t40">
+     <span>
+      <b>
+       40)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      What is an appropriate title for the passage?
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  Why People Don’t Like Unfamiliar Food
+       </label>
+       <label>
+        B.  The Brain That Plays a Role in Our Eating Habit
+       </label>
+       <label class="green">
+        C.  The Factors That Affect People’s Eating Habit
+       </label>
+       <label>
+        D.  The Reasons Why People Can Tell Differences in Food
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      36) B      37) A      38) C      39) D      40) C
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <div>
+      <pre>（无）</pre>
+     </div>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+ </div>
+ <div class="Test">
+  <div class="TestTitle">
+   <div class="title" id="112">
+    完型填空20题，总分值：20分
+   </div>
+   <div class="title-decrible">
+    <div class="directs">
+     Directions： There are some blanks in the following passage. For each blank there are four choices marked A, B, C and D. You should choose the ONE that best fits into the passage.
+    </div>
+   </div>
+  </div>
+  <div class="Question-Conversation" qid="153158" qtype="112">
+   <div class="Choice">
+    <div class="padding">
+     <p>
+      <p style="text-align:justify">
+       Do you know when one door closes but another door opens? Most people are too
+       <b>
+        41)
+       </b>
+       <span class="blankinput" type="text">
+        attached
+       </span>
+       to the past and to what they are familiar with;
+       <b>
+        42)
+       </b>
+       <span class="blankinput" type="text">
+        therefore
+       </span>
+       , they miss opportunities that stand right in front of them. Doors may close, but there is always a(n)
+       <b>
+        43)
+       </b>
+       <span class="blankinput" type="text">
+        abundance
+       </span>
+       of other doors – new opportunities. The world is full of opportunities, if we could be
+       <b>
+        44)
+       </b>
+       <span class="blankinput" type="text">
+        enlightened
+       </span>
+       to see them. The infinite power is boundless, and so are the possibilities without number.
+      </p>
+      <p style="text-align:justify">
+       <b>
+        45)
+       </b>
+       <span class="blankinput" type="text">
+        Apparently
+       </span>
+       , not every plan works out. There are losses and failures; there are problems in everyday life,
+       <b>
+        46)
+       </b>
+       <span class="blankinput" type="text">
+        temporary
+       </span>
+       loss of money or job, and sometimes unpleasant things
+       <b>
+        47)
+       </b>
+       <span class="blankinput" type="text">
+        dominate
+       </span>
+       our emotional feelings. We don’t always have control over these happenings, but we can
+       <b>
+        48)
+       </b>
+       <span class="blankinput" type="text">
+        retain
+       </span>
+       maximum control over our attention and attitude. When one of these things happens and we only
+       <b>
+        49)
+       </b>
+       <span class="blankinput" type="text">
+        cling
+       </span>
+       to the loss – the closed door, we see only a closed door with
+       <b>
+        50)
+       </b>
+       <span class="blankinput" type="text">
+        overwhelming
+       </span>
+       frustration and unhappiness, but if we could move our attention away from the closed door and
+       <b>
+        51)
+       </b>
+       <span class="blankinput" type="text">
+        discard
+       </span>
+       our worries, we might be surprised to discover a row of new doors open.
+      </p>
+      <p style="text-align:justify">
+       We might not
+       <b>
+        52)
+       </b>
+       <span class="blankinput" type="text">
+        rejoice
+       </span>
+       to move our eyes elsewhere due to various reasons, such as
+       <b>
+        53)
+       </b>
+       <span class="blankinput" type="text">
+        attachment
+       </span>
+       to the old and familiar, and fear of the new and the unknown. Many intend to
+       <b>
+        54)
+       </b>
+       <span class="blankinput" type="text">
+        preserve
+       </span>
+       their controlled thoughts, and consequently their mind keeps
+       <b>
+        55)
+       </b>
+       <span class="blankinput" type="text">
+        focusing
+       </span>
+       on the loss, failure, and frustration – the door that has closed. Will they
+       <b>
+        56)
+       </b>
+       <span class="blankinput" type="text">
+        profit
+       </span>
+       from these thoughts? Except for creating suffering and preventing any change, it doesn’t help
+       <b>
+        57)
+       </b>
+       <span class="blankinput" type="text">
+        whatsoever
+       </span>
+       .
+      </p>
+      <p style="text-align:justify">
+       You might agree with what is being said here, but how can you
+       <b>
+        58)
+       </b>
+       <span class="blankinput" type="text">
+        reduce
+       </span>
+       your past attachments and see new opportunities? How can you
+       <b>
+        59)
+       </b>
+       <span class="blankinput" type="text">
+        implement
+       </span>
+       your plan to see the new doors that open for you? Simplifying can be more of what
+       <b>
+        60)
+       </b>
+       <span class="blankinput" type="text">
+        enriches
+       </span>
+       you: more time, more enjoyment, and more satisfaction. Simplifying is not necessarily about less. In fact, it can be about more.
+      </p>
+     </p>
+    </div>
+    <div class="nu" id="t41">
+     <span>
+      <b>
+       41)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  regarded
+       </label>
+       <label>
+        B.  engaged
+       </label>
+       <label>
+        C.  fond
+       </label>
+       <label class="green">
+        D.  attached
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t42">
+     <span>
+      <b>
+       42)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  therefore
+       </label>
+       <label>
+        B.  while
+       </label>
+       <label>
+        C.  whereas
+       </label>
+       <label>
+        D.  nevertheless
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t43">
+     <span>
+      <b>
+       43)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  guidance
+       </label>
+       <label>
+        B.  accordance
+       </label>
+       <label class="green">
+        C.  abundance
+       </label>
+       <label>
+        D.  attendance
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t44">
+     <span>
+      <b>
+       44)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  enlightened
+       </label>
+       <label>
+        B.  lighted
+       </label>
+       <label>
+        C.  heightened
+       </label>
+       <label>
+        D.  contented
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t45">
+     <span>
+      <b>
+       45)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  Currently
+       </label>
+       <label class="green">
+        B.  Apparently
+       </label>
+       <label>
+        C.  Inherently
+       </label>
+       <label>
+        D.  Relevantly
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t46">
+     <span>
+      <b>
+       46)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  contrary
+       </label>
+       <label>
+        B.  contemporary
+       </label>
+       <label>
+        C.  arbitrary
+       </label>
+       <label class="green">
+        D.  temporary
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t47">
+     <span>
+      <b>
+       47)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  dominate
+       </label>
+       <label>
+        B.  maintain
+       </label>
+       <label>
+        C.  coordinate
+       </label>
+       <label>
+        D.  fascinate
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t48">
+     <span>
+      <b>
+       48)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  contain
+       </label>
+       <label>
+        B.  entertain
+       </label>
+       <label class="green">
+        C.  retain
+       </label>
+       <label>
+        D.  withstand
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t49">
+     <span>
+      <b>
+       49)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  assign
+       </label>
+       <label>
+        B.  belong
+       </label>
+       <label>
+        C.  attach
+       </label>
+       <label class="green">
+        D.  cling
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t50">
+     <span>
+      <b>
+       50)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  overcoming
+       </label>
+       <label class="green">
+        B.  overwhelming
+       </label>
+       <label>
+        C.  overbooking
+       </label>
+       <label>
+        D.  overlooking
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t51">
+     <span>
+      <b>
+       51)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  discard
+       </label>
+       <label>
+        B.  disgust
+       </label>
+       <label>
+        C.  display
+       </label>
+       <label>
+        D.  discount
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t52">
+     <span>
+      <b>
+       52)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  renew
+       </label>
+       <label>
+        B.  release
+       </label>
+       <label class="green">
+        C.  rejoice
+       </label>
+       <label>
+        D.  refuse
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t53">
+     <span>
+      <b>
+       53)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  amusement
+       </label>
+       <label>
+        B.  achievement
+       </label>
+       <label>
+        C.  investment
+       </label>
+       <label class="green">
+        D.  attachment
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t54">
+     <span>
+      <b>
+       54)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  deserve
+       </label>
+       <label class="green">
+        B.  preserve
+       </label>
+       <label>
+        C.  reserve
+       </label>
+       <label>
+        D.  observe
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t55">
+     <span>
+      <b>
+       55)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  focusing
+       </label>
+       <label>
+        B.  fixing
+       </label>
+       <label>
+        C.  attaching
+       </label>
+       <label>
+        D.  specifying
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t56">
+     <span>
+      <b>
+       56)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  prohibit
+       </label>
+       <label>
+        B.  promote
+       </label>
+       <label>
+        C.  prompt
+       </label>
+       <label class="green">
+        D.  profit
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t57">
+     <span>
+      <b>
+       57)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  whoever
+       </label>
+       <label>
+        B.  whichever
+       </label>
+       <label class="green">
+        C.  whatsoever
+       </label>
+       <label>
+        D.  whenever
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t58">
+     <span>
+      <b>
+       58)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  reduce
+       </label>
+       <label>
+        B.  induce
+       </label>
+       <label>
+        C.  introduce
+       </label>
+       <label>
+        D.  produce
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t59">
+     <span>
+      <b>
+       59)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  cement
+       </label>
+       <label class="green">
+        B.  implement
+       </label>
+       <label>
+        C.  comment
+       </label>
+       <label>
+        D.  experiment
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t60">
+     <span>
+      <b>
+       60)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  enhances
+       </label>
+       <label>
+        B.  enlightens
+       </label>
+       <label>
+        C.  ensures
+       </label>
+       <label class="green">
+        D.  enriches
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      41) D      42) A      43) C      44) A      45) B      46) D      47) A      48) C      49) D      50) B      51) A      52) C      53) D      54) B      55) A      56) D      57) C      58) A      59) B      60) D
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <div>
+      <pre>（无）</pre>
+     </div>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+ </div>
+ <div class="Test">
+  <div class="TestTitle">
+   <div class="title" id="305">
+    词汇与结构20题，总分值：20分
+   </div>
+   <div class="title-decrible">
+    <div class="directs">
+     Directions： For each of the following sentences there are four choices marked A, B, C and D. Choose the best one to complete each sentence.
+    </div>
+   </div>
+  </div>
+  <div class="Question-Conversation" qid="153063" qtype="305">
+   <div class="Choice">
+    <div id="t61">
+     <span>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Roy was too polite to laugh in anyone’s face so he did his utmost to __________ his laughter at his friend’s inappropriate remarks.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  suppress
+       </label>
+       <label>
+        B.  distress
+       </label>
+       <label>
+        C.  oppress
+       </label>
+       <label>
+        D.  impress
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       61) A
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="153062" qtype="305">
+   <div class="Choice">
+    <div id="t62">
+     <span>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      The goal of the university is to make higher education available to everyone who is willing and capable __________ his financial conditions.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  in terms of
+       </label>
+       <label class="green">
+        B.  regardless of
+       </label>
+       <label>
+        C.  with respect to
+       </label>
+       <label>
+        D.  in accordance with
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       62) B
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="153061" qtype="305">
+   <div class="Choice">
+    <div id="t63">
+     <span>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      These areas rely on agriculture almost __________, having few mineral resources and a minimum of industrial development.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  respectively
+       </label>
+       <label>
+        B.  separately
+       </label>
+       <label>
+        C.  extraordinarily
+       </label>
+       <label class="green">
+        D.  exclusively
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       63) D
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="153060" qtype="305">
+   <div class="Choice">
+    <div id="t64">
+     <span>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      It is through learning and accumulated experience that the individual __________ many appropriate ways of reacting to different situations.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  acquires
+       </label>
+       <label>
+        B.  retains
+       </label>
+       <label>
+        C.  preserves
+       </label>
+       <label>
+        D.  achieves
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       64) A
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="153059" qtype="305">
+   <div class="Choice">
+    <div id="t65">
+     <span>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Stella held her ground against several attempts to __________ her as secretary of the club, insisting that no one could have done the job better than her.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  transmit
+       </label>
+       <label>
+        B.  shift
+       </label>
+       <label class="green">
+        C.  remove
+       </label>
+       <label>
+        D.  cancel
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       65) C
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="153058" qtype="305">
+   <div class="Choice">
+    <div id="t66">
+     <span>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      It was a shock to me that the chairman of the board should __________ me to dismiss the good employees the firm can no longer afford to employ.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  press
+       </label>
+       <label class="green">
+        B.  compel
+       </label>
+       <label>
+        C.  impose
+       </label>
+       <label>
+        D.  pose
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       66) B
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="153057" qtype="305">
+   <div class="Choice">
+    <div id="t67">
+     <span>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      When I __________ my senses after the earthquake, I found myself wrapped up in bed in a little room, with my colleagues and family bending over me.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  took to
+       </label>
+       <label>
+        B.  woke up
+       </label>
+       <label class="green">
+        C.  came to
+       </label>
+       <label>
+        D.  picked up
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       67) C
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="153056" qtype="305">
+   <div class="Choice">
+    <div id="t68">
+     <span>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Ricky’s embarrassment when he met his teachers was __________; his ears turned bright red and he kept looking down on the ground.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  obvious
+       </label>
+       <label>
+        B.  acute
+       </label>
+       <label>
+        C.  keen
+       </label>
+       <label>
+        D.  severe
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       68) A
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="153055" qtype="305">
+   <div class="Choice">
+    <div id="t69">
+     <span>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      I never trusted him because I always thought of him as such a __________ character, which had a hidden intension in whatever he did or said.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  suspicious
+       </label>
+       <label>
+        B.  conscious
+       </label>
+       <label>
+        C.  skeptical
+       </label>
+       <label>
+        D.  envious
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       69) A
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="153054" qtype="305">
+   <div class="Choice">
+    <div id="t70">
+     <span>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Jack doesn’t know what to __________ after the university as he just cannot make up his mind; besides jobs are rare in the economic recession.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  take in
+       </label>
+       <label>
+        B.  take over
+       </label>
+       <label>
+        C.  take after
+       </label>
+       <label class="green">
+        D.  take up
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       70) D
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="153053" qtype="305">
+   <div class="Choice">
+    <div id="t71">
+     <span>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      There are often bitter quarrels between the two, but the husband and wife can always __________ each other’s demands to live together with ardent love.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  reconcile
+       </label>
+       <label>
+        B.  adjust
+       </label>
+       <label>
+        C.  modify
+       </label>
+       <label>
+        D.  vary
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       71) A
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="153052" qtype="305">
+   <div class="Choice">
+    <div id="t72">
+     <span>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      One of the responsibilities of the Coast Guard is to make sure that all ships __________ follow traffic rules in the busy harbors.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  randomly
+       </label>
+       <label class="green">
+        B.  dutifully
+       </label>
+       <label>
+        C.  faithfully
+       </label>
+       <label>
+        D.  respectfully
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       72) B
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="153051" qtype="305">
+   <div class="Choice">
+    <div id="t73">
+     <span>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Mike’s strong desire to __________ his elder sister and win a Christmas prize from their father was the driving force for him to do well in school.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  overcome
+       </label>
+       <label>
+        B.  overlook
+       </label>
+       <label class="green">
+        C.  overtake
+       </label>
+       <label>
+        D.  overwhelm
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       73) C
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="153050" qtype="305">
+   <div class="Choice">
+    <div id="t74">
+     <span>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      After her appointment __________ this important position, she had to work in the office until late in the evening and had no time for her former friends.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  with
+       </label>
+       <label>
+        B.  at
+       </label>
+       <label>
+        C.  over
+       </label>
+       <label class="green">
+        D.  to
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       74) D
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="153049" qtype="305">
+   <div class="Choice">
+    <div id="t75">
+     <span>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      The police got the order to fire tear gas into the crowd to __________ the protectors; in addition they had arrested some of the radicals.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  scatter
+       </label>
+       <label>
+        B.  attribute
+       </label>
+       <label>
+        C.  spread
+       </label>
+       <label>
+        D.  stretch
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       75) A
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="153048" qtype="305">
+   <div class="Choice">
+    <div id="t76">
+     <span>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      The future of this company is __________ as many of its talented employees are flowing into more profitable IT business.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  at odds
+       </label>
+       <label class="green">
+        B.  at stake
+       </label>
+       <label>
+        C.  in suspicion
+       </label>
+       <label>
+        D.  in vain
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       76) B
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="153047" qtype="305">
+   <div class="Choice">
+    <div id="t77">
+     <span>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      __________ somewhat ambitious as well as naive, they decided to extend their graduate education by attending a prestigious university in New York City.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  To be
+       </label>
+       <label>
+        B.  Were
+       </label>
+       <label class="green">
+        C.  Being
+       </label>
+       <label>
+        D.  Be
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       77) C
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="153046" qtype="305">
+   <div class="Choice">
+    <div id="t78">
+     <span>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      According to this understanding of love and family, individuals try to go through a series of different romantic relationships, pursuing __________.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  as great happiness as possible
+       </label>
+       <label>
+        B.  as great as happiness possible
+       </label>
+       <label>
+        C.  as great happiness as is possible
+       </label>
+       <label>
+        D.  as great happiness as possible is
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       78) A
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="153045" qtype="305">
+   <div class="Choice">
+    <div id="t79">
+     <span>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      The report stated that __________ a result of environmental tobacco smoke, thousands of nonsmokers die of lung cancer each year and thousands more suffer from a lot of illnesses.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  to
+       </label>
+       <label>
+        B.  with
+       </label>
+       <label class="green">
+        C.  as
+       </label>
+       <label>
+        D.  for
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       79) C
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="153044" qtype="305">
+   <div class="Choice">
+    <div id="t80">
+     <span>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      To live in a family __________ native language is English is the ideal way to further improve one’s English and to gain insight into a new culture.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  what
+       </label>
+       <label>
+        B.  that
+       </label>
+       <label>
+        C.  which
+       </label>
+       <label class="green">
+        D.  whose
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       80) D
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+ </div>
+</div>
+
+                <!-- 题型列表结束 -->
+                <!-- 评论区开始 -->
+                <div class="container">
+                    <div id="vcomments" class="tow">
+                        <script>
+                            new Valine({
+                                el: '#vcomments',
+                                appId: 'jphqw5DgcOz2TwIRuwPvVusb-gzGzoHsz',
+                                appKey: 'e6WOjatXeFfe7C5ukXcmLGCE',
+                                notify: false,
+                                verify: false,
+                                avatar: 'wavatar',
+                                visitor: true,
+                                avatarForce: true,
+                                recordIP: true,
+                                enableQQ: true,
+                                requiredFields: ['nick'],
+                            })
+                        </script>
+                        <span id="/" class="leancloud_visitors" data-flag-title="U校园答案导航" style="position:relative;float:right;top:-10px;font-size: 12px;color:#808080">
+                        <em class="post-meta-item-text">访问量</em>
+                        <i class="leancloud-visitors-count">0</i>
+                    </span>
+                    </div>
+                </div>
+                <!-- 评论区结束 -->
+            </div>
+            <br>
+            <!-- 主体部分结束 -->
+            <div class="container">
+                <div style="text-align: center;color:white;font-size: small;">Copyright&nbsp;© 2021 abiscuit</div>
+            </div>
+            <br>
+            <!--jplayer播放期div-->
+            <div style="width: 0px; height:0px;" id="jplayer"></div>
+            </body>
+
+            <script>
+            function initPlayerAciton() {
+                // 音频资源播放
+                var allPlayButton = $("div.play");
+                allPlayButton.click(function(event) {
+                    var self = this;
+                    var resPath = $(this).attr("resPath");
+                    var pFlag = $(this).attr("playing");
+                    if (pFlag && pFlag == 1) { // 正在播放，需要停止播放
+                        $("#jplayer").jPlayer("stop", 0);
+                        $(self).attr("playing", "0");
+                        $(self).find("img.playImg").show();
+                        $(self).find("img.playingImg").hide();
+                        return false;
+                    }
+                    allPlayButton.attr("playing", "0");
+                    allPlayButton.find("img.playImg").show();
+                    allPlayButton.find("img.playingImg").hide();
+                    $(self).attr("playing", "1");
+                    $(self).find("img.playImg").hide();
+                    $(self).find("img.playingImg").show();
+                    // 获取音频播放列表
+                    var res_arr = new Array();
+                    res_arr = resPath.split(",");
+                    var play_resPath = new Array();
+                    for (var i = 0; i < res_arr.length; i++) {
+                        play_resPath.push(res_arr[i]);
+                    }
+                    myPlayer.play(play_resPath, function() {
+                        $(self).find("img.playImg").show();
+                        $(self).find("img.playingImg").hide();
+                    });
+                    $('#jplayer').find('object').height(10);
+                    return false;
+                });
+            }
+
+            function initStaticReturn() {
+                // 返回
+                $("#staticReturn").click(function() {
+                    staticReturn();
+                });
+                // 返回
+                $("#staticPageReturn").click(function() {
+                    staticReturn();
+                });
+            }
+            </script>
+
+            </html>

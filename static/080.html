@@ -1,0 +1,3908 @@
+<!DOCTYPE html>
+            <html lang="zh-cn">
+
+            <head>
+            <meta charset="utf-8">
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+            <title>读写2-张新祥-重修Unit2</title>
+            <meta name="MSSmartTagsPreventParsing" content="True" />
+            <meta http-equiv="MSThemeCompatible" content="Yes" />
+            <meta name="renderer" content="webkit">
+            <script src="https://uexercise.unipus.cn/static/its/lib/jquery/jquery.js"></script>
+            <script src="https://uexercise.unipus.cn/static/its/lib/zui/js/zui.js"></script>
+            <script src="https://uexercise.unipus.cn/static/its/lib/chosen/chosen.js"></script>
+            <script src="https://uexercise.unipus.cn/static/its/lib/jquery/jquery.form.js"></script>
+            <script>
+                window.CTX = 'https://uexercise.unipus.cn';
+            </script>
+            <script src="https://uexercise.unipus.cn/static/its/lib/itest/js/itest_common.js"></script>
+            <script src="https://uexercise.unipus.cn/static/its/lib/layer/layer.js"></script>
+            <script src="https://uexercise.unipus.cn/static/its/lib/layer/laytpl.js"></script>
+            <script src="https://uexercise.unipus.cn/static/its/lib/layer/extend/layer.ext.js"></script>
+            <script src="https://uexercise.unipus.cn/static/its/lib/fltrp/js/js.js"></script>
+            <script src="https://uexercise.unipus.cn/static/its/lib/fltrp/js/stopic.js"></script>
+            <script src="https://uexercise.unipus.cn/static/its/lib/jplayer/jquery.jplayer.min.js"></script>
+            <script type="text/javascript" src="//player.youku.com/jsapi"></script>
+            <script src='https://uexercise.unipus.cn/static/its/lib/fltrp/js/uploadXX.js'></script>
+            <script>
+                var _hmt = _hmt || [];
+                (function() {
+                    var hm = document.createElement("script");
+                    hm.src = "https://hm.baidu.com/hm.js?c402237d180d562bcdd7e9d5fe8780f8";
+                    var s = document.getElementsByTagName("script")[0];
+                    s.parentNode.insertBefore(hm, s);
+                })();
+            </script>
+            <script src="../assets/js/Valine.min.js"></script>
+            <link rel="shortcut icon" href="../assets/images/favicon.ico">
+            <link href="../assets/css/main.css" rel="stylesheet">
+            <link href="../assets/css/part.css" rel="stylesheet">
+            <link href="../assets/css/topic.css" rel="stylesheet">
+            <link href="../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+            <style>
+                ul {
+                    padding-left: 0px;
+                }
+                
+                .playButton {
+                    width: 35px;
+                    height: 35px;
+                    cursor: pointer;
+                    float: left;
+                    margin: 25px 10px 0 35px;
+                }
+                
+                .answer-video .playButton {
+                    margin: 0 10px;
+                }
+                
+                input.blankinput {
+                    -moz-border-bottom-colors: none;
+                    -moz-border-left-colors: none;
+                    -moz-border-right-colors: none;
+                    -moz-border-top-colors: none;
+                    border-color: -moz-use-text-color -moz-use-text-color #000000;
+                    border-image: none;
+                    border-style: none none solid;
+                    border-width: 0 0 1px;
+                    margin: 0 0px;
+                    font-weight: bold;
+                    text-align: center;
+                    outline: none;
+                    height: 24px;
+                    resize: none;
+                    color: #333;
+                }
+                
+                span.blankinput {
+                    border-color: -moz-use-text-color -moz-use-text-color #000000;
+                    border-image: none;
+                    border-style: none none solid;
+                    border-width: 0 0 1px;
+                    margin: 0 0px;
+                    font-weight: bold;
+                    text-align: center;
+                    outline: none;
+                    height: 24px;
+                    resize: none;
+                    color: white;
+                }
+                
+                .form-horizontal .form-group {
+                    margin-right: 0;
+                    margin-left: 0;
+                    margin-top: 20px;
+                }
+            </style>
+            </head>
+
+            <body>
+            <nav class="navbar navbar-light navbar-expand-md fixed-top" id="mainNav" style="background: rgba(0,0,0,0);">
+                <div class="container">
+                    <a class="navbar-brand d-xl-flex justify-content-xl-center align-items-xl-center js-scroll-trigger" data-aos="zoom-in-right" href="https://u.abiscuit.net" style="font-family: Roboto, sans-serif;text-shadow: 0px 0px 5px var(--red);"><img class="rounded-circle d-xl-flex justify-content-xl-center align-items-xl-center" src="https://gravatar.loli.net/avatar/058e7772431faa1fcf6ef8e6ceed6552" style="max-height: auto;width: 40px;height: 40px;margin-right: 10px;">u校园答案导航</a>
+                    <button data-toggle="collapse" class="navbar-toggler navbar-toggler-right" data-target="#navbarResponsive" data-aos="fade-left" type="button" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" value="Menu" style="box-shadow: 0px 0px 5px var(--red);"><i class="fa fa-bars" style="box-shadow: 0px 0px 5px var(--red);"></i></button>
+                    <div class="collapse navbar-collapse" id="navbarResponsive">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item nav-link js-scroll-trigger"><a class="nav-link js-scroll-trigger" data-aos="zoom-out-left" href="https://kxz.atcumt.com/" style="font-family: Roboto, sans-serif;text-shadow: 0px 0px 5px var(--primary);">友情推荐：矿小助</a></li>
+                            <li class="nav-item nav-link js-scroll-trigger"><a class="nav-link js-scroll-trigger" data-aos="zoom-out-left" href="mailto:abiscuit@vip.qq.com" style="font-family: Roboto, sans-serif;text-shadow: 0px 0px 5px var(--blue);">邮箱联系</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- 主体部分开始 -->
+            <div class="main">
+                <div class="topclass">读写2-张新祥-重修Unit2</div>
+                <!-- 题型列表开始 --><div class="content Question">
+ <div class="Test">
+  <div class="TestTitle">
+   <div class="title" id="102">
+    短对话8题，总分值：8分
+   </div>
+   <div class="title-decrible">
+    <div class="directs">
+     Directions： In this section, you'll hear some short conversations. At the end of each conversation, one question will be asked. Both the conversation and the question will be spoken only once. After each question, choose the best answer from the four choices marked A, B, C, and D.
+    </div>
+   </div>
+  </div>
+  <div class="Question-Conversation" qid="152065" qtype="102">
+   <span class="answer-video">
+    <div class="play" respath="https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_300/c_2/t_102/201509/5e5aa3eb-f57e-45b9-98e8-2bd1bd48e6e0.mp3">
+     <img class="playImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/play-1.png">
+      <img class="playingImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/playing02-fltrp.gif" style="display:none;"/>
+     </img>
+    </div>
+   </span>
+   <div class="Choice">
+    <div class="nu" id="t1">
+     <span>
+      <b>
+       1)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  Tourism has caused pollution to people’s mind.
+       </label>
+       <label>
+        B.  The flood brought rubbish into their village.
+       </label>
+       <label>
+        C.  People can make money from tourism.
+       </label>
+       <label>
+        D.  Peace should be kept at a tourist spot.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       1) A
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+     <p>
+      <b>
+       听力文本：
+      </b>
+     </p>
+     <p>
+      <p style="text-align:justify">
+       W: How I hate these tourists. They flood into our village and throw rubbish everywhere.
+      </p>
+      <p style="text-align:justify">
+       M: Yeah, ever since the government made this place a tourist spot, our peace has gone. Tourists care for nothing but money. It’s not only the place that’s polluted, but also the mind.
+      </p>
+      <p style="text-align:justify">
+       Q: What does the man mean?
+      </p>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="152064" qtype="102">
+   <span class="answer-video">
+    <div class="play" respath="https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_300/c_2/t_102/201509/931bba89-f194-4789-ad96-accbfd6b2672.mp3">
+     <img class="playImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/play-1.png"/>
+     <img class="playingImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/playing02-fltrp.gif" style="display:none;"/>
+    </div>
+   </span>
+   <div class="Choice">
+    <div class="nu" id="t2">
+     <span>
+      <b>
+       2)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  She thinks of having chicken as an exciting experience.
+       </label>
+       <label>
+        B.  Ordering chicken in a new place is very exciting.
+       </label>
+       <label class="green">
+        C.  Strange foods may not agree with her stomach.
+       </label>
+       <label>
+        D.  She has no interest in trying any new food.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       2) C
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+     <p>
+      <b>
+       听力文本：
+      </b>
+     </p>
+     <p>
+      <p style="text-align: justify;">
+       M: Hey, every time you order in a restaurant you have chicken. Why not try the local food? Trying new foods is one of the most exciting experiences about visiting a new place, isn’t it?
+      </p>
+      <p style="text-align: justify;">
+       W: Well, these strange foods are too much for my poor stomach.
+      </p>
+      <p style="text-align: justify;">
+       Q: Why does the woman order chicken every time?
+      </p>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="152063" qtype="102">
+   <span class="answer-video">
+    <div class="play" respath="https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_300/c_2/t_102/201509/9657e551-6558-4155-878e-0a502b888e49.mp3">
+     <img class="playImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/play-1.png"/>
+     <img class="playingImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/playing02-fltrp.gif" style="display:none;"/>
+    </div>
+   </span>
+   <div class="Choice">
+    <div class="nu" id="t3">
+     <span>
+      <b>
+       3)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  He was forced to spend the night in the hotel.
+       </label>
+       <label>
+        B.  The room he reserved was canceled by others.
+       </label>
+       <label>
+        C.  The desk clerk of the hotel had a fight with him.
+       </label>
+       <label>
+        D.  He had a nightmare because he had to stay there.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       3) A
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+     <p>
+      <b>
+       听力文本：
+      </b>
+     </p>
+     <p>
+      <p style="text-align: justify;">
+       W: I heard that you had a bad experience at the Holiday Inn while you were traveling in the United States.
+      </p>
+      <p style="text-align: justify;">
+       M: That experience was a nightmare. The desk clerk argued at the top of his voice. Though I wanted to cancel my reservation I was forced to stay.
+      </p>
+      <p style="text-align: justify;">
+       Q: What happened to the man at the Holiday Inn?
+      </p>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="152062" qtype="102">
+   <span class="answer-video">
+    <div class="play" respath="https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_300/c_2/t_102/201509/7315c87d-4253-4a2d-8244-cb8d93915951.mp3">
+     <img class="playImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/play-1.png"/>
+     <img class="playingImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/playing02-fltrp.gif" style="display:none;"/>
+    </div>
+   </span>
+   <div class="Choice">
+    <div class="nu" id="t4">
+     <span>
+      <b>
+       4)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  She gets mad with Andy for not wanting to return home.
+       </label>
+       <label>
+        B.  She envies Andy for having been traveling for so many years.
+       </label>
+       <label class="green">
+        C.  She feels shocked at Andy’s separation from the modern world.
+       </label>
+       <label>
+        D.  She gets crazy about Andy for living in the deserts or mountains.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       4) C
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+     <p>
+      <b>
+       听力文本：
+      </b>
+     </p>
+     <p>
+      <p style="text-align: justify;">
+       M: Do you know Andy? This guy has been traveling around for 11 years, with no intention of returning home! He even lives in deserts or mountains for months!
+      </p>
+      <p style="text-align: justify;">
+       W: Andy must be mad. I mean, isn’t it crazy to run away from city and civilization?
+      </p>
+      <p style="text-align: justify;">
+       Q: How does the woman react to Andy’s traveling experience?
+      </p>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="152061" qtype="102">
+   <span class="answer-video">
+    <div class="play" respath="https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_300/c_2/t_102/201509/55f57770-4b41-4e48-8983-6329d8efaf47.mp3">
+     <img class="playImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/play-1.png"/>
+     <img class="playingImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/playing02-fltrp.gif" style="display:none;"/>
+    </div>
+   </span>
+   <div class="Choice">
+    <div class="nu" id="t5">
+     <span>
+      <b>
+       5)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  It can enhance skills to interact with people.
+       </label>
+       <label class="green">
+        B.  It is beneficial for learning a new culture.
+       </label>
+       <label>
+        C.  It is important to find a good host family.
+       </label>
+       <label>
+        D.  It is the choice for most Chinese students.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       5) B
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+     <p>
+      <b>
+       听力文本：
+      </b>
+     </p>
+     <p>
+      <p style="text-align:justify">
+       W: You know, this summer I will go to London to study. I am wondering if I could find a good host family to stay with.
+      </p>
+      <p style="text-align:justify">
+       M: I hope you can. Most international students prefer to stay with a local family. It can help them interact with the family of a different culture.
+      </p>
+      <p style="text-align:justify">
+       Q: What does the man say about staying with a family?
+      </p>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="152060" qtype="102">
+   <span class="answer-video">
+    <div class="play" respath="https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_300/c_2/t_102/201509/31370b41-5012-4f0c-89c7-a06e9afb9f4a.mp3">
+     <img class="playImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/play-1.png"/>
+     <img class="playingImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/playing02-fltrp.gif" style="display:none;"/>
+    </div>
+   </span>
+   <div class="Choice">
+    <div class="nu" id="t6">
+     <span>
+      <b>
+       6)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  The stay in a five-star hotel.
+       </label>
+       <label>
+        B.  Different ways to earn money.
+       </label>
+       <label>
+        C.  The traveling experience in Egypt.
+       </label>
+       <label class="green">
+        D.  The possibility of traveling cheaply.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       6) D
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+     <p>
+      <b>
+       听力文本：
+      </b>
+     </p>
+     <p>
+      <p style="text-align:justify">
+       M: Is it possible to visit many parts of the world and spend only $10-30 per day?
+      </p>
+      <p style="text-align:justify">
+       W: As long as you do not stay in five-star hotels. I spent a whole month in Egypt on $300. Besides, you can earn money on the road by teaching English or working on a farm.
+      </p>
+      <p style="text-align:justify">
+       Q: What are they talking about?
+      </p>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="152059" qtype="102">
+   <span class="answer-video">
+    <div class="play" respath="https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_300/c_2/t_102/201509/8e9f1594-5d8c-46cb-b282-0fab99db2f7d.mp3">
+     <img class="playImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/play-1.png"/>
+     <img class="playingImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/playing02-fltrp.gif" style="display:none;"/>
+    </div>
+   </span>
+   <div class="Choice">
+    <div class="nu" id="t7">
+     <span>
+      <b>
+       7)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  They were related to a disaster.
+       </label>
+       <label>
+        B.  They were transported by boat.
+       </label>
+       <label>
+        C.  They were used to attack enemies.
+       </label>
+       <label>
+        D.  They were found by the Europeans.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       7) A
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+     <p>
+      <b>
+       听力文本：
+      </b>
+     </p>
+     <p>
+      <p style="text-align:justify">
+       W: I’m back from Easter Island! You should see the stone heads; they are very huge and mysterious.
+      </p>
+      <p style="text-align:justify">
+       M: One story says the stone statues brought disaster to the islanders because they cut down every tree to transport the statues. And when the Europeans attacked, they were left with no wood for boats!
+      </p>
+      <p style="text-align:justify">
+       Q: What does the man say about the stone heads?
+      </p>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="152058" qtype="102">
+   <span class="answer-video">
+    <div class="play" respath="https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_300/c_2/t_102/201509/bd6ffa39-9b3e-43d7-a559-fe77b9311873.mp3">
+     <img class="playImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/play-1.png"/>
+     <img class="playingImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/playing02-fltrp.gif" style="display:none;"/>
+    </div>
+   </span>
+   <div class="Choice">
+    <div class="nu" id="t8">
+     <span>
+      <b>
+       8)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  The man can use hand gestures to communicate.
+       </label>
+       <label>
+        B.  The man doesn’t have to learn Chinese at all.
+       </label>
+       <label class="green">
+        C.  Hand signals could be easily misinterpreted.
+       </label>
+       <label>
+        D.  The Chinese are very sensitive to insults.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       8) C
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+     <p>
+      <b>
+       听力文本：
+      </b>
+     </p>
+     <p>
+      <p style="text-align:justify">
+       M: Do you think it is really necessary that I learn some basic Chinese before my visit? I think I can simply use hand gestures to communicate.
+      </p>
+      <p style="text-align:justify">
+       W: Well, I am not sure. A friendly gesture in one culture may be understood as an insult or dirty body language by another.
+       <br/>
+       <br/>
+       Q: What does the woman mean?
+      </p>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+ </div>
+ <div class="Test">
+  <div class="TestTitle">
+   <div class="title" id="103">
+    长对话8题，总分值：8分
+   </div>
+   <div class="title-decrible">
+    <div class="directs">
+     Directions： In this section, you'll hear some long conversations. At the end of each conversation, some questions will be asked. Both the conversation and the questions will be spoken only once. After each question, choose the best answer from the four choices marked A, B, C, and D.
+    </div>
+   </div>
+  </div>
+  <div class="Question-Conversation" qid="153944" qtype="103">
+   <span class="answer-video">
+    <div class="play" respath="https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/t_103/201509/cnzyhx_22172435006.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_300/c_2/t_103/201509/c5ed1931-a8aa-41b9-af9b-a16c2196c52c.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_300/c_2/t_103/201509/b6bd2a7b-a422-4f07-b615-ac12c316c2ae.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_300/c_2/t_103/201509/c67a56da-f4ca-42b6-9ac2-1ad9bb18b1b2.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/t_103/201509/pygfzk_24181221801.mp3">
+     <img class="playImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/play-1.png"/>
+     <img class="playingImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/playing02-fltrp.gif" style="display:none;"/>
+    </div>
+   </span>
+   <div class="Choice">
+    <div class="nu" id="t9">
+     <span>
+      <b>
+       9)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  To know all the places on the map.
+       </label>
+       <label>
+        B.  To win the love of a rich woman.
+       </label>
+       <label>
+        C.  To win a large sum of money.
+       </label>
+       <label class="green">
+        D.  To travel to a lot of places.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t10">
+     <span>
+      <b>
+       10)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  Inherit money from his parents.
+       </label>
+       <label>
+        B.  Have a mini-vacation every day.
+       </label>
+       <label>
+        C.  Try to date with a rich woman.
+       </label>
+       <label class="green">
+        D.  Save up slowly for retirement.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t11">
+     <span>
+      <b>
+       11)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  Because it is close to the Forbidden City.
+       </label>
+       <label>
+        B.  Because it is typical in Beijing, China.
+       </label>
+       <label class="green">
+        C.  Because it combines old and new.
+       </label>
+       <label>
+        D.  Because it has amazing views.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t12">
+     <span>
+      <b>
+       12)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  It is the center of ancient civilizations.
+       </label>
+       <label class="green">
+        B.  It runs from the south toward the north.
+       </label>
+       <label>
+        C.  It is famous for the architecture along it.
+       </label>
+       <label>
+        D.  It takes five days to have a boat trip on it.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      9) D      10) D      11) C      12) B
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <div>
+      <pre>（无）</pre>
+     </div>
+     <p>
+      <b>
+       听力文本：
+      </b>
+     </p>
+     <p>
+      <p style="text-align:justify">
+       W: Wow! You’ve traveled to dozens of places all over this map, Mark!
+      </p>
+      <p style="text-align:justify">
+       M: No! I only wish, Martha! These are only places I’m planning to travel to!
+      </p>
+      <p style="text-align:justify">
+       W: So did you win a lot of money or something? How can you afford it?
+      </p>
+      <p style="text-align:justify">
+       M: Well, I’ve got two plans! Plan A: Marry someone rich and inherit all of her money. If I’m not lucky enough to fall in love with a rich woman, then, Plan B: Slowly saving up for retirement when I’ll become a tourist all year long! Meanwhile, I’m reading every day and taking thousands of mini-vacations in my imagination!
+      </p>
+      <p style="text-align:justify">
+       W: Where will you travel first?
+      </p>
+      <p style="text-align:justify">
+       M: Well first, Beijing, China. I’ve been reading all about the Forbidden City and the 798 Art District — a mix of old and new! Then, I must see Shanghai with its amazing views! Then, I’m heading to Egypt, another must-see civilization.
+      </p>
+      <p style="text-align:justify">
+       W: Oh, China and Egypt, I’ve dreamed about both of those places! I just read a book about the ancient civilizations that developed there and their world-famous architecture. Did you know the great river, the River Nile, flows north, not south?
+      </p>
+      <p style="text-align:justify">
+       M: Yeah! I’m planning a boat trip along the River Nile for five days!
+      </p>
+      <p style="text-align:justify">
+       W: Oh dear! Mark, a boat? I know you love boats, but, you’re afraid of snakes. On the River Nile, snakes are able to get right up onto the boats.
+      </p>
+      <p style="text-align:justify">
+       M: Oh no! That’s scary! I didn’t know, Martha! Are you sure?
+      </p>
+      <p style="text-align:justify">
+       W: No…I just made that up as a joke. There are snakes of course — but I’ve never heard or read of one coming up on a big tourist boat. I just said it to be funny, Mark…
+      </p>
+      New words:
+      <p style="text-align:justify">
+       the Forbidden City 紫禁城，即故宫
+      </p>
+      <p style="text-align:justify">
+       the River Nile 尼罗河，有“埃及之母”之称
+      </p>
+      <p>
+       <br/>
+       <p>
+        What is the man’s biggest wish?
+       </p>
+       <p>
+        What does the man plan to do to fulfill his wish?
+       </p>
+       <p>
+        Why is the man interested in the 798 Art District?
+       </p>
+       <p>
+        What do the two speakers say about the River Nile?
+       </p>
+      </p>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="153943" qtype="103">
+   <span class="answer-video">
+    <div class="play" respath="https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_300/c_2/t_103/201509/e6aae409-cee8-47f3-9ea5-6c231a95f635.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_300/c_2/t_103/201509/114005d1-370c-4e9c-ab83-84ed3bf579b9.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_300/c_2/t_103/201509/d06bca07-b166-4235-ab9d-3a3e3138c4d6.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_300/c_2/t_103/201509/92e68f64-5d28-4336-8cab-37f5fd33475f.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_300/c_2/t_103/201509/4f167bfe-cbd2-4480-b45a-652c41cd13cb.mp3">
+     <img class="playImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/play-1.png"/>
+     <img class="playingImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/playing02-fltrp.gif" style="display:none;"/>
+    </div>
+   </span>
+   <div class="Choice">
+    <div class="nu" id="t13">
+     <span>
+      <b>
+       13)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  She wishes the vacation could start right now.
+       </label>
+       <label>
+        B.  She is waiting patiently for the vacation to begin.
+       </label>
+       <label>
+        C.  She is excited that she is to visit Queen Elizabeth.
+       </label>
+       <label>
+        D.  She likes the idea that the vacation is two weeks long.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t14">
+     <span>
+      <b>
+       14)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  Because airline tickets will be much cheaper.
+       </label>
+       <label>
+        B.  Because it is less likely to have rain in this season.
+       </label>
+       <label>
+        C.  Because there will be several more attractions then.
+       </label>
+       <label class="green">
+        D.  Because it is easier to get around with fewer visitors.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t15">
+     <span>
+      <b>
+       15)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  The London Eye.
+       </label>
+       <label>
+        B.  The River Thames.
+       </label>
+       <label>
+        C.  The Tower of London.
+       </label>
+       <label>
+        D.  Shakespeare’s Theater.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t16">
+     <span>
+      <b>
+       16)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  Many famous people used to live there.
+       </label>
+       <label class="green">
+        B.  Many famous prisoners were killed there.
+       </label>
+       <label>
+        C.  Many famous criminals were buried there.
+       </label>
+       <label>
+        D.  Many famous people have paid a visit to it.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      13) A      14) D      15) A      16) B
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <div>
+      <pre>（无）</pre>
+     </div>
+     <p>
+      <b>
+       听力文本：
+      </b>
+     </p>
+     <p>
+      <p style="text-align:justify">
+       M: Hey Lucy, I heard you’re going on vacation next Thursday?
+      </p>
+      <p style="text-align:justify">
+       W: That’s right George, and I can’t wait for my two weeks of vacation. I’ve been dreaming of seeing London since I was eight years old when I saw Queen Elizabeth on television! I’m going all over London! I’m planning to take London buses and to use the British underground which they call “The Tube”.
+      </p>
+      <p style="text-align:justify">
+       M: Wow! But why go in November when it’s so cold and rainy?
+      </p>
+      <p style="text-align:justify">
+       W: Because in the winter there are fewer tourists and most attractions have cheaper tickets. Plus it will be easier getting around to see things with shorter lines.
+      </p>
+      <p style="text-align:justify">
+       M: Speaking of attractions, what will you see?
+      </p>
+      <p style="text-align:justify">
+       W: I have a list prepared. The first is the London Eye on the banks of the River Thames that runs through London. The London Eye takes you up high into the air to see the whole city from above. And then I’m going on a private walking tour to look at some famous places in London!
+      </p>
+      <p style="text-align:justify">
+       M: That sounds fun!
+      </p>
+      <p style="text-align:justify">
+       W: That’s not all. I’ve also picked out a bus tour called the “Big Bus Tour of London” where I’ll see Shakespeare’s famous theater and one of the oldest castles in the world. Also, I’m really excited to see the Tower of London, where they used to kill famous criminals.
+      </p>
+      <p style="text-align:justify">
+       M: Eww! That’s so dark and depressing!
+      </p>
+      <p style="text-align:justify">
+       W: Maybe a little, but don’t you think it calls to our mind the history of famous people who died there?
+      </p>
+      <p style="text-align:justify">
+       M: I guess…“Well, remember: Pack a good raincoat, warm socks, and some water-proof boots!
+      </p>
+      <p style="text-align:justify">
+       W: Great advice, George!
+      </p>
+      New words:
+      <p style="text-align:justify">
+       the London Eye 伦敦眼（世界第四大摩天轮）
+      </p>
+      <p style="text-align:justify">
+       the River Thames 泰晤士河（英国的“母亲河”）
+      </p>
+      <p style="text-align:justify">
+       the Tower of London 伦敦塔（曾作为监狱关押上层阶级的囚犯）
+      </p>
+      <p style="text-align:justify">
+       waterproof a. 防雨的，不透水的
+      </p>
+      <p>
+       <br/>
+       <p>
+        How does Lucy feel about going to London?
+       </p>
+       <p>
+        Why does Lucy decide to go in November?
+       </p>
+       <p>
+        From which place can a tourist see the whole city of London?
+       </p>
+       <p>
+        What’s special about the Tower of London?
+       </p>
+      </p>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+ </div>
+ <div class="Test">
+  <div class="TestTitle">
+   <div class="title" id="308">
+    长文章4题，总分值：4分
+   </div>
+   <div class="title-decrible">
+    <div class="directs">
+     Directions： In this section, you’ll hear some passages. At the end of each passage, you'll hear some questions. Both the passage and the questions will be spoken only once. After each question, choose the best answer from the four choices marked A, B, C, and D.
+    </div>
+   </div>
+  </div>
+  <div class="Question-Conversation" qid="153945" qtype="308">
+   <span class="answer-video">
+    <div class="play" respath="https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_300/c_2/t_301/201509/8011cea5-2050-461f-b517-1a2a60b9a5f3.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_300/c_2/t_301/201509/52d0faa3-f490-4a13-8db3-922f4bf3e08b.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_300/c_2/t_301/201509/26fd4a69-da76-401a-b005-a66bfd7eeaf9.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_300/c_2/t_301/201509/1ae69e5b-bbf5-4bc1-8e45-f025b4d96125.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_300/c_2/t_301/201509/38957161-7330-4bed-af0b-ff1e277eb5c1.mp3">
+     <img class="playImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/play-1.png"/>
+     <img class="playingImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/playing02-fltrp.gif" style="display:none;"/>
+    </div>
+   </span>
+   <div class="Choice">
+    <div class="nu" id="t17">
+     <span>
+      <b>
+       17)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  He had a personal interview with President Nixon.
+       </label>
+       <label>
+        B.  His famous sentence has been written into textbooks.
+       </label>
+       <label class="green">
+        C.  He was sent on a world tour by NASA after the landing.
+       </label>
+       <label>
+        D.  He has become the focus of the largest audience since then.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t18">
+     <span>
+      <b>
+       18)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  He considered email correspondence was sufficient enough.
+       </label>
+       <label>
+        B.  He thought Andrew Smith was not a well-known writer.
+       </label>
+       <label>
+        C.  He decided to accept only two interviews all his life.
+       </label>
+       <label class="green">
+        D.  He believed that he was not worthy of the attention.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t19">
+     <span>
+      <b>
+       19)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  Because he declined many requests from other people.
+       </label>
+       <label class="green">
+        B.  Because he refused to be the center of public attention.
+       </label>
+       <label>
+        C.  Because he did not feel excited about the moon landing.
+       </label>
+       <label>
+        D.  Because he did only a small part of the moon landing work.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t20">
+     <span>
+      <b>
+       20)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  He didn’t get the credit he deserved even though he did the flying part.
+       </label>
+       <label class="green">
+        B.  He didn’t want to make money from the moon-landing experience.
+       </label>
+       <label>
+        C.  He failed to become a millionaire like the other moon walkers.
+       </label>
+       <label>
+        D.  He was not good at signing autographs and having interviews.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      17) C      18) D      19) B      20) B
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <div>
+      <pre>（无）</pre>
+     </div>
+     <p>
+      <b>
+       听力文本：
+      </b>
+     </p>
+     <p>
+      <p style="text-align:justify">
+       Being the first person ever to set foot on the moon, Neil Armstrong’s sentence “That's one small step for a man, one giant leap for mankind” has been written into history. The moon landing of the Apollo 11 was watched by the largest television audience of its time, and President Nixon put in a phone call just after the US flag was planted on the moon. On the astronauts’ return, NASA sent them on a world tour.
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       Though he was very excited about landing on the moon, Neil Armstrong didn’t like being the center of the attention and preferred to talk about the facts rather than feelings. He started to decline speeches and interviews, eventually refusing to sign autographs and keeping away from being photographed in public. In fact, Armstrong had done only two television interviews in the last 40 years, and he had said nothing about what he felt about anything. Andrew Smith, a writer who has met many famous people, has been repeatedly refused an interview with Armstrong despite many requests, although the pair has had email correspondence. So what has made Neil Armstrong such a reluctant hero? The reason is simple: He believed that he wasn’t worthy of the attention. There were 400,000 people that worked on the moon landing program in various different ways and he thought he shouldn’t get all the credit just because he did the flying part. Armstrong didn’t want to gain financially, even though a lot of the other moon walkers have done this. It was said that if Armstrong spent just one afternoon signing autographs he could make a million dollars, but he had always refused.
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       New words:
+      </p>
+      <p style="text-align:justify">
+       autograph n. 亲笔签名
+      </p>
+      <p>
+       <br/>
+       <p>
+        What happened to Neil Armstrong after the moon landing?
+       </p>
+       <p>
+        Why did Neil Armstrong repeatedly refuse an interview from Andrew Smith?
+       </p>
+       <p>
+        Why was Neil Armstrong described as a reluctant hero?
+       </p>
+       <p>
+        What’s the difference between Armstrong and other astronauts?
+       </p>
+      </p>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+ </div>
+ <div class="Test">
+  <div class="TestTitle">
+   <div class="title" id="107">
+    长篇阅读10题，总分值：10分
+   </div>
+   <div class="title-decrible">
+    <div class="directs">
+     Directions： You are going to read a passage with 10 statements attached to it. Each statement contains information given in one of the paragraphs. Identify the paragraph from which the information is derived. You may choose a paragraph more than once. Each paragraph is marked with a letter.
+    </div>
+   </div>
+  </div>
+  <div class="Question-Conversation" qid="1000010" qtype="107">
+   <div class="Choice">
+    <div class="padding">
+     <p>
+      <div style="text-align:center">
+       <b>
+        A Parents’ Guide to UCAS Applications
+       </b>
+      </div>
+      <div style="text-align:justify">
+       <br/>
+       A) To support your child through the UCAS (Universities and Colleges Admissions Service) process, you’ll need to be aware of the key dates and — make sure that they are, too. “The university application process is a minefield,” says Wendy Pannell, whose daughter is in year 13. It can be particularly confusing for parents who want to be supportive, but who have no previous experience of the university admissions service. “University has changed enormously,” says Andrew Swarbrick, university applications coordinator at the independent Abingdon school, Oxfordshire. “Parents need to remember that it’s different from how it was for them. They need to start with a blank slate.” With that in mind, here’s how you can help your sixth-former to find and apply to a university that’s right for them.
+       <br/>
+       <br/>
+       B) Most schools will host information days that help parents to prepare. “Go to those sessions if a school is running them,” says Nancy Raynsford, whose daughter is in her first year at Liverpool University. Students should think about where they want to go and what they want to study in year 12, as the application procedure will get underway in the autumn term of year 13. But with 37,000 courses to choose from at over 300 institutions, how can you help them to narrow down the options?
+       <br/>
+       <br/>
+       C) If your sixth-former has a dream career in mind, such as medicine or dentistry, they’ll need a specific degree to achieve it. If they don’t know, admissions tutors advise students to apply for a subject they enjoy or a course they are fascinated by. Make use of the resources available online, such as university league tables and prospectuses（简章）.”I found the UCAS website a mine of information,” says Wendy Pannell. “It’s got all the deadline dates and everything in one place. You can also download apps and use Twitter — I’ve followed UCAS and universities.”
+       <br/>
+       <br/>
+       D) Parents and sixth-formers should go to open days to get a feel for what a university is like. “We went to about 20 open days,” says Nancy Raynsford. “We sat in lectures and that helped us to understand what it was all about. I was designated as the note-taker so that my daughter could listen. I didn’t ask any questions publicly because that was her job, but my being there gave her confidence. We could talk about it afterwards, and the shared experience of having been there with her meant that we could understand the process as well.” “I went on a couple of visits to universities,” says Barbara Asante, whose daughter is now at Sussex University. “It’s important for the parents to go because you know your child and so you can see that a university or a course will suit them.”
+       <br/>
+       <br/>
+       E) Parents should know important dates in the UCAS calendar and remind their sixth-former of them. All applications are made through UCAS and the final deadline for the majority of courses is January 15. However, most applications are submitted during the autumn term of year 13. It’s recommended that students complete applications as early as possible; although universities must consider every one received by the deadline, many make offers in the autumn.
+       <br/>
+       <br/>
+       F) Students can apply for up to five courses. Entry for most courses will be determined by predicted A-level results and tariff points. A certain number of tariff points are given for each A-level grade. You can look at tariff tables online to see how many points each grade has. Many schools advise that students have at least one “back-up” option, with lower entry requirements, in case they do not get their predicted grades.
+       <br/>
+       <br/>
+       G) As well as understanding and guiding your child through the application process, parents can help with the personal statement, which is a chance for students to show their passion for a subject. “Parents can help their son or daughter to begin their personal statement,” says Swarbrick. “Get them to explain what they find interesting and exciting about their subject,” he says, “as well as to say what they’ve done to demonstrate that interest. However, it’s also important that parents recognize that their son or daughter has to write their personal statement themselves.”
+       <br/>
+       <br/>
+       H) Parents can also help by being aware of the early deadline. The deadline for Oxbridge and some specific courses, such as medicine and dentistry, is October 15. If your sixth-former is thinking about applying to any of these subjects or universities they should prepare well in advance. Students may need to take a test or submit written work. They are then shortlisted and could be invited for an interview.
+       <br/>
+       <br/>
+       I) At the offer stage, parents should play a monitorial role. Offers are staggered（犹豫，动摇）depending on when an application was made. Offers can be “unconditional” or “conditional” – which means they depend on A-level results. Students have to decline or accept only when all of their five choices have got back to them. They will then have to respond by a set deadline, given by UCAS. If a student’s first choice is a conditional offer, they can also accept a second insurance choice, which asks for lower grades. “At this stage, parents should ask sixth-formers what the deadline is and when they plan to make their response by, to make sure that they are on top of the procedure. As the whole thing becomes more real, parents could help to organize another visit or two so that they get a second impression.”
+       <br/>
+       <br/>
+       J) If your sixth-former did not get into any of their choices, then they can still find a course through UCAS Extra, which stays open until early July. They can use the course search to find out which courses still have places available and apply through UCAS. Another option is to go through clearing, which matches students with unfilled places on courses. It’s organized by UCAS and opens at 5 p.m. on A-level results day, August 15. It then runs until September. Encourage your child to keep calm, as clearing can be a stressful process. Expect them to be on the phone, contacting universities. Institutions say they prefer students, rather than parents, to call, so it’s best for parents to take a step back and to let their son or daughter speak for themselves.
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t21">
+     <span>
+      <b>
+       21)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      If a student is not sure about what subject to learn, he will be advised to apply for the subject he is interested in.
+      <span class="blankinput" type="text">
+       C
+      </span>
+     </p>
+    </div>
+    <div class="nu" id="t22">
+     <span>
+      <b>
+       22)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      If a sixth-former graduate applies for medicine course, he should get to know the deadline for it and prepare for some tests ahead of time.
+      <span class="blankinput" type="text">
+       H
+      </span>
+     </p>
+    </div>
+    <div class="nu" id="t23">
+     <span>
+      <b>
+       23)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      The advantage that parents accompany their children to the open days is that they can give their children confidence and help.
+      <span class="blankinput" type="text">
+       D
+      </span>
+     </p>
+    </div>
+    <div class="nu" id="t24">
+     <span>
+      <b>
+       24)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Many applicants submit their applications in the autumn of year 13 rather than in the January of year 14.
+      <span class="blankinput" type="text">
+       E
+      </span>
+     </p>
+    </div>
+    <div class="nu" id="t25">
+     <span>
+      <b>
+       25)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Students have to make a final decision about which university to attend by the deadline given by UCAS.
+      <span class="blankinput" type="text">
+       I
+      </span>
+     </p>
+    </div>
+    <div class="nu" id="t26">
+     <span>
+      <b>
+       26)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Students are recommended to choose at least one course with lower entry requirements.
+      <span class="blankinput" type="text">
+       F
+      </span>
+     </p>
+    </div>
+    <div class="nu" id="t27">
+     <span>
+      <b>
+       27)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Some parents, especially those who have never gone through university admission service, feel troubled and worried about the process of their kid’s university application.
+      <span class="blankinput" type="text">
+       A
+      </span>
+     </p>
+    </div>
+    <div class="nu" id="t28">
+     <span>
+      <b>
+       28)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Parents are suggested to go to the colleges on their information days to get well prepared to help their children.
+      <span class="blankinput" type="text">
+       B
+      </span>
+     </p>
+    </div>
+    <div class="nu" id="t29">
+     <span>
+      <b>
+       29)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Students who fail to be admitted by their ideal universities can still find vacancy in other universities before early July through UCAS Extra.
+      <span class="blankinput" type="text">
+       J
+      </span>
+     </p>
+    </div>
+    <div class="nu" id="t30">
+     <span>
+      <b>
+       30)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      When writing personal statement, students should explain their interests in the chosen subject.
+      <span class="blankinput" type="text">
+       G
+      </span>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      21) C      22) H      23) D      24) E      25) I      26) F      27) A      28) B      29) J      30) G
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <div>
+      <pre>（无）</pre>
+     </div>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+ </div>
+ <div class="Test">
+  <div class="TestTitle">
+   <div class="title" id="152">
+    阅读理解10题，总分值：30分
+   </div>
+   <div class="title-decrible">
+    <div class="directs">
+     Directions： Read the following passages carefully. Each passage is followed by some questions or unfinished sentences. For each of them there are four choices marked A, B, C, and D. Choose the best answer to each question.
+    </div>
+   </div>
+  </div>
+  <div class="Question-Conversation" qid="152103" qtype="152">
+   <div class="Choice">
+    <div class="padding">
+     <p>
+      <p style="text-align:justify">
+       What do Leonardo da Vinci (达芬奇) and Albert Einstein have in common? They were both left-handed, along with other famous people including Pablo Picasso (毕加索). In fact, an estimated 11 percent of Americans and Europeans are left-handed.
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       Most people around the world are right-handed. This fact also seems to have held true throughout history. In 1977, scientists studied works of art made at various time in history starting with cave drawings from 15,000 B.C. and ending with paintings from the 1950s. Most of the people shown in these works of art are right-handed, so scientists guessed that right-handedness has always been common.
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       Many researchers claim to have found relationships between left-handedness and various physical and mental characteristics, such as blond hair, blue eyes, vegetarianism, and sleep difficulties. Other studies have found a higher-than-normal level of left-handed people in certain occupations, including professional baseball and tennis players, architects, lawyers, as well as prisoners. However, some of these connections are very weak, and others haven’t been proven.
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       What makes a person become right-handed rather than left-handed? As yet, no one really knows for sure. One simple idea suggests that people normally get right-handedness from their parents. Studies have found that two right-handed parents have only 9.5 percent chance of having a left-handed child, while two left-handed parents have a 26 percent chance of having a left-handed child. Another common theory is that left-handed people suffer mild brain damage during their birth.
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       Whatever the reasons behind it, people’s attitudes toward left-handedness have changed a lot over the years. Statistics show that although 13 percent of young people (10-12 years old) are left-handed, only 6 percent of the elderly are left-handed. Left-handed children used to be punished until they began using their right hand like other children, but today people who are left-handed are no longer looked down upon nor are they considered abnormal.
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       For most people today either case is perfectly acceptable. There are even a number of shops now that specialize in selling products designed for left-handed people, such as left-handed scissors, can openers, guitars, and even a left-handed camera. Don’t you think it’s wonderful?
+      </p>
+     </p>
+    </div>
+    <div class="nu" id="t31">
+     <span>
+      <b>
+       31)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      From studying works of art, scientists have learned that ________.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  left-handed people are better artists
+       </label>
+       <label>
+        B.  most artists are left-handed
+       </label>
+       <label class="green">
+        C.  most people in history were right-handed
+       </label>
+       <label>
+        D.  cave drawings were drawn using both hands
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t32">
+     <span>
+      <b>
+       32)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      What is talking about in the Paragraph 3?
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  People with certain characteristics are better at certain jobs.
+       </label>
+       <label>
+        B.  Left-handed people are better at some jobs.
+       </label>
+       <label class="green">
+        C.  Left-handedness is linked with certain characters and occupations.
+       </label>
+       <label>
+        D.  There are some reasons why people are left-handed.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t33">
+     <span>
+      <b>
+       33)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Why is a person right-handed?
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  It is caused by the person’s parents.
+       </label>
+       <label>
+        B.  It is due to the environment the person lives in.
+       </label>
+       <label>
+        C.  It is suffered a mild brain damage at birth.
+       </label>
+       <label class="green">
+        D.  It is not sure about specific reasons yet.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t34">
+     <span>
+      <b>
+       34)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      What can be assumed about the children of two left-handed parents?
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  Many of them are left-handed.
+       </label>
+       <label>
+        B.  Most of them are right-handed.
+       </label>
+       <label>
+        C.  Most of them use both hands equally.
+       </label>
+       <label>
+        D.  Very few of them are left-handed.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t35">
+     <span>
+      <b>
+       35)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Left-handed children ________.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  are usually looked down upon
+       </label>
+       <label>
+        B.  are exceptionally talented like Einstein
+       </label>
+       <label>
+        C.  are thought of as abnormal
+       </label>
+       <label class="green">
+        D.  were often forced to become right-handed
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      31) C      32) C      33) D      34) A      35) D
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <div>
+      <pre>（无）</pre>
+     </div>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="152102" qtype="152">
+   <div class="Choice">
+    <div class="padding">
+     <p>
+      <p style="text-align:justify">
+       After men landed on the moon in 1969, astronauts (宇航员) around the world had a problem – there were no other places they could go! Even today, the other planets are still too far away for astronauts to fly to. So while rockets and robots can go to other planets, manned flights have to stay closer to home. Therefore, manned space programs have turned their attention to solving problems related to living and working in space.
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       Currently, NASA’s (US National Aeronautics and Space Administration) manned space exploration program focuses on the space shuttle program. NASA now operates three space shuttles, Discovery, Atlantis, and Endeavor. Unfortunately, two of NASA’s shuttles, Challenger and Columbia, were lost through accidents. Seven astronauts died in each accident. The program completed 135 missions when the program ended with the successful landing at the Kennedy Space Center on July 21, 2011. These missions have included putting satellites into orbit, photographing the earth, studying space, conducting experiments related to working in space, and connecting with various manned space station in orbit.
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       Throughout the short history of the exploration of space, several space stations have been put into orbit. The first manned space station was the Soviet station Salyut 1, put into orbit in 1971. Later, in 1986, the Soviet Union launched the Mir space station. Mir stayed in orbit until March 23, 2001. Over that time, 104 astronauts visited the station to stay for various lengths of time. The person who has spent the longest in space so far is Russian astronaut Valeri Polyakov. Working as the doctor aboard the station, he lived on Mir for 438 days without returning to earth. In total, Polyakov worked aboard Mir for 678 days before retiring.
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       Today, astronauts from around the world are working together to complete the International Space Station (ISS). The construction began in 1998, and the US Orbital Segment was completed in 2011. Operations are expected to continue until at least 2020. In the long run, it is hoped that the ISS will be a place where people can live and work all year round.
+      </p>
+     </p>
+    </div>
+    <div class="nu" id="t36">
+     <span>
+      <b>
+       36)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Why can’t astronauts travel to other planets now?
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  Because there are not enough space shuttles.
+       </label>
+       <label>
+        B.  Because there have been too many rocket accidents.
+       </label>
+       <label class="green">
+        C.  Because the journey would take too long for human.
+       </label>
+       <label>
+        D.  Because there are too many problems here on Earth.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t37">
+     <span>
+      <b>
+       37)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      What is the fact of NASA’s manned space exploration program?
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  Discovery, Atlantis, and Endeavor were lost through accidents.
+       </label>
+       <label>
+        B.  Challenger and Columbia are the current space shuttles.
+       </label>
+       <label>
+        C.  Seven astronauts died in accidents.
+       </label>
+       <label class="green">
+        D.  NASA had completed 135 missions by July 21, 2011.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t38">
+     <span>
+      <b>
+       38)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      What is TRUE about Valeri Polyakov?
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  He has spent more time in space than anyone else.
+       </label>
+       <label>
+        B.  He stayed aboard Mir for 678 days at one time.
+       </label>
+       <label>
+        C.  He is still an astronaut though he is retired.
+       </label>
+       <label>
+        D.  He often helped the doctor at the Mir space station.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t39">
+     <span>
+      <b>
+       39)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      What is TRUE about the International Space Station?
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  It is being built by the United States alone.
+       </label>
+       <label>
+        B.  It will be launched into space in 2011.
+       </label>
+       <label>
+        C.  It was completed in 1998.
+       </label>
+       <label class="green">
+        D.  It will eventually have people living and working there.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t40">
+     <span>
+      <b>
+       40)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      What is the best title for this passage?
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  Valeri Polyakov — An Amazing Astronaut
+       </label>
+       <label class="green">
+        B.  The Past and Future of Space Travel
+       </label>
+       <label>
+        C.  Space Cities of the Future
+       </label>
+       <label>
+        D.  Living and Working on the International Space Station
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      36) C      37) D      38) A      39) D      40) B
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <div>
+      <pre>（无）</pre>
+     </div>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+ </div>
+ <div class="Test">
+  <div class="TestTitle">
+   <div class="title" id="112">
+    完型填空20题，总分值：20分
+   </div>
+   <div class="title-decrible">
+    <div class="directs">
+     Directions： There are some blanks in the following passage. For each blank there are four choices marked A, B, C and D. You should choose the ONE that best fits into the passage.
+    </div>
+   </div>
+  </div>
+  <div class="Question-Conversation" qid="152098" qtype="112">
+   <div class="Choice">
+    <div class="padding">
+     <p>
+      <div style="text-align:justify">
+       When my parents came to the university for my graduation, they were very proud — of themselves and of me.
+       <b>
+        41)
+       </b>
+       <span class="blankinput" type="text">
+        In fact
+       </span>
+       , they hadn’t known much about college when they had first sent me off to this
+       <b>
+        42)
+       </b>
+       <span class="blankinput" type="text">
+        outstanding
+       </span>
+       liberal arts school. Sending me to college meant something special to them because it represented a big
+       <b>
+        43)
+       </b>
+       <span class="blankinput" type="text">
+        break through
+       </span>
+       for the future economic betterment and the chance to join an education-
+       <b>
+        44)
+       </b>
+       <span class="blankinput" type="text">
+        oriented
+       </span>
+       society. To me, this was the school where I would be
+       <b>
+        45)
+       </b>
+       <span class="blankinput" type="text">
+        invested with
+       </span>
+       great insight.
+       <br/>
+       <br/>
+       I bet we all achieved more than we had expected
+       <b>
+        46)
+       </b>
+       <span class="blankinput" type="text">
+        since
+       </span>
+       I am now the president of the university. My parents were part of a wave of Americans after World War II
+       <b>
+        47)
+       </b>
+       <span class="blankinput" type="text">
+        whose
+       </span>
+       belief and support in education greatly promoted the
+       <b>
+        48)
+       </b>
+       <span class="blankinput" type="text">
+        establishment
+       </span>
+       _ of the greatest universities in the world. Students began to have the chance to acquire a well-rounded education,
+       <b>
+        49)
+       </b>
+       <span class="blankinput" type="text">
+        on which
+       </span>
+       Americans created today’s culture and economy, plus a political system that
+       <b>
+        50)
+       </b>
+       <span class="blankinput" type="text">
+        acknowledges
+       </span>
+       _ equality.
+       <br/>
+       <br/>
+       College education
+       <b>
+        51)
+       </b>
+       <span class="blankinput" type="text">
+        provides
+       </span>
+       students with more tools to solve problems, broader horizons to
+       <b>
+        52)
+       </b>
+       <span class="blankinput" type="text">
+        evaluate
+       </span>
+       what’s going on in this world, and stronger ability to build a
+       <b>
+        53)
+       </b>
+       <span class="blankinput" type="text">
+        promising
+       </span>
+       society. University leaders in Asia, the Mideast and even Europe are now seeking to
+       <b>
+        54)
+       </b>
+       <span class="blankinput" type="text">
+        improve
+       </span>
+       curriculums more like those of our liberal arts schools.
+       <b>
+        55)
+       </b>
+       <span class="blankinput" type="text">
+        Likewise
+       </span>
+       , they want to know how we can combine academic learning with the development of critical thinking and creativity, the main
+       <b>
+        56)
+       </b>
+       <span class="blankinput" type="text">
+        pillar
+       </span>
+       of the best American colleges.
+       <br/>
+       <br/>
+       However, on the contrary, in our own land now we are
+       <b>
+        57)
+       </b>
+       <span class="blankinput" type="text">
+        defecting
+       </span>
+       from the liberal education. When the job market continues its long slide in
+       <b>
+        58)
+       </b>
+       <span class="blankinput" type="text">
+        succession
+       </span>
+       , college education is more and more seen as a means of economic betterment rather
+       <b>
+        59)
+       </b>
+       <span class="blankinput" type="text">
+        than
+       </span>
+       a means of human betterment. Many think that by narrowing our focus to just science and engineering, we will presumably become more
+       <b>
+        60)
+       </b>
+       <span class="blankinput" type="text">
+        competitive
+       </span>
+       in the market driven world. This is definitely a serious mistake.
+       <br/>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t41">
+     <span>
+      <b>
+       41)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  In brief
+       </label>
+       <label class="green">
+        B.  In fact
+       </label>
+       <label>
+        C.  In time
+       </label>
+       <label>
+        D.  In case
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t42">
+     <span>
+      <b>
+       42)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  funding
+       </label>
+       <label>
+        B.  searching
+       </label>
+       <label>
+        C.  upstanding
+       </label>
+       <label class="green">
+        D.  outstanding
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t43">
+     <span>
+      <b>
+       43)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  break through
+       </label>
+       <label>
+        B.  break away
+       </label>
+       <label>
+        C.  break out
+       </label>
+       <label>
+        D.  break off
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t44">
+     <span>
+      <b>
+       44)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  appealed
+       </label>
+       <label>
+        B.  adapted
+       </label>
+       <label class="green">
+        C.  oriented
+       </label>
+       <label>
+        D.  appointed
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t45">
+     <span>
+      <b>
+       45)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  counted in
+       </label>
+       <label>
+        B.  invested in
+       </label>
+       <label class="green">
+        C.  invested with
+       </label>
+       <label>
+        D.  established with
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t46">
+     <span>
+      <b>
+       46)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  like
+       </label>
+       <label>
+        B.  thereby
+       </label>
+       <label>
+        C.  because
+       </label>
+       <label class="green">
+        D.  since
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t47">
+     <span>
+      <b>
+       47)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  which
+       </label>
+       <label class="green">
+        B.  whose
+       </label>
+       <label>
+        C.  who
+       </label>
+       <label>
+        D.  that
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t48">
+     <span>
+      <b>
+       48)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  establishment
+       </label>
+       <label>
+        B.  commitment
+       </label>
+       <label>
+        C.  assignment
+       </label>
+       <label>
+        D.  engagement
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t49">
+     <span>
+      <b>
+       49)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  for which
+       </label>
+       <label>
+        B.  among which
+       </label>
+       <label class="green">
+        C.  on which
+       </label>
+       <label>
+        D.  in which
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t50">
+     <span>
+      <b>
+       50)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  acknowledges
+       </label>
+       <label>
+        B.  accepts
+       </label>
+       <label>
+        C.  receives
+       </label>
+       <label>
+        D.  admits
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t51">
+     <span>
+      <b>
+       51)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  affords
+       </label>
+       <label>
+        B.  guides
+       </label>
+       <label>
+        C.  furnishes
+       </label>
+       <label class="green">
+        D.  provides
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t52">
+     <span>
+      <b>
+       52)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  cultivate
+       </label>
+       <label class="green">
+        B.  evaluate
+       </label>
+       <label>
+        C.  stimulate
+       </label>
+       <label>
+        D.  moderate
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t53">
+     <span>
+      <b>
+       53)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  developing
+       </label>
+       <label>
+        B.  caring
+       </label>
+       <label class="green">
+        C.  promising
+       </label>
+       <label>
+        D.  assuring
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t54">
+     <span>
+      <b>
+       54)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  improve
+       </label>
+       <label>
+        B.  advance
+       </label>
+       <label>
+        C.  progress
+       </label>
+       <label>
+        D.  raise
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t55">
+     <span>
+      <b>
+       55)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  Eventually
+       </label>
+       <label>
+        B.  Therefore
+       </label>
+       <label>
+        C.  Thereby
+       </label>
+       <label class="green">
+        D.  Likewise
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t56">
+     <span>
+      <b>
+       56)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  leader
+       </label>
+       <label class="green">
+        B.  pillar
+       </label>
+       <label>
+        C.  monument
+       </label>
+       <label>
+        D.  beam
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t57">
+     <span>
+      <b>
+       57)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  escaping
+       </label>
+       <label>
+        B.  emerging
+       </label>
+       <label class="green">
+        C.  defecting
+       </label>
+       <label>
+        D.  shrinking
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t58">
+     <span>
+      <b>
+       58)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  succession
+       </label>
+       <label>
+        B.  success
+       </label>
+       <label>
+        C.  sequence
+       </label>
+       <label>
+        D.  chain
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t59">
+     <span>
+      <b>
+       59)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  before
+       </label>
+       <label>
+        B.  for
+       </label>
+       <label>
+        C.  then
+       </label>
+       <label class="green">
+        D.  than
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t60">
+     <span>
+      <b>
+       60)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  distinctive
+       </label>
+       <label class="green">
+        B.  competitive
+       </label>
+       <label>
+        C.  objective
+       </label>
+       <label>
+        D.  sensitive
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      41) B      42) D      43) A      44) C      45) C      46) D      47) B      48) A      49) C      50) A      51) D      52) B      53) C      54) A      55) D      56) B      57) C      58) A      59) D      60) B
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <div>
+      <pre>（无）</pre>
+     </div>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+ </div>
+ <div class="Test">
+  <div class="TestTitle">
+   <div class="title" id="305">
+    词汇与结构20题，总分值：20分
+   </div>
+   <div class="title-decrible">
+    <div class="directs">
+     Directions： For each of the following sentences there are four choices marked A, B, C and D. Choose the best one to complete each sentence.
+    </div>
+   </div>
+  </div>
+  <div class="Question-Conversation" qid="152096" qtype="305">
+   <div class="Choice">
+    <div class="nu" id="t61">
+     <span>
+      <b>
+       61)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div style="text-align:justify">
+       During economic crisis, people don’t feel safe to __________ their money in any financial program recommended even by banks with good reputations.
+      </div>
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  reserve
+       </label>
+       <label>
+        B.  entrust
+       </label>
+       <label class="green">
+        C.  invest
+       </label>
+       <label>
+        D.  save
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       61) C
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="152095" qtype="305">
+   <div class="Choice">
+    <div class="nu" id="t62">
+     <span>
+      <b>
+       62)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div style="text-align: justify;">
+       Curious tourists, visitors, and newspaper reporters from every corner of the world were __________ upon the small place where Steve Jobs was born.
+      </div>
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  pouring
+       </label>
+       <label class="green">
+        B.  descending
+       </label>
+       <label>
+        C.  falling
+       </label>
+       <label>
+        D.  plunging
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       62) B
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="152094" qtype="305">
+   <div class="Choice">
+    <div class="nu" id="t63">
+     <span>
+      <b>
+       63)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div style="text-align:justify">
+       The continual source of our strength was our mutual trust and respect and time will __________ what we feel about each other.
+      </div>
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  confirm
+       </label>
+       <label>
+        B.  guarantee
+       </label>
+       <label>
+        C.  admit
+       </label>
+       <label>
+        D.  secure
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       63) A
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="152093" qtype="305">
+   <div class="Choice">
+    <div class="nu" id="t64">
+     <span>
+      <b>
+       64)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      You have to be __________ and cancel your marriage plan without any hesitation if you think that he is not reliable and responsible.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  romantic
+       </label>
+       <label class="green">
+        B.  realistic
+       </label>
+       <label>
+        C.  optimistic
+       </label>
+       <label>
+        D.  fantastic
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       64) B
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="152092" qtype="305">
+   <div class="Choice">
+    <div class="nu" id="t65">
+     <span>
+      <b>
+       65)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      While animals aren’t people, he says it is __________ to make the inference that an effect found in rats may also apply to humans.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  radical
+       </label>
+       <label>
+        B.  typical
+       </label>
+       <label>
+        C.  practical
+       </label>
+       <label class="green">
+        D.  logical
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       65) D
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="152091" qtype="305">
+   <div class="Choice">
+    <div class="nu" id="t66">
+     <span>
+      <b>
+       66)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div style="text-align:justify">
+       What is somewhat encouraging is that all participants from the European Union now sense the pressure of working toward __________ to the debt crisis.
+      </div>
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  solutions
+       </label>
+       <label>
+        B.  evolutions
+       </label>
+       <label>
+        C.  foundations
+       </label>
+       <label>
+        D.  donations
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       66) A
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="152090" qtype="305">
+   <div class="Choice">
+    <div class="nu" id="t67">
+     <span>
+      <b>
+       67)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div style="text-align:justify">
+       The quality of the faculty and graduate students, combined with a(n) __________ scientific atmosphere, makes the university a unique place to pursue graduate study.
+      </div>
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  corresponding
+       </label>
+       <label class="green">
+        B.  outstanding
+       </label>
+       <label>
+        C.  demanding
+       </label>
+       <label>
+        D.  understanding
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       67) B
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="152089" qtype="305">
+   <div class="Choice">
+    <div class="nu" id="t68">
+     <span>
+      <b>
+       68)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div style="text-align: justify;">
+       The new government has decided to invest more to create jobs, expand education, __________ health care, and reduce taxes by adopting a series of new policies.
+      </div>
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  release
+       </label>
+       <label>
+        B.  revise
+       </label>
+       <label class="green">
+        C.  reform
+       </label>
+       <label>
+        D.  reduce
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       68) C
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="152088" qtype="305">
+   <div class="Choice">
+    <div class="nu" id="t69">
+     <span>
+      <b>
+       69)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div style="text-align: justify;">
+       World War II, the most __________ war in history, was a disaster for humankind, in which about 60 million people lost their lives.
+      </div>
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  representative
+       </label>
+       <label>
+        B.  competitive
+       </label>
+       <label>
+        C.  objective
+       </label>
+       <label class="green">
+        D.  destructive
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       69) D
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="152087" qtype="305">
+   <div class="Choice">
+    <div class="nu" id="t70">
+     <span>
+      <b>
+       70)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div style="text-align:justify">
+       Opinion polls are now beginning to show the consensus about the __________ that high unemployment is probably to stay.
+      </div>
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  prospect
+       </label>
+       <label>
+        B.  prosperity
+       </label>
+       <label>
+        C.  aspect
+       </label>
+       <label>
+        D.  scope
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       70) A
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="152086" qtype="305">
+   <div class="Choice">
+    <div class="nu" id="t71">
+     <span>
+      <b>
+       71)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Since your daughter is ___________ to catch a cold, you’d better take her to a hospital and give her a thorough physical examination.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  liberal
+       </label>
+       <label>
+        B.  reliable
+       </label>
+       <label>
+        C.  logical
+       </label>
+       <label class="green">
+        D.  liable
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       71) D
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="152085" qtype="305">
+   <div class="Choice">
+    <div class="nu" id="t72">
+     <span>
+      <b>
+       72)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div style="text-align:justify">
+       Professor Chen complained that he had been unable to __________ any Ph.D. students for more than five years and it seemed that no one wanted a doctorate in humanities.
+      </div>
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  regulate
+       </label>
+       <label class="green">
+        B.  recruit
+       </label>
+       <label>
+        C.  reject
+       </label>
+       <label>
+        D.  release
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       72) B
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="152084" qtype="305">
+   <div class="Choice">
+    <div class="nu" id="t73">
+     <span>
+      <b>
+       73)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div style="text-align: justify;">
+       Einstein wrote to President Franklin Roosevelt and suggested that the United States should __________ its atomic research program and make building the bomb a top priority.
+      </div>
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  accelerate
+       </label>
+       <label>
+        B.  calculate
+       </label>
+       <label>
+        C.  accumulate
+       </label>
+       <label>
+        D.  speculate
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       73) A
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="152083" qtype="305">
+   <div class="Choice">
+    <div class="nu" id="t74">
+     <span>
+      <b>
+       74)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div style="text-align:justify">
+       US military forces are fully prepared to __________ the military mission once the order is given by the President.
+      </div>
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  explore
+       </label>
+       <label>
+        B.  explode
+       </label>
+       <label class="green">
+        C.  execute
+       </label>
+       <label>
+        D.  exclude
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       74) C
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="152082" qtype="305">
+   <div class="Choice">
+    <div class="nu" id="t75">
+     <span>
+      <b>
+       75)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div style="text-align:justify">
+       When he bought Penny her favorite book, the Harry Potter book series, she gave him a __________, sweet smile of thanks.
+      </div>
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  genuine
+       </label>
+       <label>
+        B.  actual
+       </label>
+       <label>
+        C.  real
+       </label>
+       <label>
+        D.  authentic
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       75) A
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="152081" qtype="305">
+   <div class="Choice">
+    <div class="nu" id="t76">
+     <span>
+      <b>
+       76)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      He got drunk and came back very late, ________ which time all the guests had already left as they had to catch an early plane the following day.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  after
+       </label>
+       <label>
+        B.  at
+       </label>
+       <label class="green">
+        C.  by
+       </label>
+       <label>
+        D.  during
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       76) C
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="152080" qtype="305">
+   <div class="Choice">
+    <div class="nu" id="t77">
+     <span>
+      <b>
+       77)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div style="text-align:justify">
+       ________ it was on the side of a mountain, the small village was very quiet and the view was superb.
+      </div>
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  Lonely and isolated as
+       </label>
+       <label>
+        B.  Alone and isolated if
+       </label>
+       <label>
+        C.  Having lonely and isolated as
+       </label>
+       <label>
+        D.  Having been alone and isolated if
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       77) A
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="152079" qtype="305">
+   <div class="Choice">
+    <div class="nu" id="t78">
+     <span>
+      <b>
+       78)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      ________, Malcolm X managed to achieve English language proficiency through self- learning while in prison.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  Unbelievable as it was
+       </label>
+       <label>
+        B.  Unbelievable if it was
+       </label>
+       <label>
+        C.  As Unbelievable it was
+       </label>
+       <label>
+        D.  If it was Unbelievable
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       78) A
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="152078" qtype="305">
+   <div class="Choice">
+    <div class="nu" id="t79">
+     <span>
+      <b>
+       79)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div style="text-align: justify;">
+       In no country ________ Britain, it has been said, can one experience four seasons in the course of a single day.
+      </div>
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  more than
+       </label>
+       <label class="green">
+        B.  other than
+       </label>
+       <label>
+        C.  rather than
+       </label>
+       <label>
+        D.  less than
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       79) B
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="152077" qtype="305">
+   <div class="Choice">
+    <div class="nu" id="t80">
+     <span>
+      <b>
+       80)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div style="text-align:justify">
+       We have been told that under no circumstances ________ the telephone in the office for personal affairs.
+      </div>
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  may we use
+       </label>
+       <label>
+        B.  we may use
+       </label>
+       <label>
+        C.  we could use
+       </label>
+       <label>
+        D.  did we use
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       80) A
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+ </div>
+</div>
+
+                <!-- 题型列表结束 -->
+                <!-- 评论区开始 -->
+                <div class="container">
+                    <div id="vcomments" class="tow">
+                        <script>
+                            new Valine({
+                                el: '#vcomments',
+                                appId: 'jphqw5DgcOz2TwIRuwPvVusb-gzGzoHsz',
+                                appKey: 'e6WOjatXeFfe7C5ukXcmLGCE',
+                                notify: false,
+                                verify: false,
+                                avatar: 'wavatar',
+                                visitor: true,
+                                avatarForce: true,
+                                recordIP: true,
+                                enableQQ: true,
+                                requiredFields: ['nick'],
+                            })
+                        </script>
+                        <span id="/" class="leancloud_visitors" data-flag-title="U校园答案导航" style="position:relative;float:right;top:-10px;font-size: 12px;color:#808080">
+                        <em class="post-meta-item-text">访问量</em>
+                        <i class="leancloud-visitors-count">0</i>
+                    </span>
+                    </div>
+                </div>
+                <!-- 评论区结束 -->
+            </div>
+            <br>
+            <!-- 主体部分结束 -->
+            <div class="container">
+                <div style="text-align: center;color:white;font-size: small;">Copyright&nbsp;© 2021 abiscuit</div>
+            </div>
+            <br>
+            <!--jplayer播放期div-->
+            <div style="width: 0px; height:0px;" id="jplayer"></div>
+            </body>
+
+            <script>
+            function initPlayerAciton() {
+                // 音频资源播放
+                var allPlayButton = $("div.play");
+                allPlayButton.click(function(event) {
+                    var self = this;
+                    var resPath = $(this).attr("resPath");
+                    var pFlag = $(this).attr("playing");
+                    if (pFlag && pFlag == 1) { // 正在播放，需要停止播放
+                        $("#jplayer").jPlayer("stop", 0);
+                        $(self).attr("playing", "0");
+                        $(self).find("img.playImg").show();
+                        $(self).find("img.playingImg").hide();
+                        return false;
+                    }
+                    allPlayButton.attr("playing", "0");
+                    allPlayButton.find("img.playImg").show();
+                    allPlayButton.find("img.playingImg").hide();
+                    $(self).attr("playing", "1");
+                    $(self).find("img.playImg").hide();
+                    $(self).find("img.playingImg").show();
+                    // 获取音频播放列表
+                    var res_arr = new Array();
+                    res_arr = resPath.split(",");
+                    var play_resPath = new Array();
+                    for (var i = 0; i < res_arr.length; i++) {
+                        play_resPath.push(res_arr[i]);
+                    }
+                    myPlayer.play(play_resPath, function() {
+                        $(self).find("img.playImg").show();
+                        $(self).find("img.playingImg").hide();
+                    });
+                    $('#jplayer').find('object').height(10);
+                    return false;
+                });
+            }
+
+            function initStaticReturn() {
+                // 返回
+                $("#staticReturn").click(function() {
+                    staticReturn();
+                });
+                // 返回
+                $("#staticPageReturn").click(function() {
+                    staticReturn();
+                });
+            }
+            </script>
+
+            </html>

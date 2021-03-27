@@ -1,0 +1,2515 @@
+<!DOCTYPE html>
+            <html lang="zh-cn">
+
+            <head>
+            <meta charset="utf-8">
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+            <title>读写3-刘芳-B3U6</title>
+            <meta name="MSSmartTagsPreventParsing" content="True" />
+            <meta http-equiv="MSThemeCompatible" content="Yes" />
+            <meta name="renderer" content="webkit">
+            <script src="https://uexercise.unipus.cn/static/its/lib/jquery/jquery.js"></script>
+            <script src="https://uexercise.unipus.cn/static/its/lib/zui/js/zui.js"></script>
+            <script src="https://uexercise.unipus.cn/static/its/lib/chosen/chosen.js"></script>
+            <script src="https://uexercise.unipus.cn/static/its/lib/jquery/jquery.form.js"></script>
+            <script>
+                window.CTX = 'https://uexercise.unipus.cn';
+            </script>
+            <script src="https://uexercise.unipus.cn/static/its/lib/itest/js/itest_common.js"></script>
+            <script src="https://uexercise.unipus.cn/static/its/lib/layer/layer.js"></script>
+            <script src="https://uexercise.unipus.cn/static/its/lib/layer/laytpl.js"></script>
+            <script src="https://uexercise.unipus.cn/static/its/lib/layer/extend/layer.ext.js"></script>
+            <script src="https://uexercise.unipus.cn/static/its/lib/fltrp/js/js.js"></script>
+            <script src="https://uexercise.unipus.cn/static/its/lib/fltrp/js/stopic.js"></script>
+            <script src="https://uexercise.unipus.cn/static/its/lib/jplayer/jquery.jplayer.min.js"></script>
+            <script type="text/javascript" src="//player.youku.com/jsapi"></script>
+            <script src='https://uexercise.unipus.cn/static/its/lib/fltrp/js/uploadXX.js'></script>
+            <script>
+                var _hmt = _hmt || [];
+                (function() {
+                    var hm = document.createElement("script");
+                    hm.src = "https://hm.baidu.com/hm.js?c402237d180d562bcdd7e9d5fe8780f8";
+                    var s = document.getElementsByTagName("script")[0];
+                    s.parentNode.insertBefore(hm, s);
+                })();
+            </script>
+            <script src="../assets/js/Valine.min.js"></script>
+            <link rel="shortcut icon" href="../assets/images/favicon.ico">
+            <link href="../assets/css/main.css" rel="stylesheet">
+            <link href="../assets/css/part.css" rel="stylesheet">
+            <link href="../assets/css/topic.css" rel="stylesheet">
+            <link href="../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+            <style>
+                ul {
+                    padding-left: 0px;
+                }
+                
+                .playButton {
+                    width: 35px;
+                    height: 35px;
+                    cursor: pointer;
+                    float: left;
+                    margin: 25px 10px 0 35px;
+                }
+                
+                .answer-video .playButton {
+                    margin: 0 10px;
+                }
+                
+                input.blankinput {
+                    -moz-border-bottom-colors: none;
+                    -moz-border-left-colors: none;
+                    -moz-border-right-colors: none;
+                    -moz-border-top-colors: none;
+                    border-color: -moz-use-text-color -moz-use-text-color #000000;
+                    border-image: none;
+                    border-style: none none solid;
+                    border-width: 0 0 1px;
+                    margin: 0 0px;
+                    font-weight: bold;
+                    text-align: center;
+                    outline: none;
+                    height: 24px;
+                    resize: none;
+                    color: #333;
+                }
+                
+                span.blankinput {
+                    border-color: -moz-use-text-color -moz-use-text-color #000000;
+                    border-image: none;
+                    border-style: none none solid;
+                    border-width: 0 0 1px;
+                    margin: 0 0px;
+                    font-weight: bold;
+                    text-align: center;
+                    outline: none;
+                    height: 24px;
+                    resize: none;
+                    color: white;
+                }
+                
+                .form-horizontal .form-group {
+                    margin-right: 0;
+                    margin-left: 0;
+                    margin-top: 20px;
+                }
+            </style>
+            </head>
+
+            <body>
+            <nav class="navbar navbar-light navbar-expand-md fixed-top" id="mainNav" style="background: rgba(0,0,0,0);">
+                <div class="container">
+                    <a class="navbar-brand d-xl-flex justify-content-xl-center align-items-xl-center js-scroll-trigger" data-aos="zoom-in-right" href="https://u.abiscuit.net" style="font-family: Roboto, sans-serif;text-shadow: 0px 0px 5px var(--red);"><img class="rounded-circle d-xl-flex justify-content-xl-center align-items-xl-center" src="https://gravatar.loli.net/avatar/058e7772431faa1fcf6ef8e6ceed6552" style="max-height: auto;width: 40px;height: 40px;margin-right: 10px;">u校园答案导航</a>
+                    <button data-toggle="collapse" class="navbar-toggler navbar-toggler-right" data-target="#navbarResponsive" data-aos="fade-left" type="button" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" value="Menu" style="box-shadow: 0px 0px 5px var(--red);"><i class="fa fa-bars" style="box-shadow: 0px 0px 5px var(--red);"></i></button>
+                    <div class="collapse navbar-collapse" id="navbarResponsive">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item nav-link js-scroll-trigger"><a class="nav-link js-scroll-trigger" data-aos="zoom-out-left" href="https://kxz.atcumt.com/" style="font-family: Roboto, sans-serif;text-shadow: 0px 0px 5px var(--primary);">友情推荐：矿小助</a></li>
+                            <li class="nav-item nav-link js-scroll-trigger"><a class="nav-link js-scroll-trigger" data-aos="zoom-out-left" href="mailto:abiscuit@vip.qq.com" style="font-family: Roboto, sans-serif;text-shadow: 0px 0px 5px var(--blue);">邮箱联系</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- 主体部分开始 -->
+            <div class="main">
+                <div class="topclass">读写3-刘芳-B3U6</div>
+                <!-- 题型列表开始 --><div class="content Question">
+ <div class="Test">
+  <div class="TestTitle">
+   <div class="title" id="103">
+    长对话4题，总分值：8分
+   </div>
+   <div class="title-decrible">
+    <div class="directs">
+     Directions： In this section, you'll hear some long conversations. At the end of each conversation, some questions will be asked. Both the conversation and the questions will be spoken only once. After each question, choose the best answer from the four choices marked A, B, C, and D.
+    </div>
+   </div>
+  </div>
+  <div class="Question-Conversation" qid="156998" qtype="103">
+   <span class="answer-video">
+    <div class="play" respath="https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_3/t_103/201510/4fa5b4ac-2ecf-4b4e-ac3a-b9b19ba9fd57.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_3/t_103/201510/919aab49-f478-4d50-b14c-05371ab8d90a.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_3/t_103/201510/0e0a6a0b-8856-4cc5-80d7-eccbe54e71e0.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_3/t_103/201510/dad61bb6-a8ad-4b9e-9177-74a623854c63.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_3/t_103/201510/f90a2b86-b84f-496d-908f-7ac8a6a390c7.mp3">
+     <img class="playImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/play-1.png">
+      <img class="playingImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/playing02-fltrp.gif" style="display:none;"/>
+     </img>
+    </div>
+   </span>
+   <div class="Choice">
+    <div class="nu" id="t1">
+     <span>
+      <b>
+       1)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  It’s about the famous flight over the Atlantic Ocean by Amelia Earhart.
+       </label>
+       <label>
+        B.  It’s based on facts how Amelia Earhart disappeared in 1937 flight.
+       </label>
+       <label class="green">
+        C.  It is impressive as it goes deeper into Amelia Earhart’s story.
+       </label>
+       <label>
+        D.  It collects more facts about Amelia Earhart than others’ reports.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t2">
+     <span>
+      <b>
+       2)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  She sacrificed her victory and helped save a fellow pilot in the race.
+       </label>
+       <label>
+        B.  She won the first place in 1929 race flight by landing earlier than others.
+       </label>
+       <label>
+        C.  She won the first place in 1929 race flight though she was not the first to land.
+       </label>
+       <label>
+        D.  She sacrificed her life to save another pilot in 1929 race flight.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t3">
+     <span>
+      <b>
+       3)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  Professor Smith’s interesting lecture.
+       </label>
+       <label class="green">
+        B.  The influence of her family.
+       </label>
+       <label>
+        C.  The sacrifice made by Amelia Earhart.
+       </label>
+       <label>
+        D.  The story her mother told her about Amelia Earhart.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t4">
+     <span>
+      <b>
+       4)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  History is a series of interconnected events.
+       </label>
+       <label>
+        B.  History is a story of important people and events.
+       </label>
+       <label>
+        C.  History is as a web in which every war leads to new inventions.
+       </label>
+       <label>
+        D.  History is fascinating and could be very impersonal.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      1) C      2) A      3) B      4) A
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <div>
+      <pre>（无）</pre>
+     </div>
+     <p>
+      <b>
+       听力文本：
+      </b>
+     </p>
+     <p>
+      <p style="text-align:justify">
+       M: Kirsten, I’d like to speak with you now about your report on Amelia Earhart.
+      </p>
+      <p style="text-align:justify">
+       W: Of course Professor Smith. How’d you like my paper?
+      </p>
+      <p style="text-align:justify">
+       M: Most students just gather facts – but your paper went deeper into the spirited and fascinating woman, Amelia Earhart, who rose to fame from the flight over the Atlantic Ocean in 1928 and disappeared over the Pacific Ocean in 1937.
+      </p>
+      <p style="text-align:justify">
+       W: Thank you, professor. I became fascinated by Amelia Earhart’s story when I read about a race she flew in 1929. She was clearly in the lead and going to win – but sacrificed her own victory to land early and helped save a fellow pilot who had crashed. I was so impressed by her heart-felt sacrifice that it led me to read three more books about her!
+      </p>
+      <p style="text-align:justify">
+       M: Well, that impressive research shows-up in your essay. I don’t remember you being so interested in history before. What changed?
+      </p>
+      <p style="text-align:justify">
+       W: You’re right, sir. This is the first time I’ve had a personal connection with history. My great grandmother met Ms. Earhart when she visited Purdue University in 1935 and was inspired by her independent spirit and big heart! My great grandmother told her daughter and granddaughter (my mom!) about how that meeting changed her life, so, I’ve always been interested in learning about Amelia Earhart.
+      </p>
+      <p style="text-align:justify">
+       M: That’s fascinating Kirsten! History really is as a web of interconnecting events, where every war, invention, and life connects with and impacts every other. If you take that view of it, I think you’ll find the entire class to be more personal and just as fun as this assignment.
+      </p>
+      <p style="text-align:justify">
+       W: Sounds great, Professor Smith! And, I’m glad you enjoyed my essay!
+      </p>
+      <p style="text-align:justify">
+       New words:
+      </p>
+      <p style="text-align:justify">
+       Kirsten 柯尔斯顿（人名）
+      </p>
+      <p style="text-align:justify">
+       Amelia Earhart 阿梅莉亚·埃尔哈特（人名）
+      </p>
+      <p style="text-align:justify">
+       Purdue University 普渡大学
+      </p>
+      <p style="text-align:justify">
+       interconnect v. 相互联系
+      </p>
+      <p>
+       <br/>
+       <p>
+        How is Kirsten’s report different from others’ according to the professor?
+       </p>
+       <p>
+        What made Amelia Earhart famous from her 1929 race flight?
+       </p>
+       <p>
+        What made Kirsten interested in Amelia Earhart’s story?
+       </p>
+       <p>
+        What does Professor Smith think of history?
+       </p>
+      </p>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+ </div>
+ <div class="Test">
+  <div class="TestTitle">
+   <div class="title" id="308">
+    长文章8题，总分值：16分
+   </div>
+   <div class="title-decrible">
+    <div class="directs">
+     Directions： In this section, you’ll hear some passages. At the end of each passage, you'll hear some questions. Both the passage and the questions will be spoken only once. After each question, choose the best answer from the four choices marked A, B, C, and D.
+    </div>
+   </div>
+  </div>
+  <div class="Question-Conversation" qid="157151" qtype="308">
+   <span class="answer-video">
+    <div class="play" respath="https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_3/t_301/201510/a33c2849-a20e-4bd8-b83e-f318d157e930.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_3/t_301/201510/34ca46c5-497b-4271-9014-3cb998366842.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_3/t_301/201510/de8f59c9-b953-4888-9f06-19a1c8149df2.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_1031/t_308/201701/bwdhoy_21153843238.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_1031/t_308/201701/qtnmow_21153843239.mp3">
+     <img class="playImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/play-1.png"/>
+     <img class="playingImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/playing02-fltrp.gif" style="display:none;"/>
+    </div>
+   </span>
+   <div class="Choice">
+    <div class="nu" id="t5">
+     <span>
+      <b>
+       5)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  Snow can cause thousands of deaths in the United States every year.
+       </label>
+       <label class="green">
+        B.  Snow can be very dangerous although it is beautiful.
+       </label>
+       <label>
+        C.  Snow can lead to many people’s heart attack in the United States.
+       </label>
+       <label>
+        D.  Snow can make it more difficult to do physical activity in winter.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t6">
+     <span>
+      <b>
+       6)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  Avoid living in areas where it snows often.
+       </label>
+       <label>
+        B.  Stay inside the house until the winter ends.
+       </label>
+       <label>
+        C.  Do physical activity by removing the snow around the house.
+       </label>
+       <label class="green">
+        D.  Keep sufficient supplies in the home before the snow storm.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t7">
+     <span>
+      <b>
+       7)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  Turn off the engine to save fuel for emergency.
+       </label>
+       <label>
+        B.  Shut the vehicle windows to keep it warm inside waiting for rescue.
+       </label>
+       <label class="green">
+        C.  Put a bright-colored object on top of the vehicle asking for help.
+       </label>
+       <label>
+        D.  Clear the exhaust pipe every ten or fifteen minutes.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t8">
+     <span>
+      <b>
+       8)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  Food, medicine and clothing.
+       </label>
+       <label>
+        B.  Food, medicine and clean water.
+       </label>
+       <label>
+        C.  Clothing, clean water and extra power supplies.
+       </label>
+       <label>
+        D.  Medicine, clean water and clothing.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      5) B      6) D      7) C      8) A
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <div>
+      <pre>（无）</pre>
+     </div>
+     <p>
+      <b>
+       听力文本：
+      </b>
+     </p>
+     <p>
+      <p style="text-align:justify">
+       Snow may be beautiful, but it can be deadly. It is responsible for the deaths of hundreds of people in the United States every year. Many people die in traffic accidents on roads that are covered with snow or ice. Others die from being out in the cold, or from heart attacks caused by too much physical activity during snow removal.
+       <br/>
+       <br/>
+       You may not be able to avoid living in areas where it snows often. However, you can avoid becoming a victim of a snowstorm. Most people are told to stay in their homes until the storm has passed. When removing large amounts of snow, they should stop and rest often. Difficult physical activity during snow removal can cause a heart attack, especially among older adults.
+       <br/>
+       <br/>
+       It is always a good idea to keep a lot of supplies in the home, even before winter begins. These supplies include food, medicine, clean water and extra power supplies.
+       <br/>
+       <br/>
+       Some drivers have become trapped in their vehicles during a snowstorm. If this happens, people should remain in or near their car unless they see some kind of help. They should get out and clear space around the vehicle’s exhaust pipe to prevent the possibility of carbon monoxide poisoning.
+       <br/>
+       <br/>
+       Drivers should tie a bright-colored object to the top of their car to increase the chance of rescue. Inside the car, they should open a window a little for fresh air and turn on the engine for ten or fifteen minutes every hour for heat.
+       <br/>
+       <br/>
+       People living in areas where winter storms are likely should carry emergency supplies in their vehicle. These include food, emergency medical supplies and extra clothing to stay warm and dry. People in these areas should always be prepared for winter emergencies. Snow can be beautiful, but it can also be dangerous.
+       <br/>
+       <br/>
+       New words：
+      </p>
+      <p style="text-align:justify">
+       exhaust pipe 排气管
+      </p>
+      <p style="text-align:justify">
+       carbon monoxide 一氧化碳
+      </p>
+      <p>
+       <br/>
+       <p>
+        What do we know about snow from the passage?
+       </p>
+       <p>
+        How can a person avoid becoming a victim of snowstorm according to the passage?
+       </p>
+       <p>
+        What should drivers do when they are trapped in their vehicles during a snowstorm?
+       </p>
+       <p>
+        What emergency supplies should people carry in their vehicles in case of a snowstorm?
+       </p>
+      </p>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="157150" qtype="308">
+   <span class="answer-video">
+    <div class="play" respath="https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_3/t_301/201510/f99afb46-32bb-4a1c-bccb-cd3104cc140e.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_3/t_301/201510/9b0808a0-2977-4a6a-a29c-0ee6bd8e2bbc.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_3/t_301/201510/59855aca-ca58-4ffe-a25a-73885eb4842d.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_3/t_301/201510/8b0d01dc-b40b-440c-8761-79a9460886d4.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_3/t_301/201510/d5e46875-bb99-4c0e-8375-d6439b297953.mp3">
+     <img class="playImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/play-1.png"/>
+     <img class="playingImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/playing02-fltrp.gif" style="display:none;"/>
+    </div>
+   </span>
+   <div class="Choice">
+    <div class="nu" id="t9">
+     <span>
+      <b>
+       9)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  About successive waves of immigrants arriving in the city.
+       </label>
+       <label>
+        B.  About its original city name New Amsterdam.
+       </label>
+       <label>
+        C.  About how Germans conquered the city.
+       </label>
+       <label>
+        D.  About the war of independence at the time.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t10">
+     <span>
+      <b>
+       10)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  For conquest.
+       </label>
+       <label>
+        B.  For immigration.
+       </label>
+       <label class="green">
+        C.  For a better life.
+       </label>
+       <label>
+        D.  For independence.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t11">
+     <span>
+      <b>
+       11)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  Because they were American citizens and have the right to live there.
+       </label>
+       <label>
+        B.  Because they arrived before laws were passed to limit immigration.
+       </label>
+       <label>
+        C.  Because they did not come in large numbers.
+       </label>
+       <label>
+        D.  Because they were American blacks.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t12">
+     <span>
+      <b>
+       12)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  With earlier immigrants who spoke English better.
+       </label>
+       <label class="green">
+        B.  With earlier settlers from their former country.
+       </label>
+       <label>
+        C.  With Americans of other nationalities.
+       </label>
+       <label>
+        D.  With earlier settlers of British origin.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      9) A      10) C      11) A      12) B
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <div>
+      <pre>（无）</pre>
+     </div>
+     <p>
+      <b>
+       听力文本：
+      </b>
+     </p>
+     <p>
+      <p style="text-align:justify">
+       The story of New York City is a story of successive waves of immigrants arriving to find a better life. In 1625, the Dutch sailed into the harbor and founded the city they called New Amsterdam. Then, in 1665, came the conquering British who changed the young city’s name to New York. The name was retained even after America won its independence. By 1800, half the city’s 60,000 inhabitants were of British origin, but already there were settlers of many other nationalities as well.
+       <br/>
+       <br/>
+       The year 1856 marked the arrival of the first of large numbers of Germans and Irish. Twenty-four years later, in 1880, eastern Europeans and Italians began to arrive. By 1890, the city’s population had grown to 3,437,200. Soon after that, however, laws were passed to limit the number of foreigners allowed to immigrate to America.
+       <br/>
+       <br/>
+       Such laws did not prevent the arrival of a large number of Puerto Ricans from the US Possession of Puerto Rico during the 1950s. As American citizens, they had every right to live wherever they chose in the USA. Prior to that, between the two world wars, hundreds of thousands of American blacks rode buses and trains from the south to New York City in search of work and better living conditions. Both groups originally settled in large numbers in Harlem.
+       <br/>
+       <br/>
+       With few exceptions, new immigrants chose to live in neighborhoods where earlier immigrants from their former country had settled. This permitted them to be among those who shared similar religious beliefs, customs and language. Only when their command of English was sufficient did they venture out into new neighborhoods where Americans of other national origins lived. The dream of many of those immigrants was to become American as soon as possible, leaving behind the accents and manners that showed them to be foreign. This meant speaking, dressing and even thinking like Americans.
+       <br/>
+       <br/>
+       New Words：
+      </p>
+      <p style="text-align:justify">
+       New Amsterdam 新阿姆斯特丹 (New York的原称)
+      </p>
+      <p style="text-align:justify">
+       Puerto Rican 波多黎各人
+      </p>
+      <p style="text-align:justify">
+       Puerto Rico 波多黎各(岛)[拉丁美洲]
+      </p>
+      <p style="text-align:justify">
+       Harlem 哈莱姆（纽约市的一个区）
+      </p>
+      <p>
+       <br/>
+       <p>
+        What is the story of New York City about?
+       </p>
+       <p>
+        For what purpose did most people come to New York?
+       </p>
+       <p>
+        Why could the Puerto Ricans choose to live in New York freely?
+       </p>
+       <p>
+        With whom did the new immigrants choose to live?
+       </p>
+      </p>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+ </div>
+ <div class="Test">
+  <div class="TestTitle">
+   <div class="title" id="305">
+    词汇与结构16题，总分值：16分
+   </div>
+   <div class="title-decrible">
+    <div class="directs">
+     Directions： For each of the following sentences there are four choices marked A, B, C and D. Choose the best one to complete each sentence.
+    </div>
+   </div>
+  </div>
+  <div class="Question-Conversation" qid="157059" qtype="305">
+   <div class="Choice">
+    <div class="nu" id="t13">
+     <span>
+      <b>
+       13)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      He was ________ by memories of his unhappy childhood well into his adult life.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  convicted
+       </label>
+       <label class="green">
+        B.  haunted
+       </label>
+       <label>
+        C.  released
+       </label>
+       <label>
+        D.  undermined
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       13) B
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="157060" qtype="305">
+   <div class="Choice">
+    <div class="nu" id="t14">
+     <span>
+      <b>
+       14)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      It ________ me to have to say it, but you have only yourself to blame.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  oppresses
+       </label>
+       <label>
+        B.  sustains
+       </label>
+       <label class="green">
+        C.  grieves
+       </label>
+       <label>
+        D.  surrenders
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       14) C
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="157061" qtype="305">
+   <div class="Choice">
+    <div class="nu" id="t15">
+     <span>
+      <b>
+       15)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Villagers can trace their ancestry (祖先) back to those who ________ in the cliffs.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  hesitated
+       </label>
+       <label class="green">
+        B.  dwelled
+       </label>
+       <label>
+        C.  retained
+       </label>
+       <label>
+        D.  lingered
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       15) B
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="157062" qtype="305">
+   <div class="Choice">
+    <div class="nu" id="t16">
+     <span>
+      <b>
+       16)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      The police were alerted that the escaped criminal might be in the ________.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  vicinity
+       </label>
+       <label>
+        B.  vain
+       </label>
+       <label>
+        C.  court
+       </label>
+       <label>
+        D.  jail
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       16) A
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="157063" qtype="305">
+   <div class="Choice">
+    <div class="nu" id="t17">
+     <span>
+      <b>
+       17)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      There are a number of problems underlying this ________ and apparently simple statement.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  conventional
+       </label>
+       <label>
+        B.  innumerable
+       </label>
+       <label>
+        C.  compact
+       </label>
+       <label class="green">
+        D.  concise
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       17) D
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="157064" qtype="305">
+   <div class="Choice">
+    <div class="nu" id="t18">
+     <span>
+      <b>
+       18)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      The task of evaluation is to ________ whether or not the pre-specified goals have been achieved.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  assert
+       </label>
+       <label class="green">
+        B.  ascertain
+       </label>
+       <label>
+        C.  notify
+       </label>
+       <label>
+        D.  impart
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       18) B
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="157065" qtype="305">
+   <div class="Choice">
+    <div class="nu" id="t19">
+     <span>
+      <b>
+       19)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      They asked him to pay for the damage but he ________ poverty.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  entitled
+       </label>
+       <label>
+        B.  granted
+       </label>
+       <label class="green">
+        C.  pleaded
+       </label>
+       <label>
+        D.  cultivated
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       19) C
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="157066" qtype="305">
+   <div class="Choice">
+    <div class="nu" id="t20">
+     <span>
+      <b>
+       20)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      The UN is ________ the distribution of aid to those areas worst affected by the fighting.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  supervising
+       </label>
+       <label>
+        B.  radiating
+       </label>
+       <label>
+        C.  clutching
+       </label>
+       <label>
+        D.  upholding
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       20) A
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="157067" qtype="305">
+   <div class="Choice">
+    <div class="nu" id="t21">
+     <span>
+      <b>
+       21)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      The boy ________ easily when he spoke in front of others.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  reserve
+       </label>
+       <label>
+        B.  sustain
+       </label>
+       <label>
+        C.  retain
+       </label>
+       <label class="green">
+        D.  blushed
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       21) D
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="157068" qtype="305">
+   <div class="Choice">
+    <div class="nu" id="t22">
+     <span>
+      <b>
+       22)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Taking a ________ walk can often induce a feeling of well-being.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  tender
+       </label>
+       <label class="green">
+        B.  brisk
+       </label>
+       <label>
+        C.  delicate
+       </label>
+       <label>
+        D.  sensible
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       22) B
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="157069" qtype="305">
+   <div class="Choice">
+    <div class="nu" id="t23">
+     <span>
+      <b>
+       23)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      If more than one item is ordered, they will be ________ in separate packages.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  dispatched
+       </label>
+       <label>
+        B.  discharged
+       </label>
+       <label>
+        C.  deprived
+       </label>
+       <label>
+        D.  derived
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       23) A
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="157070" qtype="305">
+   <div class="Choice">
+    <div class="nu" id="t24">
+     <span>
+      <b>
+       24)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      She rejected the arguments that had been ________ against her.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  decorated
+       </label>
+       <label>
+        B.  distributed
+       </label>
+       <label>
+        C.  disguised
+       </label>
+       <label class="green">
+        D.  deployed
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       24) D
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="157071" qtype="305">
+   <div class="Choice">
+    <div class="nu" id="t25">
+     <span>
+      <b>
+       25)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      She is so ________ that she believes everything he tells her.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  nasty
+       </label>
+       <label>
+        B.  notorious
+       </label>
+       <label class="green">
+        C.  naive
+       </label>
+       <label>
+        D.  notable
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       25) C
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="157072" qtype="305">
+   <div class="Choice">
+    <div class="nu" id="t26">
+     <span>
+      <b>
+       26)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Treating animals kindly does not mean that we must never ________ any pain on them.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  incline
+       </label>
+       <label>
+        B.  decline
+       </label>
+       <label>
+        C.  increase
+       </label>
+       <label class="green">
+        D.  inflict
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       26) D
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="157073" qtype="305">
+   <div class="Choice">
+    <div class="nu" id="t27">
+     <span>
+      <b>
+       27)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      He is now engaged in a probe into the ________ of matters.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  essence
+       </label>
+       <label>
+        B.  tendency
+       </label>
+       <label>
+        C.  freight
+       </label>
+       <label>
+        D.  target
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       27) A
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="157074" qtype="305">
+   <div class="Choice">
+    <div class="nu" id="t28">
+     <span>
+      <b>
+       28)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      A large amount of goods is piled up in the ________ at the train station.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  garage
+       </label>
+       <label class="green">
+        B.  warehouse
+       </label>
+       <label>
+        C.  barrel
+       </label>
+       <label>
+        D.  cabin
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       28) B
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+ </div>
+ <div class="Test">
+  <div class="TestTitle">
+   <div class="title" id="309">
+    选词填空（15选10）10题，总分值：20分
+   </div>
+   <div class="title-decrible">
+    <div class="directs">
+     Directions： Fill in the blanks in the following passage by selecting suitable words from the word bank. Each word can be used only once.
+    </div>
+   </div>
+  </div>
+  <div class="Question-Conversation" qid="157108" qtype="309">
+   <div class="Choice">
+    <div id="t29">
+     <span>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <p style="text-align:justify">
+       The 1989 popular and classic British comedy “Blackadder goes forth” satirised (讽刺) the First World War. It featured Captain Blackadder, his upper-class idealistic lieutenant George (who thinks it is all a bit of a giggle) and his stupid but
+       <b>
+        29)
+       </b>
+       <span class="blankinput" type="text">
+        dogged
+       </span>
+       batman (勤务兵) Private Baldrick. All of them have been
+       <b>
+        30)
+       </b>
+       <span class="blankinput" type="text">
+        deployed
+       </span>
+       in the 1917 frontline trenches (战壕), from which the British and opposing German battalions are confronting each other. Blackadder forms a
+       <b>
+        31)
+       </b>
+       <span class="blankinput" type="text">
+        multitude
+       </span>
+       of different plans to try to escape from the fighting. He tries, for example, to plead insanity, but when this fails he concludes that he has been desperately clutching at a straw, for so many who advocate war are mad anyway that no one would notice! Notwithstanding all his efforts, Blackadder is forced to
+       <b>
+        32)
+       </b>
+       <span class="blankinput" type="text">
+        remain
+       </span>
+       in the awful trench vicinity of death and destruction. In the series, they
+       <b>
+        33)
+       </b>
+       <span class="blankinput" type="text">
+        await
+       </span>
+       the final command to attack from the famous Field Marshall Sir Douglas Haig, whose
+       <b>
+        34)
+       </b>
+       <span class="blankinput" type="text">
+        incompetent
+       </span>
+       and cold-hearted orders resulted, in actual history, in hundreds of thousands of British soldier deaths. The series was a satirical comedy, but the final scene as they are
+       <b>
+        35)
+       </b>
+       <span class="blankinput" type="text">
+        dispatched
+       </span>
+       over the top of the trench to a near certain death is one that
+       <b>
+        36)
+       </b>
+       <span class="blankinput" type="text">
+        haunts
+       </span>
+       many for its poignancy (心酸). Their advance fades to the later stillness of that same Flanders field in which
+       <i>
+        poppies flower
+       </i>
+       (罂粟花), a
+       <b>
+        37)
+       </b>
+       <span class="blankinput" type="text">
+        symbol
+       </span>
+       of the war dead, and birds dwell and sing. We
+       <b>
+        38)
+       </b>
+       <span class="blankinput" type="text">
+        grieve
+       </span>
+       for the men who, for all their faults, did not deserve to die on a field in France for a pointless national pride.
+      </p>
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <ul class="Wordli">
+       <li>
+        A.  haunts
+       </li>
+       <li>
+        B.  incompetent
+       </li>
+       <li>
+        C.  remain
+       </li>
+       <li>
+        D.  evacuate
+       </li>
+       <li>
+        E.  multitude
+       </li>
+       <li>
+        F.  landmark
+       </li>
+       <li>
+        G.  dispatched
+       </li>
+       <li>
+        H.  overturns
+       </li>
+       <li>
+        I.  deployed
+       </li>
+       <li>
+        J.  grieve
+       </li>
+       <li>
+        K.  await
+       </li>
+       <li>
+        L.  pervasive
+       </li>
+       <li>
+        M.  fostered
+       </li>
+       <li>
+        N.  dogged
+       </li>
+       <li>
+        O.  symbol
+       </li>
+      </ul>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      29) dogged      30) deployed      31) multitude      32) remain      33) await      34) incompetent      35) dispatched      36) haunts      37) symbol      38) grieve
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+ </div>
+ <div class="Test">
+  <div class="TestTitle">
+   <div class="title" id="152">
+    阅读理解10题，总分值：20分
+   </div>
+   <div class="title-decrible">
+    <div class="directs">
+     Directions： Read the following passages carefully. Each passage is followed by some questions or unfinished sentences. For each of them there are four choices marked A, B, C, and D. Choose the best answer to each question.
+    </div>
+   </div>
+  </div>
+  <div class="Question-Conversation" qid="157111" qtype="152">
+   <div class="Choice">
+    <div class="padding">
+     <p>
+      <p style="text-align:justify">
+       This is not particularly an ideal time for those who are advocating for the magic of the market; that an open and competitive economy yields much more benefits to society than any other social system ever tested in human history. The financial crisis that is threatening to rock the western economy (United States and Europe) from its core has become a blow to the free enterprise thinking that has overwhelmed the world over the past two decades.
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       American politicians across the political divide are now debating whether or not the state should put 700 billion dollars of tax payers’ money into helping out huge financial institutions, each with assets worth more than a trillion (万亿) dollars.
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       They cannot be blamed for this procrastination as this is no small amount. China could easily host another 17 Olympic Games similar to the one that it organized in Beijing in 2008; this amount could keep a tourist in a luxurious seven-star hotel in Dubai for 767,000 days; it could also finance the making of 3,500 brilliant films of the kind James Cameron exemplifies with Titanic; or pay for 3.5 million trips to space with Sir Richard’s Atlantis.
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       No wonder then that at the time of our going to press (late on Friday night), American politicians had not yet reached a decision. Nonetheless, their proposition (主张) to let the state intervene in fixing what goes wrong in the economy has led to what The Economist described as “the black week” for those who promote financial capitalism, such as disciples (追随者) of Milton Freidman.
+       <br/>
+       <br/>
+       For those who believe in the significant role of a state in managing an economy, however, their boat has not been rocked; “Marx was partly right”, declares a headline one of the British newspapers last week. It is a week that produced rather tempting evidence in favor of Maynard Keynes, who argued for the state’s involvement in righting what is wrong in the market.
+      </p>
+     </p>
+    </div>
+    <div class="nu" id="t39">
+     <span>
+      <b>
+       39)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      According to the passage, the free enterprise thinking ________.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  has failed to draw people’s attention in recent times.
+       </label>
+       <label class="green">
+        B.  has met with some difficulties presently.
+       </label>
+       <label>
+        C.  has fully demonstrated the magic of the market.
+       </label>
+       <label>
+        D.  has produced a lot of benefit to society.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t40">
+     <span>
+      <b>
+       40)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      The word “procrastination” in Line 1, Para. 3 probably means ________.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  delay
+       </label>
+       <label>
+        B.  decision
+       </label>
+       <label>
+        C.  haste
+       </label>
+       <label>
+        D.  irresponsibility
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t41">
+     <span>
+      <b>
+       41)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Which of the following is true about Milton Freidman according to the passage?
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  He has published many reports about “the black week”.
+       </label>
+       <label>
+        B.  He is a disciple of Marx.
+       </label>
+       <label class="green">
+        C.  He is a prominent advocate of free markets.
+       </label>
+       <label>
+        D.  He believes in the critical role of a state in managing an economy.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t42">
+     <span>
+      <b>
+       42)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      From the passage, we can conclude that the theory of state management of the economy ________.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  has no advantage at all
+       </label>
+       <label>
+        B.  is more popular than market theory
+       </label>
+       <label class="green">
+        C.  has got an upper hand
+       </label>
+       <label>
+        D.  will be practiced in the U. S.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t43">
+     <span>
+      <b>
+       43)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      What can be inferred from the passage?
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  The economy of China is beginning to surpass that of America.
+       </label>
+       <label>
+        B.  Maynard Keynes seems to be in favor of financial capitalism.
+       </label>
+       <label>
+        C.  American politicians have reached an agreement to pour in more money in helping enterprises.
+       </label>
+       <label class="green">
+        D.  America seems to have enjoyed benefits from financial capitalism in the past decades.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      39) B      40) A      41) C      42) C      43) D
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <div>
+      <pre>（无）</pre>
+     </div>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="157112" qtype="152">
+   <div class="Choice">
+    <div class="padding">
+     <p>
+      <p style="text-align:justify">
+       Believe it or not, the Swiss were once a warlike people. But the Swiss discovered long ago that constant warfare (战争) brought them nothing but suffering and poverty. By adopting a policy of neutrality, Switzerland, a country, with hardly any natural resources, enjoyed peace and prosperity. The rest of the world is still not ready to accept this simple and obvious solution. Most countries not only maintain permanent armies but require all their young men to do a period of compulsory military service. Everybody has a lot to say about the desirability of peace, but no one does anything about it. An obvious thing to do would be to abolish conscription (征兵) everywhere. This would be the first step towards universal peace.
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       Some countries, like Britain, have already abandoned peace-time conscription. Unfortunately, they haven’t done so for idealistic reasons, but a simple recognition of the fact that modern warfare is a highly professional business. In the old days large armies were essential. But in these days of inter-continental missiles and push-button warfare, unskilled manpower has become redundant (多余的). In a mere two years or so, you can’t hope to train soldiers in the requirement and conditions of modern warfare. So why bother? Leave it to the professionals!
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       There are also pressing personal reasons to abolish conscription. It is most unpleasant in times of peace for young men to grow up under the threat of military service. They are deprived of two of the best and most formative years of their lives. Their careers and studies are seriously affected and sometimes the whole course of their lives is altered. They spend at least two years in the armed forces engaged in activities which do not provide them with any useful experience with regard to their future work. It can’t even be argued that what they learn might prove valuable in a national emergency. When they leave the services, young men quickly forget all the unnecessary information about warfare which they were made to acquire. It is shocking to think that skilled and unskilled men are often nothing more than a source of cheap labor for the military.
+      </p>
+     </p>
+    </div>
+    <div class="nu" id="t44">
+     <span>
+      <b>
+       44)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      What do we know about the Swiss?
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  They are warlike people and maintain a permanent army.
+       </label>
+       <label>
+        B.  They found that neutrality would bring them only suffering and poverty.
+       </label>
+       <label class="green">
+        C.  They live in a country that hardly has any natural resources.
+       </label>
+       <label>
+        D.  They enjoyed peace and prosperity thanks to their compulsory military service.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t45">
+     <span>
+      <b>
+       45)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      The reason Britain abandoned peace-time conscription is that ___________.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  Britain planned to give up its permanent army
+       </label>
+       <label class="green">
+        B.  modern warfare needs professionals
+       </label>
+       <label>
+        C.  Britain recognized the importance of this step for world peace
+       </label>
+       <label>
+        D.  skilled manpower is insufficient in Britain.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t46">
+     <span>
+      <b>
+       46)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      One of the pressing personal reasons to abolish conscription is that ___________.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  the two year military service is under the threat of wars
+       </label>
+       <label>
+        B.  young men are not motivated to join the army in times of peace
+       </label>
+       <label>
+        C.  young men will quickly forget all the necessary information about warfare
+       </label>
+       <label class="green">
+        D.  young men’s course of lives will possibly be changed.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t47">
+     <span>
+      <b>
+       47)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Which of the following can be inferred from the passage?
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  Most countries are not ready to abandon their permanent armies.
+       </label>
+       <label>
+        B.  More and more countries are adopting the policy of neutrality.
+       </label>
+       <label>
+        C.  The size of an army is still very important nowadays.
+       </label>
+       <label class="green">
+        D.  Young men can get some experience for their future work from military service.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t48">
+     <span>
+      <b>
+       48)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      The best title for this text is _____________.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  Why abolish conscription
+       </label>
+       <label>
+        B.  Peace and prosperity in Switzerland
+       </label>
+       <label>
+        C.  Uniformity and conformity in military service
+       </label>
+       <label>
+        D.  No need to maintain permanent armies
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      44) C      45) B      46) D      47) D      48) A
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <div>
+      <pre>（无）</pre>
+     </div>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+ </div>
+ <div class="Test">
+  <div class="TestTitle">
+   <div class="title" id="107">
+    长篇阅读10题，总分值：20分
+   </div>
+   <div class="title-decrible">
+    <div class="directs">
+     Directions： You are going to read a passage with 10 statements attached to it. Each statement contains information given in one of the paragraphs. Identify the paragraph from which the information is derived. You may choose a paragraph more than once. Each paragraph is marked with a letter.
+    </div>
+   </div>
+  </div>
+  <div class="Question-Conversation" qid="157152" qtype="107">
+   <div class="Choice">
+    <div class="padding">
+     <p>
+      <p style="text-align:center">
+       <b>
+        Blitzkrieg: Germany’s Lightning War
+       </b>
+      </p>
+      <p style="text-align:justify">
+       <br/>
+       A) On June 21, 1940, early in the second year of World War II, the French President, Marshall Philippe Pétain, sued for peace with Adolf Hitler’s Third Reich. In the course of the negotiations, Pétain agreed to cede three-fifths of French territory to German control. In one of history’s great ironies, Hitler insisted that the armistice (停战) be signed in the very railway car in which Germany had been compelled to admit defeat at the end of World War I. He was in a good position to dictate such terms.
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       B) It had taken only a few weeks for the Wehrmacht (the German army), under Hitler’s control, to crush the army of the French Third Republic. His well-trained and organized troops had also caused France’s Allies, in the form of the British Expeditionary Force (BEF), to beat an ignominious (耻辱的) retreat from continental Europe. Thus between May 10 and June 21, 1940, the Wehrmacht had accomplished what the army of Kaiser Wilhelm II had not managed to do in four years of desperate fighting in World War I.
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       C) Across the English Channel, a stunned British military establishment struggled to determine how it was that events had so quickly gone so horribly wrong. The BEF had sailed for France believing that they and their French ally were well equipped and well trained to fight a modern war. In truth, as events proved, they were completely unprepared to face Hitler’s Wehrmacht.
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       D. During World War I, the armies of the two Allies had dug in (掘壕固守) for what became a long, drawn-out conflict. And in 1940, influenced by this experience, the British and French leaders of World War II were still expecting to fight a war in which the defensive would dominate. With this approach in mind, the French army was sent to man France’s heavily fortified border with Germany, the Maginot Line, and to await a German attack. The BEF was sent to join the line of French troops defending the border with Belgium. They expected that battles would develop slowly and be dominated by “traditional” arms – those of the infantry and the artillery. Although the two armies had more than 3,500 tanks between them, these were largely cast in a supporting role.
+      </p>
+      <p style="text-align:justify">
+       <br/>
+       E) The events in May and June 1940 proved that this outdated vision of war could not have been further from reality. This time, unlike the Allies, the Germans intended to fight the war offensively, and win quickly. At dawn on May 10, the Germans began an invasion of Belgium and the Netherlands. Accordingly, convinced that they were facing a repeat of the German strategy of 1914, Allied commanders moved the bulk of their forces from the Franco-Belgian border into defensive positions within Belgium to await the continuation of the German attack. In so doing, they fell right into Hitler’s trap.
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       F) Rather than repeating the World War I Schlieffen Plan, the Germans in 1940 advanced with their main thrust through the Ardennes Forest, in order to smash the vulnerable flank of the Allies. As 29 German divisions advanced through the Netherlands and Belgium in the north, 45 further divisions, including about 2,400 tanks in seven divisions, burst through the Allied right flank and drove towards the English Channel. By May 21, this thrust had reached the Channel and encircled 35 Allied divisions, including the BEF. Although the French army put up token resistance for several more weeks, their spirit was broken and the German advance south from Belgium was swift and decisive.
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       G) The Allied armies, completely unprepared for the rapid, mobile operations of the Germans, had simply been out-fought at every turn. Shocked by their experience, the Allied military observers who had survived the fall of France attributed their defeat to the completely new form of warfare pioneered by the Wehrmacht – the blitzkrieg. Blitzkrieg seemed to be based around the pervasive (遍布的) use of new technology. After all, during the disastrous campaign in Belgium and France, it had seemed as if German tanks and aircraft were everywhere.
+      </p>
+      <p style="text-align:justify">
+       <br/>
+       H) Contrary to the beliefs of the Allied military establishment of the day, however, blitzkrieg was not a brand-new way of waging war. In fact, although it is a German word, the term itself was created by an English newspaper sometime in 1939. In reality, the way in which the Wehrmacht fought, their “doctrine” in today’s parlance (说法), was based more upon ideas than technology. And the ideas that shaped how Hitler’s army fought were influenced by the fighting methods German soldiers had used since the 1870s. The so-called blitzkrieg of 1940 was really the German doctrine of 1914 with technology bolted on.
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       I) Before 1914-18, Germany had perceived itself as surrounded by enemies who were superior both in numbers and resources. And German strategists, most notably Alfred von Schlieffen, had concluded that Germany could not win a long, protracted war against such opposition. Thus, in order to win, Schlieffen knew the German army would have to defeat its opponents quickly and decisively. Always outnumbered by its enemies, it would have to match quantity with quality.
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       J) Schlieffen set about creating a doctrine that would allow the outnumbered German army to outfight its opponents. This doctrine stressed speed of manoeuvre (调遣) and attacking the enemy where he was weakest, and usually this meant attacking the flanks (侧翼). Schlieffen also foresaw the need to maintain the initiative. To accomplish this, he advocated the use of the flexible command system pioneered by Helmuth von Moltke the Elder. The German army encouraged its commanders to make decisions without waiting for orders from above, thus allowing them to take advantage of fleeting opportunities as they arose. Above all else, this doctrine created aggressive and flexible leaders.
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       K) Schlieffen’s ideas were largely aimed at operational-level leaders, that is, the commanders of Germany’s divisions and army corps. The biggest problems in World War I, however, were at the lower, tactical level. And the German solution to these problems was to apply Schlieffen’s operational principles to small units as well as to large ones. Thus, by decentralizing command and by increasing the firepower of the infantry, they created a large number of platoon-sized units capable of independent action on the battlefield. These units had the freedom to fight as they thought best, without having to refer constantly to a higher commander. While the Allies relied upon tanks to break through the stalemate of the trenches in 1918, the Germans used a largely infantry force empowered by a sound tactical doctrine.
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       L) Thus, the German army in 1940 had an offensive doctrine that emphasized speed of decision-making, speed of manoeuvre and decentralized action. From the operational ideas of Schlieffen, they placed the emphasis on speed, flank attacks, encirclements and decisive battle. The experience of World War I had convinced German leaders that these ideas needed to be applied not only at top operational level, but also at the tactical level. Tanks, motor vehicles and aircraft merely enabled the Wehrmacht to apply these principles more efficiently. With this doctrine, despite being outnumbered in tanks and combat aircraft, they were able to outfight the Allies at every turn in 1940, and cause the rapid and total collapse of Allied resistance.
+      </p>
+     </p>
+    </div>
+    <div class="nu" id="t49">
+     <span>
+      <b>
+       49)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Influenced by their experience during the World War I, the British and French leaders in 1940 still expected to fight a war with the defensive strategy.
+      <span class="blankinput" type="text">
+       D
+      </span>
+     </p>
+    </div>
+    <div class="nu" id="t50">
+     <span>
+      <b>
+       50)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Schlieffen’s doctrine produced aggressive and flexible leaders.
+      <span class="blankinput" type="text">
+       J
+      </span>
+     </p>
+    </div>
+    <div class="nu" id="t51">
+     <span>
+      <b>
+       51)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      According to the Allied military observers, blitzkrieg, a new form of warfare, led to their defeat.
+      <span class="blankinput" type="text">
+       G
+      </span>
+     </p>
+    </div>
+    <div class="nu" id="t52">
+     <span>
+      <b>
+       52)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      During the negotiations with France, Hitler insisted that the cease-fire be signed in the same railway car in which Germany had been forced to surrender at the end of World War I.
+      <span class="blankinput" type="text">
+       A
+      </span>
+     </p>
+    </div>
+    <div class="nu" id="t53">
+     <span>
+      <b>
+       53)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Always outnumbered by its opponents, Schlieffen realized the German army had to defeat its enemies quickly and strategically.
+      <span class="blankinput" type="text">
+       I
+      </span>
+     </p>
+    </div>
+    <div class="nu" id="t54">
+     <span>
+      <b>
+       54)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Blitzkrieg, as a German word, was created by an English newspaper in 1939.
+      <span class="blankinput" type="text">
+       H
+      </span>
+     </p>
+    </div>
+    <div class="nu" id="t55">
+     <span>
+      <b>
+       55)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      From May 10 to June 21, 1940, the Germen army had accomplished what they had failed to do in four years’ fighting in World War I.
+      <span class="blankinput" type="text">
+       B
+      </span>
+     </p>
+    </div>
+    <div class="nu" id="t56">
+     <span>
+      <b>
+       56)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Based on the experience in World War I, the Germans applied Schlieffen’s operational principles to small units as well as large ones.
+      <span class="blankinput" type="text">
+       K
+      </span>
+     </p>
+    </div>
+    <div class="nu" id="t57">
+     <span>
+      <b>
+       57)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      The so-called blitzkrieg of 1940 was actually not a new way of waging war, but the German doctrine of 1914 with technology added.
+      <span class="blankinput" type="text">
+       H
+      </span>
+     </p>
+    </div>
+    <div class="nu" id="t58">
+     <span>
+      <b>
+       58)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      In 1940, the main force of the German army advanced through the Ardennes Forest so as to defeat the flank, the weakest part of the Allies.
+      <span class="blankinput" type="text">
+       F
+      </span>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      49) D      50) J      51) G      52) A      53) I      54) H      55) B      56) K      57) H      58) F
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <div>
+      <pre>（无）</pre>
+     </div>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+ </div>
+</div>
+
+                <!-- 题型列表结束 -->
+                <!-- 评论区开始 -->
+                <div class="container">
+                    <div id="vcomments" class="tow">
+                        <script>
+                            new Valine({
+                                el: '#vcomments',
+                                appId: 'jphqw5DgcOz2TwIRuwPvVusb-gzGzoHsz',
+                                appKey: 'e6WOjatXeFfe7C5ukXcmLGCE',
+                                notify: false,
+                                verify: false,
+                                avatar: 'wavatar',
+                                visitor: true,
+                                avatarForce: true,
+                                recordIP: true,
+                                enableQQ: true,
+                                requiredFields: ['nick'],
+                            })
+                        </script>
+                        <span id="/" class="leancloud_visitors" data-flag-title="U校园答案导航" style="position:relative;float:right;top:-10px;font-size: 12px;color:#808080">
+                        <em class="post-meta-item-text">访问量</em>
+                        <i class="leancloud-visitors-count">0</i>
+                    </span>
+                    </div>
+                </div>
+                <!-- 评论区结束 -->
+            </div>
+            <br>
+            <!-- 主体部分结束 -->
+            <div class="container">
+                <div style="text-align: center;color:white;font-size: small;">Copyright&nbsp;© 2021 abiscuit</div>
+            </div>
+            <br>
+            <!--jplayer播放期div-->
+            <div style="width: 0px; height:0px;" id="jplayer"></div>
+            </body>
+
+            <script>
+            function initPlayerAciton() {
+                // 音频资源播放
+                var allPlayButton = $("div.play");
+                allPlayButton.click(function(event) {
+                    var self = this;
+                    var resPath = $(this).attr("resPath");
+                    var pFlag = $(this).attr("playing");
+                    if (pFlag && pFlag == 1) { // 正在播放，需要停止播放
+                        $("#jplayer").jPlayer("stop", 0);
+                        $(self).attr("playing", "0");
+                        $(self).find("img.playImg").show();
+                        $(self).find("img.playingImg").hide();
+                        return false;
+                    }
+                    allPlayButton.attr("playing", "0");
+                    allPlayButton.find("img.playImg").show();
+                    allPlayButton.find("img.playingImg").hide();
+                    $(self).attr("playing", "1");
+                    $(self).find("img.playImg").hide();
+                    $(self).find("img.playingImg").show();
+                    // 获取音频播放列表
+                    var res_arr = new Array();
+                    res_arr = resPath.split(",");
+                    var play_resPath = new Array();
+                    for (var i = 0; i < res_arr.length; i++) {
+                        play_resPath.push(res_arr[i]);
+                    }
+                    myPlayer.play(play_resPath, function() {
+                        $(self).find("img.playImg").show();
+                        $(self).find("img.playingImg").hide();
+                    });
+                    $('#jplayer').find('object').height(10);
+                    return false;
+                });
+            }
+
+            function initStaticReturn() {
+                // 返回
+                $("#staticReturn").click(function() {
+                    staticReturn();
+                });
+                // 返回
+                $("#staticPageReturn").click(function() {
+                    staticReturn();
+                });
+            }
+            </script>
+
+            </html>
