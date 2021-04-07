@@ -1,0 +1,3636 @@
+<!DOCTYPE html>
+            <html lang="zh-cn">
+
+            <head>
+            <meta charset="utf-8">
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+            <title>读写4-张新祥-重修Unit3</title>
+            <meta name="MSSmartTagsPreventParsing" content="True" />
+            <meta http-equiv="MSThemeCompatible" content="Yes" />
+            <meta name="renderer" content="webkit">
+            <script src="https://uexercise.unipus.cn/static/its/lib/jquery/jquery.js"></script>
+            <script src="https://uexercise.unipus.cn/static/its/lib/zui/js/zui.js"></script>
+            <script src="https://uexercise.unipus.cn/static/its/lib/chosen/chosen.js"></script>
+            <script src="https://uexercise.unipus.cn/static/its/lib/jquery/jquery.form.js"></script>
+            <script>
+                window.CTX = 'https://uexercise.unipus.cn';
+            </script>
+            <script src="https://uexercise.unipus.cn/static/its/lib/itest/js/itest_common.js"></script>
+            <script src="https://uexercise.unipus.cn/static/its/lib/layer/layer.js"></script>
+            <script src="https://uexercise.unipus.cn/static/its/lib/layer/laytpl.js"></script>
+            <script src="https://uexercise.unipus.cn/static/its/lib/layer/extend/layer.ext.js"></script>
+            <script src="https://uexercise.unipus.cn/static/its/lib/fltrp/js/js.js"></script>
+            <script src="https://uexercise.unipus.cn/static/its/lib/fltrp/js/stopic.js"></script>
+            <script src="https://uexercise.unipus.cn/static/its/lib/jplayer/jquery.jplayer.min.js"></script>
+            <script type="text/javascript" src="//player.youku.com/jsapi"></script>
+            <script src='https://uexercise.unipus.cn/static/its/lib/fltrp/js/uploadXX.js'></script>
+            <script>
+                var _hmt = _hmt || [];
+                (function() {
+                    var hm = document.createElement("script");
+                    hm.src = "https://hm.baidu.com/hm.js?c402237d180d562bcdd7e9d5fe8780f8";
+                    var s = document.getElementsByTagName("script")[0];
+                    s.parentNode.insertBefore(hm, s);
+                })();
+            </script>
+            <link rel="shortcut icon" href="../assets/images/favicon.ico">
+            <link href="../assets/css/main.css" rel="stylesheet">
+            <link href="../assets/css/part.css" rel="stylesheet">
+            <link href="../assets/css/topic.css" rel="stylesheet">
+            <link href="../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+            <style>
+                ul {
+                    padding-left: 0px;
+                }
+                
+                .playButton {
+                    width: 35px;
+                    height: 35px;
+                    cursor: pointer;
+                    float: left;
+                    margin: 25px 10px 0 35px;
+                }
+                
+                .answer-video .playButton {
+                    margin: 0 10px;
+                }
+                
+                input.blankinput {
+                    -moz-border-bottom-colors: none;
+                    -moz-border-left-colors: none;
+                    -moz-border-right-colors: none;
+                    -moz-border-top-colors: none;
+                    border-color: -moz-use-text-color -moz-use-text-color #000000;
+                    border-image: none;
+                    border-style: none none solid;
+                    border-width: 0 0 1px;
+                    margin: 0 0px;
+                    font-weight: bold;
+                    text-align: center;
+                    outline: none;
+                    height: 24px;
+                    resize: none;
+                    color: #333;
+                }
+                
+                span.blankinput {
+                    border-color: -moz-use-text-color -moz-use-text-color #000000;
+                    border-image: none;
+                    border-style: none none solid;
+                    border-width: 0 0 1px;
+                    margin: 0 0px;
+                    font-weight: bold;
+                    text-align: center;
+                    outline: none;
+                    height: 24px;
+                    resize: none;
+                    color: white;
+                }
+                
+                .form-horizontal .form-group {
+                    margin-right: 0;
+                    margin-left: 0;
+                    margin-top: 20px;
+                }
+            </style>
+            </head>
+
+            <body>
+            <nav class="navbar navbar-light navbar-expand-md fixed-top" id="mainNav" style="background: rgba(0,0,0,0);">
+                <div class="container">
+                    <a class="navbar-brand d-xl-flex justify-content-xl-center align-items-xl-center js-scroll-trigger" data-aos="zoom-in-right" href="https://u.abiscuit.net" style="font-family: Roboto, sans-serif;text-shadow: 0px 0px 5px var(--red);"><img class="rounded-circle d-xl-flex justify-content-xl-center align-items-xl-center" src="https://gravatar.loli.net/avatar/058e7772431faa1fcf6ef8e6ceed6552" style="max-height: auto;width: 40px;height: 40px;margin-right: 10px;">u校园答案导航</a>
+                    <button data-toggle="collapse" class="navbar-toggler navbar-toggler-right" data-target="#navbarResponsive" data-aos="fade-left" type="button" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" value="Menu" style="box-shadow: 0px 0px 5px var(--red);"><i class="fa fa-bars" style="box-shadow: 0px 0px 5px var(--red);"></i></button>
+                    <div class="collapse navbar-collapse" id="navbarResponsive">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item nav-link js-scroll-trigger"><a class="nav-link js-scroll-trigger" data-aos="zoom-out-left" href="https://kxz.atcumt.com/" style="font-family: Roboto, sans-serif;text-shadow: 0px 0px 5px var(--primary);">友情推荐：矿小助</a></li>
+                            <li class="nav-item nav-link js-scroll-trigger"><a class="nav-link js-scroll-trigger" data-aos="zoom-out-left" href="mailto:abiscuit@vip.qq.com" style="font-family: Roboto, sans-serif;text-shadow: 0px 0px 5px var(--blue);">邮箱联系</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- 主体部分开始 -->
+            <div class="main">
+                <div class="topclass">读写4-张新祥-重修Unit3</div>
+                <!-- 题型列表开始 --><div class="content Question">
+ <div class="Test">
+  <div class="TestTitle">
+   <div class="title" id="102">
+    短对话4题，总分值：4分
+   </div>
+   <div class="title-decrible">
+    <div class="directs">
+     Directions： In this section, you'll hear some short conversations. At the end of each conversation, one question will be asked. Both the conversation and the question will be spoken only once. After each question, choose the best answer from the four choices marked A, B, C, and D.
+    </div>
+   </div>
+  </div>
+  <div class="Question-Conversation" qid="154496" qtype="102">
+   <span class="answer-video">
+    <div class="play" respath="https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_4/t_102/201510/f914ef8e-ec85-44fe-a532-cc7a6b163653.mp3">
+     <img class="playImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/play-1.png">
+      <img class="playingImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/playing02-fltrp.gif" style="display:none;"/>
+     </img>
+    </div>
+   </span>
+   <div class="Choice">
+    <div class="nu" id="t1">
+     <span>
+      <b>
+       1)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  Her hotel.
+       </label>
+       <label>
+        B.  London.
+       </label>
+       <label class="green">
+        C.  The airport.
+       </label>
+       <label>
+        D.  Her home.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       1) C
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+     <p>
+      <b>
+       听力文本：
+      </b>
+     </p>
+     <p>
+      <p>
+       M: Don’t worry, madam. I’ll get you there in time. It looks as if most people have already gone home today.
+      </p>
+      <p>
+       W:   I hope so. The plane leaves at seven. I don’t want to arrive in London too late, or the hotel will think I’m not coming and I might lose my room.
+      </p>
+      <p>
+       Q: Where is the man taking the woman to?
+      </p>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="154495" qtype="102">
+   <span class="answer-video">
+    <div class="play" respath="https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_4/t_102/201510/f37fb0d7-7102-4a10-b08f-2214600001c5.mp3">
+     <img class="playImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/play-1.png"/>
+     <img class="playingImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/playing02-fltrp.gif" style="display:none;"/>
+    </div>
+   </span>
+   <div class="Choice">
+    <div class="nu" id="t2">
+     <span>
+      <b>
+       2)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  Trying other types of accommodation.
+       </label>
+       <label>
+        B.  Trying motels or lodges in the downtown.
+       </label>
+       <label>
+        C.  Choosing hotels in the suburbs of the city.
+       </label>
+       <label>
+        D.  Taking his family to other cities instead of Las Vegas.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       2) A
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+     <p>
+      <b>
+       听力文本：
+      </b>
+     </p>
+     <p>
+      <p>
+       M: I’ve heard that the hotels in Las Vegas are all running out of rooms during this peak season, but I’ve promised to take my family there this summer.
+      </p>
+      <p>
+       W: Take it easy. Perhaps there are other options available such as motels and lodges in the suburbs of the city.
+      </p>
+      <p>
+       Q: What is the woman’s suggestion to the man?
+      </p>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="154494" qtype="102">
+   <span class="answer-video">
+    <div class="play" respath="https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_4/t_102/201510/c7a20de8-ba1b-41de-8097-110bf98c03c5.mp3">
+     <img class="playImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/play-1.png"/>
+     <img class="playingImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/playing02-fltrp.gif" style="display:none;"/>
+    </div>
+   </span>
+   <div class="Choice">
+    <div class="nu" id="t3">
+     <span>
+      <b>
+       3)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  Philip’s views on tourism don’t make much sense.
+       </label>
+       <label class="green">
+        B.  Philip’s ideas about tourism are quite reasonable.
+       </label>
+       <label>
+        C.  Philip has expressed his ideas with proper words.
+       </label>
+       <label>
+        D.  The woman should talk about Philip more politely.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       3) B
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+     <p>
+      <b>
+       听力文本：
+      </b>
+     </p>
+     <p>
+      <p>
+       W: I don’t agree with Philip on his views about tourism. He even claims that tourism destroys natural landscapes.
+      </p>
+      <p>
+       M: Philip might have used better words to show his ideas. But I’ve found what he said makes a lot of sense.
+      </p>
+      <p>
+       Q: What does the man mean?
+      </p>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="154493" qtype="102">
+   <span class="answer-video">
+    <div class="play" respath="https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_4/t_102/201510/074c810c-dcf4-4fe6-9575-ca6066a21582.mp3">
+     <img class="playImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/play-1.png"/>
+     <img class="playingImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/playing02-fltrp.gif" style="display:none;"/>
+    </div>
+   </span>
+   <div class="Choice">
+    <div class="nu" id="t4">
+     <span>
+      <b>
+       4)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  He watched a basketball match.
+       </label>
+       <label>
+        B.  He attended a pop music concert.
+       </label>
+       <label>
+        C.  He listened to some electronic music.
+       </label>
+       <label>
+        D.  He went to see an influential music band.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       4) A
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+     <p>
+      <b>
+       听力文本：
+      </b>
+     </p>
+     <p>
+      <p>
+       W: Did you go to the concert yesterday evening? It was so wonderful with terrific music and an electric atmosphere. And it was such a thrilling experience to see one of the most influential bands in China.
+      </p>
+      <p>
+       M: I didn’t want to miss the basketball game. Besides, I’m not a pop music fan anyway.
+      </p>
+      <p>
+       Q: What did the man do last night?
+      </p>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+ </div>
+ <div class="Test">
+  <div class="TestTitle">
+   <div class="title" id="103">
+    长对话8题，总分值：8分
+   </div>
+   <div class="title-decrible">
+    <div class="directs">
+     Directions： In this section, you'll hear some long conversations. At the end of each conversation, some questions will be asked. Both the conversation and the questions will be spoken only once. After each question, choose the best answer from the four choices marked A, B, C, and D.
+    </div>
+   </div>
+  </div>
+  <div class="Question-Conversation" qid="154623" qtype="103">
+   <span class="answer-video">
+    <div class="play" respath="https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_4/t_103/201510/0ccc5fb6-5322-4cd7-8c06-95136fb401f3.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_4/t_103/201510/2e2c3ebc-c728-4db4-803a-f838ecca6437.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_4/t_103/201510/d0ec41a6-3758-4e86-96da-cadc58433566.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_4/t_103/201510/cc26d92d-a28c-400c-8a79-9957259f5289.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_4/t_103/201510/6c67b728-840f-4ae2-b5fc-7fae2d62dff9.mp3">
+     <img class="playImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/play-1.png"/>
+     <img class="playingImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/playing02-fltrp.gif" style="display:none;"/>
+    </div>
+   </span>
+   <div class="Choice">
+    <div class="nu" id="t5">
+     <span>
+      <b>
+       5)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  Painting the baby’s room.
+       </label>
+       <label>
+        B.  Putting up the baseball decorations.
+       </label>
+       <label>
+        C.  Bringing the baby home.
+       </label>
+       <label>
+        D.  Preparing the baseball equipment.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t6">
+     <span>
+      <b>
+       6)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  It is a tradition of his family.
+       </label>
+       <label class="green">
+        B.  It is the best way to honor his father.
+       </label>
+       <label>
+        C.  He knows his baby will like baseball.
+       </label>
+       <label>
+        D.  He is a great baseball player himself.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t7">
+     <span>
+      <b>
+       7)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  His dad gave up his work to take care of him.
+       </label>
+       <label>
+        B.  His dad took him to the ball park every day.
+       </label>
+       <label class="green">
+        C.  His dad managed to take him to baseball games.
+       </label>
+       <label>
+        D.  His dad made him nice breakfast before going to work.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t8">
+     <span>
+      <b>
+       8)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  Playing baseball was his favorite hobby for life.
+       </label>
+       <label>
+        B.  He was too busy to be at home even on Saturdays.
+       </label>
+       <label>
+        C.  His hard work at the company was greatly admired.
+       </label>
+       <label class="green">
+        D.  His love of the family was deeply cherished by them.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      5) A      6) B      7) C      8) D
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <div>
+      <pre>（无）</pre>
+     </div>
+     <p>
+      <b>
+       听力文本：
+      </b>
+     </p>
+     <p>
+      <p>
+       W: Hello Son! How are you and your wife? When’s the baby due?
+      </p>
+      <p>
+       M: uh Hi mom … We’re doing well … Kelly is having the baby any minute now! I’ve finished painting the baby’s room, but I haven’t finished the baseball decorations. The baseball decorations have to be perfect for the baby’s room you know …
+      </p>
+      <p>
+       W: Son? Baseball? This baby isn’t born yet. How do you know the baby will like baseball?
+      </p>
+      <p>
+       M: When Kelly and I talked about the new baby’s room, I told her the one thing it had to have is a baseball theme. Baseball. Baseball, mom. Just like dad and me.
+      </p>
+      <p>
+       W: Son, your father loved you so much. Going to baseball games with you was important for him to show how much he loved you. He worried that he worked too much and didn’t spend enough time with you. But he always made time to take you to baseball games.
+      </p>
+      <p>
+       M: Dad was the best dad. He worked so hard at the company for so many years to make sure he took good care of us. I always remember the Saturdays he took me to the ball park. We would get up early, and he would make me a nice breakfast before we left for the game. Oh mom. I miss dad so much.
+      </p>
+      <p>
+       W: I know, son, I miss him so much, too. All the time, every day.
+      </p>
+      <p>
+       M: I just kept thinking that if I put up the baseball decorations in the baby’s room before the baby is born, it would be like dad is here to welcome the baby home even though he’s not alive to be here in person.
+      </p>
+      <p>
+       W: Well, we have his memory, his great love of all his family and baseball! I can’t wait to see the room. Did you paint it blue?
+      </p>
+      <p>
+       M: I did! A blue room full of the love of baseball!
+      </p>
+      <p>
+       <br/>
+       <p>
+        What has the man finished doing so far?
+       </p>
+       <p>
+        Why did the man choose the baseball theme to decorate his baby’s room?
+       </p>
+       <p>
+        Why does the man regard his dad as the best dad?
+       </p>
+       <p>
+        What can we infer about the man’s dad from the recording?
+       </p>
+      </p>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="154624" qtype="103">
+   <span class="answer-video">
+    <div class="play" respath="https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_4/t_103/201510/62bf6ded-2b43-41b8-9a82-0ab719ef07b6.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_4/t_103/201510/8c32fa6b-15b6-45c7-99cd-c3d8da5524da.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_4/t_103/201510/e85807fc-e694-4189-bc15-3852cf4fab9a.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_4/t_103/201510/1dcc8d8d-52c9-45bd-84ea-0c5728d640c9.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_4/t_103/201510/5a60fa0f-62ba-479b-984e-dbab4052e82e.mp3">
+     <img class="playImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/play-1.png"/>
+     <img class="playingImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/playing02-fltrp.gif" style="display:none;"/>
+    </div>
+   </span>
+   <div class="Choice">
+    <div class="nu" id="t9">
+     <span>
+      <b>
+       9)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  Because it is too expensive and they are saving for a car.
+       </label>
+       <label>
+        B.  Because it is a waste of time going there with stupid friends.
+       </label>
+       <label>
+        C.  Because the woman shouldn’t think about doing things for fun.
+       </label>
+       <label>
+        D.  Because the woman invited only her friends from college for it.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t10">
+     <span>
+      <b>
+       10)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  Cancel her lunch party with her friends.
+       </label>
+       <label class="green">
+        B.  Change their plan to cooking together at home.
+       </label>
+       <label>
+        C.  Ask their friends to cook lunch by themselves.
+       </label>
+       <label>
+        D.  Go out for lunch in a less expensive restaurant.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t11">
+     <span>
+      <b>
+       11)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  Walk down a nice trail nearby their home.
+       </label>
+       <label class="green">
+        B.  Go to buy fresh vegetables for their lunch.
+       </label>
+       <label>
+        C.  Make their favorite apple pie for dessert.
+       </label>
+       <label>
+        D.  Prepare chocolate ice cream together.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t12">
+     <span>
+      <b>
+       12)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  Family disagreement is better to be solved through compromise.
+       </label>
+       <label>
+        B.  Saving money to buy a car is more important than going out to eat.
+       </label>
+       <label>
+        C.  Inviting friends to an expensive family dinner is not necessary.
+       </label>
+       <label>
+        D.  Cooking at home is better than going out to eat in a restaurant.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      9) A      10) B      11) B      12) A
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <div>
+      <pre>（无）</pre>
+     </div>
+     <p>
+      <b>
+       听力文本：
+      </b>
+     </p>
+     <p>
+      <p>
+       M: I don’t know why you told your stupid friends we would go out to that expensive restaurant tomorrow at lunch!
+      </p>
+      <p>
+       W: My “stupid friends” Jake and Marsha are your friends from college, too! I am tired of never doing anything fun! When did you become so boring?!!
+      </p>
+      <p>
+       M: Boring?!! I work so hard for us, and I don’t want to go out for an expensive lunch! We agreed, Janice! We are saving to buy a car, and we can’t do that if all we do is spend our money!
+      </p>
+      <p>
+       W: James, you’re right. I’m sorry. I’ll call Marsha and Jake to change our plan to cooking together here at our house Saturday for lunch. Would that be better?
+      </p>
+      <p>
+       M: Yes, Janice. That would be much better. We can enjoy cooking a nice meal together. I am sorry for calling Jake and Marsha stupid. They just spend so much money and don’t know the value of hard work.
+      </p>
+      <p>
+       W: Thanks. I am glad we could sort this out. I think we’ll have a very nice day and save money. I know how hard you work and appreciate everything you do. Getting that new car will be such an improvement for us and way better than expensive lunches!
+      </p>
+      <p>
+       M: When we work together we accomplish so much more! Let’s plan: After they arrive, we can all walk down to the little open-air street market to choose fresh vegetables for our lunch. And, Janice, will you make one of your great apple pies for dessert?
+      </p>
+      <p>
+       W: James, I’ll make your favorite apple pie with chocolate ice cream for dessert! Hey! Here’s another idea! Let’s go for a nature walk after lunch. Remember? There is an incredibly nice walking trail nearby our neighborhood.
+      </p>
+      <p>
+       <br/>
+       <p>
+        Why did the man feel upset about the woman’s plan for lunch in a restaurant?
+       </p>
+       <p>
+        What did the woman decide to do after she realized the man was right?
+       </p>
+       <p>
+        What is the first thing they would do after their friends arrive?
+       </p>
+       <p>
+        What is implied in the conversation?
+       </p>
+      </p>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+ </div>
+ <div class="Test">
+  <div class="TestTitle">
+   <div class="title" id="308">
+    长文章8题，总分值：8分
+   </div>
+   <div class="title-decrible">
+    <div class="directs">
+     Directions： In this section, you’ll hear some passages. At the end of each passage, you'll hear some questions. Both the passage and the questions will be spoken only once. After each question, choose the best answer from the four choices marked A, B, C, and D.
+    </div>
+   </div>
+  </div>
+  <div class="Question-Conversation" qid="154565" qtype="308">
+   <span class="answer-video">
+    <div class="play" respath="https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_4/t_301/201510/aaef8046-7bd1-44a0-a3e1-f4c8709f76c8.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_4/t_301/201510/3c54b341-3282-4707-84e6-edfa2314d73d.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_4/t_301/201510/82c6602a-277a-447f-b27b-9046b4de2691.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_4/t_301/201510/310848aa-b6f3-46d3-9e70-6f117def1e81.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_4/t_301/201510/320d89e5-9c0b-47b2-aa1d-f2e13d6bbf89.mp3">
+     <img class="playImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/play-1.png"/>
+     <img class="playingImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/playing02-fltrp.gif" style="display:none;"/>
+    </div>
+   </span>
+   <div class="Choice">
+    <div class="nu" id="t13">
+     <span>
+      <b>
+       13)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  We have less leisure time than we did 40 years ago.
+       </label>
+       <label class="green">
+        B.  We spend too much of our leisure time watching TV.
+       </label>
+       <label>
+        C.  We have too many types of leisure activities to enjoy.
+       </label>
+       <label>
+        D.  We have different understandings about what is leisure.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t14">
+     <span>
+      <b>
+       14)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  Enjoy some outdoor activities.
+       </label>
+       <label>
+        B.  Turn the TV off.
+       </label>
+       <label>
+        C.  Join a book club to read.
+       </label>
+       <label>
+        D.  Go out to live independently.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t15">
+     <span>
+      <b>
+       15)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  6,800, 000
+       </label>
+       <label class="green">
+        B.  680,000
+       </label>
+       <label>
+        C.  3,000,000
+       </label>
+       <label>
+        D.  196,000
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t16">
+     <span>
+      <b>
+       16)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  Watch television with our family.
+       </label>
+       <label>
+        B.  Cook a delicious meal for ourselves.
+       </label>
+       <label>
+        C.  Turn on the stove to warm our house.
+       </label>
+       <label class="green">
+        D.  Entertain friends or family at home.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      13) B      14) A      15) B      16) D
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <div>
+      <pre>（无）</pre>
+     </div>
+     <p>
+      <b>
+       听力文本：
+      </b>
+     </p>
+     <p>
+      <p style="text-align: justify;">
+       If life seems more rushed than ever, you might be surprised to learn that we don’t have less leisure time than we did 40 years ago. We actually have more leisure time, and quite a bit more. What counts as leisure is up for argument, but under every definition the numbers have gone up. We get about 45 minutes a day of extra leisure.
+       <br/>
+      </p>
+      <p style="text-align: justify;">
+       Then why does it feel like we have so much less? It might be because we waste half of all our leisure time watching television. The average American adult devotes 2.5 hours a day to this hobby. So if you want more free time, I recommend one thing: Turn it off. This is easier said than done, especially during the sports season.
+       <br/>
+      </p>
+      <p style="text-align: justify;">
+       When I was growing up, my mom had one piece of advice for me, and she said it every single morning. “Get out of the house!” It’s good advice. Come and join the 6.8 million who are in a book club, or the 196,000 who play beach volleyball, or the 680,000 who go hiking every month. There are even 3 million people who enjoy a sport which involves shooting a gun that looks 200 years old.
+       <br/>
+      </p>
+      <p style="text-align: justify;">
+       And at the end of the day, there’s a thing in your kitchen called a stove. Turn it on and invite people over. Only 38% of Americans entertain friends or family at home at least once a year. What were the other 62% of us doing? Getting a free meal, I suppose. We can surely do better. If we’re going to watch so much television, can’t we at least invite friends over to watch?
+      </p>
+      <p>
+       <br/>
+       <p>
+        Why does our life seem more rushed than before according to the speaker?
+       </p>
+       <p>
+        What advice did the speaker’s mom give to him when he was growing up?
+       </p>
+       <p>
+        How many people go hiking every month?
+       </p>
+       <p>
+        What does the speaker recommend us to do at the end of the day?
+       </p>
+      </p>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="154564" qtype="308">
+   <span class="answer-video">
+    <div class="play" respath="https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_4/t_301/201510/596b001b-7efd-4e7e-a66f-2a7cc924d640.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_4/t_301/201510/15497289-25d9-4489-bb32-88966f7f35c5.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_4/t_301/201510/f7441859-bcde-461e-8786-0195cb0741e9.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_4/t_301/201510/d2eb548b-1f2f-4c2e-8e81-41fcc975d481.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_4/t_301/201510/e45fa060-7e9f-45ce-9b72-f168a7a2d2c5.mp3">
+     <img class="playImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/play-1.png"/>
+     <img class="playingImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/playing02-fltrp.gif" style="display:none;"/>
+    </div>
+   </span>
+   <div class="Choice">
+    <div class="nu" id="t17">
+     <span>
+      <b>
+       17)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  They can become more popular in the business circle.
+       </label>
+       <label class="green">
+        B.  They can use this network to benefit their own career.
+       </label>
+       <label>
+        C.  They can make friends with more professional people.
+       </label>
+       <label>
+        D.  They can contact people with more advanced technology.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t18">
+     <span>
+      <b>
+       18)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  Because it makes social contacts much easier than before.
+       </label>
+       <label>
+        B.  Because it helps people avoid unnecessary social meetings.
+       </label>
+       <label>
+        C.  Because people can use it to help them do a lot of work.
+       </label>
+       <label class="green">
+        D.  Because people become addicted to it and do it all the time.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t19">
+     <span>
+      <b>
+       19)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  It makes people enjoy work just as playing.
+       </label>
+       <label>
+        B.  It gets people acquainted with high technology.
+       </label>
+       <label class="green">
+        C.  It is often done during office hours.
+       </label>
+       <label>
+        D.  It is only done when people are off work.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t20">
+     <span>
+      <b>
+       20)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  Use such sites only when no one else is in the office.
+       </label>
+       <label>
+        B.  Chat with friends only at night when in the office.
+       </label>
+       <label class="green">
+        C.  Know the company’s Internet policy and the boss’s attitude.
+       </label>
+       <label>
+        D.  Log in to their favorite sites when nobody is paying attention.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      17) B      18) D      19) C      20) C
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <div>
+      <pre>（无）</pre>
+     </div>
+     <p>
+      <b>
+       听力文本：
+      </b>
+     </p>
+     <p>
+      <p style="text-align: justify;">
+       If you want to be successful in business, I’m told that it’s very important to make a lot of effort to meet new people, to socialize and create a network of useful contacts which you can then use to advance your career. You meet and make friends with people who might be able to help you later on in your professional life. This is called social networking, and it was one of the most popular words in business in the 1980s and 90s.
+       <br/>
+      </p>
+      <p style="text-align: justify;">
+       Well, with new technology come new words. After social networking, we now have social NOT working. Increasingly, people are meeting other people online using websites that intended to make social networking easier. These sites, things like MySpace, Facebook, Bebo, LinkedIn, Twitter and others, have become incredibly popular. Most people use them as a way of chatting with their friends, and sharing photographs and information about social events – parties, birthdays, etc. Some people are even using them to provide regular updates about what they’re doing, often many times each hour. Well, when you do this at work, instead of the many things you should be doing, it’s not social networking. It’s social NOT working.
+       <br/>
+      </p>
+      <p style="text-align: justify;">
+       If you’re one of those people that use these sites a lot, it can be very tempting to check what your friends are doing tonight while nobody else is in the office, or to see if your friend has put those photos from the last trip you took together on the site yet. It might only take a second, and no-one will ever know. However, my advice is, to check your company’s Internet policy and to think about your boss’s attitude before you log in to your favorite site – some employers take a very dim view towards social NOT working!
+      </p>
+      <p>
+       <br/>
+       <p>
+        Why is it important for business people to create a network of contacts?
+       </p>
+       <p>
+        How could it turn out that social Networking becomes social NOT working?
+       </p>
+       <p>
+        What is one typical characteristic of social NOT working according to the speaker?
+       </p>
+       <p>
+        What is the speaker’s advice to those who are addicted to social NOT working sites?
+       </p>
+      </p>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+ </div>
+ <div class="Test">
+  <div class="TestTitle">
+   <div class="title" id="107">
+    长篇阅读10题，总分值：10分
+   </div>
+   <div class="title-decrible">
+    <div class="directs">
+     Directions： You are going to read a passage with 10 statements attached to it. Each statement contains information given in one of the paragraphs. Identify the paragraph from which the information is derived. You may choose a paragraph more than once. Each paragraph is marked with a letter.
+    </div>
+   </div>
+  </div>
+  <div class="Question-Conversation" qid="154626" qtype="107">
+   <div class="Choice">
+    <div class="padding">
+     <p>
+      <p style="text-align:center">
+       <b>
+        The Amazon Mystery:
+       </b>
+      </p>
+      <p style="text-align:center">
+       <b>
+        What America's Strangest Tech Company Is Really Up To
+       </b>
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       A) If there’s a sentence that sums up Amazon, the weirdest major technology company in America, it’s one that came from its own CEO, Jeff Bezos, speaking at the Aspen Institute’s 2009 Annual Awards Dinner, “Invention requires a long-term willingness to be misunderstood.” In other words: If you don’t yet get what I’m trying to build, keep waiting.
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       B) Four years later, Amazon’s annual revenue and stock price have both nearly tripled, but for many onlookers, the long wait for understanding continues. Bezos’s company has grown from its humble Seattle beginnings to become not only the largest bookstore in the history of the world, but also the world’s largest online retailer, and the largest Web-hosting company in the world. It is now rumored to be close to launching its own smartphone and television set-top box. The every-bookstore has become the store for everything, with the global ambition to become the store for everywhere.
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       C) Seriously: What is Amazon? A retail company? A media company? A logistics (物流) machine? The mystery of its strategy is deepened by two factors. First is the company’s communications department, which famously excels at not communicating. This moves discussions of the company’s intentions into the realm of mind reading, often attempted by the research departments of investment banks, where even bullish analysts aren’t really sure what Bezos is up to. “It’s very difficult to define what Amazon is,” says R.J. Hottovy, an analyst with Morningstar, who nonetheless champions the company’s future.
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       D) Second, investors have developed a seemingly unconditional love for Amazon, despite the company’s financial performance. Some 19 years after its founding, Amazon still barely turns a profit – when it makes money at all. The company is pinched between its low margins as a discount retailer and its high capital spending as a global logistics company. Last year, it lost $39 million. By comparison, in its latest annual report, Apple announced a profit of almost $42 billion – nearly 22 times what Amazon has earned in its entire life span. And yet Amazon’s market capitalization, the value investors place on the company, is more than a quarter of Apple’s, placing Amazon among the largest tech companies in the United States.
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       E) If Amazon doesn’t seem entirely coherent (连贯一致的) in the context of its contemporary competitors – it appears to be simultaneously competing with Walmart, eBay, Microsoft, and Apple, for starters – it makes considerably more sense in the historical context of American shopping. “I think Amazon’s efforts are centered on securing the customer relationship,” says Benedict Evans, a consultant with Enders Analysis. The Kindle Fire tablet and the widely rumored phone aren’t meaningless experiments, but rather purchasing devices that put Amazon on the coffee table so consumers can never escape the shopping screen.
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       F) In a way, this strategy isn’t new at all. It’s ripped from the mildewed playbooks of the first national retail stores in American history. Amazon appears to be building nothing less than a global Sears, Roebuck of the 21st century – a large-scale operation that aims to dominate the future of shopping and shipping. The question is, can it succeed?
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       G) In the late 19th century, soon after a network of rail lines and telegraph wires had stitched together a rural country, mail-order companies like Sears built the first national retail corporations. Today the Sears catalog seems about as innovative as the prehistoric handsaw, but in the 1890s, the 500-page “Consumer’s Bible” popularized a truly radical shopping concept: the mail would bring stores to consumers.
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       H) But in the early 1900s, as families streamed off farms and into cities, chains like J. C. Penney and Woolworth sprang up to greet them. Sears followed, building more than 300 stores between 1925 and 1929 that specialized in “hard” goods like household appliances and spare parts for a mobile technology revolutionizing retail: the rapidly proliferating automobile. The company’s focus on the emerging middle-class market paid off so well that by mid-century, Sears’s revenue approached 1 percent of the entire US economy. But its dominance had deflated (降低) by the late 1980s, after more competitors arose and as the blue-collar consumer base it had leaned on collapsed.
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       I) Now that Internet cables have replaced telegraph wires, American consumers are going back to their turn-of-the-century shopping habits. The car is fading in the American imagination. Malls are shutting down. Families, meanwhile, have rediscovered the Consumer’s Bible while sitting on their couches, and this time, it’s in a Web browser. E‑commerce has nearly doubled in the past four years, and Amazon now takes in revenue of more than $60 billion annually.
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       J) “Sears took advantage of the US postal system and railways in the early 20th century just as transportation costs were falling,” says Richard White, a historian at Stanford, “and Amazon has done the same with the Web.” Its national logistics machine imitates Sears’s Chicago warehouse, but is more powerful, and much faster. Its instinct to sell tablets stuffed with e‑books echoes Sears’s decision to create Allstate to bundle insurance with the company’s car parts. And its latest trick would have astonished even Richard Sears himself: same-day delivery of the products you select from your living room.
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       K) Like the mail-order giants did a century ago, Amazon is moving to the city. In the past few years, the company has added warehouses in the most-populous cities to cut shipping times to urban customers. People subscribing to Amazon Prime or AmazonFresh (which, in exchange for an annual payment, provides fast delivery of most goods or groceries you’d like to order) commit themselves financially, with Prime members spending twice as much as other buyers. If those subscriptions grow numerous enough, Amazon’s search bar could become the preferred retail-shopping engine. Some analysts even suggest that this puts the company on a collision course with Google for search-advertising lucre. After all, if Amazon had everything you could want – and the capacity to put it on your doorstep in just hours – why would you Google a product ever again?
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       L) At least, that’s the vision. Defenders say Amazon is trading the present for the future, spending all its revenue on a global scatter plot of warehouses that will make the company unconquerable. Eventually, the theory goes, investors expect Amazon to complete its construction project and, having swayed enough customers and destroyed enough rivals, to “flip the switch,” raising prices and profits greatly. In the meantime, they’re happy to keep buying stock, offering an unqualified thumbs-up for heavy spending.
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       M) But this theory assumes a practically infinite life span for Amazon. The modern history of retail innovation suggests that even the most powerful can be overtaken suddenly. Sears was still America’s largest retailer in 1982, but just nine years later, its annual revenues were barely half those of Walmart. “The economic countryside is littered with the carcasses (废墟) of companies that thought they had a durable competitive advantage,” says Alex Field, an economic historian at Santa Clara University. “Just look at BlackBerry or AOL.”
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       N) Amazon is not as insulated (隔绝) from its rivals as some think it is. Walmart, eBay, and a bounty of upstarts are all in the race to dominate online retail. Amazon’s spending on new buildings and equipment isn’t an elective measure; it’s a survival plan. The truth is that the company benefits from a beautiful but delicate tautology: Amazon has won investors’ trust with a reputation for spending everybody to death, and it can spend everybody to death because it has won investors’ trust. For now.
+      </p>
+      <p style="text-align:justify">
+      </p>
+     </p>
+    </div>
+    <div class="nu" id="t21">
+     <span>
+      <b>
+       21)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      There are similarities and differences between Amazon and Sears in terms of their strategies in logistics, sales and delivery.
+      <span class="blankinput" type="text">
+       J
+      </span>
+     </p>
+    </div>
+    <div class="nu" id="t22">
+     <span>
+      <b>
+       22)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Though Amazon has performed poorly in making profits so far, investors are still confident about its value.
+      <span class="blankinput" type="text">
+       D
+      </span>
+     </p>
+    </div>
+    <div class="nu" id="t23">
+     <span>
+      <b>
+       23)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Amazon invests much in buildings and equipment in order to survive in the competition for online retail dominance.
+      <span class="blankinput" type="text">
+       N
+      </span>
+     </p>
+    </div>
+    <div class="nu" id="t24">
+     <span>
+      <b>
+       24)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Since its foundation, Amazon has been developing from a bookstore to one offering various products or services globally.
+      <span class="blankinput" type="text">
+       B
+      </span>
+     </p>
+    </div>
+    <div class="nu" id="t25">
+     <span>
+      <b>
+       25)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Amazon is expanding their market in the urban area by setting up more warehouses in cities with large populations.
+      <span class="blankinput" type="text">
+       K
+      </span>
+     </p>
+    </div>
+    <div class="nu" id="t26">
+     <span>
+      <b>
+       26)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Supporters of Amazon believe that its investments in warehouse across the world will improve the competitiveness of the company greatly.
+      <span class="blankinput" type="text">
+       L
+      </span>
+     </p>
+    </div>
+    <div class="nu" id="t27">
+     <span>
+      <b>
+       27)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      When American families left farms for cities early last century, they were welcomed by emerging chain stores.
+      <span class="blankinput" type="text">
+       H
+      </span>
+     </p>
+    </div>
+    <div class="nu" id="t28">
+     <span>
+      <b>
+       28)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Internet has caused the decline of traditional shopping centers and transformed American consumers’ way of shopping.
+      <span class="blankinput" type="text">
+       I
+      </span>
+     </p>
+    </div>
+    <div class="nu" id="t29">
+     <span>
+      <b>
+       29)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      The communications department of Amazon is partly responsible for people’s ignorance about its development strategy.
+      <span class="blankinput" type="text">
+       C
+      </span>
+     </p>
+    </div>
+    <div class="nu" id="t30">
+     <span>
+      <b>
+       30)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Amazon develops various electronic devices to offer consumers better access to their online store.
+      <span class="blankinput" type="text">
+       E
+      </span>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      21) J      22) D      23) N      24) B      25) K      26) L      27) H      28) I      29) C      30) E
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <div>
+      <pre>（无）</pre>
+     </div>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+ </div>
+ <div class="Test">
+  <div class="TestTitle">
+   <div class="title" id="152">
+    阅读理解10题，总分值：30分
+   </div>
+   <div class="title-decrible">
+    <div class="directs">
+     Directions： Read the following passages carefully. Each passage is followed by some questions or unfinished sentences. For each of them there are four choices marked A, B, C, and D. Choose the best answer to each question.
+    </div>
+   </div>
+  </div>
+  <div class="Question-Conversation" qid="154538" qtype="152">
+   <div class="Choice">
+    <div class="padding">
+     <p>
+      <p style="text-align:justify">
+       Something big is happening to the human race – something that could be called the Great Transformation.
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       Take the energy for example. Some people worry about what will happen when the deposits of petroleum are gone, but researchers are already finding all kinds of new ways to obtain energy. Someday, solar power collected by satellites circling the earth or nuclear power manufactured by mankind may give us all the energy we need for an expanding civilization. Space exploration promises to open up many new territories for human settlement, as well as leading to the harvest of mineral resources like the asteroids (小行星).
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       Scientific research continues to open up previously undreamed-of possibilities. Seventy years ago, few people could even imagine things like computers or lasers. Today, a host of newly emerging technologies such as artificial intelligence and genetic engineering are opening up all kinds of new paths for technologists.
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       Like it or not, our advancing technology has made us masters of the earth. We not only dominate all the other animals, but we are reshaping the world's plant life and even its soil and rocks, its waters and surrounding air. Mountains are being dug up to provide minerals and stone for buildings. The very ground under our feet is washing away as we chop down the forests, plow up the fields, and excavate (挖掘) foundations for our buildings.
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       Human junk is cluttering (拥塞) up not only the land but even the bottom of the sea. And so many chemicals are being released into the air by human activities that scientists worry that the entire globe may warm, causing the polar icecaps to melt and ocean waters to flood vast areas of the land.
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       No one knows what the Great Transformation means or where it will ultimately lead. But this mysterious Transformation is the biggest story of all time. It is the story of the human race itself.
+      </p>
+     </p>
+    </div>
+    <div class="nu" id="t31">
+     <span>
+      <b>
+       31)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      By “the Great Transformation”, the author means ______________.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  all the changes happened to human life
+       </label>
+       <label class="green">
+        B.  recent changes due to advancing technology
+       </label>
+       <label>
+        C.  discoveries in new sources of energy
+       </label>
+       <label>
+        D.  the damage that man has done to nature so far
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t32">
+     <span>
+      <b>
+       32)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      What energy source is mentioned as a way to provide our energy needs in the future?
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  Nuclear power found in new territories in space.
+       </label>
+       <label>
+        B.  Harvest of electricity from space exploration.
+       </label>
+       <label>
+        C.  Mineral resources collected from the asteroids.
+       </label>
+       <label class="green">
+        D.  Solar power obtained with satellites.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t33">
+     <span>
+      <b>
+       33)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      According to the scientists, what directly leads to flooding in vast areas of the land?
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  Human junk piled up at the bottom of the sea.
+       </label>
+       <label>
+        B.  Mountains that are dug up for stone and minerals.
+       </label>
+       <label class="green">
+        C.  The melting polar icecaps caused by global warming.
+       </label>
+       <label>
+        D.  The plowing of fields and earth-digging for buildings.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t34">
+     <span>
+      <b>
+       34)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      What tone does the author convey when he describes the impacts of advancing technology?
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  Ironic.
+       </label>
+       <label>
+        B.  Enthusiastic.
+       </label>
+       <label>
+        C.  Cautious.
+       </label>
+       <label>
+        D.  Indifferent.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t35">
+     <span>
+      <b>
+       35)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Which of the followings can best summarize the article?
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  The development in science and technology makes humans powerful enough to achieve anything possible.
+       </label>
+       <label class="green">
+        B.  The Great Transformation changes human life remarkably, yet it is hard to tell whether the changes are positive.
+       </label>
+       <label>
+        C.  Advanced technology guarantees that human beings are living in a world better than before.
+       </label>
+       <label>
+        D.  Changes brought about by human efforts will surely destroy the mountains and sea, and cause disaster to the earth.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      31) B      32) D      33) C      34) A      35) B
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <div>
+      <pre>（无）</pre>
+     </div>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="154537" qtype="152">
+   <div class="Choice">
+    <div class="padding">
+     <p>
+      <p style="text-align:justify">
+       What is the use of a plan?
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       The concept that a plan itself means very little isn’t a new idea. Who would think that spending a year doing a business plan is a good thing, or that formal business plans spell success?
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       Business plans are sometimes overdone and misused, but the planning process is critical. About 60 years ago, Dwight D. Eisenhower said, “The plan is useless; it’s the planning that’s important.” That’s still true today. In fact, all business plans are wrong. They’re the work of humans guessing the future, dealing with uncertainty and making assumptions. Still, the planning process is absolutely essential. A startup entrepreneur’s planning process should start with a plan and continue with a plan vs. reality review, progress tracking and course correction.
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       Planning is about controlling your destiny: Establish your business goals and outline the steps needed to achieve them – don’t just react to events. While your plan will be wrong, of course, how would you track what is going wrong without it? You can’t have a route without a starting point and a destination, but even the most well-planned route may require some detours (绕道).
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       For the best results, planning should be concrete and specific. For each step in your plan, create dates, deadlines and clearly assigned responsibilities. You can’t track your progress and steer your company efficiently with vague generalities (概述). In real-world planning, form follows function. When new businesses seek investors they usually need formal plans. Investors who say they don't need formal plans still need to see your strategy, focus, priorities, commitments, dates and deadlines. The content has to be there, regardless of the format. Although you may not need a formal plan, all businesses need to go through the planning process. There will always be examples of businesses with great plans that fail and businesses with no plans that succeed, but I feel it’s very dangerous to tell startup entrepreneurs they don’t need a plan. The truth of the matter is that most of us need more planning, not more rationalizations for not doing it.
+      </p>
+     </p>
+    </div>
+    <div class="nu" id="t36">
+     <span>
+      <b>
+       36)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      What does the quotation from Dwight D. Eisenhower imply?
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  We don’t really need a plan when we do things.
+       </label>
+       <label class="green">
+        B.  The process of making a plan is significant.
+       </label>
+       <label>
+        C.  A plan is more crucial than how it has been made.
+       </label>
+       <label>
+        D.  Planning makes no sense if it does not arrive at a plan.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t37">
+     <span>
+      <b>
+       37)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Why does the author say that “all business plans are wrong”?
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  Because plans are always overdone and misused.
+       </label>
+       <label>
+        B.  Because formal business plans may not spell success.
+       </label>
+       <label>
+        C.  Because plans guessing the future is of no real use.
+       </label>
+       <label class="green">
+        D.  Because plans deal with uncertainty and make assumptions.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t38">
+     <span>
+      <b>
+       38)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      What’s the most important function of a plan?
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  It helps with progress tracking and correction.
+       </label>
+       <label>
+        B.  It attracts investors for new businesses.
+       </label>
+       <label>
+        C.  It consists of important rules for business.
+       </label>
+       <label>
+        D.  It helps businesses not to make mistakes.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t39">
+     <span>
+      <b>
+       39)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      What elements should be included in a plan?
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  Generalities of the business process.
+       </label>
+       <label class="green">
+        B.  Business goals and outlined steps.
+       </label>
+       <label>
+        C.  A plan vs. reality review.
+       </label>
+       <label>
+        D.  Strategy and reaction to events.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t40">
+     <span>
+      <b>
+       40)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      What can we infer from the passage?
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  All plans are wrong, so no specific plan is necessary for a project.
+       </label>
+       <label>
+        B.  Planning should be as detailed as possible with the most well-planned route.
+       </label>
+       <label class="green">
+        C.  Awareness of strategy, focus, and commitments is critical to any project.
+       </label>
+       <label>
+        D.  Whether you are able to draw up a formal plan or not controls your destiny.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      36) B      37) D      38) A      39) B      40) C
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <div>
+      <pre>（无）</pre>
+     </div>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+ </div>
+ <div class="Test">
+  <div class="TestTitle">
+   <div class="title" id="112">
+    完型填空20题，总分值：20分
+   </div>
+   <div class="title-decrible">
+    <div class="directs">
+     Directions： There are some blanks in the following passage. For each blank there are four choices marked A, B, C and D. You should choose the ONE that best fits into the passage.
+    </div>
+   </div>
+  </div>
+  <div class="Question-Conversation" qid="154533" qtype="112">
+   <div class="Choice">
+    <div class="padding">
+     <p>
+      <p style="text-align:justify">
+       When we look into the improvements in the intellectual life, we are surprised to see how slowly the tools for intellects develop. Revolutions in library facilities always
+       <b>
+        41)
+       </b>
+       <span class="blankinput" type="text">
+        precede
+       </span>
+       the intellectual development. If we compare the ordinary tools of a middle-class English writer nowadays with the
+       <b>
+        42)
+       </b>
+       <span class="blankinput" type="text">
+        inconvenient
+       </span>
+       equipment of an ancient Greek writer, we may realize the
+       <b>
+        43)
+       </b>
+       <span class="blankinput" type="text">
+        enormous
+       </span>
+       waste of time and energy that went on through all the centuries before the
+       <b>
+        44)
+       </b>
+       <span class="blankinput" type="text">
+        appearance
+       </span>
+       of the modern library.
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       Hundreds of years
+       <b>
+        45)
+       </b>
+       <span class="blankinput" type="text">
+        elapsed
+       </span>
+       , and the invention of paper made it possible for the
+       <b>
+        46)
+       </b>
+       <span class="blankinput" type="text">
+        brainchild
+       </span>
+       of great minds to spread more widely. A
+       <b>
+        47)
+       </b>
+       <span class="blankinput" type="text">
+        present
+       </span>
+       writer can link onto the Internet or pick up any reference book,
+       <b>
+        48)
+       </b>
+       <span class="blankinput" type="text">
+        refer
+       </span>
+       quickly to a statement, check for a quotation, and go on writing. The
+       <b>
+        49)
+       </b>
+       <span class="blankinput" type="text">
+        tedious
+       </span>
+       digging for materials from a mountain of rolled-up files becomes only
+       <b>
+        50)
+       </b>
+       <span class="blankinput" type="text">
+        reminiscences
+       </span>
+       .
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       Indeed, there were no convenient
+       <b>
+        51)
+       </b>
+       <span class="blankinput" type="text">
+        resources
+       </span>
+       in the world in 300 B.C. At that time
+       <b>
+        52)
+       </b>
+       <span class="blankinput" type="text">
+        utilization
+       </span>
+       of sheets of paper was more than a luxury. Alexandria had not yet
+       <b>
+        53)
+       </b>
+       <span class="blankinput" type="text">
+        produced
+       </span>
+       the first grammar and the first dictionary. The present writer can
+       <b>
+        54)
+       </b>
+       <span class="blankinput" type="text">
+        directly
+       </span>
+       type his ideas into the computer and print out his manuscript clearly and accurately. It can then, with great convenience, be read over by different editors, fully corrected, freely
+       <b>
+        55)
+       </b>
+       <span class="blankinput" type="text">
+        reshuffled
+       </span>
+       and reconnected. The Alexandrian author, however, had to depend on
+       <b>
+        56)
+       </b>
+       <span class="blankinput" type="text">
+        multilateral
+       </span>
+       efforts of different professional groups. They had to dictate or recopy every word of the writer. Before they could turn back to what he had written
+       <b>
+        57)
+       </b>
+       <span class="blankinput" type="text">
+        previously
+       </span>
+       , they had to dry his last words by waving them in the air or pouring sand over the letters.
+       <b>
+        58)
+       </b>
+       <span class="blankinput" type="text">
+        Whatever
+       </span>
+       an author wrote had to be recopied again and again before it could be
+       <b>
+        59)
+       </b>
+       <span class="blankinput" type="text">
+        dispersed
+       </span>
+       to considerable circle of readers, and every copyist might introduce some new error. New books were then read to a roomful of people, who dictated them and so got at least several hundred copies
+       <b>
+        60)
+       </b>
+       <span class="blankinput" type="text">
+        issued
+       </span>
+       in a first edition. If they needed maps or diagrams, they were faced with fresh difficulties.
+      </p>
+     </p>
+    </div>
+    <div class="nu" id="t41">
+     <span>
+      <b>
+       41)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  exceed
+       </label>
+       <label>
+        B.  succeed
+       </label>
+       <label class="green">
+        C.  precede
+       </label>
+       <label>
+        D.  proceed
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t42">
+     <span>
+      <b>
+       42)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  inconvenient
+       </label>
+       <label>
+        B.  uncomfortable
+       </label>
+       <label>
+        C.  unconscious
+       </label>
+       <label>
+        D.  incapable
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t43">
+     <span>
+      <b>
+       43)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  imperative
+       </label>
+       <label>
+        B.  exclusive
+       </label>
+       <label class="green">
+        C.  enormous
+       </label>
+       <label>
+        D.  numerical
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t44">
+     <span>
+      <b>
+       44)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  approval
+       </label>
+       <label>
+        B.  accomplishment
+       </label>
+       <label class="green">
+        C.  appearance
+       </label>
+       <label>
+        D.  acquaintance
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t45">
+     <span>
+      <b>
+       45)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  exempted
+       </label>
+       <label class="green">
+        B.  elapsed
+       </label>
+       <label>
+        C.  eluded
+       </label>
+       <label>
+        D.  expelled
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t46">
+     <span>
+      <b>
+       46)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  brainchild
+       </label>
+       <label>
+        B.  brainstorm
+       </label>
+       <label>
+        C.  brainwash
+       </label>
+       <label>
+        D.  brainwork
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t47">
+     <span>
+      <b>
+       47)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  habitual
+       </label>
+       <label>
+        B.  customary
+       </label>
+       <label>
+        C.  precedent
+       </label>
+       <label class="green">
+        D.  present
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t48">
+     <span>
+      <b>
+       48)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  cater
+       </label>
+       <label class="green">
+        B.  refer
+       </label>
+       <label>
+        C.  adjust
+       </label>
+       <label>
+        D.  appeal
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t49">
+     <span>
+      <b>
+       49)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  initiative
+       </label>
+       <label class="green">
+        B.  tedious
+       </label>
+       <label>
+        C.  obscure
+       </label>
+       <label>
+        D.  surplus
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t50">
+     <span>
+      <b>
+       50)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  reminder
+       </label>
+       <label>
+        B.  remainder
+       </label>
+       <label class="green">
+        C.  reminiscences
+       </label>
+       <label>
+        D.  retainer
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t51">
+     <span>
+      <b>
+       51)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  assets
+       </label>
+       <label>
+        B.  sources
+       </label>
+       <label class="green">
+        C.  resources
+       </label>
+       <label>
+        D.  properties
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t52">
+     <span>
+      <b>
+       52)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  utility
+       </label>
+       <label class="green">
+        B.  utilization
+       </label>
+       <label>
+        C.  application
+       </label>
+       <label>
+        D.  appliance
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t53">
+     <span>
+      <b>
+       53)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  defined
+       </label>
+       <label>
+        B.  emerged
+       </label>
+       <label>
+        C.  figured
+       </label>
+       <label class="green">
+        D.  produced
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t54">
+     <span>
+      <b>
+       54)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  particularly
+       </label>
+       <label>
+        B.  hurriedly
+       </label>
+       <label>
+        C.  publicly
+       </label>
+       <label class="green">
+        D.  directly
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t55">
+     <span>
+      <b>
+       55)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  reshuffled
+       </label>
+       <label>
+        B.  resolved
+       </label>
+       <label>
+        C.  scratched
+       </label>
+       <label>
+        D.  originated
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t56">
+     <span>
+      <b>
+       56)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  multilateral
+       </label>
+       <label>
+        B.  bilateral
+       </label>
+       <label>
+        C.  defensive
+       </label>
+       <label>
+        D.  regulatory
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t57">
+     <span>
+      <b>
+       57)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  consequently
+       </label>
+       <label>
+        B.  persistently
+       </label>
+       <label>
+        C.  unexpectedly
+       </label>
+       <label class="green">
+        D.  previously
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t58">
+     <span>
+      <b>
+       58)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  Which
+       </label>
+       <label class="green">
+        B.  Whatever
+       </label>
+       <label>
+        C.  Whenever
+       </label>
+       <label>
+        D.  Whereby
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t59">
+     <span>
+      <b>
+       59)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  dispersed
+       </label>
+       <label>
+        B.  contrasted
+       </label>
+       <label>
+        C.  reduced
+       </label>
+       <label>
+        D.  stipulated
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t60">
+     <span>
+      <b>
+       60)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  decreed
+       </label>
+       <label class="green">
+        B.  issued
+       </label>
+       <label>
+        C.  verdict
+       </label>
+       <label>
+        D.  granted
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      41) C      42) A      43) C      44) C      45) B      46) A      47) D      48) B      49) B      50) C      51) C      52) B      53) D      54) D      55) A      56) A      57) D      58) B      59) A      60) B
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <div>
+      <pre>（无）</pre>
+     </div>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+ </div>
+ <div class="Test">
+  <div class="TestTitle">
+   <div class="title" id="305">
+    词汇与结构20题，总分值：20分
+   </div>
+   <div class="title-decrible">
+    <div class="directs">
+     Directions： For each of the following sentences there are four choices marked A, B, C and D. Choose the best one to complete each sentence.
+    </div>
+   </div>
+  </div>
+  <div class="Question-Conversation" qid="154529" qtype="305">
+   <div class="Choice">
+    <div id="t61">
+     <span>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      The Dutch Golden Age in the 17th century left an abundance of ________ paintings reflecting the traditions of detailed realism.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  exquisite
+       </label>
+       <label>
+        B.  explicit
+       </label>
+       <label>
+        C.  exceptional
+       </label>
+       <label>
+        D.  exclusive
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       61) A
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="154528" qtype="305">
+   <div class="Choice">
+    <div id="t62">
+     <span>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Our town was destroyed by a great tornado (龙卷风) last Spring and officially declared a disaster area, ________ made us eligible for the support from federal funds.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  whereas
+       </label>
+       <label class="green">
+        B.  which
+       </label>
+       <label>
+        C.  whereby
+       </label>
+       <label>
+        D.  where
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       62) B
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="154527" qtype="305">
+   <div class="Choice">
+    <div id="t63">
+     <span>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      The economist says he is optimistic that developed nations will remain ________ to improving the quality of life in Africa.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  admitted
+       </label>
+       <label>
+        B.  submitted
+       </label>
+       <label class="green">
+        C.  committed
+       </label>
+       <label>
+        D.  omitted
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       63) C
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="154526" qtype="305">
+   <div class="Choice">
+    <div class="nu" id="t64">
+     <span>
+      <b>
+       64)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Social workers are fully aware that some poorly paid jobs with no entry requirements tend to have high staff ________.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  turn around
+       </label>
+       <label class="green">
+        B.  turnover
+       </label>
+       <label>
+        C.  turnout
+       </label>
+       <label>
+        D.  turn-off
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       64) B
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="154525" qtype="305">
+   <div class="Choice">
+    <div id="t65">
+     <span>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Several days had ________ before he finally made up his mind to apply for the position, only to find that it was already taken by someone else.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  eclipsed
+       </label>
+       <label>
+        B.  escaped
+       </label>
+       <label>
+        C.  enclosed
+       </label>
+       <label class="green">
+        D.  elapsed
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       65) D
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="154524" qtype="305">
+   <div class="Choice">
+    <div id="t66">
+     <span>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      We need a president who understands the ________ of the challenges we face, and has the strength and experience to address them
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  altitude
+       </label>
+       <label>
+        B.  latitude
+       </label>
+       <label class="green">
+        C.  magnitude
+       </label>
+       <label>
+        D.  multitude
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       66) C
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="154523" qtype="305">
+   <div class="Choice">
+    <div id="t67">
+     <span>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      According to a recent estimation, which may be optimistic, only 20 percent of job-seekers have had any sort of ________ training.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  vocational
+       </label>
+       <label>
+        B.  volunteer
+       </label>
+       <label>
+        C.  vocal
+       </label>
+       <label>
+        D.  voluntary
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       67) A
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="154522" qtype="305">
+   <div class="Choice">
+    <div id="t68">
+     <span>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Due to the unpredictable changes of weather, our summer camp activities were continuously ________ by storms and emergency calls.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  hounded
+       </label>
+       <label>
+        B.  horned
+       </label>
+       <label>
+        C.  hauled
+       </label>
+       <label>
+        D.  haunted
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       68) A
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="154521" qtype="305">
+   <div class="Choice">
+    <div id="t69">
+     <span>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      In the ________ months, the wolves continued to have daily social contact with humans and five adult dogs, with which they developed close relationships.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  enclosing
+       </label>
+       <label>
+        B.  enduring
+       </label>
+       <label class="green">
+        C.  ensuing
+       </label>
+       <label>
+        D.  ensuring
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       69) C
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="154520" qtype="305">
+   <div class="Choice">
+    <div id="t70">
+     <span>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      The two roads extend into the forest and ________ into one, leading all the way to an old gold mine.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  submerge
+       </label>
+       <label class="green">
+        B.  merge
+       </label>
+       <label>
+        C.  emerge
+       </label>
+       <label>
+        D.  verge
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       70) B
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="154519" qtype="305">
+   <div class="Choice">
+    <div id="t71">
+     <span>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      It is a pity that he has ________ become ________ enough to say NO to school violence.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  always … timid
+       </label>
+       <label class="green">
+        B.  never … courageous
+       </label>
+       <label>
+        C.  gradually … fearful
+       </label>
+       <label>
+        D.  finally … bold
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       71) B
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="154518" qtype="305">
+   <div class="Choice">
+    <div id="t72">
+     <span>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      ________ your product and distribution method are suited, then you’re essentially trying to reach the market with a product they need or want.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  Resuming that
+       </label>
+       <label>
+        B.  Assuring that
+       </label>
+       <label>
+        C.  Consuming that
+       </label>
+       <label class="green">
+        D.  Assuming that
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       72) D
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="154517" qtype="305">
+   <div class="Choice">
+    <div id="t73">
+     <span>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Her outstanding skills in performance made her role a ________ name throughout the country.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  household
+       </label>
+       <label>
+        B.  neighborhood
+       </label>
+       <label>
+        C.  threshold
+       </label>
+       <label>
+        D.  homemade
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       73) A
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="154516" qtype="305">
+   <div class="Choice">
+    <div id="t74">
+     <span>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Many people ________ that we see the world as it actually is, but in fact, we do not.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  take them for granted
+       </label>
+       <label>
+        B.  take for granted
+       </label>
+       <label class="green">
+        C.  take it for granted
+       </label>
+       <label>
+        D.  take granted for
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       74) C
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="154515" qtype="305">
+   <div class="Choice">
+    <div id="t75">
+     <span>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      With the application of the Internet, you can easily ________ an offer to anyone qualified and interested to participate in the program.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  expand
+       </label>
+       <label class="green">
+        B.  extend
+       </label>
+       <label>
+        C.  expend
+       </label>
+       <label>
+        D.  express
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       75) B
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="154514" qtype="305">
+   <div class="Choice">
+    <div id="t76">
+     <span>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      During the meeting, the director repeatedly ________ the importance of the civic education project, and the commitment to teamwork.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  underscored
+       </label>
+       <label>
+        B.  undertook
+       </label>
+       <label>
+        C.  undermined
+       </label>
+       <label>
+        D.  underwent
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       76) A
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="154513" qtype="305">
+   <div class="Choice">
+    <div id="t77">
+     <span>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      New efforts to track and ________ the amount of greenhouse gas emission (排放) reductions could prove a model for researchers all over the world.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  signify
+       </label>
+       <label class="green">
+        B.  quantify
+       </label>
+       <label>
+        C.  notify
+       </label>
+       <label>
+        D.  qualify
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       77) B
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="154512" qtype="305">
+   <div class="Choice">
+    <div id="t78">
+     <span>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Several colleges and universities in the country have started to ________ the transfer process to make it easier for students.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  underline
+       </label>
+       <label>
+        B.  straighten
+       </label>
+       <label class="green">
+        C.  streamline
+       </label>
+       <label>
+        D.  smoothen
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       78) C
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="154511" qtype="305">
+   <div class="Choice">
+    <div id="t79">
+     <span>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      If we could really arrive at a deal, it’s probably to be made in the ________ period for new leaders to settle down in our company.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  interim
+       </label>
+       <label>
+        B.  internal
+       </label>
+       <label>
+        C.  intermediary
+       </label>
+       <label>
+        D.  interior
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       79) A
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="154510" qtype="305">
+   <div class="Choice">
+    <div id="t80">
+     <span>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      No matter how unrealistic his plans seem to be, he is still sure that he must be ________ something in the near future.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  with
+       </label>
+       <label>
+        B.  upon
+       </label>
+       <label>
+        C.  into
+       </label>
+       <label class="green">
+        D.  onto
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       80) D
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+ </div>
+</div>
+
+                <!-- 题型列表结束 -->
+                <!-- 评论区开始 -->
+                            <script src="../assets/js/Valine.min.js"></script>
+                <div class="container">
+                    <div id="vcomments" class="tow">
+                        <script>
+                            new Valine({
+                                el: '#vcomments',
+                                appId: 'jphqw5DgcOz2TwIRuwPvVusb-gzGzoHsz',
+                                appKey: 'e6WOjatXeFfe7C5ukXcmLGCE',
+                                notify: false,
+                                verify: false,
+                                avatar: 'wavatar',
+                                visitor: true,
+                                avatarForce: true,
+                                recordIP: true,
+                                enableQQ: true,
+                                requiredFields: ['nick'],
+                            })
+                        </script>
+                        <span id="/" class="leancloud_visitors" data-flag-title="U校园答案导航" style="position:relative;float:right;top:-10px;font-size: 12px;color:#808080">
+                        <em class="post-meta-item-text">访问量</em>
+                        <i class="leancloud-visitors-count">0</i>
+                    </span>
+                    </div>
+                </div>
+                <!-- 评论区结束 -->
+                            <br>
+            <!-- 主体部分结束 -->
+            <div class="container">
+                <div style="text-align: center;color:white;font-size: small;">Copyright&nbsp;© 2021 abiscuit</div>
+            </div>
+            <br>
+            </div>
+            </html>

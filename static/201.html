@@ -1,0 +1,3810 @@
+<!DOCTYPE html>
+            <html lang="zh-cn">
+
+            <head>
+            <meta charset="utf-8">
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+            <title>读写2-张新祥-重修Unit4</title>
+            <meta name="MSSmartTagsPreventParsing" content="True" />
+            <meta http-equiv="MSThemeCompatible" content="Yes" />
+            <meta name="renderer" content="webkit">
+            <script src="https://uexercise.unipus.cn/static/its/lib/jquery/jquery.js"></script>
+            <script src="https://uexercise.unipus.cn/static/its/lib/zui/js/zui.js"></script>
+            <script src="https://uexercise.unipus.cn/static/its/lib/chosen/chosen.js"></script>
+            <script src="https://uexercise.unipus.cn/static/its/lib/jquery/jquery.form.js"></script>
+            <script>
+                window.CTX = 'https://uexercise.unipus.cn';
+            </script>
+            <script src="https://uexercise.unipus.cn/static/its/lib/itest/js/itest_common.js"></script>
+            <script src="https://uexercise.unipus.cn/static/its/lib/layer/layer.js"></script>
+            <script src="https://uexercise.unipus.cn/static/its/lib/layer/laytpl.js"></script>
+            <script src="https://uexercise.unipus.cn/static/its/lib/layer/extend/layer.ext.js"></script>
+            <script src="https://uexercise.unipus.cn/static/its/lib/fltrp/js/js.js"></script>
+            <script src="https://uexercise.unipus.cn/static/its/lib/fltrp/js/stopic.js"></script>
+            <script src="https://uexercise.unipus.cn/static/its/lib/jplayer/jquery.jplayer.min.js"></script>
+            <script type="text/javascript" src="//player.youku.com/jsapi"></script>
+            <script src='https://uexercise.unipus.cn/static/its/lib/fltrp/js/uploadXX.js'></script>
+            <script>
+                var _hmt = _hmt || [];
+                (function() {
+                    var hm = document.createElement("script");
+                    hm.src = "https://hm.baidu.com/hm.js?c402237d180d562bcdd7e9d5fe8780f8";
+                    var s = document.getElementsByTagName("script")[0];
+                    s.parentNode.insertBefore(hm, s);
+                })();
+            </script>
+            <link rel="shortcut icon" href="../assets/images/favicon.ico">
+            <link href="../assets/css/main.css" rel="stylesheet">
+            <link href="../assets/css/part.css" rel="stylesheet">
+            <link href="../assets/css/topic.css" rel="stylesheet">
+            <link href="../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+            <style>
+                ul {
+                    padding-left: 0px;
+                }
+                
+                .playButton {
+                    width: 35px;
+                    height: 35px;
+                    cursor: pointer;
+                    float: left;
+                    margin: 25px 10px 0 35px;
+                }
+                
+                .answer-video .playButton {
+                    margin: 0 10px;
+                }
+                
+                input.blankinput {
+                    -moz-border-bottom-colors: none;
+                    -moz-border-left-colors: none;
+                    -moz-border-right-colors: none;
+                    -moz-border-top-colors: none;
+                    border-color: -moz-use-text-color -moz-use-text-color #000000;
+                    border-image: none;
+                    border-style: none none solid;
+                    border-width: 0 0 1px;
+                    margin: 0 0px;
+                    font-weight: bold;
+                    text-align: center;
+                    outline: none;
+                    height: 24px;
+                    resize: none;
+                    color: #333;
+                }
+                
+                span.blankinput {
+                    border-color: -moz-use-text-color -moz-use-text-color #000000;
+                    border-image: none;
+                    border-style: none none solid;
+                    border-width: 0 0 1px;
+                    margin: 0 0px;
+                    font-weight: bold;
+                    text-align: center;
+                    outline: none;
+                    height: 24px;
+                    resize: none;
+                    color: white;
+                }
+                
+                .form-horizontal .form-group {
+                    margin-right: 0;
+                    margin-left: 0;
+                    margin-top: 20px;
+                }
+            </style>
+            </head>
+
+            <body>
+            <nav class="navbar navbar-light navbar-expand-md fixed-top" id="mainNav" style="background: rgba(0,0,0,0);">
+                <div class="container">
+                    <a class="navbar-brand d-xl-flex justify-content-xl-center align-items-xl-center js-scroll-trigger" data-aos="zoom-in-right" href="https://u.abiscuit.net" style="font-family: Roboto, sans-serif;text-shadow: 0px 0px 5px var(--red);"><img class="rounded-circle d-xl-flex justify-content-xl-center align-items-xl-center" src="https://gravatar.loli.net/avatar/058e7772431faa1fcf6ef8e6ceed6552" style="max-height: auto;width: 40px;height: 40px;margin-right: 10px;">u校园答案导航</a>
+                    <button data-toggle="collapse" class="navbar-toggler navbar-toggler-right" data-target="#navbarResponsive" data-aos="fade-left" type="button" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" value="Menu" style="box-shadow: 0px 0px 5px var(--red);"><i class="fa fa-bars" style="box-shadow: 0px 0px 5px var(--red);"></i></button>
+                    <div class="collapse navbar-collapse" id="navbarResponsive">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item nav-link js-scroll-trigger"><a class="nav-link js-scroll-trigger" data-aos="zoom-out-left" href="https://kxz.atcumt.com/" style="font-family: Roboto, sans-serif;text-shadow: 0px 0px 5px var(--primary);">友情推荐：矿小助</a></li>
+                            <li class="nav-item nav-link js-scroll-trigger"><a class="nav-link js-scroll-trigger" data-aos="zoom-out-left" href="mailto:abiscuit@vip.qq.com" style="font-family: Roboto, sans-serif;text-shadow: 0px 0px 5px var(--blue);">邮箱联系</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- 主体部分开始 -->
+            <div class="main">
+                <div class="topclass">读写2-张新祥-重修Unit4</div>
+                <!-- 题型列表开始 --><div class="content Question">
+ <div class="Test">
+  <div class="TestTitle">
+   <div class="title" id="102">
+    短对话8题，总分值：8分
+   </div>
+   <div class="title-decrible">
+    <div class="directs">
+     Directions： In this section, you'll hear some short conversations. At the end of each conversation, one question will be asked. Both the conversation and the question will be spoken only once. After each question, choose the best answer from the four choices marked A, B, C, and D.
+    </div>
+   </div>
+  </div>
+  <div class="Question-Conversation" qid="152459" qtype="102">
+   <span class="answer-video">
+    <div class="play" respath="https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_300/c_2/t_102/201509/d5359369-78cc-4615-a1fc-9ab532544753.mp3">
+     <img class="playImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/play-1.png">
+      <img class="playingImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/playing02-fltrp.gif" style="display:none;"/>
+     </img>
+    </div>
+   </span>
+   <div class="Choice">
+    <div class="nu" id="t1">
+     <span>
+      <b>
+       1)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  He will see his favorite foreign football player.
+       </label>
+       <label>
+        B.  He will play football with a foreign player.
+       </label>
+       <label>
+        C.  He will meet his best friend at the airport.
+       </label>
+       <label>
+        D.  He will play football for the local team.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       1) A
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+     <p>
+      <b>
+       听力文本：
+      </b>
+     </p>
+     <p>
+      <p>
+       W: You’re already up? It’s your day off. And you look excited. What’s going on?
+      </p>
+      <p>
+       M: Oh Mom, you know my favorite German football superstar will join our local team as a foreign player. I will be waiting at the airport with my friends to give him a welcome.
+      </p>
+      <p>
+       Q: Why is the boy so excited?
+      </p>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="152458" qtype="102">
+   <span class="answer-video">
+    <div class="play" respath="https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/t_102/201509/mpakbu_21105735500.mp3">
+     <img class="playImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/play-1.png"/>
+     <img class="playingImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/playing02-fltrp.gif" style="display:none;"/>
+    </div>
+   </span>
+   <div class="Choice">
+    <div class="nu" id="t2">
+     <span>
+      <b>
+       2)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  They are already somewhat successful before talent shows.
+       </label>
+       <label class="green">
+        B.  They have little preparation for too much media attention.
+       </label>
+       <label>
+        C.  They have an open door into the entertainment industry.
+       </label>
+       <label>
+        D.  They are offered more chances to become recognized.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       2) B
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+     <p>
+      <b>
+       听力文本：
+      </b>
+     </p>
+     <p>
+      <p>
+       M: Talent shows offer successful competitors an open door into the entertainment industry, and a chance to become recognized.
+      </p>
+      <p>
+       W: But they are thrust into the public eye with very little warning or preparation, unlike other artists who are already somewhat successful before they have to deal with excessive media attention.
+      </p>
+      <p>
+       Q: What does the woman say about successful competitors in talent shows?
+      </p>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="152457" qtype="102">
+   <span class="answer-video">
+    <div class="play" respath="https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_300/c_2/t_102/201509/ad54937b-ff32-4733-9e6f-41843ad3c4b6.mp3">
+     <img class="playImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/play-1.png"/>
+     <img class="playingImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/playing02-fltrp.gif" style="display:none;"/>
+    </div>
+   </span>
+   <div class="Choice">
+    <div class="nu" id="t3">
+     <span>
+      <b>
+       3)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  He considers it a wise choice.
+       </label>
+       <label class="green">
+        B.  He has mixed feelings about it.
+       </label>
+       <label>
+        C.  He believes it is a great loss for Yao.
+       </label>
+       <label>
+        D.  He thinks Yao should continue to play.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       3) B
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+     <p>
+      <b>
+       听力文本：
+      </b>
+     </p>
+     <p>
+      <p>
+       W: Your favorite NBA star Yao Ming has officially announced his retirement.
+      </p>
+      <p>
+       M: It’s a pity he ended his sports career so early. His leaving is definitely a loss for basketball in China. But if he continues to play, he might suffer worse injuries.
+      </p>
+      <p>
+       Q: How does the man respond to Yao Ming’s retirement?
+      </p>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="152456" qtype="102">
+   <span class="answer-video">
+    <div class="play" respath="https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_300/c_2/t_102/201509/b6a87f98-d3df-41ca-b743-07bfe62a4757.mp3">
+     <img class="playImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/play-1.png"/>
+     <img class="playingImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/playing02-fltrp.gif" style="display:none;"/>
+    </div>
+   </span>
+   <div class="Choice">
+    <div class="nu" id="t4">
+     <span>
+      <b>
+       4)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  She would not take any photo of her baby.
+       </label>
+       <label>
+        B.  She would not give birth to her baby in hospital.
+       </label>
+       <label class="green">
+        C.  She would keep her baby away from the media’s attention.
+       </label>
+       <label>
+        D.  She would not let her information appear in the newspapers.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       4) C
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+     <p>
+      <b>
+       听力文本：
+      </b>
+     </p>
+     <p>
+      <p>
+       M: Dozens of reporters are now gathering outside the hospital where a famous actress is going to give birth to her baby.
+      </p>
+      <p>
+       W: I’m sure the photo and all the detailed information of the poor baby will soon appear in the newspapers. If I were the actress, I wouldn’t do that.
+      </p>
+      <p>
+       Q: What would the woman do if she were the actress?
+      </p>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="152455" qtype="102">
+   <span class="answer-video">
+    <div class="play" respath="https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_300/c_2/t_102/201509/b538e33e-06c1-489a-870c-77d60229bf8b.mp3">
+     <img class="playImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/play-1.png"/>
+     <img class="playingImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/playing02-fltrp.gif" style="display:none;"/>
+    </div>
+   </span>
+   <div class="Choice">
+    <div class="nu" id="t5">
+     <span>
+      <b>
+       5)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  He attaches great importance to fame.
+       </label>
+       <label>
+        B.  He tries hard to live up to his fame.
+       </label>
+       <label class="green">
+        C.  He pays little attention to fame.
+       </label>
+       <label>
+        D.  He has control over his fame.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       5) C
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+     <p>
+      <b>
+       听力文本：
+      </b>
+     </p>
+     <p>
+      <p>
+       W: I know your fame takes up most of your time, so what do you actually think of your fame?
+      </p>
+      <p>
+       M: Fame is not something I have any control over. I try to do what I think I should be doing and don’t pay much attention to what others may say.
+      </p>
+      <p>
+       Q: How does the man look at fame?
+      </p>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="152454" qtype="102">
+   <span class="answer-video">
+    <div class="play" respath="https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_300/c_2/t_102/201509/fe13cdd7-1560-4dc2-85a8-1e007e262f96.mp3">
+     <img class="playImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/play-1.png"/>
+     <img class="playingImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/playing02-fltrp.gif" style="display:none;"/>
+    </div>
+   </span>
+   <div class="Choice">
+    <div class="nu" id="t6">
+     <span>
+      <b>
+       6)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  The Internet reveals true human nature.
+       </label>
+       <label class="green">
+        B.  Some people pursue fame at whatever cost.
+       </label>
+       <label>
+        C.  There are ugly and shameless people in this world.
+       </label>
+       <label>
+        D.  The Internet helps some people gain overnight fame.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       6) B
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+     <p>
+      <b>
+       听力文本：
+      </b>
+     </p>
+     <p>
+      <p>
+       M: Have you noticed nowadays people can make themselves known overnight by using the Internet?
+      </p>
+      <p>
+       W: Yes. It seems that in order to make themselves known some people would use whatever means, even by showing how ugly and shameless they can be.
+      </p>
+      <p>
+       Q: What does the woman mean?
+      </p>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="152453" qtype="102">
+   <span class="answer-video">
+    <div class="play" respath="https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_300/c_2/t_102/201509/3f7dce47-53d3-4db8-8e56-48d3c14cc0f5.mp3">
+     <img class="playImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/play-1.png"/>
+     <img class="playingImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/playing02-fltrp.gif" style="display:none;"/>
+    </div>
+   </span>
+   <div class="Choice">
+    <div class="nu" id="t7">
+     <span>
+      <b>
+       7)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  That Jacky Chan is now aged over 50.
+       </label>
+       <label>
+        B.  That Jacky Chan acts only in action movies.
+       </label>
+       <label>
+        C.  That Jacky Chan gets successful in his 50s.
+       </label>
+       <label class="green">
+        D.  That Jacky Chan performs dangerous movements.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       7) D
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+     <p>
+      <b>
+       听力文本：
+      </b>
+     </p>
+     <p>
+      <p>
+       W: It seems to me that you’re a big fan of Jacky Chan.
+      </p>
+      <p>
+       M: Yes. His action movies are all great successes. You just can’t imagine at the age of over 50, he can still perform such challenging and even dangerous movements without any safety measures.
+      </p>
+      <p>
+       Q: What seems to be surprising for the man?
+      </p>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="152452" qtype="102">
+   <span class="answer-video">
+    <div class="play" respath="https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_300/c_2/t_102/201509/41ebe55b-4aed-4d43-b342-85a35a17f9f5.mp3">
+     <img class="playImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/play-1.png"/>
+     <img class="playingImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/playing02-fltrp.gif" style="display:none;"/>
+    </div>
+   </span>
+   <div class="Choice">
+    <div class="nu" id="t8">
+     <span>
+      <b>
+       8)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  They are not useful because they cannot discover real talents.
+       </label>
+       <label class="green">
+        B.  They are not necessary as there are already a lot of great talents.
+       </label>
+       <label>
+        C.  They are amazing because they provide hope for talented people.
+       </label>
+       <label>
+        D.  They are successful because they have discovered a lot of talents.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       8) B
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+     <p>
+      <b>
+       听力文本：
+      </b>
+     </p>
+     <p>
+      <p>
+       M: Look at all the amazing discoveries in talent shows. Do you think those people would have had a hope of being discovered if it weren’t for these shows?
+      </p>
+      <p>
+       W: Probably not. But do you think it’s really necessary? I mean, there’s already a lot of great stuff out there.
+      </p>
+      <p>
+       Q: What does the woman think of talent shows?
+      </p>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+ </div>
+ <div class="Test">
+  <div class="TestTitle">
+   <div class="title" id="103">
+    长对话8题，总分值：8分
+   </div>
+   <div class="title-decrible">
+    <div class="directs">
+     Directions： In this section, you'll hear some long conversations. At the end of each conversation, some questions will be asked. Both the conversation and the questions will be spoken only once. After each question, choose the best answer from the four choices marked A, B, C, and D.
+    </div>
+   </div>
+  </div>
+  <div class="Question-Conversation" qid="153951" qtype="103">
+   <span class="answer-video">
+    <div class="play" respath="https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_300/c_2/t_103/201509/9d36b40e-36da-4d79-bd6c-a3beb972d005.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_300/c_2/t_103/201509/f0689b97-4f6c-4ffb-b4a2-ff6af721a435.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_300/c_2/t_103/201509/70922bea-3ee5-411b-98ac-257716959cba.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_300/c_2/t_103/201509/640fefde-40eb-460c-bfe4-33775a45e9e3.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_300/c_2/t_103/201509/869e797f-e666-492d-bad1-c6d40b7806e3.mp3">
+     <img class="playImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/play-1.png"/>
+     <img class="playingImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/playing02-fltrp.gif" style="display:none;"/>
+    </div>
+   </span>
+   <div class="Choice">
+    <div class="nu" id="t9">
+     <span>
+      <b>
+       9)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  To try to get some roles in movies.
+       </label>
+       <label>
+        B.  To appear on reality TV programs.
+       </label>
+       <label class="green">
+        C.  To make a popular Internet video.
+       </label>
+       <label>
+        D.  To start appearing in talk shows.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t10">
+     <span>
+      <b>
+       10)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  It is funny.
+       </label>
+       <label>
+        B.  It is crazy.
+       </label>
+       <label>
+        C.  It is boring.
+       </label>
+       <label class="green">
+        D.  It is dangerous.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t11">
+     <span>
+      <b>
+       11)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  Have a cat dance while baking.
+       </label>
+       <label>
+        B.  Film ball room dancing.
+       </label>
+       <label>
+        C.  Bake chocolate cakes.
+       </label>
+       <label>
+        D.  Have a barbecue.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t12">
+     <span>
+      <b>
+       12)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  The dog was born in June.
+       </label>
+       <label>
+        B.  The dog is incredibly lazy.
+       </label>
+       <label class="green">
+        C.  The dog is pretty clever.
+       </label>
+       <label>
+        D.  The dog likes to dance.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      9) C      10) D      11) A      12) C
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <div>
+      <pre>（无）</pre>
+     </div>
+     <p>
+      <b>
+       听力文本：
+      </b>
+     </p>
+     <p>
+      <p style="text-align:justify">
+       M: Hey, did you see that fun video of the orange cat riding on the back of the dog?
+      </p>
+      <p style="text-align:justify">
+       W: Yeah, that was funny! It got a million hits in three days!
+      </p>
+      <p style="text-align:justify">
+       M: You know, that’s what we need to do to finally get famous – make a popular video! If we’re watched enough, we can start appearing on talk shows, and then reality TV, and then maybe get a few movie roles. It’s the perfect plan!
+      </p>
+      <p style="text-align:justify">
+       W: Alright, let’s do something with sports, people love sports! We could skateboard off a house onto a pile of old cushions! And there’s always the opportunity to get hurt, which is always funny in videos.
+      </p>
+      <p style="text-align:justify">
+       M: No! You’re crazy! We are NOT hurting ourselves for an Internet video! NO WAY! Think of something else! What else do people like to see?
+      </p>
+      <p style="text-align:justify">
+       W: Well, there are always cats…. OR cooking shows with hmm barbecues and chocolate cake. I have a great recipe for chocolate cake. OR Let’s see... ball room dancing is really popular right now too… and….
+      </p>
+      <p style="text-align:justify">
+       M: Wait! Wait! I’ve got it! We’ll do something truly unique: 3 ideas in one! We’ll teach a cat to dance while baking a chocolate cake. We can call it: The Dancing Cat Chef. He’s Perrrrrfect~
+      </p>
+      <p style="text-align:justify">
+       W: Come on! We can’t teach a cat to bake or dance…Though we might be able to teach my dog June to pretend to dance … she’s pretty smart … except she only sits and howls like a train when I play music.
+      </p>
+      <p style="text-align:justify">
+       M: Fine, I guess my cat, Trudie, won’t work either. She’s incredibly lazy. All she ever really wants to do is sit around and eat cans of fish.
+      </p>
+      <p>
+       <br/>
+       <p>
+        According to the man, what is the first step to be famous?
+       </p>
+       <p>
+        What does the man think of the idea of skateboarding onto cushions?
+       </p>
+       <p>
+        What does the man suggest they do?
+       </p>
+       <p>
+        What does the woman say about her dog?
+       </p>
+      </p>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="153952" qtype="103">
+   <span class="answer-video">
+    <div class="play" respath="https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_300/c_2/t_103/201509/59a4e8da-aed1-43f9-be7f-51449e2e5aba.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_300/c_2/t_103/201509/54cf029a-b6e9-482c-bbf1-5e4835cf6819.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_300/c_2/t_103/201509/d7f88530-f50d-4d17-a12b-b9c767e16242.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_300/c_2/t_103/201509/488c62fd-66c2-42e8-a2e2-bd04c6de6220.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_300/c_2/t_103/201509/2a1e8644-1f19-41f5-9e7e-bda5a240154c.mp3">
+     <img class="playImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/play-1.png"/>
+     <img class="playingImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/playing02-fltrp.gif" style="display:none;"/>
+    </div>
+   </span>
+   <div class="Choice">
+    <div class="nu" id="t13">
+     <span>
+      <b>
+       13)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  Because she is fascinated with the wedding.
+       </label>
+       <label>
+        B.  Because she greatly admires the beautiful bride.
+       </label>
+       <label>
+        C.  Because she is attracted by the charm of the prince.
+       </label>
+       <label>
+        D.  Because she appreciates becoming famous suddenly.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t14">
+     <span>
+      <b>
+       14)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  The bride had her personal details under control.
+       </label>
+       <label>
+        B.  The bride dreamed of getting married in a garden.
+       </label>
+       <label>
+        C.  The bride preferred a small family-only ceremony.
+       </label>
+       <label class="green">
+        D.  The bride experienced much pressure at the wedding.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t15">
+     <span>
+      <b>
+       15)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  She is proud of marrying into the royal family.
+       </label>
+       <label>
+        B.  She has gradually faded out of the public eye.
+       </label>
+       <label class="green">
+        C.  She’s become an international fashion symbol.
+       </label>
+       <label>
+        D.  She is good at handling family relationships.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t16">
+     <span>
+      <b>
+       16)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  She has a long-sleeved wedding dress.
+       </label>
+       <label>
+        B.  She has red flowers on her wedding dress.
+       </label>
+       <label>
+        C.  She has long leaves on her wedding dress.
+       </label>
+       <label>
+        D.  She has small flowers on her wedding dress.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      13) A      14) D      15) C      16) A
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <div>
+      <pre>（无）</pre>
+     </div>
+     <p>
+      <b>
+       听力文本：
+      </b>
+     </p>
+     <p>
+      <p style="text-align: justify;">
+       W: I just watched the video again… it’s so romantic.
+      </p>
+      <p style="text-align: justify;">
+       M: Not that famous royal wedding again. When are you going to get over that? It happened so long ago!
+      </p>
+      <p style="text-align: justify;">
+       W: I know, but it was so beautiful, a woman marrying her charming prince!
+      </p>
+      <p style="text-align: justify;">
+       M: Can you imagine suddenly becoming famous just by marrying the man you love?
+      </p>
+      <p style="text-align: justify;">
+       W: It’s true - that it would be a lot of pressure, becoming known all across the world like that.
+      </p>
+      <p style="text-align: justify;">
+       M: At least she knew what she was getting into though, and she got to choose to go ahead with it.
+      </p>
+      <p style="text-align: justify;">
+       W: I always wondered what personal details she wanted at her wedding that were out of her control. What if she’d always dreamed of getting married in a garden, or she wanted a small family-only ceremony? Can you imagine something so personal being broadcast around the world?
+      </p>
+      <p style="text-align: justify;">
+       M: Yeah! There were only 2,600 people in the church - but over 2 billion - 2 billion people watched the wedding around the world. Imagine the pressure!
+      </p>
+      <p style="text-align: justify;">
+       W: Yeah! And she’s never been out of the public eye since.
+      </p>
+      <p style="text-align: justify;">
+       M: But she seems to be handling it well, she’s made the royal family proud of her so far– and she’s an international fashion symbol. One of my friends Mary is even getting married in a dress modeled after her wedding gown, but with long sleeves and white flowers. Mary’s having the wedding in a garden though.
+      </p>
+      <p style="text-align: justify;">
+       W: That’s what I am dreaming of, so dearly!
+      </p>
+      <p style="text-align: justify;">
+       M: I’m looking forward to the day when you are the focus of fashion!
+      </p>
+      <div style="text-align: justify;">
+       New words:
+      </div>
+      <p style="text-align: justify;">
+       royal a. 王室的
+      </p>
+      <p>
+       <br/>
+       <p>
+        Why does the woman watch the video again and again?
+       </p>
+       <p>
+        What did the woman say about the bride?
+       </p>
+       <p>
+        How is the bride after the wedding?
+       </p>
+       <p>
+        What kind of wedding dress does Mary have?
+       </p>
+      </p>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+ </div>
+ <div class="Test">
+  <div class="TestTitle">
+   <div class="title" id="308">
+    长文章4题，总分值：4分
+   </div>
+   <div class="title-decrible">
+    <div class="directs">
+     Directions： In this section, you’ll hear some passages. At the end of each passage, you'll hear some questions. Both the passage and the questions will be spoken only once. After each question, choose the best answer from the four choices marked A, B, C, and D.
+    </div>
+   </div>
+  </div>
+  <div class="Question-Conversation" qid="153953" qtype="308">
+   <span class="answer-video">
+    <div class="play" respath="https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_300/c_2/t_301/201509/e71cd66f-efe2-498e-afdd-bfd9ff667f11.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_300/c_2/t_301/201509/6b10c639-6977-4c5a-8ac7-cce128823622.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_300/c_2/t_301/201509/2cc1264d-c971-4198-9c3f-469bc881df04.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_300/c_2/t_301/201509/4a9ad820-bf90-44c5-8b7a-a0f85cd8103c.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_300/c_2/t_301/201509/0a062d87-3eb3-4ac9-94b3-c8c771972319.mp3">
+     <img class="playImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/play-1.png"/>
+     <img class="playingImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/playing02-fltrp.gif" style="display:none;"/>
+    </div>
+   </span>
+   <div class="Choice">
+    <div class="nu" id="t17">
+     <span>
+      <b>
+       17)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  He sees fame as becoming wealthy.
+       </label>
+       <label>
+        B.  He sees fame as becoming a rock star.
+       </label>
+       <label class="green">
+        C.  He sees fame as succeeding in what you do.
+       </label>
+       <label>
+        D.  He sees fame as becoming a professional athlete.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t18">
+     <span>
+      <b>
+       18)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  Fame comes without time and effort.
+       </label>
+       <label>
+        B.  Fame needs you to do more than you can.
+       </label>
+       <label>
+        C.  Fame does not come with your dream job.
+       </label>
+       <label class="green">
+        D.  Fame does not always come with hard work.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t19">
+     <span>
+      <b>
+       19)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  His father could make the best out of the situation he was in.
+       </label>
+       <label>
+        B.  His father could be always smiling even in bad mood.
+       </label>
+       <label>
+        C.  His father could light up the room he walks into.
+       </label>
+       <label>
+        D.  His father could get to know everyone he meets.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t20">
+     <span>
+      <b>
+       20)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  Those who smile at ordinary people.
+       </label>
+       <label>
+        B.  Those who can cope with bad mood.
+       </label>
+       <label>
+        C.  Those who often appear on television.
+       </label>
+       <label class="green">
+        D.  Those who have a good effect on others.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      17) C      18) D      19) A      20) D
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <div>
+      <pre>（无）</pre>
+     </div>
+     <p>
+      <b>
+       听力文本：
+      </b>
+     </p>
+     <p>
+      <p style="text-align:justify">
+       There are many perceptions of fame. Some may see fame as being a rock star, or a professional athlete, but some may have the same perceptions as me, and see fame as succeeding in what you do, being healthy, having a family, and loving what you do to make a living. Fame to me also means going to college, and continuing to learn throughout the rest of your life. You need to learn things all the time, and if you do not, then you cannot be the best you can be.
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       Fame does not come without the time, effort, and hard work put into everything that you do. Working hard does not always mean fame though. If you work hard and do not love what you are doing, then you are not fulfilling your fame, and you have not found your dream job. You need to push yourself to succeed in everything you do, you can always work a little bit harder, and there is always something more you can do.
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       I see my dad as being the most famous person I have ever known. He was the guy that everyone wanted to know, because when he walked into a room, he just lit the room right up with his smile, and he could do this because no matter what mood he was in, he was always smiling, and making the best out of the situation he was given. This is why I believe that you don’t need to be on television to be famous, you can just be an ordinary person, but if you have a good effect on the people around you and your community, then you are famous to me.
+      </p>
+      <p>
+       <br/>
+       <p>
+        What does fame mean to the speaker?
+       </p>
+       <p>
+        What does the speaker believe about fame?
+       </p>
+       <p>
+        Why does the speaker think his father is famous?
+       </p>
+       <p>
+        What kind of people are famous according to the speaker?
+       </p>
+      </p>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+ </div>
+ <div class="Test">
+  <div class="TestTitle">
+   <div class="title" id="107">
+    长篇阅读10题，总分值：10分
+   </div>
+   <div class="title-decrible">
+    <div class="directs">
+     Directions： You are going to read a passage with 10 statements attached to it. Each statement contains information given in one of the paragraphs. Identify the paragraph from which the information is derived. You may choose a paragraph more than once. Each paragraph is marked with a letter.
+    </div>
+   </div>
+  </div>
+  <div class="Question-Conversation" qid="1000013" qtype="107">
+   <div class="Choice">
+    <div class="padding">
+     <p>
+      <div style="text-align:center">
+       <b>
+        The Attack of the MOOCs
+       </b>
+      </div>
+      <div style="text-align:justify">
+       <br/>
+       An army of new online courses is scaring the wits out of traditional universities. But can they find a feasible business model?
+       <br/>
+       <br/>
+       A) Dotcom mania was slow in coming to higher education, but now it has the impressive industry firmly in its grip. Since the launch early last year of Udacity and Coursera, two Silicon Valley start-ups offering free education through MOOCs, massive open online courses, the ivory towers of academia have been shaken to their foundations. University brands built in some cases over centuries have been forced to consider the possibility that information technology will rapidly make their existing business model obsolete (过时的). Meanwhile, the MOOCs have multiplied in number, resources and student recruitment – without yet having figured out a business model of their own.
+       <br/>
+       <br/>
+       B) Besides providing online courses to their own (generally fee-paying) students, universities have felt obliged to join the MOOC revolution to avoid being guillotined by it. Coursera has formed partnerships with 83 universities and colleges around the world, including many of America’s top-tier institutions.
+       <br/>
+       <br/>
+       C) EdX, a non-profit MOOC provider founded in May 2012 by Harvard University and the Massachusetts Institute of Technology and backed with $60 million of their money, is now a consortium (联盟) of 28 institutions, the most recent joiner being the Indian Institute of Technology in Mumbai. Led by the Open University, which pioneered distance learning in the 1970s, FutureLearn, a consortium of 21 British, one Irish and one Australian university, plus other educational bodies, will start offering MOOCs later this year. But Oxford and Cambridge remain indifferent and distant, refusing to join what a senior Oxford figure fears may be a “lemming-like rush” into MOOCs.
+       <br/>
+       <br/>
+       D) On July 10th Coursera said it had raised another $43 million in venture capital, on top of the $22 million it banked last year. Although its enrollments have soared, and now exceed 4 million students, this is a huge leap of faith by investors that the firm can develop a feasible business model. The new money should allow Coursera to build on any advantage it has from being a first mover among a rapidly growing number of MOOC providers. “It is somewhat entertaining to watch the number of people jumping on board,” says Daphne Koller, a Stanford professor and co-founder of Coursera. She expects it to become one of a “very small number of dominant players”.
+       <br/>
+       <br/>
+       E) The industry has similar network economics to Amazon, eBay and Google, says Ms. Koller, in that “content producers go to where most consumers are, and consumers go to where the most content is.” Simon Nelson, the chief executive of FutureLearn, disagrees. “Anyone who thinks the rules of engagement have already been written by the existing players is massively underestimating the potential of the technology,” he says.
+       <br/>
+       <br/>
+       F) Certainly, there is plenty of experimentation with business models taking place. The MOOCs themselves may be free, but those behind them think there will be plenty of revenue (收入) opportunities. Coursera has started charging to provide certificates for those who complete its courses and want proof, perhaps for a future employer. It is also starting to license course materials to universities that want to beef up their existing offering. However, it has abandoned for now attempts to help firms recruit employees from among Coursera’s students, because catering to the different needs of each employer was “not a scalable model”, says Ms. Koller.
+       <br/>
+       <br/>
+       G) For Udacity, in contrast, working with companies to train existing and future employees is now the heart of its business model. It has tie-ups with several firms, including Google. It recently formed a partnership with AT&amp;T, along with Georgia Tech, to offer a master’s degree in computer science. Course materials will be free, but students will pay around $7,000 for tuition. EdX is taking yet another tack, selling its MOOC technology to universities like Stanford, both to create their own MOOC offerings and to make physically attending university more attractive, by expanding existing teaching.
+       <br/>
+       <br/>
+       H) Alison, an Irish provider of free, mostly vocational education founded in 2007, before MOOCs got their name, is generating plenty of revenue by selling advertising on its site. “Ads propelled radio and TV, why not education? There is a lot of misplaced snobbery in education about advertising,” says Mike Feerick, Alison’s founder.
+       <br/>
+       <br/>
+       I) Another important category of MOOC providers are publishers, says Rob Lytle of the Parthenon Group, a consultancy. He says firms like Pearson (part-owner of
+       <i>
+        The Economist
+       </i>
+       ) that run educational businesses such as textbook-publishing may thrive by offering free MOOCs as a way to get people to buy their related paid content.
+       <br/>
+       <br/>
+       J) Besides the uncertainty over which business model, if any, will produce profits, there is disagreement over how big the market will be. Some see a zero- or negative-sum game, in which cheap online providers radically reduce the cost of higher education and drive many traditional institutions to the wall. Others believe this effect will be dwarfed by the dramatic increase in access to higher education that the MOOCs will bring.
+       <br/>
+       <br/>
+       K) Mr. Feerick predicts that the market will be commoditised, spelling trouble for many institutions. But Anant Agarwal, the boss of EdX, reckons the MOOC providers will be more like online airline-booking services, expanding the market by improving the customer experience. Sebastian Thrun, Udacity’s co-founder, thinks the effect will be similar in magnitude to what the creation of cinema did to demand for staged fiction: He predicts a tenfold increase in the market for higher education.
+       <br/>
+       <br/>
+       L) Sceptics point to the MOOCs’ high drop-out rates, which in some cases exceed 90 percent. But Coursera and Udacity both insist that this reflects the different expectations of consumers of free products, who can browse costlessly. Both firms have now studied drop-out rates for those students who start with the stated intention of finishing, and found that the vast majority of them complete the courses.
+       <br/>
+       <br/>
+       M) Besides LearnCapital, a Silicon Valley venture firm, and the World Bank’s International Finance Corporation, the participants in Coursera’s $43 million fund-raising included Laureate, an operator of for-profit universities. Doug Becker, its boss, reckons that many established universities will soon offer credits toward their degrees for those who complete MOOCs. He thinks this will drive a dramatic reduction in the price of a traditional higher education, which will reduce the total revenues of existing providers by far more than the revenue gained by the start-ups. Still, if MOOCs reduce the cost of higher education by one-third, as he predicts, yet only earn for themselves one percent of that benefit, that would “still be a very nice business,” he says.
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t21">
+     <span>
+      <b>
+       21)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      The MOOC providers are experimenting with the business model as they’re still looking for the opportunities to get income besides offering free courses.
+      <span class="blankinput" type="text">
+       F
+      </span>
+     </p>
+    </div>
+    <div class="nu" id="t22">
+     <span>
+      <b>
+       22)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Many universities feel it necessary to introduce MOOCs for fear of being eliminated although they are already providing their students with online courses.
+      <span class="blankinput" type="text">
+       B
+      </span>
+     </p>
+    </div>
+    <div class="nu" id="t23">
+     <span>
+      <b>
+       23)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Coursera and Udacity believe that high drop-out rates suggested that consumers have different expectations of taking free courses.
+      <span class="blankinput" type="text">
+       L
+      </span>
+     </p>
+    </div>
+    <div class="nu" id="t24">
+     <span>
+      <b>
+       24)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      According to a Stanford professor, MOOCs are provided by using similar economic method as other internet-based business service.
+      <span class="blankinput" type="text">
+       E
+      </span>
+     </p>
+    </div>
+    <div class="nu" id="t25">
+     <span>
+      <b>
+       25)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      The business model of Udacity is to train employees for companies, while that of EdX is to sell its MOOC technology to universities.
+      <span class="blankinput" type="text">
+       G
+      </span>
+     </p>
+    </div>
+    <div class="nu" id="t26">
+     <span>
+      <b>
+       26)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Offering free MOOCs may contribute to the development and prosperity of some publishing corporations like Pearson.
+      <span class="blankinput" type="text">
+       I
+      </span>
+     </p>
+    </div>
+    <div class="nu" id="t27">
+     <span>
+      <b>
+       27)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      The introduction of MOOCs has threatened the traditional higher education.
+      <span class="blankinput" type="text">
+       A
+      </span>
+     </p>
+    </div>
+    <div class="nu" id="t28">
+     <span>
+      <b>
+       28)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Like Cousera and EdX, FutureLearn has formed partnerships with more than 23 universities and educational institutions around the world.
+      <span class="blankinput" type="text">
+       C
+      </span>
+     </p>
+    </div>
+    <div class="nu" id="t29">
+     <span>
+      <b>
+       29)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      The boss of Laureate thinks that MOOCs will greatly reduce the cost of traditional higher education.
+      <span class="blankinput" type="text">
+       M
+      </span>
+     </p>
+    </div>
+    <div class="nu" id="t30">
+     <span>
+      <b>
+       30)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      As for the market of MOOC technology, some founders are worried about the influence it brings to higher education while others are positive about it.
+      <span class="blankinput" type="text">
+       K
+      </span>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      21) F      22) B      23) L      24) E      25) G      26) I      27) A      28) C      29) M      30) K
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <div>
+      <pre>（无）</pre>
+     </div>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+ </div>
+ <div class="Test">
+  <div class="TestTitle">
+   <div class="title" id="152">
+    阅读理解10题，总分值：30分
+   </div>
+   <div class="title-decrible">
+    <div class="directs">
+     Directions： Read the following passages carefully. Each passage is followed by some questions or unfinished sentences. For each of them there are four choices marked A, B, C, and D. Choose the best answer to each question.
+    </div>
+   </div>
+  </div>
+  <div class="Question-Conversation" qid="152594" qtype="152">
+   <div class="Choice">
+    <div class="padding">
+     <p>
+      <p style="text-align:justify">
+       Can you imagine life without French fries? Potatoes are very popular today. They are the fourth most important crop in the world, after wheat, rice, and corn. But in the past, potatoes were not always popular. People in Europe started to eat them only 200 years ago!
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       In the 1500s, the Spanish went to South America to look for gold. There, they found people eating potatoes for 7000 years! The Spanish brought the potato back to Europe with them. But people in Europe did not like this strange vegetable. Some people thought that if you ate potatoes, your skin would look like the skin of a potato. Other people could not believe that you ate the underground part of the plant, so they ate the leaves instead. This made them sick because there is poison in the leaves. Others grew potatoes for their flowers. At one time in France, potato flowers were one of the most expensive flowers.
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       Around 1780, the people of Ireland started to eat potatoes. They found that potatoes had many advantages. The potato grew on poor land, and it grew well in their cold and rainy climate. It gave more food than any other plant, and it needed little work. All they had to do was to plant the potatoes, and then they could do other work on the farm. On a small piece of land, a farmer could grow enough potatoes to feed his family. A person could eat eight to ten pounds of potatoes a day, with some milk or cheese, and be very healthy. Soon, potatoes became the main food in Ireland. In 1845, a disease killed all the potatoes in Ireland. Two million people died of hunger. Many Irish who did not die came to the United States at this time.
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       In other parts of Europe, people did not want to change their old food habits. Some preferred to die of hunger rather than eat potatoes. Today, many countries have their own potato dishes. Germans eat potato salad, the United States has the baked potato, and the French invented French fries.
+      </p>
+     </p>
+    </div>
+    <div class="nu" id="t31">
+     <span>
+      <b>
+       31)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Which statement is true?
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  Potatoes are only popular in France.
+       </label>
+       <label>
+        B.  Potatoes are not very popular today.
+       </label>
+       <label>
+        C.  Potatoes are the most important crop in the world.
+       </label>
+       <label class="green">
+        D.  Potatoes were not very popular in the past.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t32">
+     <span>
+      <b>
+       32)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      In the 1500s, people in Europe ________.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  found gold and potatoes from Peru
+       </label>
+       <label>
+        B.  found potatoes could harm people’s skin
+       </label>
+       <label class="green">
+        C.  found potatoes were strange vegetables
+       </label>
+       <label>
+        D.  found potatoes and invented French fries
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t33">
+     <span>
+      <b>
+       33)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Only in about 1780 did people start to ________.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  grow potatoes for their flowers
+       </label>
+       <label>
+        B.  go to Peru to look for gold
+       </label>
+       <label class="green">
+        C.  eat potatoes in Ireland
+       </label>
+       <label>
+        D.  eat eight to ten pounds of potatoes a day
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t34">
+     <span>
+      <b>
+       34)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      What is one of the advantages of potatoes?
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  They grow well in cold and dry weather.
+       </label>
+       <label class="green">
+        B.  They have higher productivity compared with others.
+       </label>
+       <label>
+        C.  They can be grown with other plants.
+       </label>
+       <label>
+        D.  They can be eaten along with milk or cheese.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t35">
+     <span>
+      <b>
+       35)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      What statement best illustrates the main idea of the passage?
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  How potatoes become popular.
+       </label>
+       <label>
+        B.  Why potatoes are a good vegetable.
+       </label>
+       <label>
+        C.  Why potatoes are healthy and tasty.
+       </label>
+       <label>
+        D.  How potatoes have been consumed.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      31) D      32) C      33) C      34) B      35) A
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <div>
+      <pre>（无）</pre>
+     </div>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="152592" qtype="152">
+   <div class="Choice">
+    <div class="padding">
+     <p>
+      <p style="text-align:justify">
+       For any tourist visiting Egypt, there are two things that everyone must see. The first is the 137-meter-high Great Pyramid of Giza (吉萨大金字塔), the largest of all the pyramids in Egypt. The second is the Great Sphinx of Giza (吉萨大狮身人面像), a sculpture with the body of lion and the head of a man, which stands 20 meters tall and 73 meters long.
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       The origin of the Great Sphinx of Giza goes back 5,000 years. Although many sphinx sculptures have been found over the years, researchers believe that the Great Sphinx which guards the pyramids in Giza was actually the first one to be made (around 2600-2500 B.C.). The head of the Sphinx represents the king of Egypt at that time. About 2,000 years later, around 570 B.C., sand had covered all but the head of the Great Sphinx. The people living in the area had forgotten the history of the statue, so they imagined that the head represented the sun god and began to worship it.
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       For hundreds of years, the Sphinx attracted people both as a religious monument and as a work of art. But eventually, the desert sand once again covered the Sphinx, leaving only the head visible. It was not until the 1800s that archaeologists (考古学家) began clearing the sand from the statue and began researching the long history of the Sphinx. At last, in the 1920s, all of the sand was finally cleared away and restoration work, which continues to this day, was begun.
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       The name “sphinx” comes from an ancient Greek word. According to Greek legend, the Sphinx was an evil creature with the body of a lion and the head of a woman. She sat beside a road and asked all people who passed her a riddle (谜语): “Which animal in the morning goes on four feet, at noon on two, and on three in the evening?” She killed anyone who couldn’t make sense of the question. The riddle was finally solved by the Greek king. The Sphinx then threw herself from her high rock and died.
+      </p>
+     </p>
+    </div>
+    <div class="nu" id="t36">
+     <span>
+      <b>
+       36)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      What does the first paragraph want to tell us?
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  There are many places of interest in Egypt.
+       </label>
+       <label class="green">
+        B.  There are two main tourist attractions in Egypt.
+       </label>
+       <label>
+        C.  The Great Pyramid of Giza is what you want to see.
+       </label>
+       <label>
+        D.  the Great Sphinx of Giza is more interesting to see.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t37">
+     <span>
+      <b>
+       37)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      What’s the purpose for building the Great Sphinx?
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  To let people in Egypt worship the sun god.
+       </label>
+       <label>
+        B.  To represent the king of Egypt at that time.
+       </label>
+       <label>
+        C.  To remind people of the glory of ancient Egypt.
+       </label>
+       <label class="green">
+        D.  To safeguard the pyramids in Giza in Egypt.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t38">
+     <span>
+      <b>
+       38)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Why did the archaeologists have to begin the restoration work?
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  The Great Sphinx had been destroyed by desert sand.
+       </label>
+       <label>
+        B.  They wanted to research on an ancient Greek legend.
+       </label>
+       <label>
+        C.  They wanted to research on the history of the Sphinx.
+       </label>
+       <label>
+        D.  It was as a religious monument and as a work of art.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t39">
+     <span>
+      <b>
+       39)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      According to the legend, how did the Sphinx die?
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  The king killed her.
+       </label>
+       <label>
+        B.  She died of old age.
+       </label>
+       <label class="green">
+        C.  She killed herself.
+       </label>
+       <label>
+        D.  She was killed incidentally.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t40">
+     <span>
+      <b>
+       40)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      What is this passage mainly about?
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  How the Great Sphinx is being restored.
+       </label>
+       <label class="green">
+        B.  The history of the Great Sphinx.
+       </label>
+       <label>
+        C.  The history of the Egyptian tourism.
+       </label>
+       <label>
+        D.  The great monuments of Egypt.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      36) B      37) D      38) A      39) C      40) B
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <div>
+      <pre>（无）</pre>
+     </div>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+ </div>
+ <div class="Test">
+  <div class="TestTitle">
+   <div class="title" id="112">
+    完型填空20题，总分值：20分
+   </div>
+   <div class="title-decrible">
+    <div class="directs">
+     Directions： There are some blanks in the following passage. For each blank there are four choices marked A, B, C and D. You should choose the ONE that best fits into the passage.
+    </div>
+   </div>
+  </div>
+  <div class="Question-Conversation" qid="152589" qtype="112">
+   <div class="Choice">
+    <div class="padding">
+     <p>
+      <p style="text-align:justify">
+       Every culture in the world has marriage and wedding ceremonies. Usually marriages between one woman and one man are
+       <b>
+        41)
+       </b>
+       <span class="blankinput" type="text">
+        approved
+       </span>
+       by many cultures. In other parts of the world a man,
+       <b>
+        42)
+       </b>
+       <span class="blankinput" type="text">
+        however
+       </span>
+       , may have several wives, or a wife may have more than one husband, a(n)
+       <b>
+        43)
+       </b>
+       <span class="blankinput" type="text">
+        phenomenon
+       </span>
+       which is very interesting and somewhat amazing about culture.
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       <b>
+        44)
+       </b>
+       <span class="blankinput" type="text">
+        Furthermore
+       </span>
+       , there are many different kinds of wedding ceremonies that are nicely
+       <b>
+        45)
+       </b>
+       <span class="blankinput" type="text">
+        coordinated
+       </span>
+       and practiced around the world. These ceremonies can be very short and simple, or very long and
+       <b>
+        46)
+       </b>
+       <span class="blankinput" type="text">
+        complicated
+       </span>
+       , but they are usually superb. One of the largest and most
+       <b>
+        47)
+       </b>
+       <span class="blankinput" type="text">
+        expensive
+       </span>
+       wedding ceremonies in recent times was held in Dubai (迪拜) in 1981. The 7-day long wedding ceremony included many
+       <b>
+        48)
+       </b>
+       <span class="blankinput" type="text">
+        components
+       </span>
+       and cost $44 million. It was held in a large building which was
+       <b>
+        49)
+       </b>
+       <span class="blankinput" type="text">
+        specially
+       </span>
+       built for the ceremony and looked like a stadium.
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       <b>
+        50)
+       </b>
+       <span class="blankinput" type="text">
+        Nevertheless
+       </span>
+       , the reasons why a man and woman get married may vary. Occasionally they marry because they are in love,
+       <b>
+        51)
+       </b>
+       <span class="blankinput" type="text">
+        sometimes
+       </span>
+       they marry someone through friends on their
+       <b>
+        52)
+       </b>
+       <span class="blankinput" type="text">
+        behalf
+       </span>
+       , and sometimes they marry because their parents tell them that they must marry. One weird example of a(n)
+       <b>
+        53)
+       </b>
+       <span class="blankinput" type="text">
+        arranged
+       </span>
+       marriage took place in Bangladesh (孟加拉国) in 1986. Many people were
+       <b>
+        54)
+       </b>
+       <span class="blankinput" type="text">
+        exceedingly
+       </span>
+       shocked, the groom was an eleven-month-old boy and the bride was a three-month-old girl. They were
+       <b>
+        55)
+       </b>
+       <span class="blankinput" type="text">
+        consequently
+       </span>
+       the youngest married couple ever.
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       What was it all about? The
+       <b>
+        56)
+       </b>
+       <span class="blankinput" type="text">
+        preliminary
+       </span>
+       reason was that the parents of the bride and groom
+       <b>
+        57)
+       </b>
+       <span class="blankinput" type="text">
+        proposed
+       </span>
+       the marriage trying to end a fight between the two families who had been arguing over a farm for twenty years. Both
+       <b>
+        58)
+       </b>
+       <span class="blankinput" type="text">
+        denied
+       </span>
+       that the other family owned the farm, but no one knew exactly. The fight ended for
+       <b>
+        59)
+       </b>
+       <span class="blankinput" type="text">
+        good
+       </span>
+       when the little boy married the little girl at the wedding. With approval of this marriage,
+       <b>
+        60)
+       </b>
+       <span class="blankinput" type="text">
+        neither
+       </span>
+       family was forced to lose face. The two families agreed to give the farm to the little couple.
+      </p>
+     </p>
+    </div>
+    <div class="nu" id="t41">
+     <span>
+      <b>
+       41)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  admired
+       </label>
+       <label>
+        B.  praised
+       </label>
+       <label class="green">
+        C.  approved
+       </label>
+       <label>
+        D.  respected
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t42">
+     <span>
+      <b>
+       42)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  however
+       </label>
+       <label>
+        B.  whoever
+       </label>
+       <label>
+        C.  whatever
+       </label>
+       <label>
+        D.  forever
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t43">
+     <span>
+      <b>
+       43)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  occurrence
+       </label>
+       <label class="green">
+        B.  phenomenon
+       </label>
+       <label>
+        C.  incident
+       </label>
+       <label>
+        D.  event
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t44">
+     <span>
+      <b>
+       44)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  Together with
+       </label>
+       <label>
+        B.  Apart from
+       </label>
+       <label>
+        C.  Further
+       </label>
+       <label class="green">
+        D.  Furthermore
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t45">
+     <span>
+      <b>
+       45)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  sophisticated
+       </label>
+       <label class="green">
+        B.  coordinated
+       </label>
+       <label>
+        C.  fascinated
+       </label>
+       <label>
+        D.  illustrated
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t46">
+     <span>
+      <b>
+       46)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  complicated
+       </label>
+       <label>
+        B.  stimulated
+       </label>
+       <label>
+        C.  accelerated
+       </label>
+       <label>
+        D.  negotiated
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t47">
+     <span>
+      <b>
+       47)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  excessive
+       </label>
+       <label>
+        B.  competitive
+       </label>
+       <label class="green">
+        C.  expensive
+       </label>
+       <label>
+        D.  comprehensive
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t48">
+     <span>
+      <b>
+       48)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  pieces
+       </label>
+       <label>
+        B.  aspects
+       </label>
+       <label>
+        C.  factors
+       </label>
+       <label class="green">
+        D.  components
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t49">
+     <span>
+      <b>
+       49)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  specially
+       </label>
+       <label>
+        B.  especially
+       </label>
+       <label>
+        C.  financially
+       </label>
+       <label>
+        D.  officially
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t50">
+     <span>
+      <b>
+       50)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  Despite that
+       </label>
+       <label>
+        B.  In addition
+       </label>
+       <label class="green">
+        C.  Nevertheless
+       </label>
+       <label>
+        D.  Regardless
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t51">
+     <span>
+      <b>
+       51)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  some times
+       </label>
+       <label class="green">
+        B.  sometimes
+       </label>
+       <label>
+        C.  some time
+       </label>
+       <label>
+        D.  sometime
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t52">
+     <span>
+      <b>
+       52)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  behalf
+       </label>
+       <label>
+        B.  account
+       </label>
+       <label>
+        C.  purpose
+       </label>
+       <label>
+        D.  concern
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t53">
+     <span>
+      <b>
+       53)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  pledged
+       </label>
+       <label>
+        B.  obliged
+       </label>
+       <label>
+        C.  engaged
+       </label>
+       <label class="green">
+        D.  arranged
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t54">
+     <span>
+      <b>
+       54)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  fascinatingly
+       </label>
+       <label>
+        B.  demandingly
+       </label>
+       <label class="green">
+        C.  exceedingly
+       </label>
+       <label>
+        D.  outstandingly
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t55">
+     <span>
+      <b>
+       55)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  consequently
+       </label>
+       <label>
+        B.  consistently
+       </label>
+       <label>
+        C.  potentially
+       </label>
+       <label>
+        D.  confidently
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t56">
+     <span>
+      <b>
+       56)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  primary
+       </label>
+       <label class="green">
+        B.  preliminary
+       </label>
+       <label>
+        C.  extraordinary
+       </label>
+       <label>
+        D.  imaginary
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t57">
+     <span>
+      <b>
+       57)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  posed
+       </label>
+       <label>
+        B.  supposed
+       </label>
+       <label class="green">
+        C.  proposed
+       </label>
+       <label>
+        D.  exposed
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t58">
+     <span>
+      <b>
+       58)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  denied
+       </label>
+       <label>
+        B.  disagreed
+       </label>
+       <label>
+        C.  refused
+       </label>
+       <label>
+        D.  forbade
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t59">
+     <span>
+      <b>
+       59)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  nothing
+       </label>
+       <label>
+        B.  best
+       </label>
+       <label>
+        C.  better
+       </label>
+       <label class="green">
+        D.  good
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t60">
+     <span>
+      <b>
+       60)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  nor
+       </label>
+       <label class="green">
+        B.  neither
+       </label>
+       <label>
+        C.  either
+       </label>
+       <label>
+        D.  none
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      41) C      42) A      43) B      44) D      45) B      46) A      47) C      48) D      49) A      50) C      51) B      52) A      53) D      54) C      55) A      56) B      57) C      58) A      59) D      60) B
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <div>
+      <pre>（无）</pre>
+     </div>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+ </div>
+ <div class="Test">
+  <div class="TestTitle">
+   <div class="title" id="305">
+    词汇与结构20题，总分值：20分
+   </div>
+   <div class="title-decrible">
+    <div class="directs">
+     Directions： For each of the following sentences there are four choices marked A, B, C and D. Choose the best one to complete each sentence.
+    </div>
+   </div>
+  </div>
+  <div class="Question-Conversation" qid="152513" qtype="305">
+   <div class="Choice">
+    <div class="nu" id="t61">
+     <span>
+      <b>
+       61)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      ________ the valuable and timely help from their group, we would never have succeeded in our project, which was challenging and time-consuming.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  Besides
+       </label>
+       <label>
+        B.  Regardless of
+       </label>
+       <label class="green">
+        C.  But for
+       </label>
+       <label>
+        D.  Despite
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       61) C
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="152512" qtype="305">
+   <div class="Choice">
+    <div class="nu" id="t62">
+     <span>
+      <b>
+       62)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      In my opinion, it is not good ________ him for help since he is very selfish and always indifferent to other people and their matters.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  turns to
+       </label>
+       <label class="green">
+        B.  turning to
+       </label>
+       <label>
+        C.  turn to
+       </label>
+       <label>
+        D.  turned to
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       62) B
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="152511" qtype="305">
+   <div class="Choice">
+    <div class="nu" id="t63">
+     <span>
+      <b>
+       63)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      The government claims to be trying to do all it can to ________ corruptions, but it is usually easier said than done, so the public is pessimistic about it.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  eliminate
+       </label>
+       <label>
+        B.  cancel
+       </label>
+       <label>
+        C.  ignore
+       </label>
+       <label>
+        D.  fight
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       63) A
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="152510" qtype="305">
+   <div class="Choice">
+    <div class="nu" id="t64">
+     <span>
+      <b>
+       64)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Jason failed one of the exams, but we should make ________ for the fact that he had been ill and absent from class for a whole year.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  permit
+       </label>
+       <label class="green">
+        B.  allowance
+       </label>
+       <label>
+        C.  permission
+       </label>
+       <label>
+        D.  consent
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       64) B
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="152509" qtype="305">
+   <div class="Choice">
+    <div class="nu" id="t65">
+     <span>
+      <b>
+       65)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Being both spoiled and lazy from his childhood, he now feels like a failure, but it is a shame that he ________ everyone for his lack of success.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  criticizes
+       </label>
+       <label class="green">
+        B.  blames
+       </label>
+       <label>
+        C.  charges
+       </label>
+       <label>
+        D.  accuses
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       65) B
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="152508" qtype="305">
+   <div class="Choice">
+    <div class="nu" id="t66">
+     <span>
+      <b>
+       66)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Here are my questions: Can we reach a ________ on this issue? What if we can’t? Who is going to bear the consequences of that?
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  conscience
+       </label>
+       <label>
+        B.  consciousness
+       </label>
+       <label>
+        C.  consequence
+       </label>
+       <label class="green">
+        D.  consensus
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       66) D
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="152507" qtype="305">
+   <div class="Choice">
+    <div class="nu" id="t67">
+     <span>
+      <b>
+       67)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      He thinks about nothing but playing video games all day long, without any interest in anything else. I think he’s totally ________ to it.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  obsessed
+       </label>
+       <label>
+        B.  attracted
+       </label>
+       <label class="green">
+        C.  addicted
+       </label>
+       <label>
+        D.  hooked
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       67) C
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="152506" qtype="305">
+   <div class="Choice">
+    <div class="nu" id="t68">
+     <span>
+      <b>
+       68)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      I love to walk and do outdoor exercises, so if you are going out for a walk, I’ll be only too happy to come along and keep you ________.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  company
+       </label>
+       <label>
+        B.  companion
+       </label>
+       <label>
+        C.  companionship
+       </label>
+       <label>
+        D.  companies
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       68) A
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="152504" qtype="305">
+   <div class="Choice">
+    <div class="nu" id="t69">
+     <span>
+      <b>
+       69)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Even though the football team is popular, I’m still ________ about its chance of winning, but he absolutely disagrees with me.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  surprised
+       </label>
+       <label>
+        B.  reluctant
+       </label>
+       <label>
+        C.  reliant
+       </label>
+       <label class="green">
+        D.  skeptical
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       69) D
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="152505" qtype="305">
+   <div class="Choice">
+    <div class="nu" id="t70">
+     <span>
+      <b>
+       70)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Should the opportunity ________, I’d love to go to Egypt to see with my own eyes the great pyramids, one of the ten civilizations in our world today.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  rise
+       </label>
+       <label>
+        B.  raise
+       </label>
+       <label class="green">
+        C.  arise
+       </label>
+       <label>
+        D.  arouse
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       70) C
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="152502" qtype="305">
+   <div class="Choice">
+    <div class="nu" id="t71">
+     <span>
+      <b>
+       71)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      On January 1st, people usually make a New Year’s ________ such as quitting smoking or losing weight, but it’s never an easy job.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  resolve
+       </label>
+       <label class="green">
+        B.  resolution
+       </label>
+       <label>
+        C.  decision
+       </label>
+       <label>
+        D.  determination
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       71) B
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="152503" qtype="305">
+   <div class="Choice">
+    <div class="nu" id="t72">
+     <span>
+      <b>
+       72)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      The common sense is if you ________ drinks, fatty foods, and cigarettes now, you’ll be far healthier and live longer for sure.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  put off
+       </label>
+       <label>
+        B.  set off
+       </label>
+       <label class="green">
+        C.  keep off
+       </label>
+       <label>
+        D.  take off
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       72) C
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="152501" qtype="305">
+   <div class="Choice">
+    <div class="nu" id="t73">
+     <span>
+      <b>
+       73)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      If you want to join the student club on campus, you must ________ by its rules no matter who you are and what you do.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  comply
+       </label>
+       <label class="green">
+        B.  abide
+       </label>
+       <label>
+        C.  observe
+       </label>
+       <label>
+        D.  obey
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       73) B
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="152500" qtype="305">
+   <div class="Choice">
+    <div class="nu" id="t74">
+     <span>
+      <b>
+       74)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      It has been reported that the old houses are to be torn down in order to make ________ for a new post office for the neighboring communities.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  road
+       </label>
+       <label>
+        B.  path
+       </label>
+       <label>
+        C.  avenue
+       </label>
+       <label class="green">
+        D.  way
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       74) D
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="152499" qtype="305">
+   <div class="Choice">
+    <div class="nu" id="t75">
+     <span>
+      <b>
+       75)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      No matter how successful we are or how much we have achieved so far, we shouldn’t get ________ since there are more difficulties ahead of us.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  encouraged
+       </label>
+       <label class="green">
+        B.  contented
+       </label>
+       <label>
+        C.  satisfactory
+       </label>
+       <label>
+        D.  depressed
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       75) B
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="152498" qtype="305">
+   <div class="Choice">
+    <div class="nu" id="t76">
+     <span>
+      <b>
+       76)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Professor Smith and Professor Corley ________ in giving us lectures. This week Professor Smith will lecture, so you won’t be able to meet Professor Corley for your paper.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  altered
+       </label>
+       <label class="green">
+        B.  alternated
+       </label>
+       <label>
+        C.  changed
+       </label>
+       <label>
+        D.  shifted
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       76) B
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="152497" qtype="305">
+   <div class="Choice">
+    <div class="nu" id="t77">
+     <span>
+      <b>
+       77)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      The young man had ________ some clever ideas that helped the company make huge profit; consequently, the young man was promoted quickly.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  come out
+       </label>
+       <label class="green">
+        B.  come up with
+       </label>
+       <label>
+        C.  come up to
+       </label>
+       <label>
+        D.  come up
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       77) B
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="152496" qtype="305">
+   <div class="Choice">
+    <div class="nu" id="t78">
+     <span>
+      <b>
+       78)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      The new book became one of the bestsellers. ________ that they decided to buy the copyright and made it into a film to make a big fortune out of that.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  So great was the success of the book
+       </label>
+       <label>
+        B.  So the success of the book was great
+       </label>
+       <label>
+        C.  Was the success of the book so great
+       </label>
+       <label>
+        D.  So great the success of the book was
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       78) A
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="152495" qtype="305">
+   <div class="Choice">
+    <div class="nu" id="t79">
+     <span>
+      <b>
+       79)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      One ________ be struck by the enthusiasm he displayed in his work; no one can match him in terms of commitment and devotion.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  cannot help
+       </label>
+       <label>
+        B.  cannot choose but to
+       </label>
+       <label class="green">
+        C.  cannot but
+       </label>
+       <label>
+        D.  cannot
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       79) C
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="152494" qtype="305">
+   <div class="Choice">
+    <div class="nu" id="t80">
+     <span>
+      <b>
+       80)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      It is really a wonder. We just couldn’t believe the new station ________ so big and spacious, full of all kinds of modern facilities we can think about.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  should be
+       </label>
+       <label>
+        B.  would be
+       </label>
+       <label>
+        C.  was
+       </label>
+       <label>
+        D.  should have been
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       80) A
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+ </div>
+</div>
+
+                <!-- 题型列表结束 -->
+                <!-- 评论区开始 -->
+                            <script src="../assets/js/Valine.min.js"></script>
+                <div class="container">
+                    <div id="vcomments" class="tow">
+                        <script>
+                            new Valine({
+                                el: '#vcomments',
+                                appId: 'jphqw5DgcOz2TwIRuwPvVusb-gzGzoHsz',
+                                appKey: 'e6WOjatXeFfe7C5ukXcmLGCE',
+                                notify: false,
+                                verify: false,
+                                avatar: 'wavatar',
+                                visitor: true,
+                                avatarForce: true,
+                                recordIP: true,
+                                enableQQ: true,
+                                requiredFields: ['nick'],
+                            })
+                        </script>
+                        <span id="/" class="leancloud_visitors" data-flag-title="U校园答案导航" style="position:relative;float:right;top:-10px;font-size: 12px;color:#808080">
+                        <em class="post-meta-item-text">访问量</em>
+                        <i class="leancloud-visitors-count">0</i>
+                    </span>
+                    </div>
+                </div>
+                <!-- 评论区结束 -->
+                            <br>
+            <!-- 主体部分结束 -->
+            <div class="container">
+                <div style="text-align: center;color:white;font-size: small;">Copyright&nbsp;© 2021 abiscuit</div>
+            </div>
+            <br>
+            </div>
+            </html>
