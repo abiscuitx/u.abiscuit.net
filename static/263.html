@@ -1,0 +1,2532 @@
+<!DOCTYPE html>
+            <html lang="zh-cn">
+
+            <head>
+            <meta charset="utf-8">
+            <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+            <title>读写3-李翠平-unit5</title>
+            <meta name="MSSmartTagsPreventParsing" content="True" />
+            <meta http-equiv="MSThemeCompatible" content="Yes" />
+            <meta name="renderer" content="webkit">
+            <link href="https://www.hualigs.cn/image/606dce23ed45f.jpg" rel="icon" sizes="580x580" type="image/jpeg" />
+            <script src="https://uexercise.unipus.cn/static/its/lib/jquery/jquery.js"></script>
+            <script src="https://uexercise.unipus.cn/static/its/lib/zui/js/zui.js"></script>
+            <script src="https://uexercise.unipus.cn/static/its/lib/chosen/chosen.js"></script>
+            <script src="https://uexercise.unipus.cn/static/its/lib/jquery/jquery.form.js"></script>
+            <script>
+                window.CTX = 'https://uexercise.unipus.cn';
+            </script>
+            <script src="https://uexercise.unipus.cn/static/its/lib/itest/js/itest_common.js"></script>
+            <script src="https://uexercise.unipus.cn/static/its/lib/layer/layer.js"></script>
+            <script src="https://uexercise.unipus.cn/static/its/lib/layer/laytpl.js"></script>
+            <script src="https://uexercise.unipus.cn/static/its/lib/layer/extend/layer.ext.js"></script>
+            <script src="https://uexercise.unipus.cn/static/its/lib/fltrp/js/js.js"></script>
+            <script src="https://uexercise.unipus.cn/static/its/lib/fltrp/js/stopic.js"></script>
+            <script src="https://uexercise.unipus.cn/static/its/lib/jplayer/jquery.jplayer.min.js"></script>
+            <script type="text/javascript" src="//player.youku.com/jsapi"></script>
+            <script src='https://uexercise.unipus.cn/static/its/lib/fltrp/js/uploadXX.js'></script>
+            <script>
+                var _hmt = _hmt || [];
+                (function() {
+                    var hm = document.createElement("script");
+                    hm.src = "https://hm.baidu.com/hm.js?c402237d180d562bcdd7e9d5fe8780f8";
+                    var s = document.getElementsByTagName("script")[0];
+                    s.parentNode.insertBefore(hm, s);
+                })();
+            </script>
+            <link rel="shortcut icon" href="../assets/images/favicon.ico">
+            <link href="../assets/css/main.css" rel="stylesheet">
+            <link href="../assets/css/part.css" rel="stylesheet">
+            <link href="../assets/css/topic.css" rel="stylesheet">
+            <link href="../assets/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+            <style>
+                ul {
+                    padding-left: 0px;
+                }
+                
+                .playButton {
+                    width: 35px;
+                    height: 35px;
+                    cursor: pointer;
+                    float: left;
+                    margin: 25px 10px 0 35px;
+                }
+                
+                .answer-video .playButton {
+                    margin: 0 10px;
+                }
+                
+                input.blankinput {
+                    -moz-border-bottom-colors: none;
+                    -moz-border-left-colors: none;
+                    -moz-border-right-colors: none;
+                    -moz-border-top-colors: none;
+                    border-color: -moz-use-text-color -moz-use-text-color #000000;
+                    border-image: none;
+                    border-style: none none solid;
+                    border-width: 0 0 1px;
+                    margin: 0 0px;
+                    font-weight: bold;
+                    text-align: center;
+                    outline: none;
+                    height: 24px;
+                    resize: none;
+                    color: #333;
+                }
+                
+                span.blankinput {
+                    border-color: -moz-use-text-color -moz-use-text-color #000000;
+                    border-image: none;
+                    border-style: none none solid;
+                    border-width: 0 0 1px;
+                    margin: 0 0px;
+                    font-weight: bold;
+                    text-align: center;
+                    outline: none;
+                    height: 24px;
+                    resize: none;
+                    color: white;
+                }
+                
+                .form-horizontal .form-group {
+                    margin-right: 0;
+                    margin-left: 0;
+                    margin-top: 20px;
+                }
+            </style>
+            </head>
+
+            <body>
+            <nav class="navbar navbar-light navbar-expand-md fixed-top" id="mainNav" style="background: rgba(0,0,0,0);">
+                <div class="container">
+                    <a class="navbar-brand d-xl-flex justify-content-xl-center align-items-xl-center js-scroll-trigger" data-aos="zoom-in-right" href="https://u.abiscuit.net" style="font-family: Roboto, sans-serif;text-shadow: 0px 0px 5px var(--red);"><img class="rounded-circle d-xl-flex justify-content-xl-center align-items-xl-center" src="https://www.hualigs.cn/image/606dce23ed45f.jpg" style="max-height: auto;width: 40px;height: 40px;margin-right: 10px;">u校园答案导航</a>
+                    <button data-toggle="collapse" class="navbar-toggler navbar-toggler-right" data-target="#navbarResponsive" data-aos="fade-left" type="button" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation" value="Menu" style="box-shadow: 0px 0px 5px var(--red);"><i class="fa fa-bars" style="box-shadow: 0px 0px 5px var(--red);"></i></button>
+                    <div class="collapse navbar-collapse" id="navbarResponsive">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item nav-link js-scroll-trigger"><a class="nav-link js-scroll-trigger" data-aos="zoom-out-left" href="https://kxz.atcumt.com/" style="font-family: Roboto, sans-serif;text-shadow: 0px 0px 5px var(--primary);">友情推荐：矿小助</a></li>
+                            <li class="nav-item nav-link js-scroll-trigger"><a class="nav-link js-scroll-trigger" data-aos="zoom-out-left" href="mailto:abiscuit@vip.qq.com" style="font-family: Roboto, sans-serif;text-shadow: 0px 0px 5px var(--blue);">邮箱联系</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- 主体部分开始 -->
+            <div class="main">
+                <div class="topclass">读写3-李翠平-unit5</div>
+                <!-- 题型列表开始 --><div class="content Question">
+ <div class="Test">
+  <div class="TestTitle">
+   <div class="title" id="303">
+    听句子填空8题，总分值：8分
+   </div>
+   <div class="title-decrible">
+    <div class="directs">
+     Directions： In this section, you’ll hear some sentences. In each sentence there is a word or phrase missing. You are going to listen to the recording twice. When you listen for the first time, write down the missing words that you hear. When you listen for the second time, check your answers.
+    </div>
+   </div>
+  </div>
+  <div class="Question-Conversation" qid="156937" qtype="303">
+   <span class="answer-video">
+    <div class="play" respath="https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_3/t_300/201510/719e3bea-1d7e-4323-b7f6-c1ab5431737c.mp3">
+     <img class="playImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/play-1.png">
+      <img class="playingImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/playing02-fltrp.gif" style="display:none;"/>
+     </img>
+    </div>
+   </span>
+   <div class="Choice">
+    <div class="nu" id="t1">
+     <span>
+      <b>
+       1)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      They fear that the conflict between the two countries could have
+      <span class="blankinput" type="text">
+       adverse
+      </span>
+      effects on global financial markets.
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       1) adverse
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="156938" qtype="303">
+   <span class="answer-video">
+    <div class="play" respath="https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_3/t_300/201510/71316ad9-e948-4995-aee1-28c8e53f23c0.mp3">
+     <img class="playImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/play-1.png"/>
+     <img class="playingImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/playing02-fltrp.gif" style="display:none;"/>
+    </div>
+   </span>
+   <div class="Choice">
+    <div class="nu" id="t2">
+     <span>
+      <b>
+       2)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      A good deal of evidence was produced to show that children tend to
+      <span class="blankinput" type="text">
+       conform
+      </span>
+      to their teachers’ expectations of them.
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       2) conform
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="156940" qtype="303">
+   <span class="answer-video">
+    <div class="play" respath="https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_3/t_300/201510/b3c25c5f-2e58-4fc2-9dd4-b3bcb407cbf3.mp3">
+     <img class="playImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/play-1.png"/>
+     <img class="playingImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/playing02-fltrp.gif" style="display:none;"/>
+    </div>
+   </span>
+   <div class="Choice">
+    <div class="nu" id="t3">
+     <span>
+      <b>
+       3)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Although photography can be an enjoyable
+      <span class="blankinput" type="text">
+       pastime
+      </span>
+      , it is also something that plays a very important part in educating young and old alike.
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       3) pastime
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="156942" qtype="303">
+   <span class="answer-video">
+    <div class="play" respath="https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_3/t_300/201510/7c13d0ff-a14e-46dc-883c-6b79598bb048.mp3">
+     <img class="playImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/play-1.png"/>
+     <img class="playingImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/playing02-fltrp.gif" style="display:none;"/>
+    </div>
+   </span>
+   <div class="Choice">
+    <div class="nu" id="t4">
+     <span>
+      <b>
+       4)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      People’s
+      <span class="blankinput" type="text">
+       esteem
+      </span>
+      for this old man comes from his generous and consistent help to the neighboring poor.
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       4) esteem
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="156944" qtype="303">
+   <span class="answer-video">
+    <div class="play" respath="https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_3/t_300/201510/651de35a-a87d-4f13-93b5-9ff8ffdfc7df.mp3">
+     <img class="playImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/play-1.png"/>
+     <img class="playingImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/playing02-fltrp.gif" style="display:none;"/>
+    </div>
+   </span>
+   <div class="Choice">
+    <div class="nu" id="t5">
+     <span>
+      <b>
+       5)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      In general, smokers living in cities are slightly more
+      <span class="blankinput" type="text">
+       prone
+      </span>
+      to cancer than those living in the country.
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       5) prone
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="156945" qtype="303">
+   <span class="answer-video">
+    <div class="play" respath="https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_3/t_300/201510/92e6adec-44ae-4cfe-a357-ed677275138f.mp3">
+     <img class="playImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/play-1.png"/>
+     <img class="playingImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/playing02-fltrp.gif" style="display:none;"/>
+    </div>
+   </span>
+   <div class="Choice">
+    <div class="nu" id="t6">
+     <span>
+      <b>
+       6)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      The new President said she would
+      <span class="blankinput" type="text">
+       dedicate
+      </span>
+      herself to protecting the rights of the old and the homeless.
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       6) dedicate
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="156947" qtype="303">
+   <span class="answer-video">
+    <div class="play" respath="https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_3/t_300/201510/b524a736-3775-4f72-86c1-9c3f82d8e7ce.mp3">
+     <img class="playImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/play-1.png"/>
+     <img class="playingImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/playing02-fltrp.gif" style="display:none;"/>
+    </div>
+   </span>
+   <div class="Choice">
+    <div class="nu" id="t7">
+     <span>
+      <b>
+       7)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      This has tended to
+      <span class="blankinput" type="text">
+       foster
+      </span>
+      a very negative attitude toward this company and its staff.
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       7) foster
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="156949" qtype="303">
+   <span class="answer-video">
+    <div class="play" respath="https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_3/t_300/201510/806c9841-4141-4240-9d34-c2279c2461e7.mp3">
+     <img class="playImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/play-1.png"/>
+     <img class="playingImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/playing02-fltrp.gif" style="display:none;"/>
+    </div>
+   </span>
+   <div class="Choice">
+    <div class="nu" id="t8">
+     <span>
+      <b>
+       8)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      My boss has decided to rearrange the working schedule, and I can’t
+      <span class="blankinput" type="text">
+       gauge
+      </span>
+      how it will affect me.
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       8) gauge
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+ </div>
+ <div class="Test">
+  <div class="TestTitle">
+   <div class="title" id="103">
+    长对话8题，总分值：16分
+   </div>
+   <div class="title-decrible">
+    <div class="directs">
+     Directions： In this section, you'll hear some long conversations. At the end of each conversation, some questions will be asked. Both the conversation and the questions will be spoken only once. After each question, choose the best answer from the four choices marked A, B, C, and D.
+    </div>
+   </div>
+  </div>
+  <div class="Question-Conversation" qid="156752" qtype="103">
+   <span class="answer-video">
+    <div class="play" respath="https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_3/t_103/201510/735f7ec1-ddd1-4953-b284-fbb1331170d3.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_3/t_103/201510/21f6f6c1-a750-4bff-ab9a-4eb936d1464c.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_3/t_103/201510/1345ad95-7c00-4529-9b51-1708de0dc37a.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_3/t_103/201510/159d5bf2-547f-401e-8aab-718e231ff244.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_3/t_103/201510/2c9b76e8-9ac1-4d1b-ab0e-3e6b48bfc529.mp3">
+     <img class="playImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/play-1.png"/>
+     <img class="playingImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/playing02-fltrp.gif" style="display:none;"/>
+    </div>
+   </span>
+   <div class="Choice">
+    <div class="nu" id="t9">
+     <span>
+      <b>
+       9)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  Expressing his admiration for an Airline company.
+       </label>
+       <label>
+        B.  Reporting his internship to one of the company bosses.
+       </label>
+       <label>
+        C.  Showing how much he liked the interning in the company.
+       </label>
+       <label class="green">
+        D.  Meeting face-to-face with one of the company bosses.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t10">
+     <span>
+      <b>
+       10)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  She’s about to take a new position to coordinate publicity requirements.
+       </label>
+       <label class="green">
+        B.  She will be promoted to a new position in Human Resources.
+       </label>
+       <label>
+        C.  She’s another intern who has got an offer in the company.
+       </label>
+       <label>
+        D.  She’s an advisor to Barbara, one of the company bosses.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t11">
+     <span>
+      <b>
+       11)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  Accepted the offer without any hesitation.
+       </label>
+       <label>
+        B.  Accepted the offer with some reservation.
+       </label>
+       <label>
+        C.  Took it as a chance for his internship.
+       </label>
+       <label>
+        D.  Took it merely as a dream that cannot be true.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t12">
+     <span>
+      <b>
+       12)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  A position in Human Resources.
+       </label>
+       <label class="green">
+        B.  A job in Marketing Support.
+       </label>
+       <label>
+        C.  A job taking care of the interviews with the media.
+       </label>
+       <label>
+        D.  A job to study the business model in the company.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      9) D      10) B      11) A      12) B
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <div>
+      <pre>（无）</pre>
+     </div>
+     <p>
+      <b>
+       听力文本：
+      </b>
+     </p>
+     <p>
+      <p style="text-align:justify">
+       W: William? It’s William, correct?
+      </p>
+      <p style="text-align:justify">
+       M: Uh… Yes, yes! Ms. Montgomery.
+      </p>
+      <p style="text-align:justify">
+       W: William, I have reports that you’ve been an excellent intern for the last nine months here at California Gold Airlines.
+      </p>
+      <p style="text-align:justify">
+       M: Good to hear! Yes! I’ve loved, loved! my nine months interning here at California Gold Airlines! It’s amazing to hear it from you, I mean the leader, one of two founders of the whole company… I mean what I want to say is, Ms. Montgomery it’s such an honor to meet you, face-to-face…
+      </p>
+      <p style="text-align:justify">
+       W: Well, first of all, just call me Barbara – because nobody calls me Ms. Montgomery. An important part of our success here at California Gold Airlines has always been our ability to be relaxed and get to know one another!
+      </p>
+      <p style="text-align:justify">
+       M: Right! Uhhhh… Barbara… Wow! ….
+      </p>
+      <p style="text-align:justify">
+       W: Okay. So, William, let’s get down to business. I think you know my assistant, Ashley Cooper.
+      </p>
+      <p style="text-align:justify">
+       M: Ashley has been my advisor during my internship program. She’s great!
+      </p>
+      <p style="text-align:justify">
+       W: Well, Ashley does an outstanding job as my marketing support, helping coordinate publicity requirements like interviews with the media – television, radio and newspapers and, of course on-line. And, Ashley is about to be promoted from that job to a new position in Human Resources. So, William, I’d like to offer you that job in marketing support.
+      </p>
+      <p style="text-align:justify">
+       M: I accept! Ms. Montgomery! I’ve loved California Gold Airlines since childhood! I took my first flight when I was two years old. I accept Ms. Montgomery. I accept! Today is a dream come true for me!
+      </p>
+      <p style="text-align:justify">
+       W: William… Only one more thing… It’s Barbara…
+      </p>
+      <p style="text-align:justify">
+       W: Uhh…Yes, yes! Barbara! I accept the job!
+      </p>
+      <p style="text-align:justify">
+       New Words
+      </p>
+      <p style="text-align:justify">
+       William 威廉（人名）
+      </p>
+      <p style="text-align:justify">
+       Montgomery 蒙哥马利（人名）
+      </p>
+      <p style="text-align:justify">
+       intern n. 实习生  v. 实习
+      </p>
+      <p style="text-align:justify">
+       Barbara 芭芭拉（人名）
+      </p>
+      <p style="text-align:justify">
+       Ashley Cooper 阿什利·库柏（人名）
+      </p>
+      <p style="text-align:justify">
+       internship n. 实习期
+      </p>
+      <p>
+       <br/>
+       <p>
+        What is William doing in the conversation?
+       </p>
+       <p>
+        What do we know about Ashley from the conversation?
+       </p>
+       <p>
+        What was William’s reaction to the job offer?
+       </p>
+       <p>
+        What job does William finally accept?
+       </p>
+      </p>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="156751" qtype="103">
+   <span class="answer-video">
+    <div class="play" respath="https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_3/t_103/201510/a7198aae-c7eb-4c23-bfe0-487b6c8d5a7d.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_3/t_103/201510/e6b03d71-b700-4fde-9f92-20c0f318aa11.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_1031/t_103/201701/gnmbco_18142509644.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_3/t_103/201510/0861aab3-264f-40f8-8f98-988c16b4425f.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_1031/t_103/201701/kczedh_18142509646.mp3">
+     <img class="playImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/play-1.png"/>
+     <img class="playingImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/playing02-fltrp.gif" style="display:none;"/>
+    </div>
+   </span>
+   <div class="Choice">
+    <div class="nu" id="t13">
+     <span>
+      <b>
+       13)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  At 9:00 AM.
+       </label>
+       <label class="green">
+        B.  At 8:50 AM.
+       </label>
+       <label>
+        C.  At 8:20 AM.
+       </label>
+       <label>
+        D.  At 8:40 AM.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t14">
+     <span>
+      <b>
+       14)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  She arrived at her shop about 40 minutes earlier than others.
+       </label>
+       <label>
+        B.  She recruited quite a lot new employees for her business.
+       </label>
+       <label>
+        C.  She started her business two years before at a good business location.
+       </label>
+       <label class="green">
+        D.  She doubled her business since Microsoft has a building next to her shop.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t15">
+     <span>
+      <b>
+       15)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  Because she didn’t want to eat anything for lunch at all.
+       </label>
+       <label>
+        B.  Because she was too much of a girl, pretty quiet and really sweet.
+       </label>
+       <label class="green">
+        C.  Because she was too nice to embarrass Derek for his choice of restaurant.
+       </label>
+       <label>
+        D.  Because she has no other choices in the hamburger place.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t16">
+     <span>
+      <b>
+       16)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  It turned out to be fine despite some embarrassment.
+       </label>
+       <label>
+        B.  It began with unpleasantness and ended even worse.
+       </label>
+       <label>
+        C.  It turned out to be the greatest day of his life.
+       </label>
+       <label>
+        D.  It started with some excitement and expectations.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      13) B      14) D      15) C      16) A
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <div>
+      <pre>（无）</pre>
+     </div>
+     <p>
+      <b>
+       听力文本：
+      </b>
+     </p>
+     <p>
+      <p style="text-align:justify">
+       W: Hey Derek! How did your first day at the coffee shop go?
+      </p>
+      <p style="text-align:justify">
+       M: Uhhh, OK…
+      </p>
+      <p style="text-align:justify">
+       W: Tell me everything!
+      </p>
+      <p style="text-align:justify">
+       M: 9:00 a.m. start time – so, I arrived 40 minutes early at 8:20…
+      </p>
+      <p style="text-align:justify">
+       W: Good job on making a good first impression.
+      </p>
+      <p style="text-align:justify">
+       M: Right, but it didn’t exactly work out. No one arrived until 8:50 to unlock the building, so I was stuck waiting outside for 30 minutes in the cold!
+      </p>
+      <p style="text-align:justify">
+       W: Worse things have happened! I’m sure your boss was impressed anyway.
+      </p>
+      <p style="text-align:justify">
+       M: Oh, my boss is great! Her name is Carla and she’s the owner of Green Bean coffee shop. She started Green Bean nine years ago. Her business is doing well. Two years ago, Microsoft opened a building next door and with all of the new customers, Green Bean has doubled its business. So, it’s a really busy place!
+      </p>
+      <p style="text-align:justify">
+       W: Were there other new employees, today?
+      </p>
+      <p style="text-align:justify">
+       M: Only one other new employee, Jenny. She’s really nice.
+      </p>
+      <p style="text-align:justify">
+       W: Did you have the chance to talk to her about other things – get to know her a little?
+      </p>
+      <p style="text-align:justify">
+       M: We went out to lunch with our trainer, Louise. I suggested my favorite hamburger place, Johnny’s Burgers… where I found out that Jenny is vegetarian. I was so embarrassed, but thankfully they had vegetable burgers.
+      </p>
+      <p style="text-align:justify">
+       W: Ooh, that’s a lucky break.
+      </p>
+      <p style="text-align:justify">
+       M: I know! I couldn’t believe Jenny didn’t mention she was vegetarian until we came to order at Johnny’s Burgers… Jenny’s pretty quiet, but really sweet. I think she didn’t want to make me feel bad about my choice of restaurant.
+      </p>
+      <p style="text-align:justify">
+       W: She sounds nice! Maybe you can ask Jenny out on a date?
+      </p>
+      <p style="text-align:justify">
+       M: Oh mom! What!? I can’t date somebody I work with… If we broke up, I’d have to go job hunting all over again!
+      </p>
+      <p style="text-align:justify">
+       New Words
+      </p>
+      <p style="text-align:justify">
+       vegetarian adj. 素食的
+      </p>
+      <p>
+       <br/>
+       <p>
+        When did Derek enter the coffee shop for his first day?
+       </p>
+       <p>
+        What did Derek know about his boss Carla, the owner of the coffee shop?
+       </p>
+       <p>
+        Why didn’t Jenny, the other new employee, mention she was vegetarian?
+       </p>
+       <p>
+        What can we conclude about the man’s first day at work?
+       </p>
+      </p>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+ </div>
+ <div class="Test">
+  <div class="TestTitle">
+   <div class="title" id="308">
+    长文章8题，总分值：16分
+   </div>
+   <div class="title-decrible">
+    <div class="directs">
+     Directions： In this section, you’ll hear some passages. At the end of each passage, you'll hear some questions. Both the passage and the questions will be spoken only once. After each question, choose the best answer from the four choices marked A, B, C, and D.
+    </div>
+   </div>
+  </div>
+  <div class="Question-Conversation" qid="156909" qtype="308">
+   <span class="answer-video">
+    <div class="play" respath="https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_3/t_301/201510/f7c932da-4307-4277-8982-55de0758e42c.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_3/t_301/201510/cb61e2dd-eaec-49d8-9ad0-7f301b730de5.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_3/t_301/201510/3c3d51ac-8c36-49f2-b621-78e29d5b3a90.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_3/t_301/201510/0b2d0bd5-df7d-40c5-bfdd-fbce11e41f86.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_3/t_301/201510/46859ec7-0798-43f5-acf9-e8b35f147e86.mp3">
+     <img class="playImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/play-1.png"/>
+     <img class="playingImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/playing02-fltrp.gif" style="display:none;"/>
+    </div>
+   </span>
+   <div class="Choice">
+    <div class="nu" id="t17">
+     <span>
+      <b>
+       17)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  The International Mars Society.
+       </label>
+       <label class="green">
+        B.  Inspiration Mars Foundation.
+       </label>
+       <label>
+        C.  Ames Research Center in California.
+       </label>
+       <label>
+        D.  American state of Colorado.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t18">
+     <span>
+      <b>
+       18)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  A space craft would carry two men to Mars.
+       </label>
+       <label class="green">
+        B.  The crew members would be all Americans.
+       </label>
+       <label>
+        C.  America is responsible for getting the craft to Mars.
+       </label>
+       <label>
+        D.  University students would design the flight operation.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t19">
+     <span>
+      <b>
+       19)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  He is just a businessman.
+       </label>
+       <label>
+        B.  He loves touring around the world.
+       </label>
+       <label>
+        C.  He belongs to the Inspiration Mars Foundation.
+       </label>
+       <label>
+        D.  He invented the idea of the competition.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t20">
+     <span>
+      <b>
+       20)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  Mainly students.
+       </label>
+       <label>
+        B.  Mainly professors.
+       </label>
+       <label>
+        C.  University alumni and professors.
+       </label>
+       <label>
+        D.  Professors and students.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      17) B      18) B      19) A      20) A
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <div>
+      <pre>（无）</pre>
+     </div>
+     <p>
+      <b>
+       听力文本：
+      </b>
+     </p>
+     <p>
+      <p style="text-align:justify">
+       The International Mars Society recently held a four-day conference in the American state of Colorado. During the meeting, the American-based Mars Society announced a competition for university students around the world. The group is urging the students to help with plans for sending humans to Mars. About six months ago the non-profit Inspiration Mars Foundation proposed sending humans to Mars within five years. Under the plan, a spacecraft would carry a woman and a man to within 160 kilometers of the red planet. Then, it would return them to the Earth. The crew is expected to be American. But the process of getting to Mars is an international effort.
+       <br/>
+       <br/>
+       The president of the Mars Society, Robert Zubrin, made the competition announcement. He has asked that teams of students design a two-person Mars flight operation that could launch in 2018. The designs will be judged on cost, quality, simplicity and timing. The Mars Society, Inspiration Mars and the American space agency will choose the judges.
+       <br/>
+       <br/>
+       The challenge of humans to Mars could inspire a new generation to want to develop their minds to become scientists, engineers, technological entrepreneurs, researchers. The competition is open to university engineering students worldwide. The teams must be mostly students although some professors, university alumni and others can take part. Competition finalists will present their plans at the space agency’s Ames Research Center in California.
+       <br/>
+       <br/>
+       The Inspiration Mars Foundation is the idea of businessman and space tourist Dennis Tito. Robert Zubrin admits he does not belong to the group. But he says he thinks its idea of a trip to Mars is a realistic possibility.
+       <br/>
+       <br/>
+       New words:
+      </p>
+      <p style="text-align:justify">
+       Mars n. 火星
+      </p>
+      <p style="text-align:justify">
+       entrepreneur n. 企业家
+      </p>
+      <p style="text-align:justify">
+       alumni n. 校友( alumnus的名词复数 )
+      </p>
+      <p>
+       <br/>
+       <p>
+        Who proposed the plan of sending humans to Mars within five years about six months ago?
+       </p>
+       <p>
+        What is included in the proposal of sending humans to Mars?
+       </p>
+       <p>
+        What do we know about Dennis Tito?
+       </p>
+       <p>
+        What kind of people will the competition teams be composed of according to?
+       </p>
+      </p>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="156908" qtype="308">
+   <span class="answer-video">
+    <div class="play" respath="https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_3/t_301/201510/62999b90-615b-4d00-a3ef-6d3f2c69363e.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_3/t_301/201510/d929b708-329f-40fc-bed6-ae16d07feddb.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_3/t_301/201510/77768075-8725-4384-bf38-5353faf4f3f9.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_3/t_301/201510/c402896a-cfce-4694-b2a9-9884625418a0.mp3,https://ucampus.cdn.unipus.cn/uexercise/quesres/hearmp3/b_320/c_3/t_301/201510/784268d4-41ac-4698-b965-b4182e01ead7.mp3">
+     <img class="playImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/play-1.png"/>
+     <img class="playingImg" src="https://uexercise.unipus.cn/static/its/lib/itest/image/playing02-fltrp.gif" style="display:none;"/>
+    </div>
+   </span>
+   <div class="Choice">
+    <div class="nu" id="t21">
+     <span>
+      <b>
+       21)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  Their overnight success is considered to be attributed to luck.
+       </label>
+       <label>
+        B.  Their overnight success is thought to have come from personal relationships.
+       </label>
+       <label>
+        C.  They are perceived to have less integrity than unattractive ones.
+       </label>
+       <label class="green">
+        D.  They are considered to have a positive factor on the way up the career ladder.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t22">
+     <span>
+      <b>
+       22)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  Their attractiveness is a positive factor in their career development.
+       </label>
+       <label class="green">
+        B.  Their success is often attributed more to luck than to their ability.
+       </label>
+       <label>
+        C.  They are considered to have more integrity than unattractive women.
+       </label>
+       <label>
+        D.  They have a disadvantage in traditionally female jobs.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t23">
+     <span>
+      <b>
+       23)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  In the political circle.
+       </label>
+       <label>
+        B.  In the executive circle.
+       </label>
+       <label>
+        C.  In traditionally masculine positions.
+       </label>
+       <label class="green">
+        D.  In traditionally female jobs.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t24">
+     <span>
+      <b>
+       24)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  Unattractive male candidates received the most votes.
+       </label>
+       <label>
+        B.  Unattractive female candidates defeated the unattractive male candidates in votes.
+       </label>
+       <label>
+        C.  Attractive female candidates defeated attractive male candidates in votes.
+       </label>
+       <label class="green">
+        D.  Attractive female candidates received the fewest votes.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      21) D      22) B      23) D      24) D
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <div>
+      <pre>（无）</pre>
+     </div>
+     <p>
+      <b>
+       听力文本：
+      </b>
+     </p>
+     <p>
+      <p style="text-align:justify">
+       Beauty has always been regarded as something praise-worthy. Almost everyone thinks attractive people are happier and healthier, have better marriages and have more respectable occupations. Personal consultants give them better advice for finding jobs. Even judges are softer on attractive defendants. But in the executive circle, beauty can become a dilemma.
+       <br/>
+       <br/>
+       While attractiveness is a positive factor for a man on his way up the executive ladder, it is harmful for a woman. Handsome male executives were perceived as having more integrity than plainer men; effort and ability were thought to account for their success. Attractive female executives were considered to have less integrity than unattractive ones; their success was attributed not to ability but to such factors as luck. Consequently, attractive female overnight successes were attributed more to personal relationships and less to ability than unattractive overnight successes.
+       <br/>
+       <br/>
+       An attractive woman is perceived to be more feminine, and an attractive man more masculine than the less attractive one. Thus, an attractive woman has an advantage in traditionally female jobs, but an attractive woman in a traditionally masculine position appears to lack the masculine qualities required.
+       <br/>
+       <br/>
+       This is true even in politics. Anne Bowman, who recently published a study of the effects of attractiveness of political candidates, asked 125 undergraduate students to rank two groups of photographs, one of men and one of women in order of attractiveness. The students were told the photographs were of candidates for political offices. They were asked to rank them again, in the order they would vote for them. The results showed that attractive males utterly defeated unattractive men, but the women who had been rated most attractive always received the fewest votes.
+      </p>
+      <p>
+       <br/>
+       <p>
+        How do people think of attractive men?
+       </p>
+       <p>
+        How do people think of attractive women?
+       </p>
+       <p>
+        Where does an attractive woman have an advantage?
+       </p>
+       <p>
+        What is the result of Anne Bowman’ study about the effects of attractiveness for political candidates?
+       </p>
+      </p>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+ </div>
+ <div class="Test">
+  <div class="TestTitle">
+   <div class="title" id="305">
+    词汇与结构10题，总分值：10分
+   </div>
+   <div class="title-decrible">
+    <div class="directs">
+     Directions： For each of the following sentences there are four choices marked A, B, C and D. Choose the best one to complete each sentence.
+    </div>
+   </div>
+  </div>
+  <div class="Question-Conversation" qid="156829" qtype="305">
+   <div class="Choice">
+    <div id="t25">
+     <span>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      If a policy does not ________ with a society’s values, the likelihood of success diminishes.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  combine
+       </label>
+       <label>
+        B.  cohere
+       </label>
+       <label class="green">
+        C.  coincide
+       </label>
+       <label>
+        D.  confirm
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       25) C
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="156831" qtype="305">
+   <div class="Choice">
+    <div id="t26">
+     <span>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Now, please open your mouth and ________ the number with me from five.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  take down
+       </label>
+       <label>
+        B.  let down
+       </label>
+       <label>
+        C.  put down
+       </label>
+       <label class="green">
+        D.  count down
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       26) D
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="156836" qtype="305">
+   <div class="Choice">
+    <div id="t27">
+     <span>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      The poor girl couldn’t ________ from her tears any more when her mother showed up.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  refrain
+       </label>
+       <label>
+        B.  withdraw
+       </label>
+       <label>
+        C.  hold
+       </label>
+       <label>
+        D.  withhold
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       27) A
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="156837" qtype="305">
+   <div class="Choice">
+    <div id="t28">
+     <span>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Once you get to know your mistakes, you should ________ them as soon as possible.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  refrain
+       </label>
+       <label>
+        B.  reclaim
+       </label>
+       <label>
+        C.  reckon
+       </label>
+       <label class="green">
+        D.  rectify
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       28) D
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="156838" qtype="305">
+   <div class="Choice">
+    <div id="t29">
+     <span>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      The vast majority of people in any given culture will ________ to the established standards of that culture.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  confine
+       </label>
+       <label class="green">
+        B.  conform
+       </label>
+       <label>
+        C.  confront
+       </label>
+       <label>
+        D.  confirm
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       29) B
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="156843" qtype="305">
+   <div class="Choice">
+    <div id="t30">
+     <span>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      We want to ________ the law to protect children from punishment that is harsh and inappropriate in a decent society.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  repair
+       </label>
+       <label class="green">
+        B.  amend
+       </label>
+       <label>
+        C.  renew
+       </label>
+       <label>
+        D.  handle
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       30) B
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="156848" qtype="305">
+   <div class="Choice">
+    <div class="nu" id="t31">
+     <span>
+      <b>
+       31)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Among young people, women seem to be more ________ to the illness than men.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  likely
+       </label>
+       <label>
+        B.  possible
+       </label>
+       <label class="green">
+        C.  prone
+       </label>
+       <label>
+        D.  common
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       31) C
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="156856" qtype="305">
+   <div class="Choice">
+    <div id="t32">
+     <span>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      This chapter cannot claim to clear up the confusing ________ of approaches but it will offer some guidance.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  variety
+       </label>
+       <label class="green">
+        B.  array
+       </label>
+       <label>
+        C.  ray
+       </label>
+       <label>
+        D.  chain
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       32) B
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="156857" qtype="305">
+   <div class="Choice">
+    <div id="t33">
+     <span>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      On the physical level, massage aids the elimination of ________ wastes (often the cause of muscle aches and pains) by stimulating blood circulation.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  excessive
+       </label>
+       <label>
+        B.  poisonous
+       </label>
+       <label class="green">
+        C.  toxic
+       </label>
+       <label>
+        D.  deadly
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       33) C
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+  <div class="Question-Conversation" qid="156858" qtype="305">
+   <div class="Choice">
+    <div id="t34">
+     <span>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Recently a number of voluntary initiatives have sought to ________ a sense of belonging to the community on the part of young people.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  make
+       </label>
+       <label>
+        B.  form
+       </label>
+       <label>
+        C.  take
+       </label>
+       <label class="green">
+        D.  foster
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      <div>
+       34) D
+      </div>
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <p>
+      <pre>（无）</pre>
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+ </div>
+ <div class="Test">
+  <div class="TestTitle">
+   <div class="title" id="309">
+    选词填空（15选10）10题，总分值：20分
+   </div>
+   <div class="title-decrible">
+    <div class="directs">
+     Directions： Fill in the blanks in the following passage by selecting suitable words from the word bank. Each word can be used only once.
+    </div>
+   </div>
+  </div>
+  <div class="Question-Conversation" qid="156877" qtype="309">
+   <div class="Choice">
+    <div id="t35">
+     <span>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      <p style="text-align:justify">
+       Just how much does the Constitution protect your digital data? The Supreme Court will now
+       <b>
+        35)
+       </b>
+       <span class="blankinput" type="text">
+        ponder
+       </span>
+       whether police can search the contents of a mobile phone without a warrant (许可) if the phone is on or around a person during an arrest.
+      </p>
+      <p style="text-align:justify">
+       <br/>
+       California has asked the justices to
+       <b>
+        36)
+       </b>
+       <span class="blankinput" type="text">
+        refrain
+       </span>
+       from a sweeping ruling, particularly one that upsets the old
+       <b>
+        37)
+       </b>
+       <span class="blankinput" type="text">
+        assumptions
+       </span>
+       that authorities may search through the possessions of suspects at the time of their arrest. It is hard, the state argues, for judges to
+       <b>
+        38)
+       </b>
+       <span class="blankinput" type="text">
+        gauge
+       </span>
+       the implications of new and rapidly changing technologies.
+      </p>
+      <p style="text-align:justify">
+       <br/>
+       The court would be recklessly modest if it followed California’s advice. Enough of the implications are perceptible, even obvious, so that the justice can and should provide updated
+       <b>
+        39)
+       </b>
+       <span class="blankinput" type="text">
+        guidelines
+       </span>
+       to police, lawyers and defendants (被告).
+      </p>
+      <p style="text-align:justify">
+       <br/>
+       They should start by
+       <b>
+        40)
+       </b>
+       <span class="blankinput" type="text">
+        discarding
+       </span>
+       California’s lame argument that exploring the contents of a smartphone – a vast storehouse of digital information is similar to say, going through a suspect’s purse. The court has ruled that police don’t
+       <b>
+        41)
+       </b>
+       <span class="blankinput" type="text">
+        violate
+       </span>
+       the law when they go through the wallet or pocketbook of an arrestee without a warrant. But exploring one’s smartphone is more like entering his or her home. A smartphone may contain an arrestee’s reading history, personal
+       <b>
+        42)
+       </b>
+       <span class="blankinput" type="text">
+        revenue
+       </span>
+       , medical history and comprehensive records of recent correspondence.
+      </p>
+      <p style="text-align:justify">
+       <br/>
+       Orin Kerr, a law professor, compares the explosion and
+       <b>
+        43)
+       </b>
+       <span class="blankinput" type="text">
+        accessibility
+       </span>
+       of digital information in the 21st century with the establishment of automobile use as a virtual necessity of life in the 20th: The justices had to specify novel rules for the new personal
+       <b>
+        44)
+       </b>
+       <span class="blankinput" type="text">
+        domain
+       </span>
+       of the passenger car then; they must sort out how laws apply to digital information now.
+      </p>
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <ul class="Wordli">
+       <li>
+        A.  guidelines
+       </li>
+       <li>
+        B.  bias
+       </li>
+       <li>
+        C.  refrain
+       </li>
+       <li>
+        D.  accessibility
+       </li>
+       <li>
+        E.  diversion
+       </li>
+       <li>
+        F.  assumptions
+       </li>
+       <li>
+        G.  discarding
+       </li>
+       <li>
+        H.  entrust
+       </li>
+       <li>
+        I.  ponder
+       </li>
+       <li>
+        J.  impart
+       </li>
+       <li>
+        K.  violate
+       </li>
+       <li>
+        L.  domain
+       </li>
+       <li>
+        M.  gauge
+       </li>
+       <li>
+        N.  patching
+       </li>
+       <li>
+        O.  revenue
+       </li>
+      </ul>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      35) ponder      36) refrain      37) assumptions      38) gauge      39) guidelines      40) discarding      41) violate      42) revenue      43) accessibility      44) domain
+     </p>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+ </div>
+ <div class="Test">
+  <div class="TestTitle">
+   <div class="title" id="107">
+    长篇阅读10题，总分值：20分
+   </div>
+   <div class="title-decrible">
+    <div class="directs">
+     Directions： You are going to read a passage with 10 statements attached to it. Each statement contains information given in one of the paragraphs. Identify the paragraph from which the information is derived. You may choose a paragraph more than once. Each paragraph is marked with a letter.
+    </div>
+   </div>
+  </div>
+  <div class="Question-Conversation" qid="156924" qtype="107">
+   <div class="Choice">
+    <div class="padding">
+     <p>
+      <p style="text-align:center">
+       <b>
+        Women in the Labor Force
+       </b>
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       A) Women are considered labor force participants only if they work outside the home. In the past women were expected to be in the labor force only until they married; this reflected the historical, idealized notion of a society in which the man was the breadwinner and the woman the homemaker. This notion of the family was not a reality in the past and is not so today, since more than half of all married women work outside the home. But the idea that women belong in the home has had a significant effect on the conditions under which they participate in the labor force. That participation is characterized by segregation and low pay.
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       B) The majority of women in the labor force have always been isolated in “female” occupations, called such because they are often extensions of the work women do at home and because the vast majority of the people doing them are women. Some occupations have changed over time and new ones have come into existence, but various occupations are still defined as women’s work. Today women have one unpaid job in the home and one low-paid job in the labor force. Women have always been responsible for work in the home and in the labor force they have always been paid lower wages than men. They have been paid less both when their jobs are not the same as those of men but could be seen as equally valuable and when the work is exactly the same. Women earned 52.8 percent of what men earned in 1911, 58 percent in 1971 and 66 percent in 1996.
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       C) At the end of the 19th century, factories replaced families as main productive units. Factory work involved long hours, low wages and often brutal working conditions. For example, young girls worked for 60 hours a week for 80 cents, or less than two cents per hour. In 1901 women comprised 13 percent of the total labor force and the female labor-force participation rate was 14 percent (this refers to women who worked for pay; many women worked but were not paid).
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       D) The majority of women were employed as servants, dressmakers, teachers, seamstresses (女裁缝师), tailors, housekeepers, launderers, milliners (女帽商) and saleswomen. During the first half of the 20th century, the number of jobs available to women was limited and strong sentiment existed against married women working outside the home. Men feared that the cheap labor of large numbers of women would undercut their wages; employers and moral reformers were concerned that work would impair the femininity and high moral standards of women and distract them from their true calling as wives and mothers.
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       E) During World War I, women replaced men who had joined the armed services, but the labor shortage was not severe enough to warrant their large-scale employment. Although women did men’s jobs, they did not receive men’s wages. By 1921, 65 percent of all women workers were in clerical, domestic service and professional (mainly teaching and nursing) occupations.
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       F) In the early part of the 20th century, women’s fight for equality focused on political rights and was characterized by the suffrage (选举权) movement. The right to the federal vote was finally won in 1918, and by 1922 women had won the right to vote in all provinces except Quebec, where the struggle continued until 1940. In 1929 women were recognized as “persons” eligible to hold a seat in the Canadian Senate.
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       G) The expansionary period of the 1920s was cut short by the Great Depression, but production and employment expanded enormously with World War II and once again employers hired single and then married women to do men’s jobs, once again for lower wages. This time, however, many stayed and found employment in the service industries.
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       H) Greater numbers of women entering the labor force presented male-dominated trade unions with a dilemma. Trade unionists feared the competition from “unskilled” female labor and were concerned as well with maintaining the traditional role of women. Simultaneously, they were interested in protecting all workers, including women. Women workers, however, with or without the support of the trade-union movement, have traditionally fought for higher wages and better working conditions.
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       I) The 1950s was a time of rapid economic expansion. Changes in the productive process, emphasis by government and private industry on construction and on research and development, expansion in health, welfare and educational services, and the need to advertise, sell and finance new products all created new jobs for women.
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       J) By mid-20th century many families, in order to be able to afford more goods and to educate their children, needed two income earners. Because young people were staying in school longer, married women entered the labor force to help their families raise their standard of living.
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       K) Since the 1950s there has been a steady increase in part-time work and by 1994 the number of part-time jobs, which have few benefits and little security, had expanded enormously; 69.4 percent of these were filled by women. Women continued to earn lower wages than men and in 1980 the average wage rate for full-time women workers was 64 percent of that of the average wage rate for men workers. By 1993 women’s wages had increased somewhat and men’s wages had declined, narrowing the gap between their earnings to 72 percent. In 1994, 70 percent of women were still employed in clerical, sales, service, teaching and nursing and health-related occupations; women comprised 43 percent of the total labor force.
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       L) From 1971 women organized to demand greater equality in wages and working conditions, and to gain recognition of their social, economic, legal and political position in society. The women’s movement of the 1960s had made many women aware of their right to independence and control of their own lives. Women joined unions and other organizations in greater numbers. The women’s movement also raised and debated issues such as wages for housework, pensions for housewives and public childcare.
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       M) Considerable agreement existed in a wide range of areas: the prohibition of discrimination in employment policies on the grounds of gender or marital status, affirmative action, equal pay for work of equal value, maternity leave and benefits, adequate day care facilities, provision for health and safety, and protection against sexual harassment (骚扰) in the workplace. By 1994, 57 percent of mothers with children five years and under were in the labor force and the crisis in childcare services was a major issue. As the need for the two-income-earner family increases, so does the demand for parental leave and quality daycare programs that recognize women’s role in the labor force and men’s role in child rearing and household work.
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       N) Achieving the goal of equality would require major social, political and economic changes in order to create structures such as parental leave and childcare programs that support women and overturn existing structures such as labor-force segregation and low wages that are disadvantageous to women. It would also require changes in attitudes that divide work in the labor force and work in the home into “women’s” work and “men’s” work.
+      </p>
+     </p>
+    </div>
+    <div class="nu" id="t45">
+     <span>
+      <b>
+       45)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Not until the women’s movement of 1960s did women come to realize their right to independence and control of their own lives.
+      <span class="blankinput" type="text">
+       L
+      </span>
+     </p>
+    </div>
+    <div class="nu" id="t46">
+     <span>
+      <b>
+       46)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      If work would distract women from their true roles as wives and mothers was one of the concerns of employers and moral reformers in the first half of the 20th century.
+      <span class="blankinput" type="text">
+       D
+      </span>
+     </p>
+    </div>
+    <div class="nu" id="t47">
+     <span>
+      <b>
+       47)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Major social, political and economic changes would be needed to achieve the goal of equality between working men and women.
+      <span class="blankinput" type="text">
+       N
+      </span>
+     </p>
+    </div>
+    <div class="nu" id="t48">
+     <span>
+      <b>
+       48)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      With the expansion of production and employment during World War II, women were hired once again to do men’s jobs but were still paid less than men.
+      <span class="blankinput" type="text">
+       G
+      </span>
+     </p>
+    </div>
+    <div class="nu" id="t49">
+     <span>
+      <b>
+       49)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      From the 1950s, the number of part-time jobs increased steadily and many of these jobs were filled by women.
+      <span class="blankinput" type="text">
+       K
+      </span>
+     </p>
+    </div>
+    <div class="nu" id="t50">
+     <span>
+      <b>
+       50)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Women in all Canadian provinces gradually obtained the right to vote till 1940.
+      <span class="blankinput" type="text">
+       F
+      </span>
+     </p>
+    </div>
+    <div class="nu" id="t51">
+     <span>
+      <b>
+       51)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      It is a historical and idealized belief that men are breadwinners while women homemakers in society.
+      <span class="blankinput" type="text">
+       A
+      </span>
+     </p>
+    </div>
+    <div class="nu" id="t52">
+     <span>
+      <b>
+       52)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      Whether they could get the support from the trade-union movement or not, women workers strove for higher pay and better working conditions.
+      <span class="blankinput" type="text">
+       H
+      </span>
+     </p>
+    </div>
+    <div class="nu" id="t53">
+     <span>
+      <b>
+       53)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      In the late 19th century, families gave way to factories as prime productive units.
+      <span class="blankinput" type="text">
+       C
+      </span>
+     </p>
+    </div>
+    <div class="nu" id="t54">
+     <span>
+      <b>
+       54)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      To get more living expenses and have children educated, many families were in need of two breadwinners by mid-20th century.
+      <span class="blankinput" type="text">
+       J
+      </span>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      45) L      46) D      47) N      48) G      49) K      50) F      51) A      52) H      53) C      54) J
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <div>
+      <pre>（无）</pre>
+     </div>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+ </div>
+ <div class="Test">
+  <div class="TestTitle">
+   <div class="title" id="152">
+    阅读理解5题，总分值：10分
+   </div>
+   <div class="title-decrible">
+    <div class="directs">
+     Directions： Read the following passages carefully. Each passage is followed by some questions or unfinished sentences. For each of them there are four choices marked A, B, C, and D. Choose the best answer to each question.
+    </div>
+   </div>
+  </div>
+  <div class="Question-Conversation" qid="156883" qtype="152">
+   <div class="Choice">
+    <div class="padding">
+     <p>
+      <p style="text-align:justify">
+       Many immigrants who settled in the United States were poor. The country they came to was a wilderness. Land had to be cleared of trees in order to make farms; mines had to be developed; houses, shops, and public buildings had to be built. Everyone endeavored to earn their livelihood. Manual labor was highly valued. Thereafter it was the man who worked with his head to achieve success in business and industry who was esteemed. Now there is in America a curious combination of pride in having risen to a position where it is no longer necessary to depend on manual labor for a living and genuine delight in what one is able to accomplish with one’s own hands.
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       The attitude toward manual labor is seen in an array of things in American life. One is invited to dinner at the home of a middle-aged couple. It is not only comfortable but extravagantly furnished together with beautifully landscaped gardens; yet the hostess probably will cook and serve the dinner. Additionally, she is prone to do much of the housework, and even though the husband may be a professional man, he talks about washing the car, digging in the flowerbeds, or painting the house. He often assists her in washing dishes and doing other household chores (杂务) aptly. The son or daughter who is away at college may get a summer job involving manual labor to earn next year’s school expense.
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       It has been an American ideal to rise from a humble beginning to a better position. Therefore the “servant class” has not remained a fixed group. In fact, it has almost ceased to exist because people, who in earlier days might have been servants, now get higher wages working in factories. The majority of families cannot afford to pay what people who do housework or gardening charge for their services.
+       <br/>
+      </p>
+      <p style="text-align:justify">
+       The expense of household service and of skilled labor, such as painting and carpentry, and the tradition of working with one’s hands have contributed to keeping alive the spirit of “do-it-yourself”. Many articles in popular magazines are developed to instruction in gardening, carpentry, and interior decorating. The average American gets a good deal of pleasure out of telling others about his or her projects, exhibiting them for their neighbors, or taking them to the country fair, where they will surely win a prize.
+      </p>
+     </p>
+    </div>
+    <div class="nu" id="t55">
+     <span>
+      <b>
+       55)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      According to the first paragraph, the Americans ________.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  only took pride in achieving success in business and industry in the past
+       </label>
+       <label>
+        B.  only valued manual labor in the past
+       </label>
+       <label class="green">
+        C.  still take great delight in manual labor
+       </label>
+       <label>
+        D.  are more proud of being successful in working with head now
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t56">
+     <span>
+      <b>
+       56)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      From the passage we can learn that people who do housework or gardening ________.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  are well paid
+       </label>
+       <label>
+        B.  are poorly paid
+       </label>
+       <label>
+        C.  are looked down upon
+       </label>
+       <label>
+        D.  are less respected than those who work with head
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t57">
+     <span>
+      <b>
+       57)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      According to the passage, which of the following statements is true?
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  College students have to do manual labor to earn their school expense.
+       </label>
+       <label class="green">
+        B.  In America, there is no servant class.
+       </label>
+       <label>
+        C.  All Americans rise from a humble beginning to a better position.
+       </label>
+       <label>
+        D.  The salary for housework and gardening is so high that attracts many people.
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t58">
+     <span>
+      <b>
+       58)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      According to the passage, the American attitude toward manual labor is ________.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label class="green">
+        A.  positive
+       </label>
+       <label>
+        B.  negative
+       </label>
+       <label>
+        C.  indifferent
+       </label>
+       <label>
+        D.  neutral
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="nu" id="t59">
+     <span>
+      <b>
+       59)
+      </b>
+     </span>
+    </div>
+    <div class="padding">
+     <p>
+      From the passage we can infer that Americans are wealthy because ________.
+     </p>
+    </div>
+    <div class="padding">
+     <p>
+      <div>
+       <label>
+        A.  they often work with head
+       </label>
+       <label class="green">
+        B.  they have made it with their own hands
+       </label>
+       <label>
+        C.  they are more intelligent than others
+       </label>
+       <label>
+        D.  they are more skilled than others
+       </label>
+      </div>
+     </p>
+    </div>
+    <div class="Analysis">
+     <p>
+      <b>
+       参考答案：
+      </b>
+     </p>
+     <p>
+      55) C      56) A      57) B      58) A      59) B
+     </p>
+     <p>
+      <b>
+       解析：
+      </b>
+     </p>
+     <div>
+      <pre>（无）</pre>
+     </div>
+    </div>
+   </div>
+   <a class="OpenAnalysis">
+    ∨ 展开解析
+   </a>
+  </div>
+ </div>
+</div>
+
+                <!-- 题型列表结束 -->
+                <!-- 评论区开始 -->
+                            <script src="../assets/js/Valine.min.js"></script>
+                <div class="container">
+                    <div id="vcomments" class="tow">
+                        <script>
+                            new Valine({
+                                el: '#vcomments',
+                                appId: 'jphqw5DgcOz2TwIRuwPvVusb-gzGzoHsz',
+                                appKey: 'e6WOjatXeFfe7C5ukXcmLGCE',
+                                notify: false,
+                                verify: false,
+                                avatar: 'wavatar',
+                                visitor: true,
+                                avatarForce: true,
+                                recordIP: true,
+                                enableQQ: true,
+                                requiredFields: ['nick'],
+                            })
+                        </script>
+                        <span id="/" class="leancloud_visitors" data-flag-title="U校园答案导航" style="position:relative;float:right;top:-10px;font-size: 12px;color:#808080">
+                        <em class="post-meta-item-text">访问量</em>
+                        <i class="leancloud-visitors-count">0</i>
+                    </span>
+                    </div>
+                </div>
+                <!-- 评论区结束 -->
+                            <br>
+            <!-- 主体部分结束 -->
+            <div class="container">
+                <div style="text-align: center;color:white;font-size: small;">Copyright&nbsp;© 2021 abiscuit</div>
+            </div>
+            <br>
+            </div>
+            </html>
